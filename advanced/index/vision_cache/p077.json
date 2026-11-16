@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hình 21",
+   "title": "Nhu cầu và các nguồn tài chính tiềm năng giai đoạn 2022–2040",
+   "region": "bottom half",
+   "content": "Sơ đồ phân nhánh thể hiện nhu cầu tài chính tổng cộng và ba nguồn tài chính tiềm năng cho giai đoạn 2022–2040.\n\nHộp trung tâm (màu xanh):\n- NHU CẦU TÀI CHÍNH\n- 368 tỷ USD\n- Khả năng chống chịu: 4,7% GDP mỗi năm\n- Khử carbon: 2,1% GDP mỗi năm\n\nĐường nối từ hộp trung tâm xuống ba hộp nguồn tài chính (màu cam):\n1) KHU VỰC TƯ NHÂN\n- 184 tỷ USD\n- ~3,4% GDP mỗi năm\n\n2) KHU VỰC CÔNG\n- 130 tỷ USD\n- ~2,4% GDP mỗi năm\n\n3) BÊN NGOÀI\n- 54 tỷ USD\n- ~1% GDP mỗi năm\n\nThông điệp chính: nhu cầu 368 tỷ USD được chia thành ba nguồn huy động tiềm năng từ khu vực tư nhân, khu vực công và bên ngoài.\n\nGhi chú: NPV chiết khấu ở tỷ lệ 6%.",
+   "notes": "Sơ đồ không có thêm nhãn hay mũi tên khác ngoài các đường nối phân nhánh. Các số liệu và tỷ lệ phần trăm được đọc từ hình và trùng với văn bản."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3157,
+  "completion_tokens": 355
+ }
+}

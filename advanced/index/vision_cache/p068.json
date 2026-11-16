@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hộp 8",
+   "title": "Việt Nam chuyển hướng sang xuất khẩu hàng hóa môi trường và các cơ hội mới nổi",
+   "region": "upper-middle to lower half",
+   "content": "Text box summarizing Vietnam’s shift toward exporting environmental goods and new opportunities. Main points:\n- Vietnam’s imports and exports of environmental products are mainly related to renewable energy.\n- Solar panel and heliostat exports had especially high annual growth from 2010 to 2020: 81,6% and 71,2%, respectively.\n- This economic transition and emerging sectors could create more new, more sustainable jobs in a sector that will keep growing as the world shifts rapidly toward more climate-friendly trade, production, and consumption.\n- The solar PV sector is a niche sector, often embedded in complex value chains; access to inputs is important to sustain growth in coming years.\n- Vietnam is already a major country in solar equipment, but could still find a place in technologies related to wind energy and electrical equipment.\n- Trade-partner policies (importing countries) can affect this trade; therefore Vietnam needs to diversify markets.\n- Opportunities also exist in developing markets, such as the African Continental Free Trade Area.\n\nRecommendation bullets in the box:\n1) Facilitate imports of clean technology by reducing non-tariff measures applied to environmental goods and services.\n   - Vietnam’s average tariff on environmental goods is low (0,33%), but some NTM still hinder trade flows.\n   - In 2020, while Vietnam’s simple average applied tariff on all products was 12%, environmental goods were near zero tariff.\n   - Tariffs on more environmentally friendly products were 8%, indicating room for tariff cuts.\n   - Vietnam applied 199 NTM to 54 environmental products in 2020.\n   - Renewable-energy products faced the most NTM, followed by waste-management and monitoring equipment.\n   - Solar panels must meet labeling, inspection, and conformity assessment requirements when imported into Vietnam; however, since all imported products must comply with these requirements, environmental goods are not treated differently from other products.\n2) Reduce carbon emissions in international trade through policies and direct financial support for startups and emerging green firms, capacity building through training, tax incentives, and stronger enforcement of regulations.\n   - Costs and implementation should be assessed through close public-private coordination.\n   - Under the new environmental protection law, businesses must actively use pollution-control technology and fulfill recycling obligations or pay compensation for certain products and packaging.\n   - These regulations support Vietnam’s emissions-reduction ambitions and encourage renewable-energy projects.\n3) Reduce carbon intensity in international trade by improving traceability across value chains and upgrading eco-industrial parks (EIP).\n   - Consumers in key export markets such as the United States and the EU increasingly demand environmentally friendly goods and cleaner production processes.\n   - Many foreign firms are part of value chains where large corporations have committed to greener action.\n   - If Vietnam does not transition to clean energy, it will become less attractive to such firms.\n   - Converting industrial parks into EIPs also helps reduce greenhouse gas emissions.\n\nThe box text shown on this page ends mid-sentence at: “...làm giảm lượng khí”."
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "lower-left within the infographic/text area",
+   "content": "A small standalone panel or continuation of the box content is not visible as a separate illustrated element; the page contains only text in the gray callout box and bullet recommendations. No charts, tables, maps, or diagrams are present."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3388,
+  "completion_tokens": 751
+ }
+}

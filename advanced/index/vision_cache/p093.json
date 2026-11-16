@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Text-only appendix page listing background documents. Main heading: 'Phụ lục 2. Một số tài liệu cơ bản'. Introductory paragraph says the CCDR report is based on existing research by the World Bank Group and other academic, research, development organizations, as well as many Government reports, and that some background studies include: 1. 'Đồng bằng sông Cửu Long: Vai trò quan trọng trong nền kinh tế Việt Nam và những thách thức của khí hậu và phát triển, tháng 1 năm 2022.' 2. 'Tổng quan về Khung pháp lý và Chính sách của Việt Nam về Biến đổi Khí hậu, tháng 1 năm 2022.' 3. 'Năng lực thể chế liên quan đến biến đổi khí hậu, tháng 1 năm 2022' 4. 'Biến đổi khí hậu và nông nghiệp ở Việt Nam, tháng 1 năm 2022' 5. 'Chính sách tài chính và biến đổi khí hậu, tháng 1 năm 2022' 6. 'Thương mại và Biến đổi khí hậu-Nghiên cứu quốc gia Việt Nam tháng 1 năm 2022' 7. 'Khử carbon trong ngành giao thông vận tải và khả năng phục hồi trong xây dựng ở Việt Nam, tháng 1 năm 2022' 8. 'Rủi ro về khí hậu, môi trường và tính bền vững xã hội ở Việt Nam: Phân tích không gian chung, tháng 1 năm 2022' 9. 'Chính sách tài khóa và biến đổi khí hậu, tháng 1 năm 2022' 10. 'Ghi chú khử carbon trong ngành năng lượng, tháng 1 năm 2022' 11. 'Biến đổi khí hậu, thích ứng, giảm thiểu và tác động phân bổ ở Việt Nam, tháng 1 năm 2022.' 12. 'Tác động kinh tế vĩ mô của các chính sách giảm thiểu và biến đổi khí hậu ở Việt Nam, tháng 9 năm 2020 (sẽ được cập nhật).' 13. 'Đánh giá thể chế và chi tiêu công đối với biến đổi khí hậu, tháng 9 năm 2021.' 14. 'Nợ tiềm tàng của Chính phủ do Thiên tai, tháng 9 năm 2021.' 15. 'Hỗ trợ Hành động có Hệ thống để Thực hiện NDC của Việt Nam: Đánh giá Ưu tiên Thích ứng và Giảm thiểu, tháng 2 năm 2022.' 16. 'Tương lai bền vững và phục hồi cho thành phố Biên Hòa (dự thảo), tháng 1 năm 2022.' 17. 'Tương lai bền vững và có khả năng phục hồi cho Thành phố Hồ Chí Minh (dự thảo), tháng 1 năm 2022.' No charts, tables, maps, or other data visuals are present; the page is a text appendix.",
+   "notes": "Page appears to contain only narrative text and a numbered list; no informative visual elements beyond the text block itself."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2893,
+  "completion_tokens": 691
+ }
+}

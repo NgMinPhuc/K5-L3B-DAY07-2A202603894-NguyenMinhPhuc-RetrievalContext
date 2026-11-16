@@ -60,16 +60,44 @@ Quy trình đánh giá test: chốt cấu hình trên dev rồi chạy
 .venv/bin/python -m starter.test_experiments --output artifacts/day7_test/<run_id>
 ```
 
-**Lưu ý về thứ tự thực hiện (trung thực):** `artifacts/day7_test/run_20261116_final/` được tạo lúc 23:24 ngày 16/11 cho hybrid baseline và `hybrid_rrf_more_context` (cấu hình chốt khi đó). Cấu hình "citation fix" được thử trên dev sau đó (23:42–23:51) dựa trên phân tích lỗi abstain trên dev; kết quả test của run 23:24 **không được đọc hay dùng** khi chọn "citation fix". Cấu hình "citation fix" chưa chạy trên test; cần thêm `hybrid_rrf_citation_fix` vào `CONFIG_NAMES` trong `starter/test_experiments.py`, chạy test một lần, review queue test và điền bảng dưới.
+**Lưu ý về thứ tự thực hiện (trung thực):** `artifacts/day7_test/run_20261116_final/` được tạo lúc 23:24 ngày 16/11 cho hybrid baseline và `hybrid_rrf_more_context` (cấu hình chốt khi đó). Cấu hình "citation fix" được thử trên dev sau đó (23:42–23:51) dựa trên phân tích lỗi abstain trên dev; kết quả test của run 23:24 **không được đọc hay dùng** khi chọn "citation fix". Sau khi chốt "citation fix" trên dev, test được chạy **một lần** cho baseline và cấu hình đã chọn trong `artifacts/day7_test/run_20261117_citation_fix/` (cùng code, cùng model), rồi review 48 câu trả lời theo cùng tiêu chí với dev. Không chỉnh cấu hình sau khi xem test.
 
-| Cấu hình / test | Hit@1 | Evidence Hit@3 | Context evidence | Grade 0/1/2 | Citation hỗ trợ | Abstention đúng | Thời gian / chi phí |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Hybrid RRF baseline | | | | | | | |
-| Hybrid citation fix (đã chọn) | | | | | | | |
+| Cấu hình / test (40 answerable + 2 thiếu evidence) | Hit@1 | Evidence Hit@3 | Context evidence | Trả lời | Grade 0/1/2 (TB) | Citation hỗ trợ | Abstention đúng | Abstain nhầm | Latency TB / median | Chi phí |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Hybrid RRF baseline | 26/40 (65%) | 29/40 (72.5%) | 13/40 (32.5%) | 18 | 24 / 2 / 14 (0.75) | 16/18 | 2/2 | 22 | 5.37 s / 6.34 s | $0.1036 |
+| **Hybrid citation fix (đã chọn)** | **26/40 (65%)** | **29/40 (72.5%)** | **25/40 (62.5%)** | **30** | **13 / 0 / 27 (1.35)** | **26/31** | **2/2** | **10** | **4.10 s / 2.75 s** | **$0.1002** |
+
+Kết quả test xác nhận xu hướng trên dev: retrieval giống nhau (Hit@3 29/40), nhưng cấu hình đã chọn đưa evidence vào context cuối gần gấp đôi (13 → 25), trả lời nhiều hơn (18 → 30), số câu đúng tăng 14 → 27 với chi phí và latency không tăng. Test thấp hơn dev (Hit@3 72.5% so với 86.9%, grade TB 1.35 so với 1.48), có thể do test ít câu (40) và có câu hỏi metadata văn bản (khóa/kỳ họp) mà chunk trang bìa không chứa.
+
+Lỗi test của cấu hình đã chọn: `q149` trả "Có" (công đoàn được đình công khi đang giải quyết tranh chấp) trái với đáp án "Không" — cả hai citation không liên quan; `q157` và `q163` nói thiếu căn cứ vì không lấy được điều chứa thời hạn (09 tháng; chậm nhất 05 ngày làm việc ở NĐ 145 Điều 39). `q160`, `q161` đúng nhưng cite trang bìa thay vì trang chứa thông tin khóa/kỳ họp. Trace, nhãn và lý do từng câu: `citation_review_queue.json` trong từng thư mục cấu hình.
 
 ## Kết luận, đánh đổi và giới hạn
 
 - Hybrid RRF cải thiện retrieval rõ so với từng phương pháp đơn lẻ (Evidence Hit@3 139 vs 122 dense, 103 TF-IDF). Tăng context budget gần như gấp đôi evidence trong context cuối. Cải thiện lớn nhất cho chất lượng trả lời đến từ việc sửa xử lý citation (27 → 133 câu trả lời), cho thấy nút thắt nằm ở controller/validator chứ không phải retriever.
 - Đánh đổi: context 1,400 ký tự và nhiều câu trả lời hơn làm chi phí tăng nhẹ (+6.6%) trong khi latency trung bình không tăng (4.41 s → 3.50 s; chưa phân tích số lượt search để giải thích nguyên nhân).
-- Giới hạn: benchmark kế thừa từ Day 6 nên test không phải holdout mới; nhãn answer/citation là AI-assisted, cần người spot-check; chi phí là ước tính theo token; còn 27 câu abstain nhầm và lỗi chọn nhầm điều/phiên bản luật (BLLĐ 2012 vs 2019).
-- Chưa làm thử thách nâng cao.
+- Trên test, cấu hình đã chọn đạt grade TB 1.35/2 so với 0.75 của baseline, abstention đúng 2/2, với chi phí ~$0.10 cho 42 câu.
+- Giới hạn: một run test cũ (cấu hình "more context") đã tồn tại trước khi thử "citation fix", dù không được đọc; benchmark kế thừa từ Day 6 nên test không phải holdout mới; nhãn answer/citation là AI-assisted, cần người spot-check; chi phí là ước tính theo token; còn 27 câu abstain nhầm và lỗi chọn nhầm điều/phiên bản luật (BLLĐ 2012 vs 2019).
+## Thử thách nâng cao (đang thực hiện — test chưa chạy)
+
+- **Tài liệu:** World Bank Group, *Việt Nam: Báo cáo về Khí hậu và Phát triển* (Vietnam CCDR, bản tiếng Việt, 7/2022), 103 trang, giấy phép CC BY 3.0 IGO. Nguồn: https://openknowledge.worldbank.org/handle/10986/37618 (PDF: `advanced/source/vietnam_ccdr_2022_vi.pdf`). Có text layer; bảng, biểu đồ (phần lớn dạng vector), bản đồ, sơ đồ, hộp.
+- **Pipeline (`advanced/ingest.py`):** render từng trang bằng poppler `pdftoppm` (130 dpi, lưu `advanced/index/pages/pNNN.png` để kiểm chứng); text layer bằng pypdf, chia chunk ~1,400 ký tự; mỗi trang gửi ảnh + text layer cho vision model `gpt-5.4-mini` để chép lại toàn bộ bảng (markdown), biểu đồ (trục, đơn vị, chú giải, giá trị đọc được, `~` cho ước lượng), hình/sơ đồ/bản đồ; mỗi phần tử là một chunk "visual" gắn trang, vùng (region) và bbox caption lấy từ `pdftotext -bbox` (69/104 phần tử định vị được caption). Index v2 bổ sung header cấu trúc lấy từ chính PDF: tiêu đề phụ lục/mục (vd. "Phụ lục 3 – mục B"), nhãn bảng kéo dài sang trang sau ("Bảng 5 (tiếp)"). Embedding `text-embedding-3-small` (1536 chiều) lưu `embeddings.npy`.
+- **Thống kê index:** 103/103 trang xử lý, 0 trang lỗi vision, 378 chunk (274 text, 104 visual: 18 bảng, 13 biểu đồ, 63 hình — gồm nhiều biểu đồ được gán nhãn "Hình", 9 infographic, 1 bản đồ); 36 trang không có phần tử trực quan. Chi phí vision ~318k input + 39k output token; build ~1 phút. Giới hạn: giá trị đọc từ biểu đồ không có nhãn số là ước lượng; mô tả do model tạo chưa được đối chiếu toàn bộ với bản gốc (benchmark gold thì được đối chiếu với ảnh trang).
+- **Benchmark (`advanced/benchmark/`):** soạn trước khi thử nghiệm, từ ảnh trang gốc và text layer (không từ output pipeline), chia dev/test cố định. Dev 23 câu (20 có đáp án + 3 thiếu bằng chứng); test 37 câu: bảng 7, biểu đồ 7, ảnh/sơ đồ/bản đồ 5, multi-hop 6, text 6, thiếu bằng chứng 6. Mỗi câu có ID, nhóm, đáp án, evidence (trang, vùng, giá trị) và lý do. Trước khi chạy thử nghiệm, 3 câu được đổi nhóm/split để nhóm "ảnh" chỉ gồm hình thật (ghi trong trường `reason`).
+- **Retrieval/agent:** tái dùng `run_agent` (tool `search_documents`/`submit_answer`), hybrid RRF dense + TF-IDF; citation trả về trang, loại phần tử, nhãn, vùng.
+
+| Cấu hình dev (23 câu) | Thay đổi | Đạt (AI-assisted) | Bảng | Biểu đồ | Hình | Multi-hop | Text | Thiếu evidence | Cite đủ trang gold | Chi phí | Latency TB |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| text_only | chỉ text layer, top-6, 6k ký tự | 12/23 | 3/6 | 1/6 | 1/2 | 2/3 | 2/3 | 3/3 | 13/20 | $0.103 | 4.2 s |
+| multimodal | + chunk visual | 17/23 | 4/6 | 5/6 | 1/2 | 2/3 | 2/3 | 3/3 | 14/20 | $0.092 | 3.7 s |
+| **v2_wide (đã chốt)** | index v2 + label boost + prompt v2, top-8, 10k ký tự, 6 search | **22/23** | 6/6 | 6/6 | 2/2 | 2/3 | 3/3 | 3/3 | 18/20 | $0.118 | 3.5 s |
+| v2_wide_pageimg | + gửi ảnh trang context khi trả lời | 20/23 | 5/6 | 6/6 | 1/2 | 2/3 | 3/3 | 3/3 | 18/20 | $0.264 | 4.7 s |
+
+Thêm chunk visual tăng biểu đồ 1/6 → 5/6. Lỗi còn lại của multimodal: không tìm được bảng kéo dài sang trang sau/phụ lục theo nhãn (`B-dev-02`, `C-dev-01`), multi-hop dùng số liệu trong câu hỏi thay vì tìm evidence. v2 sửa bằng header cấu trúc + ưu tiên chunk khớp nhãn trong query + prompt yêu cầu kiểm chứng từng phần. Gửi ảnh trang làm chi phí ×2.2 và gây đọc sai biểu đồ (`A-dev-05`), nên không chọn. Lựa chọn: `advanced/runs/dev_selection.md`; nhãn dev trong `review_queue.json` từng cấu hình.
+
+**Test:** lần chạy đầu cấu hình đã chốt (`advanced/runs/test_20261117_v2_wide_FAILED_no_api_credit/`) lỗi 37/37 do tài khoản API hết credit (429 `insufficient_quota`) trước khi model được gọi — không có câu trả lời nào được sinh. Cần nạp credit rồi chạy lại đúng cấu hình đã chốt:
+
+```bash
+.venv/bin/python -m advanced.run_eval --split test --configs v2_wide --output advanced/runs/test_<date>_v2_wide
+```
+
+Nhãn đạt/không đạt hiện là AI-assisted; theo ADVANCED.md, người làm bài phải tự đối chiếu từng câu test với bản gốc trước khi báo điểm.

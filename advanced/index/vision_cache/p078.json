@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 22",
+   "title": "Dư nợ cho vay tư nhân về vấn đề khí hậu và tín dụng xanh từ 2016 đến 2019 (tỷ USD)",
+   "region": "bottom half",
+   "content": "Chart kind: grouped bar chart (two panels).\n\nLeft panel title: \"Dư nợ tín dụng xanh\"\n- X-axis: years 2016, 2017, 2018, 2019, 2020, 2021:Q1\n- Y-axis: value in tỷ USD (scale shown with 0 baseline; labels above bars)\n- Series: Dư nợ tín dụng xanh\n  - 2016: 3,7\n  - 2017: 7,8\n  - 2018: 10,3\n  - 2019: 13,9\n  - 2020: 14,5\n  - 2021:Q1: 14,5\n- Visible trend: steady increase from 2016 to 2019, then essentially flat in 2020 and 2021:Q1.\n- Min/max visible: min 3,7 (2016); max 14,5 (2020 and 2021:Q1).\n\nRight panel title: \"Tín dụng xanh theo lĩnh vực\"\n- X-axis: 2019, 2020, 2020:Q1\n- Y-axis: 0, 38, 75, 113, 150, 188 (tỷ USD scale as printed)\n- Legend series:\n  - Nông nghiệp xanh (dark blue)\n  - Năng lượng tái tạo xanh (orange)\n  - Khác (bao gồm quản lý nước, lâm nghiệp bền vững) (light blue)\n- Approximate values read from bar heights:\n  - 2019: Nông nghiệp xanh ~135; Năng lượng tái tạo xanh ~50; Khác ~120\n  - 2020: Nông nghiệp xanh ~130; Năng lượng tái tạo xanh ~100; Khác ~95\n  - 2020:Q1: Nông nghiệp xanh ~125; Năng lượng tái tạo xanh ~120; Khác ~75\n- Visible trend: agriculture remains high and slightly declines; renewable energy rises strongly from 2019 to 2020:Q1; \"other\" declines overall after 2019.\n- Notes/source: \"Nguồn: FiinResearch và NHNN.\""
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Page text block headed \"5.1. Khu vực tư nhân sẽ là nòng cốt\". It states that the private sector does not necessarily need to save more income, but rather allocate part of current private savings (3,4% GDP mỗi năm) to resilience- and low-carbon-enhancing investments. It says Vietnam's private sector savings are around 20% GDP, with about 80% of private savings flowing into the banking sector, so private investment capacity depends heavily on bank behavior and willingness to finance climate-related projects.\n\nThe text says green finance is still nascent in Vietnam. The State Bank of Vietnam approved a green banking development program in 2018 and an action plan to implement Vietnam's sustainable development goals to 2030, but climate-program financing accounted for only about 5% of total bank financing (about 0,2% GDP) in 2020. It notes domestic financial institutions are only beginning to explore green bonds and other capital-market instruments. It says Vietnam has significant potential to expand green finance and use the financial sector to redirect capital toward more sustainable investments. Based on SBV guidance on eligible sectors for green lending, green credit has increased nearly 5-fold since 2015, faster than overall credit growth by 2,5 times over the same period. Beneficiary sectors named are agriculture, renewable energy, sustainable water management, and sustainable forestry.\n\nThe text also highlights challenges: many banks lack internal processes and expertise to assess green finance. Of 85 credit institutions supervised by the SBV, 72 do not have a dedicated green finance business unit and 74 lack specific green credit appraisal procedures. Another obstacle is maturity mismatch: deposits are mostly short term while many green projects have long implementation periods, increasing liquidity risk and weakening banks' willingness and incentives to finance green projects. Financial institutions also need clearer information on requirements for integrating environmental and social risk assessment into credit policies and underwriting operations."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3261,
+  "completion_tokens": 959
+ }
+}

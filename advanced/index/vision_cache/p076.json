@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Full-page photographic cover image of an urban Vietnamese cityscape, showing high-rise buildings, dense low-rise development, roads, and a river/canal running through the city with bridges. Overlaid chapter text reads “5” and “Huy động tài chính” on a dark translucent band near the lower-left/center. A vertical multicolor decorative strip runs along the left edge. Photographic credit text visible: “© Huy Thoai/Shutterstock” (also vertically along the right edge). The page header text at top reads “Việt Nam: Báo cáo về Khí hậu và Phát triển” and “Huy động tài chính.” Main message: chapter/section title page introducing financing mobilization.",
+   "notes": "No tables, charts, maps, or data diagrams on this page; only a cover-style figure/photo with overlaid text."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2303,
+  "completion_tokens": 200
+ }
+}

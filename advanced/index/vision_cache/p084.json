@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "Bảng 6",
+   "title": "Tiêu chí ưu tiên",
+   "region": "lower half",
+   "content": "|  |  | **Tác động** |  |\n|---|---|---|---|\n|  |  | **Cao** | **Trung bình** |\n| **Khẩn cấp** | **Cao** | Hành động có tác động tức thì và tạo điều kiện để đạt được các mục tiêu phát triển khác | Những hành động không thể trì hoãn và sẽ có tác động lớn và ngay lập tức (thắng nhanh). Các hành động có thể cần lên kế hoạch dài hạn và huy động sự ủng hộ chính trị và nguồn tài chính |\n| **Khẩn cấp** | **Trung bình** | Chậm trễ hành động không làm tăng chi phí đạt cùng mục tiêu. | Các hành động cần thời gian để hình thành và thực hiện nhưng có thể mang lại tác động lớn |\n|  |  | Hành động mà các tác động sẽ xảy ra trong vài thập kỷ | Những hành động cần thời gian để hình thành và thực hiện; tác động có thể không chắc chắn trong một số trường hợp |\n\nVertical axis label: Khẩn cấp\nTop band label: Tác động\nSource/footnotes: none visible in the table.",
+   "notes": "The table is a priority matrix. Some cells contain wrapped text; transcription preserves the visible wording as closely as possible."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3134,
+  "completion_tokens": 318
+ }
+}

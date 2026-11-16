@@ -1,0 +1,15 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 6",
+   "title": "Các tác động của biến đổi khí hậu và rủi ro thiên tai dưới sự quan sát của các doanh nghiệp (2019)",
+   "region": "middle of page",
+   "content": "Chart kind: horizontal stacked bar chart.\nX-axis title/unit: \"Đơn vị: Phần trăm doanh nghiệp báo cáo (%)\"; axis runs from 0 to 100.\nY-axis categories: \n1. Giai đoạn kinh doanh sản xuất\n2. Giảm năng suất lao động\n3. Doanh thu sụt giảm\n4. Gián đoạn kênh vận chuyển\n5. Tăng chi phí sản xuất\n6. Trì hoãn mạng lưới phân phối\n7. Giảm chất lượng sản phẩm/dịch vụ\n8. Thiệt hại về cơ sở vật chất\n9. Thiếu hụt nhân lực\n10. Thiếu nguồn cung nguyên liệu đầu vào\nLegend/series: Hầu như không (dark blue), Khá ít (blue), Tương đối nhiều (orange), Rất nhiều (light beige).\nValues by category (%), left-to-right in legend order:\n1) Giai đoạn kinh doanh sản xuất: 11, 35, 38, 16\n2) Giảm năng suất lao động: 12, 37, 38, 13\n3) Doanh thu sụt giảm: 12, 37, 35, 16\n4) Gián đoạn kênh vận chuyển: 16, 38, 33, 13\n5) Tăng chi phí sản xuất: 16, 39, 35, 9\n6) Trì hoãn mạng lưới phân phối: 24, 38, 28, 10\n7) Giảm chất lượng sản phẩm/dịch vụ: 27, 36, 26, 11\n8) Thiệt hại về cơ sở vật chất: 21, 45, 25, 9\n9) Thiếu hụt nhân lực: 24, 43, 25, 8\n10) Thiếu nguồn cung nguyên liệu đầu vào: 33, 34, 24, 9\nVisible trend: reported impacts are widespread across all categories; the most commonly selected response is usually \"Khá ít\" or \"Tương đối nhiều\", with \"Thiếu nguồn cung nguyên liệu đầu vào\" having the highest \"Hầu như không\" share (33%) and \"Thiệt hại về cơ sở vật chất\" having the highest \"Khá ít\" share (45%). Minimum visible value: 8% (Rất nhiều for Thiếu hụt nhân lực). Maximum visible value: 45% (Khá ít for Thiệt hại về cơ sở vật chất).\nNotes/source line: Note states the figure summarizes opinions of more than 10,000 Vietnamese and foreign enterprises in a 2019 survey described as the largest and most comprehensive survey ever conducted in Vietnam from the perspective of enterprises on climate change. Source: Hình 3.3 tại VCCI, 2020.23"
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3249,
+  "completion_tokens": 670
+ }
+}

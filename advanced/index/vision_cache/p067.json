@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hộp 8",
+   "title": "Khử carbon trong thương mại và đầu tư vào công nghệ mới",
+   "region": "full page",
+   "content": "Text box/section box introducing trade-related decarbonization. It explains that because international trade activities in Vietnam have relatively high carbon emissions, achieving net zero requires shifting technology toward low-emission activities. These changes can come partly from carbon taxes (domestic or in destination markets) and partly from changing behavior of multinational corporations, which account for nearly 85% of Vietnam’s exports and are increasingly committed to low-carbon transition.\n\nMain points in the box:\n- Vietnam has begun decarbonizing trade.\n- In 2020, Vietnam was the third-largest exporter of environmental goods in Southeast Asia, with exports worth 6.5 billion USD, and the second-largest importer with value 12.9 billion USD.\n- Average annual export growth of environmental goods was 48% from 2000 to 2020; import growth was 22%, second-highest in the region after Cambodia.\n- Vietnam’s environmental goods trade is mainly related to renewable energy products, but there is room to expand by reducing non-tariff barriers to environmental goods and services.\n- The CCDR analysis suggests the impact of the EU’s Carbon Border Adjustment Mechanism (CBAM) may initially be limited for Vietnam, but other countries may adopt similar mechanisms with broader impact as consumer demand shifts toward cleaner products and firms adjust production to remain competitive in a low-carbon future.\n- Example: Apple is shifting its entire supply chain to 100% clean energy; FoxConn, a major Apple supplier, has moved an assembly line to Vietnam and will have to meet Apple’s ESG and decarbonization requirements.\n- Example: Nike is pursuing a target to reduce Scope 1 and 2 emissions by 65% and Scope 3 emissions by 30%, while increasing renewable energy use across its supply chain; more than 100 Nike suppliers in Vietnam will be affected.\n\nFootnotes referenced in the box/text:\n73 World Bank 2022, 'No Time to Waste: The Challenges and Opportunities of Cleaner Trade for Vietnam.'\n74 EU CBAM applies only to direct emissions of a small number of Scope 1 products, accounting for less than 4% of Vietnam’s exports to the EU.\n75 Apple, Inc. 2020, 'Apple, Inc. – Climate Change 2020.'",
+   "notes": "This page contains a boxed subsection rather than a standalone chart/table. The surrounding body text is continuous narrative; the only clearly indexable informative visual element is Box 8."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3279,
+  "completion_tokens": 555
+ }
+}

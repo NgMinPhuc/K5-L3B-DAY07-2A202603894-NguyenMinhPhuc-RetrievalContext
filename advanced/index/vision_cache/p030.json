@@ -1,0 +1,15 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 8",
+   "title": "Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực nước biển dâng cao - thiệt hại GDP",
+   "region": "middle-lower page",
+   "content": "Chart kind: line chart.\nX-axis: years 2022 to 2050.\nY-axis: \"Thiệt hại GDP, % độ lệch so với đường cơ sở\" (GDP loss, % deviation from baseline), scale shown from 0 to 14.\nLegend/series:\n- RCP 2.6 (blue): approximately 6.7 in 2022, rising to about 8.0 by around 2030, then gradually increasing to about 10.0 in 2050. Trend: steady upward increase with a slight flattening around 2030-2035. Min/max visible: ~6.7 (2022) / ~10.0 (2050).\n- RCP 4.5 (orange): approximately 6.5 in 2022, rising to about 8.0 by around 2030, then increasing more strongly to about 12.3 in 2050. Trend: upward increase, faster than RCP 2.6 after about 2030. Min/max visible: ~6.5 (2022) / ~12.3 (2050).\nVisible values by year are not labeled numerically; values above are estimated from line positions.\nNotes/source: \"Nguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam.\" \"Ghi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra, dựa trên dự báo nồng độ khí nhà kính.\" The page text also states losses rise from 6% GDP in 2022 to 9,8% (RCP 2.6) or 12,3% GDP (RCP 4.5) in 2050."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3183,
+  "completion_tokens": 451
+ }
+}

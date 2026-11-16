@@ -1,0 +1,37 @@
+{
+  "config": {
+    "name": "multimodal",
+    "method": "hybrid_rrf",
+    "modalities": null,
+    "top_k": 6,
+    "budget": 6000,
+    "page_images": false,
+    "hypothesis": "Adding vision transcriptions of tables/charts/figures lets retrieval reach visual evidence."
+  },
+  "split": "dev",
+  "n": 23,
+  "errors": 0,
+  "answered": 19,
+  "abstained_unanswerable": 2,
+  "unanswerable": 3,
+  "all_gold_pages_retrieved": "15/20",
+  "all_gold_pages_in_context": "14/20",
+  "all_gold_pages_cited": "14/20",
+  "mean_ms": 3712.3,
+  "median_ms": 2772.9,
+  "chat_tokens": {
+    "prompt_tokens": 99251,
+    "completion_tokens": 3884
+  },
+  "chat_cost_usd": 0.0919,
+  "pass": "17/23",
+  "pass_note": "AI-assisted labels; human verification pending",
+  "pass_by_group": {
+    "table": "4/6",
+    "chart": "5/6",
+    "figure": "1/2",
+    "multihop": "2/3",
+    "text": "2/3",
+    "abstain": "3/3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hộp 1",
+   "title": "Mô tả ngắn gọn về mô hình CGE và giả định cơ bản",
+   "region": "bottom half",
+   "content": "Gray boxed text panel explaining the CGE model used in the report. It states:\n- The World Bank’s Applied General Equilibrium model for Mitigation, Adaptation and New technologies (MANAGE) is used for this study.\n- MANAGE is a dynamic recursive single-country CGE model designed to focus on energy, emissions, and climate change.\n- Beyond standard single-country CGE features, it includes detailed energy-sector specifications for capital/labor/energy substitution in production, fuel substitution across demand-side agents, and a multi-input, multi-output production structure.\n- The model is based on behavioral assumptions that determine how economic agents respond to changes such as prices, income, and taxes within clearly defined resource constraints.\n- Markets are assumed to be flexible, so prices adjust to balance supply and demand.\n- MANAGE is dynamic and broadly follows neoclassical growth theory: labor supply is exogenous, while capital accumulation depends on agents’ saving/investment decisions.\n- Climate impacts are simulated by identifying relevant economic variables and imposing parameter changes; the model then produces two sets of results: a baseline growth scenario without climate impacts and a growth scenario including climate-impact simulations.\n- Main assumptions listed begin with: climate-impact costs are estimated by quantifying the economic value of physical losses. The final sentence is cut off on the page and continues beyond the visible box.\n\nText visible in box (verbatim heading and opening lines):\n\"Hộp 1: Mô tả ngắn gọn về mô hình CGE và giả định cơ bản\"\nFollowed by the explanatory paragraphs described above.\n\nNotes: The box text is truncated at the bottom of the page; the last sentence is incomplete."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3435,
+  "completion_tokens": 405
+ }
+}

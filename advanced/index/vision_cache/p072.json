@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 20",
+   "title": "Những thay đổi về việc làm theo lĩnh vực vào năm 2040",
+   "region": "middle-to-lower half",
+   "content": "Chart kind: grouped bar chart.\n\nX-axis: sectors/categories: Điện; Khai thác mỏ; Vận tải; Xây dựng; Công nghiệp; Dịch vụ; Thương mại; Nông nghiệp; Không hoạt động.\nY-axis: % chuyển việc, (độ lệch so với BAU). Visible scale ticks: -9,4; 0; 9,4; 18,8; 28,1.\n\nLegend series:\n- NZP (blue)\n- NZP đã cải cách (orange)\n\nValues by category (approximate from bars; numbers shown on chart are transcribed where visible):\n- Điện: NZP 0; NZP đã cải cách 23,6.\n- Khai thác mỏ: NZP 2,2; NZP đã cải cách 18,4.\n- Vận tải: NZP -6,3; NZP đã cải cách 7,9.\n- Xây dựng: NZP 1,7; NZP đã cải cách 9,8.\n- Công nghiệp: NZP -0,4; NZP đã cải cách 7,4.\n- Dịch vụ: NZP 0,1; NZP đã cải cách 12,4.\n- Thương mại: NZP 0,4; NZP đã cải cách -5,4.\n- Nông nghiệp: NZP 0; NZP đã cải cách -5,4.\n- Không hoạt động: NZP 0,1; NZP đã cải cách -0,7.\n\nVisible trend and range: Under NZP, changes are small and mixed, with the largest decline in Vận tải (-6,3) and largest increase in Khai thác mỏ (2,2). Under NZP đã cải cách, most sectors increase strongly, peaking in Điện (23,6), while Thương mại and Nông nghiệp decline the most (both -5,4).\n\nNotes/source: Source line shown as \"Nguồn: Ước tính của chuyên gia Ngân hàng Thế giới.\""
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "middle-to-lower half",
+   "content": "A page figure/embedded chart accompanies explanatory text about labor market impacts of decarbonization. It shows sectoral employment shifts in 2040 under two scenarios (NZP and NZP đã cải cách), illustrating that some sectors gain jobs while transport and some carbon-intensive sectors lose jobs. The surrounding text highlights that new jobs are created in construction, mining, services and trade, while transport sees the sharpest decline; coal mining jobs are especially at risk, and jobs in coal-fired power plants and energy-intensive industries may be displaced by renewable-energy jobs. The main message is that the labor transition depends on labor mobility and reallocation across sectors."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3252,
+  "completion_tokens": 657
+ }
+}

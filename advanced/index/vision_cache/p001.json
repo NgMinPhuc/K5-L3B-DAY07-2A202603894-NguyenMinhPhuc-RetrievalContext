@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "upper-left to center-left",
+   "content": "Cover illustration with two white globe icons (one small near the top-left, one larger showing Asia-Pacific near the middle-left) on a teal background. Large central text reads: \"VIỆT NAM\". Smaller text near the large globe reads: \"ĐÔNG Á / THÁI BÌNH DƯƠNG\". The page also shows \"World Bank Group\" above the report title. Decorative multicolored vertical strip runs down the left side, and thin curved multicolored lines decorate the upper-right corner. Main message: this is the cover page for the World Bank Group Vietnam Economic Monitor/report.",
+   "notes": "No numbered figure/table label is visible; this is a cover design/graphic."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2302,
+  "completion_tokens": 173
+ }
+}

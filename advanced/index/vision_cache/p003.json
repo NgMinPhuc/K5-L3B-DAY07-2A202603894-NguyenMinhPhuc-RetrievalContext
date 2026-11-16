@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "center-left to upper-right",
+   "content": "Cover page artwork on a white background: the wordmark “VIỆT NAM” appears large in the lower-left/center area, with “VIỆT” in dark blue and “NAM” in a blue-to-orange gradient. Below it is the report title in bold blue uppercase: “BÁO CÁO QUỐC GIA / VỀ KHÍ HẬU VÀ PHÁT TRIỂN”. In the upper-right is an abstract circular topographic/contour-line graphic made of many concentric, irregular lines in light blue, blue, and some orange tones, suggesting a stylized landscape or climate motif. Main message: national climate and development report for Vietnam.",
+   "notes": "No chart/table/map with data values; this is a cover/branding illustration."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2295,
+  "completion_tokens": 188
+ }
+}

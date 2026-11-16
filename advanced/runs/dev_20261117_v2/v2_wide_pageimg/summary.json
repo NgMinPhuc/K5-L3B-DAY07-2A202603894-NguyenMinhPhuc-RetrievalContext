@@ -1,0 +1,40 @@
+{
+  "config": {
+    "name": "v2_wide_pageimg",
+    "method": "hybrid_rrf",
+    "modalities": null,
+    "top_k": 8,
+    "budget": 10000,
+    "page_images": true,
+    "label_boost": true,
+    "prompt": "v2",
+    "max_searches": 6,
+    "hypothesis": "v2_wide plus rendered context pages for reading charts/tables directly."
+  },
+  "split": "dev",
+  "n": 23,
+  "errors": 0,
+  "answered": 21,
+  "abstained_unanswerable": 2,
+  "unanswerable": 3,
+  "all_gold_pages_retrieved": "19/20",
+  "all_gold_pages_in_context": "18/20",
+  "all_gold_pages_cited": "18/20",
+  "mean_ms": 4685.9,
+  "median_ms": 3729.3,
+  "chat_tokens": {
+    "prompt_tokens": 329524,
+    "completion_tokens": 3812
+  },
+  "chat_cost_usd": 0.2643,
+  "pass": "20/23",
+  "pass_note": "AI-assisted labels; human verification pending",
+  "pass_by_group": {
+    "table": "5/6",
+    "chart": "6/6",
+    "figure": "1/2",
+    "multihop": "2/3",
+    "text": "3/3",
+    "abstain": "3/3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hộp 4",
+   "title": "Di cư do biến đổi khí hậu ở Việt Nam",
+   "region": "center of page",
+   "content": "Boxed text explaining climate-related migration in Vietnam. Main points:\n- Climate change could significantly increase internal migration within Vietnam, especially migration to urban areas.\n- An estimated 25–33% of total internal migrants in Vietnam by 2050 could be migrating for climate-related reasons, depending on the climate pathway and socioeconomic development.\n- The biggest climate in-migration hotspots by 2050 are projected to be Hanoi and the Red River Delta.\n- Smaller in-migration hotspots are scattered along the central coast, including Bình Định, Quảng Ngãi, and Quảng Trị.\n- By 2050, on average, water resources and crop productivity in these areas are likely to improve.\n- Sea-level-rise impacts in the Red River Delta are mainly concentrated in estuarine areas, with inland areas less affected.\n- The largest projected climate out-migration hotspots by 2050 are the Mekong Delta and surrounding areas around Ho Chi Minh City.\n- Sea-level rise combined with tides is the main driver of out-migration from the Mekong Delta; low-lying coastal areas will face flooding and related impacts.\n- Available water in Ho Chi Minh City and surrounding areas is projected to decline.\n- High population density in both climate in-migration and out-migration hotspots, combined with vulnerability to sea-level rise and tidal flooding, will require strong proactive adaptation measures and planning.\n- Better-off people may use mobility as an adaptation strategy, but the poorest, most marginalized, and most vulnerable may be unable to move and therefore may be forced to remain in extremely deprived conditions and face severe climate hazards.\nSource line: \"Nguồn: Clement và cộng sự, 2021.\""
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "bottom of page",
+   "content": "Footnotes and endnotes printed on the page, including references 50 and 51:\n- 50 Clement và cộng sự, 2021, “Groundswell Part 2.”\n- 51 Xem P. McElwee, Ethnic Minorities and Climate Change in Vietnam: Impacts, Vulnerabilities, and Adaptation Strategies, December 2021.\nThese are citation notes rather than an informative visual element."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3362,
+  "completion_tokens": 500
+ }
+}

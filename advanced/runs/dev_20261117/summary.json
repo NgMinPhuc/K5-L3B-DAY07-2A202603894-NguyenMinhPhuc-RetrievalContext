@@ -1,0 +1,153 @@
+{
+  "created_at": "2026-11-16T17:27:21.137409+00:00",
+  "split": "dev",
+  "configs": [
+    {
+      "config": {
+        "name": "text_only",
+        "method": "hybrid_rrf",
+        "modalities": [
+          "text"
+        ],
+        "top_k": 6,
+        "budget": 6000,
+        "page_images": false,
+        "hypothesis": "Baseline: page text layer only; tables partly survive as text, charts/figures do not."
+      },
+      "split": "dev",
+      "n": 23,
+      "errors": 0,
+      "answered": 18,
+      "abstained_unanswerable": 2,
+      "unanswerable": 3,
+      "all_gold_pages_retrieved": "16/20",
+      "all_gold_pages_in_context": "15/20",
+      "all_gold_pages_cited": "13/20",
+      "mean_ms": 4181.2,
+      "median_ms": 3405.6,
+      "chat_tokens": {
+        "prompt_tokens": 112250,
+        "completion_tokens": 4200
+      },
+      "chat_cost_usd": 0.1031,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    },
+    {
+      "config": {
+        "name": "multimodal",
+        "method": "hybrid_rrf",
+        "modalities": null,
+        "top_k": 6,
+        "budget": 6000,
+        "page_images": false,
+        "hypothesis": "Adding vision transcriptions of tables/charts/figures lets retrieval reach visual evidence."
+      },
+      "split": "dev",
+      "n": 23,
+      "errors": 0,
+      "answered": 19,
+      "abstained_unanswerable": 2,
+      "unanswerable": 3,
+      "all_gold_pages_retrieved": "15/20",
+      "all_gold_pages_in_context": "14/20",
+      "all_gold_pages_cited": "14/20",
+      "mean_ms": 3712.3,
+      "median_ms": 2772.9,
+      "chat_tokens": {
+        "prompt_tokens": 99251,
+        "completion_tokens": 3884
+      },
+      "chat_cost_usd": 0.0919,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    },
+    {
+      "config": {
+        "name": "multimodal_dense",
+        "method": "dense",
+        "modalities": null,
+        "top_k": 6,
+        "budget": 6000,
+        "page_images": false,
+        "hypothesis": "Dense-only over the same chunks, to compare against RRF fusion."
+      },
+      "split": "dev",
+      "n": 23,
+      "errors": 0,
+      "answered": 18,
+      "abstained_unanswerable": 3,
+      "unanswerable": 3,
+      "all_gold_pages_retrieved": "15/20",
+      "all_gold_pages_in_context": "15/20",
+      "all_gold_pages_cited": "15/20",
+      "mean_ms": 3826.7,
+      "median_ms": 2727.6,
+      "chat_tokens": {
+        "prompt_tokens": 110863,
+        "completion_tokens": 3900
+      },
+      "chat_cost_usd": 0.1007,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    },
+    {
+      "config": {
+        "name": "multimodal_wide",
+        "method": "hybrid_rrf",
+        "modalities": null,
+        "top_k": 8,
+        "budget": 10000,
+        "page_images": false,
+        "hypothesis": "More context helps multi-hop and long tables."
+      },
+      "split": "dev",
+      "n": 23,
+      "errors": 0,
+      "answered": 20,
+      "abstained_unanswerable": 2,
+      "unanswerable": 3,
+      "all_gold_pages_retrieved": "17/20",
+      "all_gold_pages_in_context": "15/20",
+      "all_gold_pages_cited": "14/20",
+      "mean_ms": 4100.4,
+      "median_ms": 3156.6,
+      "chat_tokens": {
+        "prompt_tokens": 137577,
+        "completion_tokens": 4279
+      },
+      "chat_cost_usd": 0.1224,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    },
+    {
+      "config": {
+        "name": "multimodal_pageimg",
+        "method": "hybrid_rrf",
+        "modalities": null,
+        "top_k": 6,
+        "budget": 6000,
+        "page_images": true,
+        "hypothesis": "Attaching rendered context pages lets the model read charts/tables directly, fixing transcription errors."
+      },
+      "split": "dev",
+      "n": 23,
+      "errors": 0,
+      "answered": 21,
+      "abstained_unanswerable": 1,
+      "unanswerable": 3,
+      "all_gold_pages_retrieved": "15/20",
+      "all_gold_pages_in_context": "14/20",
+      "all_gold_pages_cited": "14/20",
+      "mean_ms": 6104.9,
+      "median_ms": 3981.1,
+      "chat_tokens": {
+        "prompt_tokens": 267351,
+        "completion_tokens": 3943
+      },
+      "chat_cost_usd": 0.2183,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hộp 3",
+   "title": "Xây dựng vốn con người có khả năng chống chịu",
+   "region": "top half",
+   "content": "Text box discussing the importance of investing in human capital for Vietnam’s climate resilience. It states that climate change is affecting human capital and that human capital is critical for adaptation and resilience.\n\nMain points and text contained in the box:\n- Climate change threatens livelihoods and productivity, affecting health, nutrition, learning, and educational attainment.\n- Heat and pollution increase disease risk, especially vector-borne diseases, in children and adults, and directly hinder learning and work.\n- A recent modeling analysis found that days with heatwaves can increase mortality by 0.7%.\n- Recent analyses found climate change contributes to the more frequent emergence of zoonotic diseases such as COVID-19.\n- Heat and drought affect crop production, consumption, and nutrition, leading to inadequate cognitive development in early childhood and lowering a person’s learning trajectory.\n- Further research is urgently needed to analyze climate impacts on learning outcomes, similar to existing health impact modeling.\n- Adaptation measures are more effective when people understand the consequences of inaction.\n- Better-informed people are more likely to change behavior, adapt, and upgrade their homes and other assets.\n- They also support government priorities on shared infrastructure.\n\nNo charts, tables, or graphics are shown; the box is text-only.",
+   "notes": "This page section is a shaded text box (box/figure-like callout) with no visual data display."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3406,
+  "completion_tokens": 329
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hình 3",
+   "title": "Chi phí ước tính do biến đổi khí hậu năm 2020 (triệu USD)",
+   "region": "middle of page",
+   "content": "Treemap-style infographic showing estimated climate-change costs in Vietnam in 2020, in million USD. Colored rectangles represent categories with values printed inside or beside them.\n\nCategories and values:\n- Thủy sản: 4219\n- Năng suất lao động: 2807\n- Mực nước biển dâng: 1474\n- Nông nghiệp: 837\n- Chi phí giải nhiệt: 518\n- Thiên tai: 447\n- Sức khỏe: 235\n- Nước: 218\n- Du lịch: 148\n\nMain message: fisheries and labor productivity account for the largest estimated costs, followed by sea-level rise and agriculture.\nSource line: \"Nguồn: Ngân hàng Thế giới, 2021.7\""
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "top-right margin / inline text area",
+   "content": "Small inline visual list/cluster of climate-impact categories with values, appearing above the main figure area. It reiterates the same cost components shown in Hình 3:\n- Thủy sản, 4219\n- Năng suất lao động, 2807\n- Mực nước biển dâng, 1474\n- Nông nghiệp, 837\n- Chi phí giải nhiệt, 518\n- Thiên tai, 447\n- Sức khỏe, 235\n- Nước, 218\n- Du lịch, 148\n\nNo additional legend or axes are visible. It appears to be the textual labels from the treemap rather than a separate chart."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3051,
+  "completion_tokens": 377
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "1",
+   "title": "Mô hình phát triển của Việt Nam và những thách thức về khí hậu",
+   "region": "full page",
+   "content": "Full-page cover figure showing a street scene in Vietnam with air pollution/haze. In the foreground, a person on a red motorbike covers their mouth and nose with a hand while wearing a helmet; several blurred motorbike riders and vehicles appear in the background. A dark translucent band across the lower-middle contains the large chapter number \"1\" and the chapter title \"Mô hình phát triển của Việt Nam và những thách thức về khí hậu\". Vertical credit text reads \"© Vietnam News Agency\" on the right edge; a small © Vietnam News Agency credit also appears near the top-left. The page header at the top reads \"Việt Nam: Báo cáo về Khí hậu và Phát triển\". Main message: Vietnam's development model and climate challenges, illustrated by urban air pollution and traffic.",
+   "notes": "This is a cover photograph with overlaid title text; no chart/table data on the page."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2312,
+  "completion_tokens": 231
+ }
+}

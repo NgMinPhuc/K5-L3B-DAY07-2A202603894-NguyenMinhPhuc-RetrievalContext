@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hộp 9",
+   "title": "Bài học từ kinh nghiệm quốc tế về các chương trình đào tạo lại",
+   "region": "middle of page",
+   "content": "Gray boxed text callout containing a summary of lessons from international experience on retraining programs. Text inside the box:\n\n\"Công tác thiết kế một chương trình đào tạo lại hiệu quả không hề dễ dàng, nhưng từ kinh nghiệm quốc tế có thể rút các bài học sau:\n\nĐào tạo ngắn hạn trong một thời gian ngắn sau khi mất việc có thể là một chiến lược khả thi để giữ chân các cá nhân trong thị trường lao động bằng cách chuyển đổi sang công việc mới.\n\nCần nắm rõ yêu cầu kỹ năng và nhu cầu của người lao động trước khi tiến hành đào tạo để đảm bảo chương trình đào tạo phù hợp với các yêu cầu hiện tại của người lao động bị mất việc làm.\n\nChính phủ và khu vực tư nhân cần phối hợp chặt chẽ để tận dụng thế mạnh của từng bên, từ đó huy động các nguồn lực hỗ trợ người lao động.\n\nMột yếu tố quan trọng là thời gian và cường độ của các chương trình tái đào tạo. Người lao động được tái đào tạo càng sớm sau khi nghỉ việc, thì tác động của chương trình đào tạo càng cao, xét về tiền lương và tái sử dụng lao động trong tương lai. Ngoài ra, chương trình tái đào tạo càng ngắn và chuyên sâu thì tác động tới người lao động trong việc chuyển dịch sang nghề mới càng lớn. Các biện pháp can thiệp sớm cho người lao động mất việc bao gồm tư vấn nghề nghiệp dựa trên các kỹ năng hiện có và tiềm năng.\n\nCác nghiên cứu hiện tại nhấn mạnh sự cần thiết phải có giai đoạn sàng lọc hoặc đánh giá kỹ năng trước khi thực hiện chương trình đào tạo lại để tối đa hóa tác động. Ở mức tối thiểu, các nhà thiết kế chương trình nên thu thập thông tin về các đặc điểm chung của từng công nhân bị mất việc — ví dụ, trình độ kỹ năng, nghề nghiệp, học vấn, tuổi và giới tính. Điều này sẽ đảm bảo chương trình đào tạo phù hợp với từng cá nhân, và nội dung cốt lõi của chương trình được hiểu rõ dựa trên năng lực hiện có của họ.\n\nMột khía cạnh quan trọng khác là hợp tác giữa chính phủ và khu vực tư nhân trong cung cấp chương trình đào tạo lại. Điều này sẽ đảm bảo thực hiện chương trình theo định hướng thị trường và tiết kiệm chi phí mà không ảnh hưởng đến chất lượng. Một cơ chế là cung cấp phiếu đào tạo, như đã được thực hiện thông qua Đạo luật Cơ hội và Đổi mới Lực lượng Lao động ở Mỹ. Những phiếu này giúp các cá nhân chọn nhà cung cấp dịch vụ đào tạo mà mình thích dựa trên đánh giá hiệu suất chương trình trước đây của họ trong “thẻ báo cáo” được công bố và họ có thể truy cập. Ngoài ra, các chính phủ có thể tận dụng các khoản tài trợ, viện trợ và cho vay hiện có để cung cấp các chương trình đào tạo lại có chất lượng.\n\nNguồn: Ghi chú cơ bản CCDR “Biến đổi khí hậu, Thích ứng, Giảm thiểu và Tác động Phân bổ ở Việt Nam.”",
+   "notes": "No other informative visual elements on the page."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3332,
+  "completion_tokens": 739
+ }
+}

@@ -1,0 +1,38 @@
+{
+  "created_at": "2026-11-16T17:34:57.489909+00:00",
+  "split": "test",
+  "configs": [
+    {
+      "config": {
+        "name": "v2_wide",
+        "method": "hybrid_rrf",
+        "modalities": null,
+        "top_k": 8,
+        "budget": 10000,
+        "page_images": false,
+        "label_boost": true,
+        "prompt": "v2",
+        "max_searches": 6,
+        "hypothesis": "Index v2 (annex/section headers, continued-table labels) + label boost + prompt v2 (verify facts in question, one search per part, strict period matching)."
+      },
+      "split": "test",
+      "n": 37,
+      "errors": 37,
+      "answered": 0,
+      "abstained_unanswerable": 0,
+      "unanswerable": 6,
+      "all_gold_pages_retrieved": "0/31",
+      "all_gold_pages_in_context": "0/31",
+      "all_gold_pages_cited": "0/31",
+      "mean_ms": 2386.2,
+      "median_ms": 2108.9,
+      "chat_tokens": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0
+      },
+      "chat_cost_usd": 0,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    }
+  ]
+}

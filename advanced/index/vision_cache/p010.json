@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "",
+   "title": "",
+   "region": "upper-left to upper-middle",
+   "content": "| Acronym | Meaning |\n|---|---|\n| IFPRI | Viện nghiên cứu Chính sách Thực phẩm Quốc tế |\n| ILO | Tổ chức Lao động Quốc tế |\n| IMF | Quỹ Tiền tệ Quốc tế |\n| IPCC | Ủy ban liên chính phủ về Biến đổi khí hậu |\n| IWT | Giao thông thủy nội địa |\n| LEP | Luật bảo vệ môi trường |\n| MANAGE | Giảm thiểu, thích ứng và các công nghệ mới được áp dụng Cân bằng chung |\n| MIGA | Cơ quan Bảo lãnh đầu tư đa phương |\n| MONRE | Bộ Tài nguyên và Môi trường |\n| MPI | Bộ Kế hoạch và Đầu tư |\n| NAAQS | Quy chuẩn quốc gia về chất lượng không khí xung quanh |\n| NDC | Đóng góp quốc gia tự quyết định |\n| ND-GAIN | Sáng kiến Thích ứng Toàn cầu Notre Dame |\n| NPV | Giá trị hiện tại ròng |\n| NTMs | Các biện pháp phi thuế quan |\n| NZP | Lộ trình phát thải ròng bằng 0 |\n| ODA | Hỗ trợ phát triển chính thức |",
+   "notes": "Acronym glossary list. The page also contains a small running footer 'x | Việt Nam: Báo cáo về Khí hậu và Phát triển' and a page number mark 'x', which are not treated as informative visuals."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2497,
+  "completion_tokens": 356
+ }
+}

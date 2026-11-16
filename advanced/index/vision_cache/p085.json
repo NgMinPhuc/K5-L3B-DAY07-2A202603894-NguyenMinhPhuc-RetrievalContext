@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Page contains a text-only narrative with four bulleted priority policy packages. No tables, charts, maps, diagrams, or other data visuals are present. The bullets are: 1) \"Gói ưu tiên #1: Chương trình phối hợp vùng cho Đồng bằng sông Cửu long.\" Focus on limiting land subsidence and saltwater intrusion through stopping sand and groundwater extraction, adaptive farming, increasing freshwater flow and aquifer recharge, restoring mangroves, retrofitting physical assets for flood risk, revising land law and land-use planning, systematic environmental assessment for new projects, strengthening the Regional Coordination Council, adjusting public investment allocation, and using green bonds. 2) \"Gói ưu tiên #2: Chương trình đầu tư tích hợp nâng cao khả năng chống chịu của vùng duyên hải đối với các trung tâm đô thị lớn và kết nối hạ tầng.\" Focus on upgrading roads and power assets to climate-resilient standards, effective land-use planning, forest investment, resilience policies for industry and industrial zones, relocation when needed, digital technology for risk management and early warning, and insurance/risk-transfer instruments. 3) \"Gói ưu tiên #3: Chương trình mục tiêu giảm ô nhiễm không khí trong bầu khí quyển Hà Nội để đáp ứng mục tiêu giữa kỳ của WHO vào năm 2030 và nâng cao năng suất lao động.\" Notes that Hanoi exceeded the WHO PM2.5 threshold at least 5 times in 6 months each year from 2018 to 2021; PM2.5 is expected to rise due to weak air-pollution regulation and planned coal power expansion; the government plans 10 new coal-fired power plants in the North by 2030; agricultural pollution may rise due to residue burning and fertilizer use; measures include reducing coal dependence (example: repurposing a 100 MW coal plant in Ninh Binh), reducing polluted farm inputs and waste burning, improving public transport, and tighter motorcycle emission standards. 4) \"Gói ưu tiên #4: Tăng cường chuyển dịch sang năng lượng sạch.\" States the power sector accounts for about 60% of national GHG emissions, with urgent investment alignment toward net-zero/COP26 commitments; accelerating alternatives especially offshore wind requires improved legal framework including transparent competitive procurement, and the text continues onto the next page after mentioning power purchase agreements.",
+   "notes": "The page is primarily text; no standalone informative graphic elements are visible. Footnote 89 appears at the bottom explaining CCRD focuses on interventions under Vietnam's responsibility but requires strong coordination with Mekong riparian countries to ensure river flow and reduce upstream sediment-dam construction."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3591,
+  "completion_tokens": 568
+ }
+}

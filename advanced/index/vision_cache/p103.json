@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Cover-style page with a large teal-to-dark-blue gradient background and a vertical multicolored strip near the left edge. In the lower-left area there is the World Bank Group logo (globe icon) followed by the text 'WORLD BANK GROUP'. Below it is contact information: 'Địa chỉ: Số 63, phố Lý Thái Tổ, Hà Nội'; 'Điện thoại: (024) 3934 6600'; 'Fax: (024) 3935 0752'; 'Website: www.worldbank.org.vn'; 'Email: vietnam@worldbank.org'; Facebook icon with '@WorldBankVietnam'; Twitter icon with '@WB_AsiaPacific'. The same contact details also appear in the text layer at the top-left margin. Main message: World Bank Group Vietnam contact/branding page.",
+   "notes": "No chart, table, map, or other data graphic present. The page is mostly decorative background with branding and contact details."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2341,
+  "completion_tokens": 223
+ }
+}

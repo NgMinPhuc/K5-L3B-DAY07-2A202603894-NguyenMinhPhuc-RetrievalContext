@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 9",
+   "title": "",
+   "region": "mentioned in text (no visible graphic on this page)",
+   "content": "Referenced in the text as a figure showing Vietnam's high-risk hazard hotspots for infrastructure, including vulnerable coastal areas, the northern mountains, and the Mekong Delta. The text states that flood and landslide risks are especially high in these hotspots. No actual figure is visible on this page.",
+   "notes": "The page text references Hình 9, but no corresponding visual element is shown on the provided page image."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3522,
+  "completion_tokens": 122
+ }
+}

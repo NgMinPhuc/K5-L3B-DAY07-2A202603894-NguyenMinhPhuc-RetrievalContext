@@ -1,0 +1,323 @@
+{
+ "part": "B",
+ "pages": "36-70",
+ "questions": [
+  {
+   "id": "B-test-01",
+   "split": "test",
+   "group": "table",
+   "question": "Theo Bảng 3 (Nhu cầu đầu tư và lợi nhuận đầu ra theo Lộ trình NZP), trong phần 'NZP với những cải cách hỗ trợ', tác động kinh tế ròng của giai đoạn 2031–2040 là bao nhiêu tỷ USD theo NPV và nó dương hay âm?",
+   "answerable": true,
+   "expected_answer": "+19,3 tỷ USD (NPV), tức là dương.",
+   "evidence": [
+    {
+     "page": 50,
+     "region": "Bảng 3, nhóm 'NZP với những cải cách hỗ trợ', hàng 'Tác động kinh tế ròng', cột 2031–2040",
+     "detail": "19,3 (cùng nhóm: nhu cầu đầu tư 49,5; mức sản lượng tăng 68,7)"
+    }
+   ],
+   "reason": "Đọc trực tiếp ô bảng; chú ý phân biệt hai nhóm NZP (không cải cách -95,5 vs có cải cách 19,3)."
+  },
+  {
+   "id": "B-test-02",
+   "split": "test",
+   "group": "table",
+   "question": "Trong Bảng 4, nếu chỉ kết hợp NZP với MỘT biện pháp hỗ trợ đơn lẻ (không tính hàng 'tất cả các biện pháp hỗ trợ'), biện pháp nào là duy nhất cho thay đổi GDP năm 2040 mang giá trị dương, và giá trị là bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "NZP và tăng hiệu quả năng lượng, GDP 2040 thay đổi +0,2%.",
+   "evidence": [
+    {
+     "page": 53,
+     "region": "Bảng 4, cột 'Tỷ lệ thay đổi GDP (%)' năm 2040, các hàng 2–6",
+     "detail": "ô nhiễm không khí -1,0; cạnh tranh -0,6; hiệu quả năng lượng 0,2; dịch chuyển lao động -0,2; hạn chế lấn át -0,9; (NZP không cải cách -2,2)"
+    }
+   ],
+   "reason": "So sánh cột GDP 2040 của 5 hàng biện pháp đơn lẻ; chỉ hàng hiệu quả năng lượng dương. Văn bản trang 52 cũng nêu 0,2% vào năm 2040."
+  },
+  {
+   "id": "B-test-03",
+   "split": "test",
+   "group": "chart",
+   "question": "Theo biểu đồ phát thải GHG ngành điện (Hình 13, nửa phải), năm 2040 phát thải của kịch bản CPS và ADS lần lượt là bao nhiêu triệu tấn CO2e, và CPS cao hơn ADS bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "CPS khoảng 246 triệu tấn CO2e, ADS khoảng 63 triệu tấn CO2e; CPS cao hơn ADS khoảng 183 triệu tấn CO2e.",
+   "evidence": [
+    {
+     "page": 56,
+     "region": "Hình 13, biểu đồ đường bên phải (Phát thải GHG ngành điện, triệu tấn CO2e, 2020-40), nhãn cuối đường năm 2040",
+     "detail": "CPS: 246; ADS: 63"
+    }
+   ],
+   "reason": "Đọc nhãn dữ liệu cuối hai đường; 246-63=183."
+  },
+  {
+   "id": "B-test-04",
+   "split": "test",
+   "group": "chart",
+   "question": "Trong Hình 17 (các biện pháp hiệu quả về mặt chi phí để giảm phát thải từ chăn nuôi, trục $/tCO2e), biện pháp nào có chi phí trên mỗi tCO2e cao nhất và mức đó xấp xỉ bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "'Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR)', khoảng 700–750 $/tCO2e (cột cao nhất, khoảng 730).",
+   "evidence": [
+    {
+     "page": 65,
+     "region": "Hình 17, nửa dưới trang, cột ngoài cùng bên phải",
+     "detail": "cột cao nhất nằm giữa mốc 600 và 800 trên trục, xấp xỉ 730 $/tCO2e; nhãn cột: Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR)"
+    }
+   ],
+   "reason": "Biểu đồ cột không có nhãn dữ liệu nên hỏi cực đại và cho phép dung sai 700–750."
+  },
+  {
+   "id": "B-test-05",
+   "split": "test",
+   "group": "figure",
+   "question": "Trên bản đồ Hình 14 (Sản xuất than nội địa của Việt Nam tập trung ở các vùng núi phía Bắc), hai địa điểm được khoanh vòng tròn đỏ là gì và chúng thuộc tỉnh sản xuất than chính nào được chú thích trên bản đồ?",
+   "answerable": true,
+   "expected_answer": "Hòn Gai và Cẩm Phả, thuộc tỉnh Quảng Ninh.",
+   "evidence": [
+    {
+     "page": 59,
+     "region": "Hình 14, bản đồ miền Bắc; vòng tròn đỏ phía đông bắc, ô chú thích 'Quảng Ninh' và chú giải 'Tỉnh sản xuất than chính'",
+     "detail": "Nhãn 'Hòn Gai' và 'Cẩm Phả' có vòng tròn đỏ; đường dẫn từ ô 'Quảng Ninh'. Các vùng elip cam khác: Sông Đà, Đồng bằng sông Hồng, Sông Cả và Nghệ Tĩnh, Thái Nguyên, Na Dương"
+    }
+   ],
+   "reason": "Câu hỏi dựa vào nhãn trên bản đồ/infographic (hình thông tin, không phải trang trí); thông tin Hòn Gai/Cẩm Phả không có dạng bảng."
+  },
+  {
+   "id": "B-test-06",
+   "split": "test",
+   "group": "figure",
+   "question": "Bản đồ Hình 11 (Rủi ro ngập lụt tại các vùng ven biển) đánh dấu (ghi nhãn) những thành phố nào?",
+   "answerable": true,
+   "expected_answer": "Năm thành phố: Hà Nội, Hải Phòng, Đà Nẵng, TP Hồ Chí Minh và Cần Thơ.",
+   "evidence": [
+    {
+     "page": 42,
+     "region": "Hình 11, cột phải trang, bản đồ Việt Nam tô xanh lá theo 'Relative Flood Risk'",
+     "detail": "Nhãn chấm xanh: Hanoi, Haiphong, Da Nang, Ho Chi Minh City, Can Tho"
+    }
+   ],
+   "reason": "Bản đồ chủ đề với chú giải mức rủi ro; câu hỏi chỉ về các nhãn thành phố đọc được trên hình (nhãn tiếng Anh trong ảnh). Figure thật trong khoảng trang 36–70 chủ yếu là bản đồ."
+  },
+  {
+   "id": "B-test-07",
+   "split": "test",
+   "group": "multihop",
+   "question": "Dựa vào Hình 12 (tỷ trọng than trong công suất lắp đặt 2020 trên tổng 68 GW) và đoạn văn về công suất nhiệt điện than năm 2010 ở trang liền trước, công suất nhiệt điện than năm 2020 đã tăng khoảng bao nhiêu lần so với năm 2010?",
+   "answerable": true,
+   "expected_answer": "Khoảng 4 lần: than chiếm 30% của 68 GW (≈20 GW) năm 2020, so với 5 GW năm 2010.",
+   "evidence": [
+    {
+     "page": 54,
+     "region": "Hình 12, vòng tròn bên trái (Công suất lắp đặt 2020)",
+     "detail": "Tổng 68 GW; phần than đá (màu xanh sáng) 30%"
+    },
+    {
+     "page": 53,
+     "region": "Đoạn văn phần 4.3.1, đoạn thứ hai",
+     "detail": "'công suất lắp đặt của các nhà máy nhiệt điện than đã tăng gấp 4 lần trong một thập kỷ (từ 5 GW năm 2010 lên 20 GW năm 2020)'"
+    }
+   ],
+   "reason": "Kết hợp biểu đồ (30% x 68 GW = 20,4 GW) với mốc 5 GW năm 2010 từ văn bản trang 53; 20,4/5 ≈ 4,1 lần."
+  },
+  {
+   "id": "B-test-08",
+   "split": "test",
+   "group": "multihop",
+   "question": "Nhu cầu đầu tư của Lộ trình NZP giai đoạn 2022–2040 (Bảng 3) lớn hơn bao nhiêu tỷ USD so với 'Tổng chi phí' tăng thêm của kịch bản ADS so với CPS (Bảng 5, trước khi trừ tiết kiệm nhiên liệu)? Cả hai đều tính theo NPV.",
+   "answerable": true,
+   "expected_answer": "81,3 − 65 = khoảng 16,3 tỷ USD.",
+   "evidence": [
+    {
+     "page": 50,
+     "region": "Bảng 3, hàng 'Nhu cầu đầu tư', cột 2022–2040",
+     "detail": "81,3 tỷ USD"
+    },
+    {
+     "page": 57,
+     "region": "Bảng 5, hàng 'Tổng chi phí' (tiếp theo từ trang 56)",
+     "detail": "+65 tỷ USD, 56%"
+    }
+   ],
+   "reason": "Hai bảng ở hai trang khác nhau; phép trừ 81,3-65=16,3."
+  },
+  {
+   "id": "B-test-09",
+   "split": "test",
+   "group": "text",
+   "question": "Theo phần 4.1, trong ba phương án thuế carbon toàn nền kinh tế (khởi điểm khoảng 12 USD/tCO2e năm 2022), mức nào được cho là đủ lớn để tạo thay đổi cần thiết, và khi kết hợp với đầu tư theo ngành thì giảm phát thải so với BAU bao nhiêu % vào năm 2030 và 2040?",
+   "answerable": true,
+   "expected_answer": "Mức tăng lên 90 USD/tCO2e vào năm 2040; giảm 42,8% năm 2030 và 73,6% năm 2040 so với BAU.",
+   "evidence": [
+    {
+     "page": 49,
+     "region": "Đoạn văn 4.1, đoạn bắt đầu 'Các khoản đầu tư cấp ngành sẽ cần được hỗ trợ từ định giá carbon'",
+     "detail": "các phương án 40, 90, 120 USD/tCO2e vào 2040; 'Phương án thuế carbon ở mức 90 USD/tCO2e có vẻ đủ lớn'; 'giúp giảm 42,8% ... vào năm 2030 và 73,6% vào năm 2040'"
+    }
+   ],
+   "reason": "Tổng hợp thông tin điều kiện từ văn xuôi."
+  },
+  {
+   "id": "B-test-10",
+   "split": "test",
+   "group": "text",
+   "question": "Theo Hộp 5 về ô nhiễm không khí ở Hà Nội, nguồn nào đóng góp lớn thứ hai vào PM2.5 sau ngành công nghiệp và tỷ lệ đóng góp khoảng bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "Vận tải, khoảng 25% (sau ngành công nghiệp gần 35%).",
+   "evidence": [
+    {
+     "page": 51,
+     "region": "Hộp 5, đoạn 2 'PM2.5 tại Hà Nội xuất phát cả từ nguồn cục bộ...'",
+     "detail": "(i) gần 35% công nghiệp; (ii) khoảng 25% vận tải; (iii) 20% amoniac từ chăn nuôi/phân bón; (iv) 10% dân cư; (v) khoảng 7% đốt chất thải nông nghiệp"
+    }
+   ],
+   "reason": "Xếp hạng các tỷ lệ nêu trong văn bản."
+  },
+  {
+   "id": "B-test-11",
+   "split": "test",
+   "group": "abstain",
+   "question": "Chi phí quy dẫn (LCOE, tính bằng USD/MWh) của điện gió ngoài khơi tại Việt Nam theo báo cáo là bao nhiêu?",
+   "answerable": false,
+   "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+   "evidence": [],
+   "reason": "Đã grep toàn tài liệu: 'LCOE', 'chi phí quy dẫn', 'MWh' (chỉ có hệ số phát thải 0,9 tCO2/MWh), 'USD/MW', 'kWh' (chỉ ở bảng cường độ năng lượng), 'chi phí.*gió ngoài khơi'. Phần 4.3.1 và Bảng 5 chỉ nêu chi phí vốn gộp (+39 tỷ USD) không có LCOE."
+  },
+  {
+   "id": "B-test-12",
+   "split": "test",
+   "group": "abstain",
+   "question": "Báo cáo ước tính cần đầu tư bao nhiêu tỷ USD cho công nghệ thu giữ và lưu trữ carbon (CCS) ở Việt Nam đến năm 2040?",
+   "answerable": false,
+   "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+   "evidence": [],
+   "reason": "Đã grep: 'CCS', 'thu giữ', 'lưu giữ carbon', 'thu hồi.*carbon'. Chỉ có đề cập định tính (đánh giá tiềm năng thu giữ và lưu trữ carbon) và 'công nghệ thu hồi carbon', không có số liệu đầu tư."
+  },
+  {
+   "id": "B-dev-01",
+   "split": "dev",
+   "group": "table",
+   "question": "Theo Bảng 3, chênh lệch về tác động kinh tế ròng giai đoạn 2022–2040 giữa NZP có cải cách hỗ trợ và NZP không có cải cách là bao nhiêu tỷ USD (NPV)?",
+   "answerable": true,
+   "expected_answer": "Khoảng 133,6 tỷ USD (-1,3 so với -134,9).",
+   "evidence": [
+    {
+     "page": 50,
+     "region": "Bảng 3, hàng 'Tác động kinh tế ròng', cột 2022–2040, hai nhóm",
+     "detail": "NZP: -134,9; NZP với cải cách hỗ trợ: -1,3"
+    }
+   ],
+   "reason": "Phép tính: -1,3-(-134,9)=133,6."
+  },
+  {
+   "id": "B-dev-02",
+   "split": "dev",
+   "group": "table",
+   "question": "Trong Bảng 5 (ADS so với CPS, 2022–2040), hạng mục chi phí vốn nào thay đổi theo tỷ lệ phần trăm cao nhất và mức thay đổi tuyệt đối (tỷ USD) của nó là bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "Mặt trời: +429%, tương ứng +21 tỷ USD.",
+   "evidence": [
+    {
+     "page": 57,
+     "region": "Bảng 5, hàng 'Mặt trời' (tiếp theo từ trang 56)",
+     "detail": "+21 tỷ USD, +429%; so sánh Gió ngoài khơi +39, +402%; Gió trên bờ +8, +55%"
+    }
+   ],
+   "reason": "So sánh cột 'Thay đổi' giữa các hạng mục (429% > 402%)."
+  },
+  {
+   "id": "B-dev-03",
+   "split": "dev",
+   "group": "chart",
+   "question": "Theo Hình 16 (các biện pháp giảm phát thải từ sản xuất lúa gạo, $/tCO2e), biện pháp nào có chi phí trên mỗi tCO2e cao nhất, và giá trị xấp xỉ bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "'Chuyển từ trồng lúa sang trồng ngô', khoảng 380–400 $/tCO2e (cột cao nhất, ~390).",
+   "evidence": [
+    {
+     "page": 65,
+     "region": "Hình 16, nửa trên trang, cột ngoài cùng bên phải",
+     "detail": "cột cao nhất, đỉnh sát mốc 400 (khoảng 390) trên trục 0–500"
+    }
+   ],
+   "reason": "Biểu đồ cột không nhãn dữ liệu, dùng tối đa và dung sai."
+  },
+  {
+   "id": "B-dev-04",
+   "split": "dev",
+   "group": "chart",
+   "question": "Theo Hình 18 (tác động của NZP so với BAU vào năm 2040), giá trị ghi trên biểu đồ cho 'Mức nghèo ($3,20)' và cho 'Bất bình đẳng (Chỉ số Gini)' là bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "Mức nghèo ($3,20): -0,1; Bất bình đẳng (Gini): -1,1.",
+   "evidence": [
+    {
+     "page": 70,
+     "region": "Hình 18, nửa trên trang",
+     "detail": "nhãn cột: Mức nghèo ($3,20) -0,1; Kinh tế không ổn định ($5,50) -0,1; Bất bình đẳng (Chỉ số Gini) -1,1"
+    }
+   ],
+   "reason": "Đọc nhãn dữ liệu in trên biểu đồ."
+  },
+  {
+   "id": "B-dev-05",
+   "split": "dev",
+   "group": "figure",
+   "question": "Bản đồ Hình 10 ở phần Đồng bằng sông Cửu Long mô tả dự báo hiện tượng gì và cho năm nào?",
+   "answerable": true,
+   "expected_answer": "Dự báo tình trạng ngập mặn do triều cường vào năm 2050 tại khu vực sông Mekong (ĐBSCL).",
+   "evidence": [
+    {
+     "page": 40,
+     "region": "Hình 10, cột phải trang, phụ đề in nghiêng dưới tiêu đề",
+     "detail": "'Dự báo tình trạng ngập mặn do triều cường vào năm 2050 tại khu vực sông Mekong'; bản đồ có nhãn CAM PU CHIA, BIỂN ĐÔNG"
+    }
+   ],
+   "reason": "Bản đồ chủ đề; thông tin nằm ở tiêu đề/phụ đề kèm bản đồ."
+  },
+  {
+   "id": "B-dev-06",
+   "split": "dev",
+   "group": "multihop",
+   "question": "Theo Bảng 4, biện pháp hỗ trợ đơn lẻ nào cho mức thay đổi GDP năm 2030 cao nhất, và theo phần văn bản giải thích, kết quả đó dựa trên giả định gì?",
+   "answerable": true,
+   "expected_answer": "Tăng khả năng cạnh tranh: GDP 2030 +0,9%; giả định tăng xuất khẩu 20% (so với BAU) trong giai đoạn 2022–2040 nhờ mở rộng sản xuất carbon thấp.",
+   "evidence": [
+    {
+     "page": 53,
+     "region": "Bảng 4, cột GDP 2030",
+     "detail": "ô nhiễm không khí 0,8; cạnh tranh 0,9; hiệu quả năng lượng 0,5; dịch chuyển lao động -0,2; hạn chế lấn át -0,5"
+    },
+    {
+     "page": 51,
+     "region": "Đoạn 'Nâng cao năng lực cạnh tranh quốc tế' cuối trang",
+     "detail": "'Nếu Việt Nam có thể tăng xuất khẩu lên 20% (so với kịch bản BAU) trong giai đoạn 2022–2040 ... GDP sẽ cao hơn 0,9% vào năm 2030'"
+    }
+   ],
+   "reason": "Bảng ở trang 53 xác định biện pháp; văn bản trang 51 cho giả định."
+  },
+  {
+   "id": "B-dev-07",
+   "split": "dev",
+   "group": "text",
+   "question": "Theo dự thảo Quy hoạch Điện 8 (PDP8, tháng 10/2021), công suất điện than dự kiến năm 2030 là bao nhiêu GW và so với công suất lắp đặt năm 2022 thì như thế nào?",
+   "answerable": true,
+   "expected_answer": "38 GW vào năm 2030, cao hơn gần hai lần so với công suất 20 GW năm 2022.",
+   "evidence": [
+    {
+     "page": 54,
+     "region": "Đoạn văn dưới biểu đồ Hình 12, đoạn bắt đầu 'Tại Hội nghị thượng đỉnh về biến đổi khí hậu'",
+     "detail": "'theo kế hoạch mới là 38 GW vào năm 2030. Tuy nhiên công suất mới này vẫn cao hơn gần hai lần so với công suất lắp đặt năm 2022 là 20GW'"
+    }
+   ],
+   "reason": "Thông tin điều kiện/đối chiếu từ văn xuôi."
+  },
+  {
+   "id": "B-dev-08",
+   "split": "dev",
+   "group": "abstain",
+   "question": "Giá điện bán lẻ bình quân hiện nay của EVN là bao nhiêu đồng/kWh?",
+   "answerable": false,
+   "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+   "evidence": [],
+   "reason": "Đã grep: 'đồng/kWh', 'VND', 'bán lẻ' (chỉ ngành thương mại bán lẻ), 'giá điện' (chỉ thảo luận định tính: ADS cao hơn CPS 26% năm 2040, cải cách giá điện), 'kWh'. Không có mức giá tuyệt đối."
+  }
+ ]
+}

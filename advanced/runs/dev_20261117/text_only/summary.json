@@ -1,0 +1,39 @@
+{
+  "config": {
+    "name": "text_only",
+    "method": "hybrid_rrf",
+    "modalities": [
+      "text"
+    ],
+    "top_k": 6,
+    "budget": 6000,
+    "page_images": false,
+    "hypothesis": "Baseline: page text layer only; tables partly survive as text, charts/figures do not."
+  },
+  "split": "dev",
+  "n": 23,
+  "errors": 0,
+  "answered": 18,
+  "abstained_unanswerable": 2,
+  "unanswerable": 3,
+  "all_gold_pages_retrieved": "16/20",
+  "all_gold_pages_in_context": "15/20",
+  "all_gold_pages_cited": "13/20",
+  "mean_ms": 4181.2,
+  "median_ms": 3405.6,
+  "chat_tokens": {
+    "prompt_tokens": 112250,
+    "completion_tokens": 4200
+  },
+  "chat_cost_usd": 0.1031,
+  "pass": "12/23",
+  "pass_note": "AI-assisted labels; human verification pending",
+  "pass_by_group": {
+    "table": "3/6",
+    "chart": "1/6",
+    "figure": "1/2",
+    "multihop": "2/3",
+    "text": "2/3",
+    "abstain": "3/3"
+  }
+}

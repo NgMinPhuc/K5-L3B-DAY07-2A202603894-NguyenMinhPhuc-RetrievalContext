@@ -1,0 +1,29 @@
+{
+  "config": {
+    "name": "multimodal_pageimg",
+    "method": "hybrid_rrf",
+    "modalities": null,
+    "top_k": 6,
+    "budget": 6000,
+    "page_images": true,
+    "hypothesis": "Attaching rendered context pages lets the model read charts/tables directly, fixing transcription errors."
+  },
+  "split": "dev",
+  "n": 23,
+  "errors": 0,
+  "answered": 21,
+  "abstained_unanswerable": 1,
+  "unanswerable": 3,
+  "all_gold_pages_retrieved": "15/20",
+  "all_gold_pages_in_context": "14/20",
+  "all_gold_pages_cited": "14/20",
+  "mean_ms": 6104.9,
+  "median_ms": 3981.1,
+  "chat_tokens": {
+    "prompt_tokens": 267351,
+    "completion_tokens": 3943
+  },
+  "chat_cost_usd": 0.2183,
+  "pass": null,
+  "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+}

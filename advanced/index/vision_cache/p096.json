@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "A text-heavy bullet list titled 'B. Các giả định của mô hình CGE đối với NZP và các kết quả kinh tế vĩ mô chính' describing model assumptions and macroeconomic outcomes. It lists:\n- Energy transition: an aggressive decarbonization scenario including 80% GHG emissions reduction by 2040, with cumulative existing energy capital reduced by 25% due to stranded assets.\n- Transport transition: the most ambitious transport transition includes (i) electricity replacing 50% of refined petroleum products in transport vehicles by 2040 and (ii) 5% energy-efficiency savings in transport by 2040.\n- Agriculture transition: the most ambitious agricultural transition includes (i) a 14% reduction in emissions per livestock unit; (ii) a 14% reduction in fertilizer and pesticide use by substituting other inputs.\n- Land use, land-use change and forestry: gradually increasing subsidies for forestry services, reaching 50% by 2040.\n- Industrial/service technology change: reduce the emissions factor in industrial processes and product use (IPPU) from waste and fugitive emissions by 95%, and reduce cement production by 50% at a cost of US$300 per ton of avoided CO2.\n- Carbon pricing: rises gradually from US$1 to US$24.60 per ton equivalent from 2020 to 2030, then to US$90 per ton by 2040.\n- Co-benefits: decouple labor productivity from PM2.5 pollution impacts by assuming an elasticity of 0.3 between air pollution reduction and labor productivity increase.\n- Labor market: fully flexible within sectors but not between sectors; this assumption is relaxed by assuming full flexibility.\n- Demand inefficiency: assumption relaxed by assuming energy demand falls 5%.\n- Investment crowding out: investment needed in priority sectors for the net-zero transition completely crowds out investment in other sectors; this is relaxed by assuming lower crowding out thanks to additional financing.\n- Carbon tax revenue is available to the private sector to invest in clean energy and therefore supplements cumulative capital in the next period.\n- Total required investment equals US$81.3 billion (NPV), consistent with needs identified in the sector transition model and technology changes required in industry/services.\nThe page is text only, with no charts, tables, maps, or other data visuals.",
+   "notes": "No informative visual elements beyond the bullet list/text block."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3019,
+  "completion_tokens": 529
+ }
+}

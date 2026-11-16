@@ -1,0 +1,40 @@
+{
+  "config": {
+    "name": "v2_wide",
+    "method": "hybrid_rrf",
+    "modalities": null,
+    "top_k": 8,
+    "budget": 10000,
+    "page_images": false,
+    "label_boost": true,
+    "prompt": "v2",
+    "max_searches": 6,
+    "hypothesis": "Index v2 (annex/section headers, continued-table labels) + label boost + prompt v2 (verify facts in question, one search per part, strict period matching)."
+  },
+  "split": "dev",
+  "n": 23,
+  "errors": 0,
+  "answered": 21,
+  "abstained_unanswerable": 2,
+  "unanswerable": 3,
+  "all_gold_pages_retrieved": "19/20",
+  "all_gold_pages_in_context": "18/20",
+  "all_gold_pages_cited": "18/20",
+  "mean_ms": 3498.5,
+  "median_ms": 3074.2,
+  "chat_tokens": {
+    "prompt_tokens": 134283,
+    "completion_tokens": 3850
+  },
+  "chat_cost_usd": 0.118,
+  "pass": "22/23",
+  "pass_note": "AI-assisted labels; human verification pending",
+  "pass_by_group": {
+    "table": "6/6",
+    "chart": "6/6",
+    "figure": "2/2",
+    "multihop": "2/3",
+    "text": "3/3",
+    "abstain": "3/3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 16",
+   "title": "",
+   "region": "not visible on this page; referenced in text only",
+   "content": "Referenced figure about agricultural mitigation options and their impact/abatement cost. The text says it compares mitigation measures for agriculture at the farm level for reducing emissions from rice production, other crops, and livestock, and that it shows the relationship between potential emissions reductions and cost per ton reduced (cost-effectiveness). It is referenced together with Hình 17. No visible figure content is present on this page.",
+   "notes": "The actual figure is not shown on this page; only the reference in the text layer is visible."
+  },
+  {
+   "type": "figure",
+   "label": "Hình 17",
+   "title": "",
+   "region": "not visible on this page; referenced in text only",
+   "content": "Referenced figure about agricultural mitigation options and their impact/abatement cost. The text says the measures differ in potential impact and cost per ton of emissions reduced, and that cost per ton reduced represents the cost-effectiveness of the measure. It is referenced together with Hình 16. No visible figure content is present on this page.",
+   "notes": "The actual figure is not shown on this page; only the reference in the text layer is visible."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3514,
+  "completion_tokens": 259
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "Bảng 2.",
+   "title": "Ước tính nhu cầu tài chính tăng thêm cho các biện pháp thích ứng, 2022–2050",
+   "region": "top half",
+   "content": "|  | Trung bình mỗi năm (% GDP) | Giá trị tích lũy (tỷ USD tính theo NPV) |\n|---|---:|---:|\n| **Nhu cầu tài chính tăng thêm** | 4,5–5,4 | 342,3–410,7 |\n| **Tổng nhu cầu tài chính** | 6,3–7,2 | 479,2–547,6 |\n| Nhu cầu đầu tư cho các tài sản tư nhân có khả năng phục hồi | 3,0 | 228,2 |\n| Đầu tư mới và bổ sung thêm cơ sở hạ tầng có khả năng phục hồi | 3,0–3,5 | 228,2–266,2 |\n| Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng | 0,3–0,7 | 22,8–53,2 |\n| **Nguồn tài chính hiện có** | 1,8 | 136,9 |\n\nGhi chú: NPV là giá trị hiện tại thuần; tất cả những số liệu trên phản ánh tỷ lệ chiết khấu 6%."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3286,
+  "completion_tokens": 311
+ }
+}

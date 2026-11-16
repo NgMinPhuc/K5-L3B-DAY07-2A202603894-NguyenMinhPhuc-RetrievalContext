@@ -1,0 +1,29 @@
+{
+  "config": {
+    "name": "multimodal_dense",
+    "method": "dense",
+    "modalities": null,
+    "top_k": 6,
+    "budget": 6000,
+    "page_images": false,
+    "hypothesis": "Dense-only over the same chunks, to compare against RRF fusion."
+  },
+  "split": "dev",
+  "n": 23,
+  "errors": 0,
+  "answered": 18,
+  "abstained_unanswerable": 3,
+  "unanswerable": 3,
+  "all_gold_pages_retrieved": "15/20",
+  "all_gold_pages_in_context": "15/20",
+  "all_gold_pages_cited": "15/20",
+  "mean_ms": 3826.7,
+  "median_ms": 2727.6,
+  "chat_tokens": {
+    "prompt_tokens": 110863,
+    "completion_tokens": 3900
+  },
+  "chat_cost_usd": 0.1007,
+  "pass": null,
+  "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+}

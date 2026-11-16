@@ -1,0 +1,30 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "Bảng 1",
+   "title": "Bảng 1: So sánh phát thải giữa các nước",
+   "region": "upper half",
+   "content": "| Nước | Phát thải trên đầu người (tCO$_2$e trên đầu người) | Phát thải Carbon (tCO$_2$e/triệu $GDP) | Tổng phát thải (MtCO$_2$e) | % phát thải toàn cầu |\n|---|---:|---:|---:|---:|\n| Hoa Kỳ | 17,7 | 281,5 | 5.794,3 | 12,0% |\n| Mông Cổ | 17,5 | 4.250,9 | 55,7 | 0,1% |\n| Malaysia | 12,3 | 1.08,9 | 388,1 | 0,8% |\n| OECD | 10,8 | 266,6 | 14.081,8 | 29,8% |\n| Đức | 9,4 | 195,9 | 776,61 | 1,6% |\n| Trung Quốc | 8,4 | 842,5 | 11.705,1 | 23,9% |\n| Papua New Guinea | 7,5 | 2.658,3 | 64,1 | 0,1% |\n| Vương quốc Anh | 6,6 | 154,2 | 441,1 | 0,9% |\n| Indonesia | 6,4 | 1.634,8 | 1.703,9 | 3,6% |\n| Thái Lan | 6,2 | 851,4 | 431,2 | 0,9% |\n| Lào | 5,5 | 2.151,6 | 38,6 | 0,1% |\n| Pháp | 5,4 | 129,6 | 361,4 | 0,7% |\n| Đông Timor | 5,3 | 4.271,0 | 6,7 | 0,0% |\n| Thổ Nhĩ Kỳ | 5 | 603,9 | 422,0 | 1,0% |\n| Myanmar | 4,3 | 3.040,9 | 231,6 | 0,5% |\n| Campuchia | 4,3 | 2.814,1 | 69,2 | 0,1% |\n| Việt Nam | 3,8 | 1.486,2 | 364,4 | 0,8% |\n| Philipin | 2,2 | 677,0 | 234,8 | 0,5% |\n\nNguồn: Climate Watch"
+  },
+  {
+   "type": "chart",
+   "label": "Hình 5",
+   "title": "Hình 5: Phát thải GHG trên đầu người (tấn/đầu người) (Chấm đỏ là Việt Nam)",
+   "region": "bottom half",
+   "content": "Chart kind: scatter plot.\nX-axis title: GDP trên đầu người.\nY-axis title: Phát thải GHG trên đầu người.\nAxis ranges visible: x from 0 to 30000; y from 0 to 35.\nSeries/legend: blue dots = countries; red dot = Việt Nam.\nReadable point distribution: many blue points clustered around GDP per capita ~0–6000 with emissions ~0.5–8; several mid-income points around ~6000–12000 with emissions ~3–26; higher-income points around ~15000–30000 with emissions roughly ~3–31.\nVietnam (red dot) is at approximately GDP per capita ~3000 and GHG per capita ~4.\nVisible trend: generally positive relationship between GDP per capita and GHG emissions per capita, but with substantial scatter and outliers.\nMin/max visible: lowest emissions near 0, highest visible emissions around 31–32 at GDP per capita around 25000; GDP per capita extends to about 30000.\nSource: ClimateWatch."
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "upper area above the table/chart",
+   "content": "A small partial repetition of the scatter-plot axis labels and ticks is visible near the top of the page: y-axis tick labels 0, 5, 10, 15, 20, 25, 30, 35 and x-axis tick labels 0, 5000, 10000, 15000, 20000, 25000, 30000, with the labels 'Phát thải GHG trên đầu người' and 'GDP trên đầu người'. This appears to be the same chart content repeated in the page text layer, not a separate data visualization.",
+   "notes": "The page text layer has some OCR imperfections in numbers and labels (e.g., '1.08,9' for Malaysia, '776,61' for Đức). Values are transcribed as visible from the provided text layer and page image."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2829,
+  "completion_tokens": 1104
+ }
+}

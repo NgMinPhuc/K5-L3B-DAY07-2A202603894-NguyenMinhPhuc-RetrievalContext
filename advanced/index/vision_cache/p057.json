@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "",
+   "title": "",
+   "region": "upper-middle",
+   "content": "| Category | Value | Percent |\n|---|---:|---:|\n| Mặt trời | +21 | +429% |\n| Gió (trên bờ) | +8 | +55% |\n| Gió (ngoài khơi) | +39 | +402% |\n| Thủy điện và các năng lượng tái tạo khác | ~0 | +4% |\n| Lưu trữ (ắc quy và thuỷ điện tích năng) | +3 | Không có sẵn |\n| Chi phí nâng cấp và mở rộng mạng lưới | +13 | +52% |\n| Chi phí vận hành và bảo trì thay đổi | +2 | +40% |\n| Chi phí vận hành và bảo trì cố định | +6 | +12% |\n| Tổng chi phí | +65 | 56% |\n| trừ khoản tiết kiệm chi phí nhiên liệu | -32 | -31% |\n| Tổng chi phí ròng | +33 | +13% |\n| Chi phí thiệt hại môi trường địa phương | -14 | -40% |\n| Chi phí thiệt hại môi trường toàn cầu | -40 | -37% |\n\nSource: Nguồn: Phân tích của đội ngũ Ngân hàng Thế giới dựa trên phân tích mô hình ngành điện."
+  },
+  {
+   "type": "figure",
+   "label": "Hộp 7",
+   "title": "Tác động của xung đột tại Ukraina lên ngành năng lượng Việt Nam",
+   "region": "lower-middle to bottom",
+   "content": "Gray boxed text callout with heading and three paragraphs describing the impact of the Ukraine conflict on Vietnam's energy sector. Main points: the conflict has disrupted fossil-fuel supply chains and pushed global oil and gas prices to a 10-year high; countries with direct energy trade ties, mainly in Europe, are urgently seeking substitutes; short-term energy price volatility is expected to continue, while long-term impacts remain uncertain. For Vietnam, as a net energy importer, external energy commodity shocks are becoming more harmful. Transport fuel prices have risen for many months despite use of the price stabilization fund (noted as currently negative as of April 2022). In electricity, imported coal has not been strongly affected yet, but expansion of fossil-fuel power generation under the plan, especially imported gas for power generation, may face higher risks. Suggested mitigation measures: (i) use the power-sector planning tool PDP8 as a basis for flexible investment decisions to adapt to volatile oil prices; (ii) prioritize domestic clean energy sources such as offshore wind; and (iii) steer projects toward technology-neutral electricity auctions. The text also notes that investments required for net-zero must be financed through a mix of electricity prices reflecting investment cost, carbon tax, and borrowing; the shift from coal will affect labor markets by eliminating existing jobs and creating new ones; and growing demand for raw materials for clean energy requires new supply chains from extraction to manufacturing, which may add pressure on ecologically sensitive sites and vulnerable communities. Bottom text continues beyond page edge and is truncated."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3168,
+  "completion_tokens": 663
+ }
+}

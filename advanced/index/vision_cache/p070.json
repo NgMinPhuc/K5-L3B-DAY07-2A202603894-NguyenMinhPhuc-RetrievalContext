@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 18",
+   "title": "Tác động của NZP đối với tình trạng đói nghèo, an ninh kinh tế và bất bình đẳng (sai lệch so với BAU) vào năm 2040",
+   "region": "middle of page",
+   "content": "Chart kind: vertical bar chart.\nX-axis title/labels: three categories — \"Mức nghèo ($3,20)\", \"Kinh tế không ổn định ($5,50)\", \"Bất bình đẳng (Chỉ số Gini)\".\nY-axis title/units: \"Sai số so với kịch bản phát triển thông thường (BAU)\"; scale shown from 0 down to about -1,2.\nSeries: single series (orange bars), values read from labels/bar heights:\n- Mức nghèo ($3,20): -0,1\n- Kinh tế không ổn định ($5,50): -0,1\n- Bất bình đẳng (Chỉ số Gini): -1,1\nVisible trend: all outcomes are below BAU; the two poverty/economic insecurity measures decline slightly, while inequality declines much more strongly in the plotted value. Min/max visible values: min about -1,1; max about -0,1.\nSource line: \"Nguồn: Ngân hàng Thế giới.\""
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "lower-middle of page",
+   "content": "Bulleted text callout summarizing which households are most affected by NZP. Main message: the households most affected are more likely to be younger, less educated, and from ethnic minority and/or rural households.\nText labels and figures:\n- \"Tuổi của chủ hộ: Một chủ hộ 50 tuổi có nguy cơ mất an ninh kinh tế thấp hơn 10% so với một người 40 tuổi.\"\n- \"Trình độ học vấn: Những chủ hộ đã tốt nghiệp trung học cơ sở có nguy cơ mất an ninh kinh tế thấp hơn 12% so với những người có trình độ học vấn thấp hơn.\"\n- \"Dân tộc thiểu số: Hộ gia đình người Kinh có khả năng bị ảnh hưởng thấp hơn 37% so với hộ gia đình dân tộc thiểu số.\"\n- \"Nông thôn/Thành thị: Một hộ gia đình thành thị có nguy cơ rơi vào tình trạng đói nghèo thấp hơn 10% so với một hộ gia đình nông thôn.\"\nFootnote marker in text: 78."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2993,
+  "completion_tokens": 551
+ }
+}

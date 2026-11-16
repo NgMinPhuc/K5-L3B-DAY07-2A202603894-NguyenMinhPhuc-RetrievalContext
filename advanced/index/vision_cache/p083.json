@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "top-left to top-center",
+   "content": "A small decorative/credit image area at the top of the page showing the photo credit text \"© Nguyen Quang Ngoc Tonkin/Shutterstock\". No informative data content visible.",
+   "notes": "The page appears to contain no informative tables, charts, diagrams, maps, or boxed data elements. The only visual element besides text is a decorative/credit image area."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3419,
+  "completion_tokens": 103
+ }
+}

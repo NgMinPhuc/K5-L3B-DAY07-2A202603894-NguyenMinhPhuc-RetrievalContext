@@ -22,7 +22,7 @@ from .trace_store import TraceWriter, make_trace
 
 BENCHMARK = ROOT / "data/test_benchmark_day7.json"
 CHUNKS = ROOT / "starter/day6/data/chunks_B.jsonl"
-CONFIG_NAMES = ("hybrid_rrf_baseline", "hybrid_rrf_more_context")
+CONFIG_NAMES = ("hybrid_rrf_baseline", "hybrid_rrf_citation_fix")
 
 
 def run(output: Path, model: str | None = None, *, resume: bool = False) -> list[dict[str, Any]]:

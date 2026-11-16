@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Cover page photograph/graphic showing an industrial facility or plant: a tall striped smokestack emitting dark smoke that disperses into the sky, with large blue steel structures/conveyors in the foreground and industrial buildings/equipment in the background. Overlaid on the lower half is a dark translucent band with a large white chapter number \"4\" and the chapter title text \"Giảm thiểu Biến đổi Khí hậu – Lộ trình khử carbon\". A vertical multicolored strip runs along the left edge as a design element. Vertical copyright text on the right edge reads \"© The World Bank\". The page also includes the series text at top: \"Việt Nam: Báo cáo về Khí hậu và Phát triển\". Main message: chapter 4 on climate change mitigation / decarbonization, illustrated by industrial emissions.",
+   "notes": "No data visualization, table, map, or diagram; this is a chapter cover with a background photo and title overlay."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2312,
+  "completion_tokens": 226
+ }
+}

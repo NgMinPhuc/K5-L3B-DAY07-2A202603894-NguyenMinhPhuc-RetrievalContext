@@ -1,0 +1,24 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 16",
+   "title": "Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ sản xuất lúa gạo",
+   "region": "middle-left",
+   "content": "Chart kind: vertical bar chart. Y-axis title/units: $/tCO2e. X-axis title: Các biện pháp. Categories and approximate values from bar heights:\n- Chuyển từ trồng lúa sang nuôi tôm: ~-80\n- Cải tạo đất trồng lúa thường thành đất trồng lúa nước: ~-45\n- Mô hình tưới lúa ướt khô xen kẽ (AWD) ở ĐB sông Cửu Long: ~-20\n- Mô hình AWD ở Đồng bằng sông Hồng: ~-15\n- Chuyển đổi từ trồng lúa sang hoa màu: ~+10\n- Cải thiện quản lý rơm rạ: ~+15\n- Quản lý cây trồng tổng hợp (ICM) cho lúa: ~+60\n- Mô hình AWD và Hệ thống SRI/1M5R ở khu trồng lúa tưới tiêu vừa phải: ~+90\n- Chuyển từ trồng lúa sang ngô: ~+390\nVisible trend: most measures are below zero or modestly above zero, except one very large positive-cost option; minimum around -80 and maximum around +390. Notes/source: Source line shown below figure: Nguồn: Ngân hàng Thế giới.",
+   "notes": "Bar values are estimated from the plotted heights; no exact data labels shown."
+  },
+  {
+   "type": "chart",
+   "label": "Hình 17",
+   "title": "Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ chăn nuôi",
+   "region": "lower-middle",
+   "content": "Chart kind: vertical bar chart. Y-axis title/units: $/tCO2e. X-axis title: Các biện pháp. Categories and approximate values from bar heights:\n- Khẩu phần hỗn hợp hoàn chỉnh dành cho bò sữa (TMR): ~-150\n- Bổ sung chế độ ăn uống cho bò nuôi lấy thịt (TMR): ~-120\n- Ủ chất thải của lợn: ~0\n- Thu khí ga sinh học từ chất thải chăn nuôi lợn (TMR): ~0\n- Xử lý chất thải gia súc khác (TMR): ~0\n- Cải thiện chất lượng khẩu phần ăn cho gia súc nhỏ (TMR): ~+130\n- Cải thiện chất lượng khẩu phần ăn cho bò nuôi lấy thịt: ~+140\n- Cải thiện chất lượng khẩu phần ăn cho bò sữa: ~+320\n- Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR): ~+720\nVisible trend: two negative-cost measures, several near zero, and several positive-cost measures with one very large positive-cost option; minimum around -150 and maximum around +720. Notes/source: Source line shown below figure: Nguồn: Ngân hàng Thế giới.",
+   "notes": "Bar values are estimated from the plotted heights; some labels include (TMR) on separate wrapped lines."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3014,
+  "completion_tokens": 711
+ }
+}

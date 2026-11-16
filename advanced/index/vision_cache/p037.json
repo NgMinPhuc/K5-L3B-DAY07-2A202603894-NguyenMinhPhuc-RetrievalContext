@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 9",
+   "title": "Mức độ dễ bị ảnh hưởng khi gặp thiên tai của các tuyến đường có quy mô quốc gia tại Việt Nam",
+   "region": "middle of page",
+   "content": "Composite figure with three side-by-side thematic maps of Vietnam showing exposure of national-scale road routes to different hazards. The three panels are titled: \"Lở đất\" (landslides), \"Lũ lụt 1.000 năm\" (1,000-year flood), and \"Bão lũ\" (storm/flood). Each map colors road segments by \"Percentage exposure\" using a legend on the left of each panel. Categories visible in the legends are: 0 to 10, 10 to 20, 20 to 30, 30 to 40, 40 to 100, and \"No value\". The landslide map uses orange-brown shades; the 1,000-year flood map uses light-to-dark blue shades; the storm/flood map uses green shades. The maps show Vietnam’s north-south road corridor with most exposed segments concentrated along central and northern/coastal stretches, with varying intensities by hazard. Main message: national road routes in Vietnam are exposed to different disaster risks, with notable vulnerable stretches along the main north-south corridor and coastal areas. Source line printed below: \"Nguồn: Phân tích của Ngân hàng Thế giới (Oh và đồng sự, 2019).41\" Disclaimer below notes that borders, colors, names, and other map information do not imply World Bank judgment on legal status or endorsement of borders.",
+   "notes": "The small place labels on the maps are not fully legible in the page image; only the overall hazard categories and legend ranges are clearly readable."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2982,
+  "completion_tokens": 373
+ }
+}

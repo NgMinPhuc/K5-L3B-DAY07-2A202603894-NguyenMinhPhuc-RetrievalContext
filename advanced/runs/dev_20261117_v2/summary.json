@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-11-16T17:30:15.905514+00:00",
+  "split": "dev",
+  "configs": [
+    {
+      "config": {
+        "name": "v2_wide",
+        "method": "hybrid_rrf",
+        "modalities": null,
+        "top_k": 8,
+        "budget": 10000,
+        "page_images": false,
+        "label_boost": true,
+        "prompt": "v2",
+        "max_searches": 6,
+        "hypothesis": "Index v2 (annex/section headers, continued-table labels) + label boost + prompt v2 (verify facts in question, one search per part, strict period matching)."
+      },
+      "split": "dev",
+      "n": 23,
+      "errors": 0,
+      "answered": 21,
+      "abstained_unanswerable": 2,
+      "unanswerable": 3,
+      "all_gold_pages_retrieved": "19/20",
+      "all_gold_pages_in_context": "18/20",
+      "all_gold_pages_cited": "18/20",
+      "mean_ms": 3498.5,
+      "median_ms": 3074.2,
+      "chat_tokens": {
+        "prompt_tokens": 134283,
+        "completion_tokens": 3850
+      },
+      "chat_cost_usd": 0.118,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    },
+    {
+      "config": {
+        "name": "v2_wide_pageimg",
+        "method": "hybrid_rrf",
+        "modalities": null,
+        "top_k": 8,
+        "budget": 10000,
+        "page_images": true,
+        "label_boost": true,
+        "prompt": "v2",
+        "max_searches": 6,
+        "hypothesis": "v2_wide plus rendered context pages for reading charts/tables directly."
+      },
+      "split": "dev",
+      "n": 23,
+      "errors": 0,
+      "answered": 21,
+      "abstained_unanswerable": 2,
+      "unanswerable": 3,
+      "all_gold_pages_retrieved": "19/20",
+      "all_gold_pages_in_context": "18/20",
+      "all_gold_pages_cited": "18/20",
+      "mean_ms": 4685.9,
+      "median_ms": 3729.3,
+      "chat_tokens": {
+        "prompt_tokens": 329524,
+        "completion_tokens": 3812
+      },
+      "chat_cost_usd": 0.2643,
+      "pass": null,
+      "pass_note": "Fill after reviewing review_queue.json against the original PDF."
+    }
+  ]
+}

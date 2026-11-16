@@ -1,0 +1,97 @@
+{
+  "config": {
+    "name": "hybrid_rrf_citation_fix",
+    "method": "hybrid_rrf",
+    "top_k": 5,
+    "budget": 1400,
+    "candidate_k": 20,
+    "rrf_constant": 60,
+    "hypothesis": "Keep the selected dev retrieval settings; normalize model citations to plain IDs and ensure the answer includes bracketed citation markers to prevent structurally valid answers becoming abstentions."
+  },
+  "split": "test",
+  "n": 42,
+  "errors": 0,
+  "retrieval": {
+    "hit1": {
+      "n": 26,
+      "of": 40
+    },
+    "evidence_hit3": {
+      "n": 29,
+      "of": 40
+    },
+    "retrieved_evidence_any_turn": {
+      "n": 36,
+      "of": 40
+    },
+    "context_evidence_rate": {
+      "n": 25,
+      "of": 40
+    }
+  },
+  "agent": {
+    "answered": 30,
+    "abstained": 12,
+    "correct_abstentions": {
+      "n": 2,
+      "of": 2
+    },
+    "answerable_abstentions": {
+      "n": 10,
+      "of": 40
+    },
+    "citation_ids_in_final_context": {
+      "n": 30,
+      "of": 30
+    },
+    "semantic_answer_grades": {
+      "review_method": "AI-assisted review on test after dev selection was frozen; needs human spot-check",
+      "answer_grade_counts_over_40_answerable": {
+        "0": 13,
+        "1": 0,
+        "2": 27
+      },
+      "answer_grade_mean_over_40": 1.35,
+      "correct_and_fully_supported": 25,
+      "citations_supporting": {
+        "n": 26,
+        "of": 31
+      },
+      "answers_all_citations_supporting": {
+        "n": 26,
+        "of": 30
+      },
+      "correct_abstentions": {
+        "n": 2,
+        "of": 2
+      },
+      "wrong_abstentions_on_answerable": 10,
+      "non_full_marks": {
+        "q149": 0,
+        "q157": 0,
+        "q163": 0
+      }
+    },
+    "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation."
+  },
+  "latency": {
+    "shared_index_build_seconds": 0.1044,
+    "mean_query_ms": 4096.26,
+    "median_query_ms": 2749.46,
+    "successful_n": 42
+  },
+  "usage": {
+    "query_embedding_tokens": 3533,
+    "chat_usage": {
+      "completion_tokens": 6668,
+      "total_tokens": 100198,
+      "prompt_tokens": 93530
+    },
+    "embedding_estimated_cost_usd": 7.065999999999999e-05,
+    "embedding_cost_note": "Configured EMBEDDING_PRICE_PER_1M_USD.",
+    "chat_estimated_cost_usd": 0.1001535,
+    "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+    "total_estimated_cost_usd": 0.10022416
+  },
+  "review_required": 0
+}

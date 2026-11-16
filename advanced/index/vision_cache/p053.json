@@ -1,0 +1,15 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "Bảng 4",
+   "title": "Các chính sách hỗ trợ chính sẽ ảnh hưởng như thế nào đến tác động của NZP đối với phát thải khí nhà kính và GDP",
+   "region": "upper half",
+   "content": "Phần trăm thay đổi so với đường cơ sở\n\n| Chính sách | Tỷ lệ thay đổi mức phát thải khí nhà kính (%) 2030 | Tỷ lệ thay đổi mức phát thải khí nhà kính (%) 2040 | Tỷ lệ thay đổi GDP (%) 2030 | Tỷ lệ thay đổi GDP (%) 2040 |\n|---|---:|---:|---:|---:|\n| NZP không có cải cách | -42,8 | -73,6 | -0,6 | -2,2 |\n| NZP và giảm ô nhiễm không khí | -42,2 | -73,4 | 0,8 | -1,0 |\n| NPZ và tăng khả năng cạnh tranh | -42,7 | -71,8 | 0,9 | -0,6 |\n| NZP và tăng hiệu quả năng lượng | -41,9 | -72,1 | 0,5 | 0,2 |\n| NZP và cải thiện sự dịch chuyển lao động | -43,0 | -71,8 | -0,2 | -0,2 |\n| NZP và hạn chế lấn át các khoản đầu tư khác | -43,1 | -73,5 | -0,5 | -0,9 |\n| NZP và tất cả các biện pháp hỗ trợ | -40,2 | -71,9 | 1,7 | 3,3 |\n\nNguồn: Tính toán của các tác giả dựa trên mô hình CGE được xây dựng cho CCDR.\nGhi chú: Quy mô giảm phát thải khí nhà kính dự kiến sẽ thấp hơn một chút khi có các biện pháp hỗ trợ, lí do một phần — chứ không phải hoàn toàn — là do GDP tăng. Nguyên nhân là bởi vì trong một nền kinh tế chưa khử carbon hoàn toàn, tăng GDP sẽ làm tăng mức phát thải, cho dù chỉ ở mức khiêm tốn."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3190,
+  "completion_tokens": 488
+ }
+}

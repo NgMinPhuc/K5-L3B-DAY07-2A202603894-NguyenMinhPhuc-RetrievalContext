@@ -83,7 +83,8 @@ class OpenAIController:
     """
 
     def __init__(self, model: str | None = None, *, api_key: str | None = None,
-                 client: Any | None = None, max_completion_tokens: int = 700) -> None:
+                 client: Any | None = None, max_completion_tokens: int = 700,
+                 system_prompt: str | None = None) -> None:
         try:
             from dotenv import load_dotenv
             load_dotenv(Path(__file__).resolve().parents[1] / ".env")
@@ -104,22 +105,28 @@ class OpenAIController:
         if max_completion_tokens < 1:
             raise ValueError("max_completion_tokens phải >= 1")
         self.client = client
+        self.system_prompt = system_prompt or SYSTEM_PROMPT
         self.max_completion_tokens = max_completion_tokens
         self.usage = {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0}
         # Keep the common scalar attribute for lightweight experiment runners.
         self.total_tokens = 0
 
-    def decide(self, question: str, history: list[dict[str, Any]]) -> dict[str, Any]:
-        if not isinstance(question, str) or not question.strip():
-            raise ValueError("question phải là chuỗi không rỗng")
+    def _user_content(self, question: str, history: list[dict[str, Any]]) -> Any:
+        """Build the user message; subclasses may return multimodal content parts."""
         evidence = _history_message(history)
         user_content = f"Câu hỏi: {question.strip()}"
         if evidence:
             user_content += "\n\n" + evidence
+        return user_content
+
+    def decide(self, question: str, history: list[dict[str, Any]]) -> dict[str, Any]:
+        if not isinstance(question, str) or not question.strip():
+            raise ValueError("question phải là chuỗi không rỗng")
+        user_content = self._user_content(question, history)
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "system", "content": self.system_prompt},
                 {"role": "user", "content": user_content},
             ],
             tools=TOOLS,

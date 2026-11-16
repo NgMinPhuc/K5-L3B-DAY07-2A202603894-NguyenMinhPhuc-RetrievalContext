@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 14",
+   "title": "",
+   "region": "mid-page, referenced in body text (no visible graphic on this page)",
+   "content": "Reference to a figure showing that most domestic coal production (over 90%) is mined in Northern Vietnam, around the Red River Delta, Da River, and Ca River areas, especially in Quảng Ninh province. The figure itself is not visible on this page.",
+   "notes": "The actual figure is not shown on the provided page image; only the in-text reference is visible."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3348,
+  "completion_tokens": 120
+ }
+}

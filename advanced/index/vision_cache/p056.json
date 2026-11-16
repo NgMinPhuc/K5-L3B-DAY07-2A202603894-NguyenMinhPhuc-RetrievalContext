@@ -1,0 +1,22 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 13",
+   "title": "So sánh nguồn điện và phát thải GHG giữa CPS và ADS",
+   "region": "upper half",
+   "content": "Composite figure with two charts.\n\nLeft chart: stacked vertical bar chart titled “Điện được sản xuất năm 2040 (TWh)”. Categories on x-axis: BAU, CPS, ADS. Values printed inside/above bars indicate total electricity generation: BAU 922 TWh, CPS 788 TWh, ADS 812 TWh. A legend lists generation sources (colors): Truyền tải liên vùng, Thủy điện tích năng, Sinh khối, Mặt trời, Gió ngoài khơi, Gió gần bờ, Thủy điện, Dầu, Khí, Than, Lưu trữ, Hạt nhân. Visible segment labels on bars include BAU with 550 and 106; CPS with 276 and 188; ADS with 124 and 26. The bars show BAU dominated by coal; CPS and ADS with lower coal and larger shares of renewables, storage, and gas/hydro. Main message: the generation mix shifts from fossil-heavy BAU to lower-carbon CPS/ADS, with slightly higher total generation in ADS than CPS.\n\nRight chart: line chart titled “Phát thải GHG ngành điện, triệu tấn CO2e, 2020-40.” X-axis years from 2020 to 2040; y-axis ranges roughly 0 to 300. Two series are shown: CPS (blue) and ADS (orange). CPS rises from about 100 in 2020 to a peak around 270–275 in 2035, then ends at 246 in 2040. ADS rises from about 100 in 2020 to a peak around 145 in 2030–2031, then declines steadily to 63 in 2040. Visible trend: CPS increases strongly then slightly declines at the end; ADS increases modestly then falls sharply, ending far below CPS. Min/max visible: CPS min ~100, max ~275; ADS min 63 (2040), max ~145.\n\nNotes: The figure includes printed labels CPS and ADS near line ends and the numeric end values 246 and 63. The bar-chart segment labels are partially readable; the legend order is as printed."
+  },
+  {
+   "type": "table",
+   "label": "Bảng 5",
+   "title": "Nhu cầu đầu tư và Chi phí kinh tế: Kịch bản tăng tốc khử carbon (ADS), 2022–2040",
+   "region": "lower half",
+   "content": "|  | tỷ USD | Thay đổi |\n|---|---:|---:|\n| Chi phí vốn để lưu trữ và phát điện mới | +44 | +52% |\n| Trong đó: |  |  |\n| Than đá | -19 | -72% |\n| Khí đốt | -8 | -42% |\n\nFootnote/subtitle: “NPV, độ chênh lệch giữa CPS (đường cơ sở) và ADS”\n\nNo additional source line is visible in the table."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3143,
+  "completion_tokens": 668
+ }
+}

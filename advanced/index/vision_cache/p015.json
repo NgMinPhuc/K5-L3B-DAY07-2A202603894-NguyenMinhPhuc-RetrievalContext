@@ -1,0 +1,23 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 2",
+   "title": "Để trở thành quốc gia thu nhập cao vào năm 2045, Việt Nam cần đạt được tốc độ tăng trưởng cao hơn",
+   "region": "middle of page",
+   "content": "Chart kind: multi-series line chart.\nX-axis title: Time relative to Vietnam 1990 income level (implicit; labeled T, T+2, T+4, ... T+54).\nY-axis title: GDP bình quân đầu người (USD 2015 cố định).\nY-axis scale shown: 0, 5000, 10000, 15000, 20000, 25000.\nLegend / series:\n- Hàn Quốc (1951-2005): blue line. Approximate values by visible points: T ~800; T+2 ~1000; T+4 ~1100; T+6 ~1200; T+8 ~1300; T+10 ~1400; T+12 ~1550; T+14 ~1700; T+16 ~1900; T+18 ~2100; T+20 ~2400; T+22 ~2800; T+24 ~3500; T+26 ~4200; T+28 ~4300; T+30 ~4700; T+32 ~5200; T+34 ~6000; T+36 ~7000; T+38 ~8500; T+40 ~10000; T+42 ~11500; T+44 ~13000; T+46 ~14500; T+48 ~15000; T+50 ~17000; T+52 ~18500; T+54 ~20000+.\n- Thái Lan (1958-2012): light peach line. Approximate values: T ~700; T+2 ~800; T+4 ~850; T+6 ~900; T+8 ~950; T+10 ~1000; T+12 ~1100; T+14 ~1200; T+16 ~1400; T+18 ~1600; T+20 ~1800; T+22 ~2000; T+24 ~2300; T+26 ~2500; T+28 ~2800; T+30 ~3100; T+32 ~3500; T+34 ~3800; T+36 ~3600; T+38 ~3400; T+40 ~3600; T+42 ~3900; T+44 ~4300; T+46 ~4700; T+48 ~5000; T+50 ~5100; T+52 ~5400; T+54 ~5600.\n- Trung Quốc (1983-2020): light blue line. Approximate values: T ~600; T+2 ~700; T+4 ~800; T+6 ~900; T+8 ~1000; T+10 ~1200; T+12 ~1500; T+14 ~1800; T+16 ~2200; T+18 ~2600; T+20 ~3000; T+22 ~3500; T+24 ~4200; T+26 ~5000; T+28 ~6000; T+30 ~7000; T+32 ~8000; T+34 ~9000; T+36 ~10000; T+38 ~10500; series ends around T+38.\n- Việt Nam (1990-2020): orange line. Approximate values: T ~600; T+2 ~650; T+4 ~700; T+6 ~750; T+8 ~800; T+10 ~850; T+12 ~900; T+14 ~1000; T+16 ~1100; T+18 ~1200; T+20 ~1300; T+22 ~1450; T+24 ~1600; T+26 ~1800; T+28 ~1900; T+30 ~2200; T+32 ~2400; T+34 ~2700; T+36 ~3000; T+38 ~3300; T+40 ~3500; T+42 ~3800; T+44 ~4000; T+46 ~4300; T+48 ~4600; T+50 ~4800; T+52 ~5200; T+54 ~5500.\n- Việt Nam (2021-2045): dashed orange line; a projected path rising from about T+28 ~2500-3000 to T+54 ~12500.\n- Ngưỡng HIC (Quốc gia có thu nhập cao): thick dark blue horizontal line at about 12695 (shown as a constant threshold).\nVisible trend and min/max: all historical series rise over time; Korea rises fastest and surpasses the HIC threshold well before the end of its period; China rises sharply and ends near 10,500; Thailand rises gradually to about 5,600; Vietnam's historical line rises slowly to about 5,500 by T+54 on the historical scale, while the projected Vietnam path is intended to reach the HIC threshold around 2045. The minimum visible values are around 600 USD; the maximum visible value is Korea near 21,000 USD.\nNotes: The annotation on the right reads “Việt Nam năm 2045” near the HIC line. Time T corresponds to the year when other countries had GDP per capita equal to Vietnam's GDP per capita in 1990. Source line: “Nguồn: Ngân hàng Thế giới, dựa trên dữ liệu Chỉ số phát triển thế giới.”"
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "top-left/middle text callout",
+   "content": "Large section heading and introductory text for section 1: “1. Mô hình phát triển của Việt Nam và những thách thức về khí hậu” and subsection “1.1. Việt Nam đứng trước ngã rẽ”. The text explains that after more than two decades of stable growth, Vietnam aims to become a high-income country by 2045, requiring GDP per capita above USD 12.695 and faster growth than the 1990-2020 average. It compares Vietnam with South Korea, noting that South Korea took 42 years to become high income after having a 1951 income level comparable to Vietnam in 1990. The surrounding narrative states that Vietnam’s latest SEDS emphasizes accumulating and using production, physical, and human capital more efficiently to achieve productivity gains similar to Korea, and mentions reforms needed for more efficient economic growth after COVID-19. Includes footnote reference marker 2 and footnote text citing Vietnam's 2021-2030 socio-economic development strategy and two World Bank publications. No separate visual data beyond the chart is present in this text area.",
+   "notes": "This is a text-heavy page with one substantive chart; the remaining content is narrative text, not a separate visual figure."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3116,
+  "completion_tokens": 1472
+ }
+}

@@ -1,0 +1,774 @@
+[
+  {
+    "query_id": "A-dev-01",
+    "group": "table",
+    "question": "Theo Bảng 1, nước nào có phát thải trên đầu người (tCO2e) thấp hơn Việt Nam, và phát thải trên đầu người của Việt Nam gấp khoảng mấy lần nước đó?",
+    "status": "answered",
+    "answer": "Theo Bảng 1, nước có phát thải trên đầu người thấp hơn Việt Nam là Philippin, với 2,2 tCO2e/người so với Việt Nam là 3,8 tCO2e/người. Tỷ lệ xấp xỉ = 3,8 / 2,2 ≈ 1,7 lần. [p019-v0]",
+    "citations": [
+      {
+        "id": "p019-v0",
+        "page": 19,
+        "modality": "visual",
+        "visual_type": "table",
+        "label": "Bảng 1",
+        "region": "upper half",
+        "caption_bbox": [
+          70.9,
+          74.6,
+          107.5,
+          88.8
+        ],
+        "text": "[TABLE] Bảng 1 Bảng 1: So sánh phát thải giữa các nước\n(page 19, region: upper half)\n| Nước | Phát thải trên đầu người (tCO$_2$e trên đầu người) | Phát thải Carbon (tCO$_2$e/triệu $GDP) | Tổng phát thải (MtCO$_2$e) | % phát thải toàn cầu |\n|---|---:|---:|---:|---:|\n| Hoa Kỳ | 17,7 | 281,5 | 5.794,3 | 12,0% |\n| Mông Cổ | 17,5 | 4.250,9 | 55,7 | 0,1% |\n| Malaysia | 12,3 | 1.08,9 | 388,1 | 0,8% |\n| OECD | 10,8 | 266,6 | 14.081,8 | 29,8% |\n| Đức | 9,4 | 195,9 | 776,61 | 1,6% |\n| Trung Quốc | 8,4 | 842,5 | 11.705,1 | 23,9% |\n| Papua New Guinea | 7,5 | 2.658,3 | 64,1 | 0,1% |\n| Vương quốc Anh | 6,6 | 154,2 | 441,1 | 0,9% |\n| Indonesia | 6,4 | 1.634,8 | 1.703,9 | 3,6% |\n| Thái Lan | 6,2 | 851,4 | 431,2 | 0,9% |\n| Lào | 5,5 | 2.151,6 | 38,6 | 0,1% |\n| Pháp | 5,4 | 129,6 | 361,4 | 0,7% |\n| Đông Timor | 5,3 | 4.271,0 | 6,7 | 0,0% |\n| Thổ Nhĩ Kỳ | 5 | 603,9 | 422,0 | 1,0% |\n| Myanmar | 4,3 | 3.040,9 | 231,6 | 0,5% |\n| Campuchia | 4,3 | 2.814,1 | 69,2 | 0,1% |\n| Việt Nam | 3,8 | 1.486,2 | 364,4 | 0,8% |\n| Philipin | 2,2 | 677,0 | 234,8 | 0,5% |\n\nNguồn: Climate Watch"
+      }
+    ],
+    "expected_for_offline_review_only": "Philipin (2,2 tCO2e/đầu người); 3,8/2,2 ≈ 1,7 lần.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 19,
+        "region": "Bảng 1, cột 'Phát thải trên đầu người', hai hàng cuối",
+        "detail": "Việt Nam 3,8; Philipin 2,2 (các nước còn lại đều ≥ 4,3)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-dev-02",
+    "group": "table",
+    "question": "Theo Bảng 2, 'Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng' có mức trung bình mỗi năm (% GDP) và giá trị tích lũy (tỷ USD NPV) là bao nhiêu?",
+    "status": "answered",
+    "answer": "Theo Bảng 2, \"Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng\" có mức trung bình mỗi năm là 0,3–0,7% GDP và giá trị tích lũy là 22,8–53,2 tỷ USD NPV (giai đoạn 2022–2050). [p032-v0]",
+    "citations": [
+      {
+        "id": "p032-v0",
+        "page": 32,
+        "modality": "visual",
+        "visual_type": "table",
+        "label": "Bảng 2.",
+        "region": "top half",
+        "caption_bbox": [
+          70.9,
+          70.9,
+          107.5,
+          85.1
+        ],
+        "text": "[TABLE] Bảng 2. Ước tính nhu cầu tài chính tăng thêm cho các biện pháp thích ứng, 2022–2050\n(page 32, region: top half)\n|  | Trung bình mỗi năm (% GDP) | Giá trị tích lũy (tỷ USD tính theo NPV) |\n|---|---:|---:|\n| **Nhu cầu tài chính tăng thêm** | 4,5–5,4 | 342,3–410,7 |\n| **Tổng nhu cầu tài chính** | 6,3–7,2 | 479,2–547,6 |\n| Nhu cầu đầu tư cho các tài sản tư nhân có khả năng phục hồi | 3,0 | 228,2 |\n| Đầu tư mới và bổ sung thêm cơ sở hạ tầng có khả năng phục hồi | 3,0–3,5 | 228,2–266,2 |\n| Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng | 0,3–0,7 | 22,8–53,2 |\n| **Nguồn tài chính hiện có** | 1,8 | 136,9 |\n\nGhi chú: NPV là giá trị hiện tại thuần; tất cả những số liệu trên phản ánh tỷ lệ chiết khấu 6%."
+      }
+    ],
+    "expected_for_offline_review_only": "0,3–0,7% GDP mỗi năm; 22,8–53,2 tỷ USD (NPV).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 32,
+        "region": "Bảng 2, hàng 'Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng'",
+        "detail": "0,3–0,7; 22,8-53,2"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-dev-03",
+    "group": "chart",
+    "question": "Theo Hình 7, năm 2018 (sơ bộ), ngành nào có tỷ trọng sản lượng của DNNN cao nhất và ngành nào thấp nhất, chênh nhau bao nhiêu điểm phần trăm?",
+    "status": "answered",
+    "answer": "Theo Hình 7 năm 2018 (sơ bộ), ngành than có tỷ trọng sản lượng của DNNN cao nhất, khoảng 98%; ngành kim loại thấp nhất, khoảng 14%. Chênh lệch = 98% - 14% = 84 điểm phần trăm. [p026-v0]",
+    "citations": [
+      {
+        "id": "p026-v0",
+        "page": 26,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 7",
+        "region": "lower half",
+        "caption_bbox": [
+          70.9,
+          325.1,
+          104.9,
+          339.3
+        ],
+        "text": "[CHART] Hình 7 Biến thiên tỷ trọng sản lượng của các DNNN trong các ngành công nghiệp sử dụng nhiều carbon tại Việt Nam (%)\n(page 26, region: lower half)\nChart kind: multi-series line chart.\nX-axis: years 2005, 2010, 2012, 2014, 2016, 2018 (sơ bộ).\nY-axis: percentage of output share (%), from 0% to 100%.\nSeries and values readable from the chart (approximate where inferred from line positions):\n- Than: 98% at 2018; line stays near ~98-99% across years, slightly below 100% and essentially flat.\n- Phân hóa học: 94% at 2018; line stays near ~95-96% in most years, slight decline by 2018.\n- Điện: 85% at 2018; starts ~94% in 2005, drops to ~70% around 2007, rises to ~90% around 2012, then declines gradually to ~85% in 2018.\n- Vận tải hàng hóa: 55% at 2018; starts ~63% in 2005, rises to low ~70s around 2008-2012, then declines steadily to 55% by 2018.\n- Phân bón NPK: 55% at 2018; starts ~74% in 2005, declines to ~65% by 2007, hovers around ~60-62% through 2014, then falls to 55% by 2018.\n- Xi măng: 35% at 2018; starts ~63% in 2005, falls to ~50% by 2007-2010, then declines to ~35% by 2018.\n- Vận chuyển hành khách: 27% at 2018; starts ~39% in 2005, declines gradually to ~27% by 2018.\n- Kim loại: 14% at 2018; starts ~33% in 2005, drops sharply to ~18% around 2007, briefly recovers to ~22% around 2010, then trends down to ~14% by 2018.\nVisible trend: most sectors show declining state-owned enterprise share over time, with the highest shares in coal and chemical fertilizer remaining near 100%; the steepest declines are in metal, cement, and electricity (after mid-period recovery). Min/max visible values: minimum ~14% (Kim loại, 2018), maximum ~98% (Than, 2018). Notes/source: Nguồn: Coste và cộng sự, 2020. Ghi chú: Số liệu của Tổng cục thống kê được tính toán dựa trên sản lượng tính theo tấn, trừ điện (kWh), vận tải hàng hóa (triệu tấn/km) và vận tải hành khách (triệu người-km)."
+      }
+    ],
+    "expected_for_offline_review_only": "Cao nhất: Than 98%; thấp nhất: Kim loại 14%; chênh 84 điểm phần trăm.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 26,
+        "region": "Hình 7, nhãn bên phải biểu đồ",
+        "detail": "Than 98%; Phân hóa học 94%; Điện 85%; Vận tải hàng hóa 55%; Phân bón NPK 55%; Xi măng 35%; Vận chuyển hành khách 27%; Kim loại 14%"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-dev-04",
+    "group": "chart",
+    "question": "Theo Hình 8 (thiệt hại GDP, % lệch so với đường cơ sở), đến năm 2050 kịch bản nào gây thiệt hại lớn hơn, và khoảng bao nhiêu % GDP cho mỗi kịch bản (chấp nhận sai số ±0,5 điểm %)?",
+    "status": "answered",
+    "answer": "Đến năm 2050, kịch bản RCP 4.5 gây thiệt hại GDP lớn hơn. Theo Hình 8, thiệt hại là khoảng 9,8% GDP trong kịch bản RCP 2.6 và khoảng 12,3% GDP trong kịch bản RCP 4.5 vào năm 2050 (chênh lệch khoảng 2,5 điểm % GDP). [p030-t1] [p030-v0]",
+    "citations": [
+      {
+        "id": "p030-t1",
+        "page": 30,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": " cao hơn, thay đổi nhiều hơn, mực \nnước biển dâng cao - thiệt hại GDP\n \n \n0\n2\n4\n6\n8\n10\n12\n14\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030\n2031\n2032\n2033\n2034\n2035\n2036\n2037\n2038\n2039\n2040\n2041\n2042\n2043\n2044\n2045\n2046\n2047\n2048\n2049\n2050\nThiệt hại GDP, % độ lệch so với đường cơ sở\nRCP 2.6 RCP 4.5\nNguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam.\nGhi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra, dựa trên dự báo nồng độ khí nhà kính.\nKết hợp hai mô hình dự đoán cho thấy rằng các tác động của biến đổi khí hậu có thể khiến Việt Nam \nthiệt hại tổng cộng 12–14,5% GDP, tức thiệt hại tích lũy là 400–523 tỷ USD tính đến năm 2050. Nhiệt \nđộ và lượng mưa cao hơn, thất thường hơn cùng với nước biển dâng sẽ dần phá huỷ tài sản vật chất (hạ \ntầng cơ sở), tài sản sản xuất và tài sản con người. Những tổn thất này sẽ tăng từ 6% GDP năm 2022 lên \n9,8% (theo kịch bản RCP 2.6) hay 12,3% GDP (theo kịch bản RCP 4.5) vào năm 2050 (Hình 8). Đồng \nthời, thiệt hại từ các thảm hoạ khí hậu có thể sẽ chiếm trung bình thêm 2% mỗi năm.28\n27 Nguồn: World Bank Vietnam Catastrophe Risk Assessment, Summary Report, 2017.\n28 The CEA estimates (presented in Section 1) are for 2020 and include impacts of temperature increases, \nprecipitation changes and sea level rise. The figures quoted in this CCDR begin in 2022 and are derived from \nthe MANAGE model which includes d"
+      },
+      {
+        "id": "p030-v0",
+        "page": 30,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 8",
+        "region": "middle-lower page",
+        "caption_bbox": [
+          70.9,
+          296.9,
+          104.9,
+          311.1
+        ],
+        "text": "[CHART] Hình 8 Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực nước biển dâng cao - thiệt hại GDP\n(page 30, region: middle-lower page)\nChart kind: line chart.\nX-axis: years 2022 to 2050.\nY-axis: \"Thiệt hại GDP, % độ lệch so với đường cơ sở\" (GDP loss, % deviation from baseline), scale shown from 0 to 14.\nLegend/series:\n- RCP 2.6 (blue): approximately 6.7 in 2022, rising to about 8.0 by around 2030, then gradually increasing to about 10.0 in 2050. Trend: steady upward increase with a slight flattening around 2030-2035. Min/max visible: ~6.7 (2022) / ~10.0 (2050).\n- RCP 4.5 (orange): approximately 6.5 in 2022, rising to about 8.0 by around 2030, then increasing more strongly to about 12.3 in 2050. Trend: upward increase, faster than RCP 2.6 after about 2030. Min/max visible: ~6.5 (2022) / ~12.3 (2050).\nVisible values by year are not labeled numerically; values above are estimated from line positions.\nNotes/source: \"Nguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam.\" \"Ghi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra, dựa trên dự báo nồng độ khí nhà kính.\" The page text also states losses rise from 6% GDP in 2022 to 9,8% (RCP 2.6) or 12,3% GDP (RCP 4.5) in 2050."
+      }
+    ],
+    "expected_for_offline_review_only": "RCP 4.5 lớn hơn: khoảng 12% GDP, so với RCP 2.6 khoảng 10% GDP.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 30,
+        "region": "Hình 8, điểm cuối đường năm 2050",
+        "detail": "RCP 2.6 ≈ 9,9–10; RCP 4.5 ≈ 12,3–12,4; hai đường gần trùng nhau tới khoảng 2030 rồi tách ra"
+      },
+      {
+        "page": 30,
+        "region": "Đoạn văn dưới hình",
+        "detail": "9,8% (RCP 2.6) hay 12,3% GDP (RCP 4.5) vào năm 2050"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-dev-05",
+    "group": "figure",
+    "question": "Trong Hình 2, đường nào của các nước so sánh vượt qua ngưỡng HIC (quốc gia có thu nhập cao), và đường Việt Nam (2021–2045) ở cuối thời kỳ so với ngưỡng này như thế nào?",
+    "status": "answered",
+    "answer": "Trong Hình 2, các đường vượt qua ngưỡng HIC là Hàn Quốc và Trung Quốc; đường Thái Lan không vượt ngưỡng này. Đường Việt Nam (2021–2045) ở cuối kỳ đạt khoảng đúng ngưỡng HIC, tức xấp xỉ ngang với đường ngưỡng HIC vào năm 2045, không vượt rõ rệt ngưỡng này ([p015-t1]).",
+    "citations": [
+      {
+        "id": "p015-t1",
+        "page": 15,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": " chúng một cách hiệu quả hơn, nhằm tạo ra mức tăng năng suất cần thiết để có \nthể đạt được thành về kinh tế như Hàn Quốc.2 SEDS cũng thừa nhận rằng tăng trưởng kinh tế cho đến \n2 Để có thêm chi tiết, \n\n chúng một cách hiệu quả hơn, nhằm tạo ra mức tăng năng suất cần thiết để có \nthể đạt được thành về kinh tế như Hàn Quốc.2 SEDS cũng thừa nhận rằng tăng trưởng kinh tế cho đến \n2 Để có thêm chi tiết, xin tham khảo Chiến lược Phát triển Kinh tế-Xã hội của Việt Nam cho giai đoạn 2021-\n2030, của Bộ KH&ĐT, Tháng 2/2021. Đồng thời tham khảo thêm World Bank Group. 2020. “Vibrant Vietnam: \nForging the Foundation of a High-Income Economy.” Country Economic Memorandum. Hanoi: World Bank. http://\nhdl.handle.net/10986/33831. \nBản cập nhật Nghiên cứu quốc gia có hệ thống gần đây cung cấp một loạt cải cách sẽ giúp tạo ra sự thay đổi \nnày theo hướng hiệu quả kinh tế hơn trong và sau hậu quả của đại dịch COVID-19. Tham khảo World Bank. \n2021. “How Will Vietnam Blossom? Reforming Institutions for Effective Implementation.” Systematic Country \nDiagnostic. Washington, DC: World Bank. http://hdl.handle.net/10986/36797.\n0\n5000\n10000\n15000\n20000\n25000\nT\nT+2\nT+4\nT+6\nT+8\nT+10\nT+12\nT+14\nT+16\nT+18\nT+20\nT+22\nT+24\nT+26\nT+28\nT+30\nT+32\nT+34\nT+36\nT+38\nT+40\nT+42\nT+44\nT+46\nT+48\nT+50\nT+52\nT+54\nHàn Quốc (1951-2005) Thái Lan (1958-2012) Trung Quốc (1983-2020)\nViệt Nam (1990-2020) Việt Nam (2021-2045) Ngưỡng HIC (Quốc gia có thu nhập cao) \n \nViệt Nam \nnăm 2045 \nGDP bình quân đầu người (USD 2015 cố định)\n© Vietnam News Agency"
+      }
+    ],
+    "expected_for_offline_review_only": "Chỉ Hàn Quốc (1951–2005) vượt ngưỡng HIC (khoảng T+42 trở đi, lên trên 20.000 USD); Thái Lan và Trung Quốc vẫn dưới ngưỡng. Đường Việt Nam (2021–2045) chỉ tiến sát/chạm ngưỡng (khoảng 12.000–12.700 USD) ở khoảng T+54.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 15,
+        "region": "Hình 2, biểu đồ đường nửa trên trang",
+        "detail": "Ngưỡng HIC ≈ 12.695 USD (đường ngang); Hàn Quốc vượt ngưỡng quanh T+42 và đạt ~21.000 ở T+54; Trung Quốc ~10.500 ở T+36; Thái Lan ~5.500; Việt Nam (2021–2045, nét đứt) ~12.000 ở T+54"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-dev-06",
+    "group": "multihop",
+    "question": "Năm 2020, thiệt hại do biến đổi khí hậu (CEA) là 10 tỷ USD (3,2% GDP), còn thiệt hại trực tiếp trung bình hàng năm về tài sản do các hiện tượng khí hậu cực đoan là 2,4 tỷ USD (0,8% GDP). Khoản thứ nhất lớn gấp khoảng mấy lần khoản thứ hai (tính theo tỷ USD)?",
+    "status": "answered",
+    "answer": "Khoản thứ nhất lớn gấp khoảng 4,2 lần khoản thứ hai, vì 10 tỷ USD / 2,4 tỷ USD = 4,17 (xấp xỉ 4,2). [p016-v0] [p030-v0]",
+    "citations": [
+      {
+        "id": "p016-v0",
+        "page": 16,
+        "modality": "visual",
+        "visual_type": "figure",
+        "label": "",
+        "region": "center-right / lower half",
+        "caption_bbox": null,
+        "text": "[FIGURE]\n(page 16, region: center-right / lower half)\nA text-based callout section with a bold heading and five bullet points describing Vietnam’s climate vulnerability and projected impacts. It states that Vietnam is highly vulnerable to climate change, ranking 127/182 on Notre Dame’s Global Adaptation Initiative (ND-GAIN), 13/180 on Germanwatch’s Global Climate Risk Index for 2000–2019, and 91/192 on the ND-GAIN readiness index. The bullet points say: 1) if Vietnam’s average temperature rises at a rate similar to the global average, by 2080–90 average temperature could increase by 1–3.4°C relative to the 1986–2005 baseline, with a larger range between maximum and minimum temperatures; 2) increased extreme heat is likely to amplify impacts on human health, livelihoods, and ecosystems; 3) model results show large uncertainty around two key issues for Vietnam: future rainfall trends and changes in the intensity of extreme events; 4) low-lying coastal areas and river deltas are highly vulnerable to sea-level rise, and without effective adaptation, 6 million to 12 million people could be negatively affected by coastal flooding in 2070–2100 depending on the global emissions pathway; 5) climate change is worsening already high flood risk, and by 2035–2044 several million more people each year will be affected by severe floods. The bold concluding sentence below the bullets says climate change is increasingly disrupting Vietnam’s economy and the costs are beginning to slow growth; it references initial calculations in the Country Environmental Analysis (CEA).\nNotes: No graphical chart or table is visible on this page; this is a text-based infographic/boxed summary presented as bold text plus bullets."
+      },
+      {
+        "id": "p030-v0",
+        "page": 30,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 8",
+        "region": "middle-lower page",
+        "caption_bbox": [
+          70.9,
+          296.9,
+          104.9,
+          311.1
+        ],
+        "text": "[CHART] Hình 8 Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực nước biển dâng cao - thiệt hại GDP\n(page 30, region: middle-lower page)\nChart kind: line chart.\nX-axis: years 2022 to 2050.\nY-axis: \"Thiệt hại GDP, % độ lệch so với đường cơ sở\" (GDP loss, % deviation from baseline), scale shown from 0 to 14.\nLegend/series:\n- RCP 2.6 (blue): approximately 6.7 in 2022, rising to about 8.0 by around 2030, then gradually increasing to about 10.0 in 2050. Trend: steady upward increase with a slight flattening around 2030-2035. Min/max visible: ~6.7 (2022) / ~10.0 (2050).\n- RCP 4.5 (orange): approximately 6.5 in 2022, rising to about 8.0 by around 2030, then increasing more strongly to about 12.3 in 2050. Trend: upward increase, faster than RCP 2.6 after about 2030. Min/max visible: ~6.5 (2022) / ~12.3 (2050).\nVisible values by year are not labeled numerically; values above are estimated from line positions.\nNotes/source: \"Nguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam.\" \"Ghi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra, dựa trên dự báo nồng độ khí nhà kính.\" The page text also states losses rise from 6% GDP in 2022 to 9,8% (RCP 2.6) or 12,3% GDP (RCP 4.5) in 2050."
+      }
+    ],
+    "expected_for_offline_review_only": "10/2,4 ≈ 4,2 lần (tính theo % GDP: 3,2/0,8 = 4 lần).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 17,
+        "region": "Đoạn đầu trang",
+        "detail": "năm 2020 Việt Nam đã thiệt hại 10 tỷ USD, tương đương 3,2% GDP"
+      },
+      {
+        "page": 30,
+        "region": "Đoạn trên Hình 8",
+        "detail": "thiệt hại trực tiếp về tài sản công và tư khoảng 2,4 tỷ USD hàng năm, tương đương 0,8% GDP"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-dev-07",
+    "group": "text",
+    "question": "Theo báo cáo, sự mất cân bằng giữa giảm nhẹ và thích ứng được thể hiện rõ nhất ở đâu trong chiến lược của Việt Nam và biểu hiện cụ thể là gì?",
+    "status": "answered",
+    "answer": "Sự mất cân bằng giữa giảm nhẹ và thích ứng được thể hiện rõ nhất ở phần chiến lược/khuyến nghị về giao thông và nông nghiệp: báo cáo nhấn mạnh các biện pháp giảm phát thải (giảm nhẹ) nhưng đồng thời lưu ý rằng trong nông nghiệp, thách thức thực sự là các biện pháp này phải kết hợp với các khoản đầu tư khác để bảo đảm nguồn sinh kế cho người nông dân, tức là thích ứng chỉ được nêu như điều kiện đi kèm chứ không phải trọng tâm chính. Cụ thể, ở mục 4.4.3, báo cáo nói nông nghiệp là ngành phát thải lớn thứ hai, các phương án được trình bày là ‘phương án giảm thiểu’ ở cấp trang trại, và nhấn mạnh rằng thách thức là đảm bảo các biện pháp giảm thiểu này kết hợp với đầu tư khác để mang lại lối thoát nghèo và sinh kế bền vững cho người nông dân [p064-v0].",
+    "citations": [
+      {
+        "id": "p064-v0",
+        "page": 64,
+        "modality": "visual",
+        "visual_type": "figure",
+        "label": "Hình 16",
+        "region": "not visible on this page; referenced in text only",
+        "caption_bbox": null,
+        "text": "[FIGURE] Hình 16\n(page 64, region: not visible on this page; referenced in text only)\nReferenced figure about agricultural mitigation options and their impact/abatement cost. The text says it compares mitigation measures for agriculture at the farm level for reducing emissions from rice production, other crops, and livestock, and that it shows the relationship between potential emissions reductions and cost per ton reduced (cost-effectiveness). It is referenced together with Hình 17. No visible figure content is present on this page.\nNotes: The actual figure is not shown on this page; only the reference in the text layer is visible."
+      }
+    ],
+    "expected_for_offline_review_only": "Trong Chiến lược Tăng trưởng Xanh (VGGS): có đặt một số mục tiêu về cường độ sử dụng năng lượng (toàn quốc và theo ngành) nhưng không có mục tiêu cụ thể tương tự về khả năng thích ứng.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 23,
+        "region": "Gạch đầu dòng đầu tiên trong ba thách thức",
+        "detail": "Sự mất cân bằng giữa giảm nhẹ và thích ứng được thể hiện rõ nhất trong VGGS, trong đó có đặt ra một số mục tiêu về cường độ sử dụng năng lượng... nhưng không có mục tiêu cụ thể tương tự về khả năng thích ứng"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-dev-08",
+    "group": "abstain",
+    "question": "Báo cáo dự báo lượng mưa trung bình hàng năm của Việt Nam sẽ tăng bao nhiêu milimét vào năm 2050?",
+    "status": "answered",
+    "answer": "Báo cáo không cung cấp đủ bằng chứng về mức tăng của lượng mưa trung bình hàng năm của Việt Nam vào năm 2050 (milimét). Các trang trích xuất chỉ nêu rằng có “bất định lớn” về xu hướng lượng mưa tương lai, và một hình về thiệt hại GDP do nhiệt độ/lượng mưa/nước biển dâng không cho biết con số thay đổi lượng mưa theo mm vào năm 2050. [p016-v0] [p030-v0]",
+    "citations": [
+      {
+        "id": "p016-v0",
+        "page": 16,
+        "modality": "visual",
+        "visual_type": "figure",
+        "label": "",
+        "region": "center-right / lower half",
+        "caption_bbox": null,
+        "text": "[FIGURE]\n(page 16, region: center-right / lower half)\nA text-based callout section with a bold heading and five bullet points describing Vietnam’s climate vulnerability and projected impacts. It states that Vietnam is highly vulnerable to climate change, ranking 127/182 on Notre Dame’s Global Adaptation Initiative (ND-GAIN), 13/180 on Germanwatch’s Global Climate Risk Index for 2000–2019, and 91/192 on the ND-GAIN readiness index. The bullet points say: 1) if Vietnam’s average temperature rises at a rate similar to the global average, by 2080–90 average temperature could increase by 1–3.4°C relative to the 1986–2005 baseline, with a larger range between maximum and minimum temperatures; 2) increased extreme heat is likely to amplify impacts on human health, livelihoods, and ecosystems; 3) model results show large uncertainty around two key issues for Vietnam: future rainfall trends and changes in the intensity of extreme events; 4) low-lying coastal areas and river deltas are highly vulnerable to sea-level rise, and without effective adaptation, 6 million to 12 million people could be negatively affected by coastal flooding in 2070–2100 depending on the global emissions pathway; 5) climate change is worsening already high flood risk, and by 2035–2044 several million more people each year will be affected by severe floods. The bold concluding sentence below the bullets says climate change is increasingly disrupting Vietnam’s economy and the costs are beginning to slow growth; it references initial calculations in the Country Environmental Analysis (CEA).\nNotes: No graphical chart or table is visible on this page; this is a text-based infographic/boxed summary presented as bold text plus bullets."
+      },
+      {
+        "id": "p030-v0",
+        "page": 30,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 8",
+        "region": "middle-lower page",
+        "caption_bbox": [
+          70.9,
+          296.9,
+          104.9,
+          311.1
+        ],
+        "text": "[CHART] Hình 8 Các tác động kinh tế ước tính khi nhiệt độ và lượng mưa cao hơn, thay đổi nhiều hơn, mực nước biển dâng cao - thiệt hại GDP\n(page 30, region: middle-lower page)\nChart kind: line chart.\nX-axis: years 2022 to 2050.\nY-axis: \"Thiệt hại GDP, % độ lệch so với đường cơ sở\" (GDP loss, % deviation from baseline), scale shown from 0 to 14.\nLegend/series:\n- RCP 2.6 (blue): approximately 6.7 in 2022, rising to about 8.0 by around 2030, then gradually increasing to about 10.0 in 2050. Trend: steady upward increase with a slight flattening around 2030-2035. Min/max visible: ~6.7 (2022) / ~10.0 (2050).\n- RCP 4.5 (orange): approximately 6.5 in 2022, rising to about 8.0 by around 2030, then increasing more strongly to about 12.3 in 2050. Trend: upward increase, faster than RCP 2.6 after about 2030. Min/max visible: ~6.5 (2022) / ~12.3 (2050).\nVisible values by year are not labeled numerically; values above are estimated from line positions.\nNotes/source: \"Nguồn: Ngân hàng Thế giới, dựa trên mô hình CGE đã được điều chỉnh cho Việt Nam.\" \"Ghi chú: RCP2.6 và RCP 4.5 là hai kịch bản khí hậu do IPCC đặt ra, dựa trên dự báo nồng độ khí nhà kính.\" The page text also states losses rise from 6% GDP in 2022 to 9,8% (RCP 2.6) or 12,3% GDP (RCP 4.5) in 2050."
+      }
+    ],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-01",
+    "group": "table",
+    "question": "Theo Bảng 3, chênh lệch về tác động kinh tế ròng giai đoạn 2022–2040 giữa NZP có cải cách hỗ trợ và NZP không có cải cách là bao nhiêu tỷ USD (NPV)?",
+    "status": "answered",
+    "answer": "Theo Bảng 3, tác động kinh tế ròng giai đoạn 2022–2040 của NZP không có cải cách là -134,9 tỷ USD (NPV), còn NZP có cải cách hỗ trợ là -1,3 tỷ USD (NPV). Chênh lệch = -1,3 - (-134,9) = 133,6 tỷ USD (NPV). [p050-v0]",
+    "citations": [
+      {
+        "id": "p050-v0",
+        "page": 50,
+        "modality": "visual",
+        "visual_type": "table",
+        "label": "Bảng 3",
+        "region": "middle of page",
+        "caption_bbox": [
+          70.9,
+          129.9,
+          107.5,
+          144.1
+        ],
+        "text": "[TABLE] Bảng 3 Nhu cầu đầu tư và lợi nhuận đầu ra theo Lộ trình phát thải carbon ròng bằng “0” (NZP)\n(page 50, region: middle of page)\n*Tỷ USD theo NPV*\n\n|  | 2022–2030 | 2031–2040 | 2022–2040 |\n|---|---:|---:|---:|\n| **NZP** |  |  |  |\n| **Nhu cầu đầu tư** | 31,8 | 49,5 | 81,3 |\n| **Mức sản lượng tăng** | -7,6 | -46,0 | -53,7 |\n| *Tác động kinh tế ròng* | -39,4 | -95,5 | -134,9 |\n| **NZP với những cải cách hỗ trợ** |  |  |  |\n| **Nhu cầu đầu tư** | 31,8 | 49,5 | 81,3 |\n| **Mức sản lượng tăng** | 11,3 | 68,7 | 80,1 |\n| *Tác động kinh tế ròng* | -20,5 | 19,3 | -1,3 |\n\n*Lưu ý: Tất cả các khoản đều được chiết khấu theo tỷ lệ chiết khấu 6%. Các ước tính nhu cầu đầu tư dựa trên cơ sở phân tích ngành trong các lĩnh vực năng lượng, giao thông, nông nghiệp và công nghiệp/thương mại. Mức tăng sản lượng là các biến thể tích lũy trong GDP theo mô hình CGE cho từng tình huống.*"
+      }
+    ],
+    "expected_for_offline_review_only": "Khoảng 133,6 tỷ USD (-1,3 so với -134,9).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 50,
+        "region": "Bảng 3, hàng 'Tác động kinh tế ròng', cột 2022–2040, hai nhóm",
+        "detail": "NZP: -134,9; NZP với cải cách hỗ trợ: -1,3"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-02",
+    "group": "table",
+    "question": "Trong Bảng 5 (ADS so với CPS, 2022–2040), hạng mục chi phí vốn nào thay đổi theo tỷ lệ phần trăm cao nhất và mức thay đổi tuyệt đối (tỷ USD) của nó là bao nhiêu?",
+    "status": "answered",
+    "answer": "Trong Bảng 5, hạng mục có thay đổi theo tỷ lệ phần trăm cao nhất là **Chi phí vốn để lưu trữ và phát điện mới**, với **+52%**; mức thay đổi tuyệt đối là **+44 tỷ USD** (NPV, chênh lệch giữa CPS và ADS giai đoạn 2022–2040). [p056-v1]",
+    "citations": [
+      {
+        "id": "p056-v1",
+        "page": 56,
+        "modality": "visual",
+        "visual_type": "table",
+        "label": "Bảng 5",
+        "region": "lower half",
+        "caption_bbox": [
+          70.9,
+          596.4,
+          107.5,
+          610.6
+        ],
+        "text": "[TABLE] Bảng 5 Nhu cầu đầu tư và Chi phí kinh tế: Kịch bản tăng tốc khử carbon (ADS), 2022–2040\n(page 56, region: lower half)\n|  | tỷ USD | Thay đổi |\n|---|---:|---:|\n| Chi phí vốn để lưu trữ và phát điện mới | +44 | +52% |\n| Trong đó: |  |  |\n| Than đá | -19 | -72% |\n| Khí đốt | -8 | -42% |\n\nFootnote/subtitle: “NPV, độ chênh lệch giữa CPS (đường cơ sở) và ADS”\n\nNo additional source line is visible in the table."
+      }
+    ],
+    "expected_for_offline_review_only": "Mặt trời: +429%, tương ứng +21 tỷ USD.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 57,
+        "region": "Bảng 5, hàng 'Mặt trời' (tiếp theo từ trang 56)",
+        "detail": "+21 tỷ USD, +429%; so sánh Gió ngoài khơi +39, +402%; Gió trên bờ +8, +55%"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-03",
+    "group": "chart",
+    "question": "Theo Hình 16 (các biện pháp giảm phát thải từ sản xuất lúa gạo, $/tCO2e), biện pháp nào có chi phí trên mỗi tCO2e cao nhất, và giá trị xấp xỉ bao nhiêu?",
+    "status": "answered",
+    "answer": "Theo Hình 16, biện pháp có chi phí trên mỗi tCO2e cao nhất là **chuyển từ trồng lúa sang ngô**, với giá trị xấp xỉ **+390 USD/tCO2e**. [p065-v0]",
+    "citations": [
+      {
+        "id": "p065-v0",
+        "page": 65,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 16",
+        "region": "middle-left",
+        "caption_bbox": [
+          70.9,
+          209.1,
+          111.3,
+          223.3
+        ],
+        "text": "[CHART] Hình 16 Các biện pháp hiệu quả về mặt chi phí để giảm phát thải khí nhà kính từ sản xuất lúa gạo\n(page 65, region: middle-left)\nChart kind: vertical bar chart. Y-axis title/units: $/tCO2e. X-axis title: Các biện pháp. Categories and approximate values from bar heights:\n- Chuyển từ trồng lúa sang nuôi tôm: ~-80\n- Cải tạo đất trồng lúa thường thành đất trồng lúa nước: ~-45\n- Mô hình tưới lúa ướt khô xen kẽ (AWD) ở ĐB sông Cửu Long: ~-20\n- Mô hình AWD ở Đồng bằng sông Hồng: ~-15\n- Chuyển đổi từ trồng lúa sang hoa màu: ~+10\n- Cải thiện quản lý rơm rạ: ~+15\n- Quản lý cây trồng tổng hợp (ICM) cho lúa: ~+60\n- Mô hình AWD và Hệ thống SRI/1M5R ở khu trồng lúa tưới tiêu vừa phải: ~+90\n- Chuyển từ trồng lúa sang ngô: ~+390\nVisible trend: most measures are below zero or modestly above zero, except one very large positive-cost option; minimum around -80 and maximum around +390. Notes/source: Source line shown below figure: Nguồn: Ngân hàng Thế giới.\nNotes: Bar values are estimated from the plotted heights; no exact data labels shown."
+      }
+    ],
+    "expected_for_offline_review_only": "'Chuyển từ trồng lúa sang trồng ngô', khoảng 380–400 $/tCO2e (cột cao nhất, ~390).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 65,
+        "region": "Hình 16, nửa trên trang, cột ngoài cùng bên phải",
+        "detail": "cột cao nhất, đỉnh sát mốc 400 (khoảng 390) trên trục 0–500"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-04",
+    "group": "chart",
+    "question": "Theo Hình 18 (tác động của NZP so với BAU vào năm 2040), giá trị ghi trên biểu đồ cho 'Mức nghèo ($3,20)' và cho 'Bất bình đẳng (Chỉ số Gini)' là bao nhiêu?",
+    "status": "answered",
+    "answer": "Theo Hình 18, giá trị trên biểu đồ cho **Mức nghèo ($3,20)** là **-0,1** và cho **Bất bình đẳng (Chỉ số Gini)** là **-1,1** vào năm 2040 (sai lệch so với BAU). [p070-v0]",
+    "citations": [
+      {
+        "id": "p070-v0",
+        "page": 70,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 18",
+        "region": "middle of page",
+        "caption_bbox": [
+          70.9,
+          116.9,
+          111.3,
+          131.1
+        ],
+        "text": "[CHART] Hình 18 Tác động của NZP đối với tình trạng đói nghèo, an ninh kinh tế và bất bình đẳng (sai lệch so với BAU) vào năm 2040\n(page 70, region: middle of page)\nChart kind: vertical bar chart.\nX-axis title/labels: three categories — \"Mức nghèo ($3,20)\", \"Kinh tế không ổn định ($5,50)\", \"Bất bình đẳng (Chỉ số Gini)\".\nY-axis title/units: \"Sai số so với kịch bản phát triển thông thường (BAU)\"; scale shown from 0 down to about -1,2.\nSeries: single series (orange bars), values read from labels/bar heights:\n- Mức nghèo ($3,20): -0,1\n- Kinh tế không ổn định ($5,50): -0,1\n- Bất bình đẳng (Chỉ số Gini): -1,1\nVisible trend: all outcomes are below BAU; the two poverty/economic insecurity measures decline slightly, while inequality declines much more strongly in the plotted value. Min/max visible values: min about -1,1; max about -0,1.\nSource line: \"Nguồn: Ngân hàng Thế giới.\""
+      }
+    ],
+    "expected_for_offline_review_only": "Mức nghèo ($3,20): -0,1; Bất bình đẳng (Gini): -1,1.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 70,
+        "region": "Hình 18, nửa trên trang",
+        "detail": "nhãn cột: Mức nghèo ($3,20) -0,1; Kinh tế không ổn định ($5,50) -0,1; Bất bình đẳng (Chỉ số Gini) -1,1"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-06",
+    "group": "multihop",
+    "question": "Theo Bảng 4, biện pháp hỗ trợ đơn lẻ nào cho mức thay đổi GDP năm 2030 cao nhất, và theo phần văn bản giải thích, kết quả đó dựa trên giả định gì?",
+    "status": "answered",
+    "answer": "Theo Bảng 4, biện pháp hỗ trợ đơn lẻ cho mức thay đổi GDP năm 2030 cao nhất là “NZP và tăng khả năng cạnh tranh”, với GDP tăng 0,9% vào năm 2030. Phần văn bản giải thích cho biết kết quả này dựa trên giả định rằng việc cải thiện khả năng cạnh tranh sẽ giúp công nghiệp chế biến, chế tạo hưởng lợi hơn nhờ “khả năng cạnh tranh được cải thiện và năng suất lao động tăng lên” [p053-v0, p052-t2]. [p053-v0] [p052-t2]",
+    "citations": [
+      {
+        "id": "p053-v0",
+        "page": 53,
+        "modality": "visual",
+        "visual_type": "table",
+        "label": "Bảng 4",
+        "region": "upper half",
+        "caption_bbox": [
+          70.9,
+          74.9,
+          107.5,
+          89.1
+        ],
+        "text": "[TABLE] Bảng 4 Các chính sách hỗ trợ chính sẽ ảnh hưởng như thế nào đến tác động của NZP đối với phát thải khí nhà kính và GDP\n(page 53, region: upper half)\nPhần trăm thay đổi so với đường cơ sở\n\n| Chính sách | Tỷ lệ thay đổi mức phát thải khí nhà kính (%) 2030 | Tỷ lệ thay đổi mức phát thải khí nhà kính (%) 2040 | Tỷ lệ thay đổi GDP (%) 2030 | Tỷ lệ thay đổi GDP (%) 2040 |\n|---|---:|---:|---:|---:|\n| NZP không có cải cách | -42,8 | -73,6 | -0,6 | -2,2 |\n| NZP và giảm ô nhiễm không khí | -42,2 | -73,4 | 0,8 | -1,0 |\n| NPZ và tăng khả năng cạnh tranh | -42,7 | -71,8 | 0,9 | -0,6 |\n| NZP và tăng hiệu quả năng lượng | -41,9 | -72,1 | 0,5 | 0,2 |\n| NZP và cải thiện sự dịch chuyển lao động | -43,0 | -71,8 | -0,2 | -0,2 |\n| NZP và hạn chế lấn át các khoản đầu tư khác | -43,1 | -73,5 | -0,5 | -0,9 |\n| NZP và tất cả các biện pháp hỗ trợ | -40,2 | -71,9 | 1,7 | 3,3 |\n\nNguồn: Tính toán của các tác giả dựa trên mô hình CGE được xây dựng cho CCDR.\nGhi chú: Quy mô giảm phát thải khí nhà kính dự kiến sẽ thấp hơn một chút khi có các biện pháp hỗ trợ, lí do một phần — chứ không phải hoàn toàn — là do GDP tăng. Nguyên nhân là bởi vì trong một nền kinh tế chưa khử carbon hoàn toàn, tăng GDP sẽ làm tăng mức phát thải, cho dù chỉ ở mức khiêm tốn."
+      },
+      {
+        "id": "p052-t2",
+        "page": 52,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": "ao \nhiệu quả quản lý đầu tư công và đầu tư tư nhân, nhờ đó có thể thực hiện được nhiều khoản đầu tư \nhơn với cùng một nguồn lực. Cũng có thể tài trợ một phần cho các khoản đầu tư mới bằng nguồn \nhỗ trợ nước ngoài bổ sung. Nếu hiệu ứng lấn át giảm 70%, thì GDP trong kịch bản NZP sẽ vẫn thấp \nhơn trong kịch bản BAU, nhưng chỉ ở mức 0,5% vào năm 2030 và 0,9% vào năm 2040.\nNhư Bảng 4 đã chỉ ra, bằng cách thực hiện NZP cùng với tất cả các biện pháp hỗ trợ này, Việt Nam có thể \ngiảm phát thải khí nhà kính hơn 70% vào năm 2040 so với kịch bản BAU, đồng thời GDP sẽ tăng 1,7% \nvào năm 2030 và 3,3% vào năm 2040. Tổng mức tăng sản lượng trong cả giai đoạn 2022–2040 so với \nkịch bản BAU sẽ là 80 tỷ USD - và điều đó có nghĩa là NZP sẽ có khả năng tự tài trợ cho chính nó một \ncách hiệu quả như đã nêu ở trên cũng như được trình bày trong Bảng 3. Trong khi sản lượng của ngành \nnăng lượng và nông nghiệp vẫn bị giảm, lĩnh vực giao thông, công nghiệp và các lĩnh vực khác (chủ yếu \nlà ngành dịch vụ) sẽ được hưởng lợi. Các nguồn lực sẽ được phân bổ tốt hơn, người lao động sẽ chuyển \ndịch từ các lĩnh vực phát thải cao sang các lĩnh vực phát thải thấp, đồng thời hạn chế lấn át các khoản \nđầu tư hiệu quả khác. Công nghiệp chế biến, chế tạo cũng sẽ được hưởng nhiều lợi ích hơn nhờ khả năng \ncạnh tranh được cải thiện và năng suất lao động tăng lên.\n56 Bộ Công thương. 2018. “Việt Nam – Chương trình năng "
+      }
+    ],
+    "expected_for_offline_review_only": "Tăng khả năng cạnh tranh: GDP 2030 +0,9%; giả định tăng xuất khẩu 20% (so với BAU) trong giai đoạn 2022–2040 nhờ mở rộng sản xuất carbon thấp.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 53,
+        "region": "Bảng 4, cột GDP 2030",
+        "detail": "ô nhiễm không khí 0,8; cạnh tranh 0,9; hiệu quả năng lượng 0,5; dịch chuyển lao động -0,2; hạn chế lấn át -0,5"
+      },
+      {
+        "page": 51,
+        "region": "Đoạn 'Nâng cao năng lực cạnh tranh quốc tế' cuối trang",
+        "detail": "'Nếu Việt Nam có thể tăng xuất khẩu lên 20% (so với kịch bản BAU) trong giai đoạn 2022–2040 ... GDP sẽ cao hơn 0,9% vào năm 2030'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-07",
+    "group": "text",
+    "question": "Theo dự thảo Quy hoạch Điện 8 (PDP8, tháng 10/2021), công suất điện than dự kiến năm 2030 là bao nhiêu GW và so với công suất lắp đặt năm 2022 thì như thế nào?",
+    "status": "answered",
+    "answer": "Theo dự thảo Quy hoạch Điện 8 (tháng 10/2021), công suất điện than dự kiến đạt 38 GW vào năm 2030. Con số này cao gần gấp đôi so với công suất lắp đặt năm 2022 là 20 GW, tức chênh lệch 18 GW (38 - 20 = 18 GW). [p054-t1]",
+    "citations": [
+      {
+        "id": "p054-t1",
+        "page": 54,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": " Chính phủ \nhiện đang chuẩn bị Quy hoạch Điện 8 (PDP8), và quy hoạch này được sử dụng làm kịch bản chính sách \nhiện đang được đề xuất (CPS) trong Báo cáo này. Trong dự thảo Quy hoạch Điện 8 (tháng 10 năm 2021), \ncông suất năng lượng tái tạo sẽ tăng đáng kể, từ 17 GW theo kế hoạch trước đó lên 36 GW (Hình 13). \nQuy mô mở rộng công suất điện than sẽ được giảm xuống, theo kế hoạch mới là 38 GW vào năm 2030. \nTuy nhiên công suất mới này vẫn cao hơn gần hai lần so với công suất lắp đặt năm 2022 là 20GW và \nmức tăng trưởng này sẽ phụ thuộc phần lớn vào nguồn than nhập khẩu.\nĐể cung cấp thông tin cho cuộc thảo luận về lộ trình chuyển dịch năng lượng sạch, Ngân hàng Thế giới đã \nthực hiện một phân tích thăm dò về khử carbon với mục đích xác định các ưu tiên chính sách nhằm đẩy \nnhanh quá trình khử carbon của ngành điện ở Việt Nam so với CPS.58 Một kịch bản tăng tốc khử carbon \n(ADS), phù hợp với mục tiêu loại bỏ than đá của Việt Nam vào thập niên 40 của thế kỷ 21, sẽ giúp giảm \nkhoảng 80% lượng phát thải của ngành điện vào năm 2040 so với CPS (xem Hình 13). Mặc dù đó là một \n57 Xem https://ukcop26.org/global-coal-to-clean-power-transition-statement.\n58 Mô hình Quy hoạch Điện (EPM) là một mô hình quy hoạch hệ thống điện nội bộ có tính đến việc mở rộng \ncông suất và điều động tổ máy. Mô hình này được sử dụng để tìm hiểu tác động của các mức giảm phát thải khác \nnhau đối với công suất và "
+      }
+    ],
+    "expected_for_offline_review_only": "38 GW vào năm 2030, cao hơn gần hai lần so với công suất 20 GW năm 2022.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 54,
+        "region": "Đoạn văn dưới biểu đồ Hình 12, đoạn bắt đầu 'Tại Hội nghị thượng đỉnh về biến đổi khí hậu'",
+        "detail": "'theo kế hoạch mới là 38 GW vào năm 2030. Tuy nhiên công suất mới này vẫn cao hơn gần hai lần so với công suất lắp đặt năm 2022 là 20GW'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-08",
+    "group": "abstain",
+    "question": "Giá điện bán lẻ bình quân hiện nay của EVN là bao nhiêu đồng/kWh?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-01",
+    "group": "table",
+    "question": "Trong Phụ lục 1, hàng 'Kịch bản phát thải - BAU' và 'Mục tiêu NDC - 27% dưới BAU (có điều kiện)': năm 2030, phát thải mục tiêu có điều kiện thấp hơn BAU bao nhiêu triệu tấn CO2e?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "expected_for_offline_review_only": "Thấp hơn 250,9 triệu tấn CO2e (927,9 - 677).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 92,
+        "region": "Phụ lục 1 (tiếp), ba hàng đầu của bảng, cột # năm 2030",
+        "detail": "BAU 2030: 927,9; NDC 9% vô điều kiện: 844; NDC 27% có điều kiện: 677 (triệu tấn CO2e, nguồn VN NDC)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-02",
+    "group": "table",
+    "question": "Theo Bảng 6 (Tiêu chí ưu tiên), hành động có mức Khẩn cấp 'Trung bình' và Tác động 'Trung bình' được mô tả như thế nào?",
+    "status": "answered",
+    "answer": "Theo Bảng 6, khi Khẩn cấp ở mức **Trung bình** và Tác động ở mức **Trung bình**, mô tả là: **“Những hành động cần thời gian để hình thành và thực hiện; tác động có thể không chắc chắn trong một số trường hợp.”** [p084-v0]",
+    "citations": [
+      {
+        "id": "p084-v0",
+        "page": 84,
+        "modality": "visual",
+        "visual_type": "table",
+        "label": "Bảng 6",
+        "region": "lower half",
+        "caption_bbox": [
+          70.9,
+          283.9,
+          103.6,
+          297.5
+        ],
+        "text": "[TABLE] Bảng 6 Tiêu chí ưu tiên\n(page 84, region: lower half)\n|  |  | **Tác động** |  |\n|---|---|---|---|\n|  |  | **Cao** | **Trung bình** |\n| **Khẩn cấp** | **Cao** | Hành động có tác động tức thì và tạo điều kiện để đạt được các mục tiêu phát triển khác | Những hành động không thể trì hoãn và sẽ có tác động lớn và ngay lập tức (thắng nhanh). Các hành động có thể cần lên kế hoạch dài hạn và huy động sự ủng hộ chính trị và nguồn tài chính |\n| **Khẩn cấp** | **Trung bình** | Chậm trễ hành động không làm tăng chi phí đạt cùng mục tiêu. | Các hành động cần thời gian để hình thành và thực hiện nhưng có thể mang lại tác động lớn |\n|  |  | Hành động mà các tác động sẽ xảy ra trong vài thập kỷ | Những hành động cần thời gian để hình thành và thực hiện; tác động có thể không chắc chắn trong một số trường hợp |\n\nVertical axis label: Khẩn cấp\nTop band label: Tác động\nSource/footnotes: none visible in the table.\nNotes: The table is a priority matrix. Some cells contain wrapped text; transcription preserves the visible wording as closely as possible."
+      }
+    ],
+    "expected_for_offline_review_only": "Là những hành động cần thời gian để hình thành và thực hiện; tác động có thể không chắc chắn trong một số trường hợp.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 84,
+        "region": "Bảng 6, hàng 'Khẩn cấp: Trung bình', cột 'Tác động: Trung bình'",
+        "detail": "'Những hành động cần thời gian để hình thành và thực hiện; tác động có thể không chắc chắn trong một số trường hợp'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-03",
+    "group": "chart",
+    "question": "Theo Hình 19 (Chỉ số giá theo nhóm hàng hóa, 2022-2040, % lệch so với BAU), đến năm 2040 nhóm hàng nào có chỉ số giá tăng cao nhất so với BAU, và khoảng bao nhiêu %?",
+    "status": "answered",
+    "answer": "Theo Hình 19, đến năm 2040 nhóm hàng có chỉ số giá tăng cao nhất so với BAU là **Năng lượng**, khoảng **15%** lệch so với BAU. Các nhóm còn lại thấp hơn nhiều (ví dụ Vận tải khoảng 4–5%, các nhóm Công nghiệp/Dịch vụ/Lương thực/Y tế quanh mức 0% hoặc âm nhẹ). [p071-t0]",
+    "citations": [
+      {
+        "id": "p071-t0",
+        "page": 71,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": "61\nViệt Nam: Báo cáo về Khí hậu và Phát triển\ntin từ cuộc khảo sát hộ gia đình năm 2018 cho thấy các hộ gia đình nghèo hơn có chi cho năng lượng \nchiếm tỷ trọng trong tổng chi tiêu cao hơn so với mức trung bình chung, nghĩa là việc tăng giá năng lượng \nsẽ tác động nhiều hơn đến những người nghèo. Ví dụ, giá năng lượng tăng 10% sẽ dẫn đến tỷ lệ đói \nnghèo và tỷ lệ mất an ninh kinh tế tăng lần lượt là 0,5 và 1,3 điểm phần trăm.\nHình 19: Chỉ số giá theo nhóm hàng hóa, 2022–2040 (% lệch so với BAU)\n \n \n-5,00\n0,00\n5,00\n10,00\n15,00\n20,00\n2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 2035 2036 2037 2038 2039 2040\nNăng lượng Công nghiệp Dịch vụ Vận tải Lương thực Y tế\nNguồn: Ngân hàng Thế giới, dựa trên mô hình CGE cho Việt Nam.\nKhuyến nghị\n y Quản lý các tác động lũy thoái ngắn hạn của thuế carbon bằng cách hỗ trợ cho người tiêu dùng bị \nảnh hưởng nhiều nhất khi giá năng lượng và nhiên liệu giao thông tăng: Chính phủ có thể gắn một \nphần doanh thu từ thuế carbon với các khoản chi để trợ giá điện cho các hộ gia đình nghèo (như \nThụy Điển và Đức đã áp dụng), cung cấp phương tiện giao thông công cộng miễn phí hoặc với chi \nphí thấp hơn hoặc giảm các loại thuế khác để bù đắp tác động của thuế carbon đối với các hộ gia \nđình và doanh nghiệp. Trong các phương án trên, một số sẽ cần Việt Nam phải sửa đổi quy định \nhiện hành vì nguyên tắc gắn nguồn thu từ thuế bảo vệ môi tr"
+      }
+    ],
+    "expected_for_offline_review_only": "Nhóm Năng lượng, khoảng 15% (chấp nhận 14-16%).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 71,
+        "region": "Hình 19, đường màu xanh dương (Năng lượng) ở điểm cuối năm 2040",
+        "detail": "Đường Năng lượng kết thúc khoảng 15% trên trục (0 đến 20); Vận tải khoảng 4,5%; các nhóm còn lại gần 0 hoặc âm nhẹ (Y tế khoảng -1,5%)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-04",
+    "group": "chart",
+    "question": "Trong Hình 20, ở kịch bản NZP đã cải cách (cột cam), những lĩnh vực nào giảm việc làm so với BAU vào năm 2040 và mức giảm lớn nhất là bao nhiêu %?",
+    "status": "answered",
+    "answer": "Trong Hình 20, ở kịch bản NZP đã cải cách (cột cam), các lĩnh vực giảm việc làm so với BAU vào năm 2040 là **Thương mại** và **Nông nghiệp** (đều **-5,4%**), và **Không hoạt động** (**-0,7%**). Mức giảm lớn nhất là **5,4%**. [p072-v0] [p072-t1]",
+    "citations": [
+      {
+        "id": "p072-v0",
+        "page": 72,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 20",
+        "region": "middle-to-lower half",
+        "caption_bbox": [
+          70.9,
+          310.3,
+          111.3,
+          324.5
+        ],
+        "text": "[CHART] Hình 20 Những thay đổi về việc làm theo lĩnh vực vào năm 2040\n(page 72, region: middle-to-lower half)\nChart kind: grouped bar chart.\n\nX-axis: sectors/categories: Điện; Khai thác mỏ; Vận tải; Xây dựng; Công nghiệp; Dịch vụ; Thương mại; Nông nghiệp; Không hoạt động.\nY-axis: % chuyển việc, (độ lệch so với BAU). Visible scale ticks: -9,4; 0; 9,4; 18,8; 28,1.\n\nLegend series:\n- NZP (blue)\n- NZP đã cải cách (orange)\n\nValues by category (approximate from bars; numbers shown on chart are transcribed where visible):\n- Điện: NZP 0; NZP đã cải cách 23,6.\n- Khai thác mỏ: NZP 2,2; NZP đã cải cách 18,4.\n- Vận tải: NZP -6,3; NZP đã cải cách 7,9.\n- Xây dựng: NZP 1,7; NZP đã cải cách 9,8.\n- Công nghiệp: NZP -0,4; NZP đã cải cách 7,4.\n- Dịch vụ: NZP 0,1; NZP đã cải cách 12,4.\n- Thương mại: NZP 0,4; NZP đã cải cách -5,4.\n- Nông nghiệp: NZP 0; NZP đã cải cách -5,4.\n- Không hoạt động: NZP 0,1; NZP đã cải cách -0,7.\n\nVisible trend and range: Under NZP, changes are small and mixed, with the largest decline in Vận tải (-6,3) and largest increase in Khai thác mỏ (2,2). Under NZP đã cải cách, most sectors increase strongly, peaking in Điện (23,6), while Thương mại and Nông nghiệp decline the most (both -5,4).\n\nNotes/source: Source line shown as \"Nguồn: Ước tính của chuyên gia Ngân hàng Thế giới.\""
+      },
+      {
+        "id": "p072-t1",
+        "page": 72,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": "ng, hóa chất). Những công việc đó sẽ được thay thế bằng những công việc \nmới trong các ngành sử dụng năng lượng tái tạo.83 Tăng ở ngành khai khoáng ngoài than là kết quả \ncủa nhu cầu cao hơn về khoáng sản và kim loại cần cho sản xuất các nguồn năng lượng sạch hơn.\nHình 20: Những thay đổi về việc làm theo lĩnh vực vào năm 2040\n \n \n0\n2,2\n-6,3\n1,7\n-0,4\n0,1 0,4 0 0,1\n23,6\n18,4\n7,9\n9,8\n7,4\n12,4\n- 5,4 - 5,4\n- 0,7\n-9,4\n0\n9,4\n18,8\n28,1\nĐiện Khai thác \nmỏ\nVận tải Xây dựng Công nghiệp Dịch vụ Thương mại Nông nghiệp Không \nhoạt động\n% chuyển việc, (độ lệch so với BAU)\nNZP NZP đã cải cách\nNguồn: Ước tính của chuyên gia Ngân hàng Thế giới.\nMột điều kiện then chốt để chiến lược khử carbon thành công là sự linh hoạt trong thị trường lao động, \nmột điều đòi hỏi phải có các biện pháp tăng cường khả năng dịch chuyển của người lao động giữa các \nngành. Linh hoạt toàn diện trong sử dụng lao động sẽ thúc đẩy tác động tích cực của NZP đối với thành \nphần lực lượng lao động vì sự dịch chuyển của người lao động giữa các ngành góp phần phân bổ nguồn \nlực tốt hơn. Ngược lại, nếu người lao động mất việc không thể nhanh chóng chuyển sang công việc mới \n81 Trên toàn cầu, Tổ chức Lao động Quốc tế (ILO) ước tính rằng hành trình chuyển sang lĩnh vực năng lượng \nchiếm ưu thế về năng lượng tái tạo sẽ tạo ra khoảng 25 triệu việc làm, trong đó tăng trưởng lớn nhất là xây dựng, \nsản xuất máy móc điện và khai thác "
+      }
+    ],
+    "expected_for_offline_review_only": "Thương mại (-5,4%), Nông nghiệp (-5,4%) và Không hoạt động (-0,7%) giảm; mức giảm lớn nhất là 5,4% (Thương mại và Nông nghiệp bằng nhau).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 72,
+        "region": "Hình 20, các cột cam nằm dưới trục 0",
+        "detail": "Thương mại -5,4; Nông nghiệp -5,4; Không hoạt động -0,7; các lĩnh vực khác dương (Điện 23,6; Khai thác mỏ 18,4; Vận tải 7,9; Xây dựng 9,8; Công nghiệp 7,4; Dịch vụ 12,4)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-05",
+    "group": "figure",
+    "question": "Trong ma trận ưu tiên Phụ lục 4, phần 'Hành động xuyên suốt', hành động 'Triển khai chương trình đào tạo xanh cho các tổ chức tài chính' nằm ở ô nào xét theo mức Khẩn cấp và Tác động?",
+    "status": "answered",
+    "answer": "Trong ma trận ưu tiên ở Phụ lục 4, hành động “Triển khai chương trình đào tạo xanh cho các tổ chức tài chính” nằm ở ô **Khẩn cấp: Trung bình** và **Tác động: Trung bình**. Bằng chứng là hành động này xuất hiện trong phần “HÀNH ĐỘNG XUYÊN SUỐT” dưới cột Khẩn cấp “Trung bình” và trong cột Tác động “Trung bình” của Bảng 6 [p102-t1].",
+    "citations": [
+      {
+        "id": "p102-t1",
+        "page": 102,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": " hậu.\nTạo sân chơi bình đẳng cho các nhà đầu tư tư \nnhân bằng cách dỡ bỏ các rào cản gia nhập và \nthúc đẩy cạnh tranh thị trường trong các lĩnh vực \nliên quan đến khí hậu. \nTrung \nbình\nThiết lập phân loại xanh để mở rộng quy mô đầu \ntư bền vững và áp dụng các tiêu chí điều kiện cho \ntín dụng xanh.\nKích hoạt thị trường trái phiếu xanh thông qua việc \ntạo ra các tiêu chí tiêu chuẩn hóa và miễn thuế \ncho phiếu trái phiếu xanh.\nXây dựng một chương trình kỹ năng quốc gia toàn \ndiện để khắc phục tình trạng thiếu kỹ năng trong \ncác ngành xanh/sạch bằng cách đổi mới các \nchương trình giáo dục/đào tạo nghề. \nTăng cường theo dõi chi tiêu liên quan đến khí \nhậu trong cả ngân sách trung ương và ngân \nsách tỉnh.\nLồng ghép rủi ro khí hậu vào Luật Mua sắm \ncông phù hợp với các thông lệ quốc tế tốt nhất. \nXây dựng hệ thống tài khoản kinh tế và môi \ntrường cũng như hệ thống MRV hiện đại cho các \nlĩnh vực khác nhau.\nĐiều chỉnh chiến lược nợ và chi tiêu công trung \nhạn với nguồn tài chính cho các kế hoạch hành \nđộng quốc gia về biến đổi khí hậu.\nTriển khai chương trình đào tạo xanh cho các tổ \nchức tài chính.\nHuy động các nguồn tài chính ưu đãi quốc tế và \ntài chính trong nước để tạo đòn bẩy và bổ sung \ntài chính ngân hàng cho các hoạt động đầu tư \nvốn xanh.\nCho phép các tổ chức tài chính nước ngoài đăng \nký thế chấp tài sản bất động sản theo một cơ \ncấu hợp lý và minh bạch để huy động vốn cho \nc"
+      }
+    ],
+    "expected_for_offline_review_only": "Ô Khẩn cấp = Trung bình và Tác động = Trung bình.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 102,
+        "region": "Ma trận 'Hành động xuyên suốt', hàng 'Khẩn cấp: Trung bình', cột phải (Tác động: Trung bình), mục thứ 5",
+        "detail": "'Triển khai chương trình đào tạo xanh cho các tổ chức tài chính.'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-06",
+    "group": "multihop",
+    "question": "Chương 5 nêu tổng chi phí khử carbon đến 2040 là 114 tỷ USD (gồm 81 tỷ USD đầu tư và 33 tỷ USD cho các chương trình xã hội). Phụ lục 3B nêu tổng vốn đầu tư cần thiết (NPV) cho NZP là bao nhiêu, và con số này bằng khoảng bao nhiêu % của 114 tỷ USD?",
+    "status": "answered",
+    "answer": "Phụ lục 3B nêu tổng vốn đầu tư cần thiết cho NZP (2022–2040, NPV) là 81,3 tỷ USD [p050-v0]. So với 114 tỷ USD, tỷ lệ xấp xỉ là 81,3 / 114 = 71,3% (khoảng 71%) [p050-v0].",
+    "citations": [
+      {
+        "id": "p050-v0",
+        "page": 50,
+        "modality": "visual",
+        "visual_type": "table",
+        "label": "Bảng 3",
+        "region": "middle of page",
+        "caption_bbox": [
+          70.9,
+          129.9,
+          107.5,
+          144.1
+        ],
+        "text": "[TABLE] Bảng 3 Nhu cầu đầu tư và lợi nhuận đầu ra theo Lộ trình phát thải carbon ròng bằng “0” (NZP)\n(page 50, region: middle of page)\n*Tỷ USD theo NPV*\n\n|  | 2022–2030 | 2031–2040 | 2022–2040 |\n|---|---:|---:|---:|\n| **NZP** |  |  |  |\n| **Nhu cầu đầu tư** | 31,8 | 49,5 | 81,3 |\n| **Mức sản lượng tăng** | -7,6 | -46,0 | -53,7 |\n| *Tác động kinh tế ròng* | -39,4 | -95,5 | -134,9 |\n| **NZP với những cải cách hỗ trợ** |  |  |  |\n| **Nhu cầu đầu tư** | 31,8 | 49,5 | 81,3 |\n| **Mức sản lượng tăng** | 11,3 | 68,7 | 80,1 |\n| *Tác động kinh tế ròng* | -20,5 | 19,3 | -1,3 |\n\n*Lưu ý: Tất cả các khoản đều được chiết khấu theo tỷ lệ chiết khấu 6%. Các ước tính nhu cầu đầu tư dựa trên cơ sở phân tích ngành trong các lĩnh vực năng lượng, giao thông, nông nghiệp và công nghiệp/thương mại. Mức tăng sản lượng là các biến thể tích lũy trong GDP theo mô hình CGE cho từng tình huống.*"
+      }
+    ],
+    "expected_for_offline_review_only": "81,3 tỷ USD (NPV); bằng khoảng 71% của 114 tỷ USD (81,3/114 ≈ 71,3%).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 77,
+        "region": "Đoạn văn đầu Chương 5",
+        "detail": "'Hành trình khử carbon... đòi hỏi thêm 114 tỷ USD đến năm 2040, bao gồm 81 tỷ USD đầu tư và 33 tỷ USD cho các chương trình xã hội'"
+      },
+      {
+        "page": 96,
+        "region": "Phụ lục 3B, gạch đầu dòng cuối",
+        "detail": "'Tổng vốn đầu tư cần thiết tương đương 81,3 tỷ USD (NPV)'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-07",
+    "group": "text",
+    "question": "Theo mục 5.3, vì sao ODA cho Việt Nam giảm mạnh giữa năm 2014 và 2019 và con số cụ thể là bao nhiêu?",
+    "status": "answered",
+    "answer": "Theo mục 5.3, ODA cho Việt Nam giảm mạnh vì Việt Nam đã tốt nghiệp khỏi các nguồn vốn ưu đãi cao của Ngân hàng Thế giới (IDA) và Ngân hàng Phát triển Châu Á (ADF) trong các năm 2017 và 2018. Con số cụ thể là ODA giảm từ 4,2 tỷ USD năm 2014 xuống khoảng 1,0 tỷ USD năm 2019, tức giảm 3,2 tỷ USD [p080-t1].",
+    "citations": [
+      {
+        "id": "p080-t1",
+        "page": 80,
+        "modality": "text",
+        "visual_type": null,
+        "label": null,
+        "region": "page text",
+        "caption_bbox": null,
+        "text": "g là vấn đề trách nhiệm thông thường nhưng có phân biệt vì nếu xét \ntrên bình diện rộng thì Việt Nam là nạn nhân của những thiệt hại gây ra bởi phát thải GHG từ các quốc \ngia khác. Nguồn tài chính bên ngoài có thể là nguồn công hoặc tư. Nguồn tài chính công có thể là vốn \nưu đãi hoặc không ưu đãi đa phương hoặc song phương trong khi nguồn tư nhân có thể là vốn FDI hoặc \ncác nhà đầu tư tổ chức (institutional investors). \nThỏa thuận Paris và Thỏa thuận Glasgow gần đây đã tạo ra cú hích tập thể lớn về tài chính khí hậu để \nhỗ trợ các gói phục hồi xanh và nhu cầu đầu tư để thực hiện NDC, nhưng quy mô và mức độ sẵn có của \ncác nguồn vốn này vẫn chưa chắc chắn, cả trên toàn cầu và đặc biệt đối với Việt Nam. Viện trợ phát triển \nchính thức (ODA) cho Việt Nam đã giảm mạnh từ 4,2 tỷ USD năm 2014 xuống chỉ còn khoảng 1,0 tỷ USD \nnăm 2019 kể từ khi Việt Nam tốt nghiệp các nguồn vốn ưu đãi cao của Ngân hàng Thế giới (IDA) và Ngân \nhàng Phát triển Châu Á (ADF) trong năm 2017 và 2018. Trong các dự báo kinh tế vĩ mô và tài khóa, Chính \nphủ không kỳ vọng ODA sẽ tăng đáng kể, trung bình chỉ khoảng 4 tỷ USD trong giai đoạn 2021–2025. \nCon số kế hoạch đó nhiều hơn đáng kể so với số vốn thực tế được cam kết trong những năm gần đây. \nMột kênh tài trợ quốc tế khác có thể là thông qua hiện diện của các công ty đa quốc gia và các khoản \nđầu tư mới tiềm năng từ nước ngoài. Theo Tổng cục Thống kê, cả nư"
+      }
+    ],
+    "expected_for_offline_review_only": "ODA giảm từ 4,2 tỷ USD (2014) xuống khoảng 1,0 tỷ USD (2019), kể từ khi Việt Nam tốt nghiệp các nguồn vốn ưu đãi cao của IDA (Ngân hàng Thế giới) và ADF (Ngân hàng Phát triển Châu Á) trong năm 2017 và 2018.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 80,
+        "region": "Mục 5.3, đoạn thứ hai",
+        "detail": "'ODA cho Việt Nam đã giảm mạnh từ 4,2 tỷ USD năm 2014 xuống chỉ còn khoảng 1,0 tỷ USD năm 2019 kể từ khi Việt Nam tốt nghiệp các nguồn vốn ưu đãi cao của IDA và ADF trong năm 2017 và 2018'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-dev-08",
+    "group": "abstain",
+    "question": "Dư nợ tín dụng xanh của Việt Nam vào cuối năm 2022 là bao nhiêu tỷ USD?",
+    "status": "answered",
+    "answer": "Dư nợ tín dụng xanh của Việt Nam vào cuối năm 2022 không được báo cáo trực tiếp trong tài liệu này. Hình 22 chỉ cung cấp số liệu đến 2021:Q1, với dư nợ tín dụng xanh là 14,5 tỷ USD vào năm 2020 và 14,5 tỷ USD vào 2021:Q1, không có số cuối năm 2022. [p078-v0]",
+    "citations": [
+      {
+        "id": "p078-v0",
+        "page": 78,
+        "modality": "visual",
+        "visual_type": "chart",
+        "label": "Hình 22",
+        "region": "bottom half",
+        "caption_bbox": [
+          70.9,
+          523.8,
+          111.3,
+          538.0
+        ],
+        "text": "[CHART] Hình 22 Dư nợ cho vay tư nhân về vấn đề khí hậu và tín dụng xanh từ 2016 đến 2019 (tỷ USD)\n(page 78, region: bottom half)\nChart kind: grouped bar chart (two panels).\n\nLeft panel title: \"Dư nợ tín dụng xanh\"\n- X-axis: years 2016, 2017, 2018, 2019, 2020, 2021:Q1\n- Y-axis: value in tỷ USD (scale shown with 0 baseline; labels above bars)\n- Series: Dư nợ tín dụng xanh\n  - 2016: 3,7\n  - 2017: 7,8\n  - 2018: 10,3\n  - 2019: 13,9\n  - 2020: 14,5\n  - 2021:Q1: 14,5\n- Visible trend: steady increase from 2016 to 2019, then essentially flat in 2020 and 2021:Q1.\n- Min/max visible: min 3,7 (2016); max 14,5 (2020 and 2021:Q1).\n\nRight panel title: \"Tín dụng xanh theo lĩnh vực\"\n- X-axis: 2019, 2020, 2020:Q1\n- Y-axis: 0, 38, 75, 113, 150, 188 (tỷ USD scale as printed)\n- Legend series:\n  - Nông nghiệp xanh (dark blue)\n  - Năng lượng tái tạo xanh (orange)\n  - Khác (bao gồm quản lý nước, lâm nghiệp bền vững) (light blue)\n- Approximate values read from bar heights:\n  - 2019: Nông nghiệp xanh ~135; Năng lượng tái tạo xanh ~50; Khác ~120\n  - 2020: Nông nghiệp xanh ~130; Năng lượng tái tạo xanh ~100; Khác ~95\n  - 2020:Q1: Nông nghiệp xanh ~125; Năng lượng tái tạo xanh ~120; Khác ~75\n- Visible trend: agriculture remains high and slightly declines; renewable energy rises strongly from 2019 to 2020:Q1; \"other\" declines overall after 2019.\n- Notes/source: \"Nguồn: FiinResearch và NHNN.\""
+      }
+    ],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  }
+]

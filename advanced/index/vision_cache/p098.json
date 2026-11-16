@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "",
+   "title": "",
+   "region": "middle-lower page",
+   "content": "| Nguồn thông tin | Lượng khí thải ước tính (triệu tấn CO$_2$ phát thải) |\n|---|---:|\n| Chính phủ Việt Nam/NDC cập nhật (2020) | 104,5 |\n| Dự thảo Nghiên cứu thông tin nền (2020) | 104,5 |\n| FAO (2019) | 72,74 |\n| Climate Watch (WRI) (2018) | 71 |\n| Climate Transparency (2018) | 61 |",
+   "notes": "No printed table label or title on the page. The source line is not visible in the provided page image/text for this table."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3325,
+  "completion_tokens": 179
+ }
+}

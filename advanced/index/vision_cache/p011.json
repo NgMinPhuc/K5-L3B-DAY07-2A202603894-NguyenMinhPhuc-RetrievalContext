@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "",
+   "title": "GIỚI THIỆU",
+   "region": "full page",
+   "content": "Introductory cover/page with a large title \"GIỚI THIỆU\" and two paragraphs of Vietnamese introductory text about Vietnam's climate and development challenges.\n\nVisible text in the body:\n- \"Như hầu hết các quốc gia trên toàn thế giới, Việt Nam đang phải đối mặt với những tác động của biến đổi khí hậu lên sự phát triển của quốc gia. Với 3.260 km đường bờ biển chạy qua các thành phố và khu sản xuất lớn, Việt Nam có nguy cơ cao sẽ bị ảnh hưởng bởi mực nước biển dâng. Tác động của biến đổi khí hậu đối với nền kinh tế và phúc lợi xã hội ở Việt Nam đã ở mức đáng kể - tương đương khoảng 3,2 % tổng sản phẩm quốc nội (GDP) – năm 2020 - và được kỳ vọng sẽ gia tăng nhanh chóng ngay cả khi có nhiều hơn nữa những nỗ lực giảm thiểu biến đổi khí hậu trong tương lai trên toàn thế giới.\"\n- \"Từng là quốc gia có lượng phát thải khí nhà kính (GHG) rất thấp, nhưng trong hai thập kỷ qua, tốc độ tăng phát thải của Việt Nam xếp vào hàng nhanh nhất thế giới. Từ năm 2000 đến năm 2015, GDP bình quân đầu người tăng từ 390 USD lên 2.000 USD trong khi lượng phát thải bình quân đầu người tăng hơn 4 lần. Phát thải GHG của Việt Nam có mối quan hệ với tình trạng ô nhiễm không khí độc hại ở nhiều thành phố hiện nay, kéo theo đó là những hệ lụy đối với sức khỏe và năng suất lao động. Tại Hội nghị thượng đỉnh về Biến đổi Khí hậu của Liên Hợp Quốc ở Glasgow vào tháng 11/2021 (COP26), Thủ tướng Chính phủ đã đưa ra một số cam kết, trong đó có mục tiêu đầy hoài bão là đạt phát thải ròng bằng “0” vào năm 2050. Việc Việt Nam quan tâm nhiều hơn đến vấn đề biến đổi khí hậu và môi trường phản ánh chi phí kinh tế đang gia tăng do sự suy giảm nguồn tài nguyên và tác động khí hậu, vốn đã bắt đầu ảnh hưởng tiêu cực đến thương mại và đầu tư, hai động lực chính thúc đẩy tăng trưởng vững chắc và tạo việc làm của Việt Nam trong những thập kỷ gần đây.\"\n\nDecorative contour graphic in the upper-right corner (non-informative, no readable labels).",
+   "notes": "No tables, charts, maps, or other data visualizations are present. Upper-right contour graphic appears decorative only and has no textual labels or legend."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2780,
+  "completion_tokens": 601
+ }
+}

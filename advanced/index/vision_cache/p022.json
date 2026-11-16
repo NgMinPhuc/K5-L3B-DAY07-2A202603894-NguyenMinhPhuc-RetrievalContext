@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Full-page cover photo of a flooded landscape and settlement viewed from above. The image shows extensive muddy floodwater covering fields and low-lying areas, scattered houses/buildings, trees partly submerged, and a central circular monument or roundabout-like structure in the foreground. Overlaid on the lower half is a dark translucent band with large white chapter number and title text: \"2\" and \"Khu vực công và khu vực tư nhân không được chuẩn bị đồng đều để đối phó với rủi ro biến đổi khí hậu\". At the top left the page also shows the report series text \"Việt Nam: Báo cáo về Khí hậu và Phát triển\" and a smaller repeated chapter title. Credit text appears on the image: \"© Ho Cau/Vietnam News Agency\" along the left/top and vertically on the right edge. A multicolored vertical stripe runs near the left margin as a design element. Main message: a flood scene introducing Chapter 2 about uneven preparedness of public and private sectors for climate risks.",
+   "notes": "This is a cover/section opener with no standalone data visualization beyond the illustrative photo and overlaid title text."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2329,
+  "completion_tokens": 259
+ }
+}

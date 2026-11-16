@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 10",
+   "title": "Đồng bằng sông Cửu Long có nguy cơ cao với tình trạng nước biển",
+   "region": "right half, mid-page",
+   "content": "Map/figure showing the Mekong Delta in southern Vietnam with shaded flood/saltwater-intrusion risk overlay. Subtitle/caption: \"Dự báo tình trạng ngập mặn do triều cường vào năm 2050 tại khu vực sông Mekong\". The map depicts the delta coastline, inland river branches, and varying blue intensity across the delta to indicate projected inundation/salinity exposure; darker blue areas appear more affected. Visible geographic labels include \"BIỂN ĐÔNG\" on the sea side and place/region labels along the map background, though many are too small to read clearly. Source line: \"Nguồn: Ngân hàng Thế giới.\" Main message: the Mekong Delta is highly exposed to tidal flooding and seawater intrusion by 2050.",
+   "notes": "No scale, legend, or quantitative legend text is legible in the provided page image; the map is too small to fully transcribe all place labels."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3326,
+  "completion_tokens": 250
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 7",
+   "title": "Biến thiên tỷ trọng sản lượng của các DNNN trong các ngành công nghiệp sử dụng nhiều carbon tại Việt Nam (%)",
+   "region": "lower half",
+   "content": "Chart kind: multi-series line chart.\nX-axis: years 2005, 2010, 2012, 2014, 2016, 2018 (sơ bộ).\nY-axis: percentage of output share (%), from 0% to 100%.\nSeries and values readable from the chart (approximate where inferred from line positions):\n- Than: 98% at 2018; line stays near ~98-99% across years, slightly below 100% and essentially flat.\n- Phân hóa học: 94% at 2018; line stays near ~95-96% in most years, slight decline by 2018.\n- Điện: 85% at 2018; starts ~94% in 2005, drops to ~70% around 2007, rises to ~90% around 2012, then declines gradually to ~85% in 2018.\n- Vận tải hàng hóa: 55% at 2018; starts ~63% in 2005, rises to low ~70s around 2008-2012, then declines steadily to 55% by 2018.\n- Phân bón NPK: 55% at 2018; starts ~74% in 2005, declines to ~65% by 2007, hovers around ~60-62% through 2014, then falls to 55% by 2018.\n- Xi măng: 35% at 2018; starts ~63% in 2005, falls to ~50% by 2007-2010, then declines to ~35% by 2018.\n- Vận chuyển hành khách: 27% at 2018; starts ~39% in 2005, declines gradually to ~27% by 2018.\n- Kim loại: 14% at 2018; starts ~33% in 2005, drops sharply to ~18% around 2007, briefly recovers to ~22% around 2010, then trends down to ~14% by 2018.\nVisible trend: most sectors show declining state-owned enterprise share over time, with the highest shares in coal and chemical fertilizer remaining near 100%; the steepest declines are in metal, cement, and electricity (after mid-period recovery). Min/max visible values: minimum ~14% (Kim loại, 2018), maximum ~98% (Than, 2018). Notes/source: Nguồn: Coste và cộng sự, 2020. Ghi chú: Số liệu của Tổng cục thống kê được tính toán dựa trên sản lượng tính theo tấn, trừ điện (kWh), vận tải hàng hóa (triệu tấn/km) và vận tải hành khách (triệu người-km)."
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "upper-middle to lower-middle",
+   "content": "The page includes a duplicated small chart image and the main textual discussion immediately above and below it; the informative visual element is the chart already indexed as Hình 7. No separate figure beyond that chart is present.",
+   "notes": "No additional standalone figure/diagram/map/infographic detected beyond the chart."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3023,
+  "completion_tokens": 734
+ }
+}

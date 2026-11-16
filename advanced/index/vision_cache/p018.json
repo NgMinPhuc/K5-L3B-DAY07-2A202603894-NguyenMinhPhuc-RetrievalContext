@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "chart",
+   "label": "Hình 4",
+   "title": "Gia tăng mức phát thải GHG",
+   "region": "middle of page",
+   "content": "Chart kind: stacked area chart.\nX-axis title: Năm. Categories/years shown: 1990, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018.\nY-axis title: MtCO2e. Scale shown from about -100 to 400.\nLegend series (as printed): Điện/Nhiệt; Nông nghiệp; Công trình xây dựng; Quy trình công nghiệp; Giao thông; Chất thải; Khí thải từ các bình áp suất; Cơ sở; Dầu thô; Các loại nhiên liệu khác; Thay đổi mục đích sử dụng đất và lâm nghiệp.\nVisible values/trends by series (approximate from area boundaries; exact numbers not printed):\n- Điện/Nhiệt: rises steadily from roughly ~50 MtCO2e in 1990 to ~95 in 2010, ~115 in 2012, ~145 in 2016, and ~175 in 2018; largest single emitting series for most of the period.\n- Nông nghiệp: roughly ~15 in 1990, slowly increasing to ~30 by 2018.\n- Công trình xây dựng: roughly ~8 in 1990 to ~28 in 2018.\n- Quy trình công nghiệp: roughly ~6 in 1990 to ~24 in 2018.\n- Giao thông: roughly ~4 in 1990 to ~20 in 2018.\n- Chất thải: roughly ~4 in 1990 to ~18 in 2018.\n- Khí thải từ các bình áp suất: very small contribution, around ~0–4 across the period.\n- Cơ sở: very small contribution, around ~0–4 across the period.\n- Dầu thô: very small contribution, around ~0–3 across the period.\n- Các loại nhiên liệu khác: very small contribution, around ~0–4 across the period.\n- Thay đổi mục đích sử dụng đất và lâm nghiệp: large negative series before 2001 at about ~-70 MtCO2e, jumps to positive around 2001 at about ~160, then drops to about ~-20 around 2011 and remains near that level, ending near ~-10 in 2018.\nOverall trend: total GHG emissions increase strongly from about ~70 MtCO2e in 1990 to about ~380 MtCO2e in 2018, with noticeable step changes around 2001 and 2011 driven by land-use/forestry.\nMin/max visible on chart: minimum around ~-70 MtCO2e (land-use/forestry, early years); maximum around ~380 MtCO2e (total in 2018).\nSource line: Nguồn: Ngân hàng Thế giới, dựa trên dữ liệu từ Climate Watch, 2020.",
+   "notes": "Values are approximate readings from the plot; the land-use/forestry series shows clear discontinuities around 2001 and 2011."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2974,
+  "completion_tokens": 722
+ }
+}

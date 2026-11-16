@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hộp 2",
+   "title": "Đánh giá tính dễ bị tổn thương của các doanh nghiệp xuất khẩu khi đối mặt với lũ lụt hoặc các cơn bão nhiệt đới",
+   "region": "middle-lower half",
+   "content": "Gray shaded text box with the heading in green. It contains two paragraphs describing a World Bank/IFC study using information from 700,000 companies in Viet Nam to assess firms’ vulnerability to climate change using microeconomic and corporate finance methods. It explains that the approach analyzes effects of exogenous shocks on key financial indicators, including liquidity, capital structure, profitability, and the availability or non-availability of cash reserves to cope with external shocks. It says the approach quantifies the amount of debt at risk of becoming non-performing, linking this to potential job losses and government tax revenue losses. It then states that manufacturing and agriculture—the two main export sectors—are among the most financially vulnerable sectors. Main risks for manufacturing come from impacts on employment and insufficient liquidity to survive a major shock. For agriculture, the main challenge is the number of farms affected rather than financial risk to individual facilities. Among non-tradable sectors, real estate, construction, and education are highlighted as the most vulnerable.",
+   "notes": "No charts, tables, maps, or diagrams on the page. The box is purely informational text content presented as an infographic/boxed callout."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3422,
+  "completion_tokens": 300
+ }
+}

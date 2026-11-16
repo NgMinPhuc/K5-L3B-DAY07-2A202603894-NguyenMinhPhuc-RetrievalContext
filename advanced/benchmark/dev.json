@@ -1,0 +1,396 @@
+{
+  "version": "1.0",
+  "split": "dev",
+  "document": {
+    "title": "Việt Nam: Báo cáo về Khí hậu và Phát triển (Vietnam Country Climate and Development Report), Vietnamese edition",
+    "publisher": "World Bank Group",
+    "year": 2022,
+    "pages": 103,
+    "license": "CC BY 3.0 IGO",
+    "landing_page": "https://openknowledge.worldbank.org/handle/10986/37618",
+    "pdf_url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/0e81a56a-8db6-592b-a6f0-2834d974660e/content",
+    "local_path": "advanced/source/vietnam_ccdr_2022_vi.pdf"
+  },
+  "page_numbering": "PDF page index, 1-based (= advanced/index/pages/pNNN.png); printed page numbers differ",
+  "authoring": "Drafted by LLM authors reading rendered page images and the PDF text layer (not pipeline output); split fixed before experiments; requires human verification against the original PDF.",
+  "counts": {
+    "table": 6,
+    "chart": 6,
+    "figure": 2,
+    "multihop": 3,
+    "text": 3,
+    "abstain": 3
+  },
+  "questions": [
+    {
+      "id": "A-dev-01",
+      "split": "dev",
+      "group": "table",
+      "question": "Theo Bảng 1, nước nào có phát thải trên đầu người (tCO2e) thấp hơn Việt Nam, và phát thải trên đầu người của Việt Nam gấp khoảng mấy lần nước đó?",
+      "answerable": true,
+      "expected_answer": "Philipin (2,2 tCO2e/đầu người); 3,8/2,2 ≈ 1,7 lần.",
+      "evidence": [
+        {
+          "page": 19,
+          "region": "Bảng 1, cột 'Phát thải trên đầu người', hai hàng cuối",
+          "detail": "Việt Nam 3,8; Philipin 2,2 (các nước còn lại đều ≥ 4,3)"
+        }
+      ],
+      "reason": "Chỉ Philipin thấp hơn Việt Nam; 3,8/2,2 ≈ 1,73."
+    },
+    {
+      "id": "A-dev-02",
+      "split": "dev",
+      "group": "table",
+      "question": "Theo Bảng 2, 'Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng' có mức trung bình mỗi năm (% GDP) và giá trị tích lũy (tỷ USD NPV) là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "0,3–0,7% GDP mỗi năm; 22,8–53,2 tỷ USD (NPV).",
+      "evidence": [
+        {
+          "page": 32,
+          "region": "Bảng 2, hàng 'Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng'",
+          "detail": "0,3–0,7; 22,8-53,2"
+        }
+      ],
+      "reason": "Đọc trực tiếp ô bảng."
+    },
+    {
+      "id": "A-dev-03",
+      "split": "dev",
+      "group": "chart",
+      "question": "Theo Hình 7, năm 2018 (sơ bộ), ngành nào có tỷ trọng sản lượng của DNNN cao nhất và ngành nào thấp nhất, chênh nhau bao nhiêu điểm phần trăm?",
+      "answerable": true,
+      "expected_answer": "Cao nhất: Than 98%; thấp nhất: Kim loại 14%; chênh 84 điểm phần trăm.",
+      "evidence": [
+        {
+          "page": 26,
+          "region": "Hình 7, nhãn bên phải biểu đồ",
+          "detail": "Than 98%; Phân hóa học 94%; Điện 85%; Vận tải hàng hóa 55%; Phân bón NPK 55%; Xi măng 35%; Vận chuyển hành khách 27%; Kim loại 14%"
+        }
+      ],
+      "reason": "98 − 14 = 84."
+    },
+    {
+      "id": "A-dev-04",
+      "split": "dev",
+      "group": "chart",
+      "question": "Theo Hình 8 (thiệt hại GDP, % lệch so với đường cơ sở), đến năm 2050 kịch bản nào gây thiệt hại lớn hơn, và khoảng bao nhiêu % GDP cho mỗi kịch bản (chấp nhận sai số ±0,5 điểm %)?",
+      "answerable": true,
+      "expected_answer": "RCP 4.5 lớn hơn: khoảng 12% GDP, so với RCP 2.6 khoảng 10% GDP.",
+      "evidence": [
+        {
+          "page": 30,
+          "region": "Hình 8, điểm cuối đường năm 2050",
+          "detail": "RCP 2.6 ≈ 9,9–10; RCP 4.5 ≈ 12,3–12,4; hai đường gần trùng nhau tới khoảng 2030 rồi tách ra"
+        },
+        {
+          "page": 30,
+          "region": "Đoạn văn dưới hình",
+          "detail": "9,8% (RCP 2.6) hay 12,3% GDP (RCP 4.5) vào năm 2050"
+        }
+      ],
+      "reason": "Đọc chart theo xu hướng và giá trị xấp xỉ; văn bản trang 29 ghi 9,9% và 12,4%, trang 30 ghi 9,8% và 12,3%, nên cần dung sai."
+    },
+    {
+      "id": "A-dev-05",
+      "split": "dev",
+      "group": "figure",
+      "question": "Trong Hình 2, đường nào của các nước so sánh vượt qua ngưỡng HIC (quốc gia có thu nhập cao), và đường Việt Nam (2021–2045) ở cuối thời kỳ so với ngưỡng này như thế nào?",
+      "answerable": true,
+      "expected_answer": "Chỉ Hàn Quốc (1951–2005) vượt ngưỡng HIC (khoảng T+42 trở đi, lên trên 20.000 USD); Thái Lan và Trung Quốc vẫn dưới ngưỡng. Đường Việt Nam (2021–2045) chỉ tiến sát/chạm ngưỡng (khoảng 12.000–12.700 USD) ở khoảng T+54.",
+      "evidence": [
+        {
+          "page": 15,
+          "region": "Hình 2, biểu đồ đường nửa trên trang",
+          "detail": "Ngưỡng HIC ≈ 12.695 USD (đường ngang); Hàn Quốc vượt ngưỡng quanh T+42 và đạt ~21.000 ở T+54; Trung Quốc ~10.500 ở T+36; Thái Lan ~5.500; Việt Nam (2021–2045, nét đứt) ~12.000 ở T+54"
+        }
+      ],
+      "reason": "Đọc xu hướng và so sánh với đường ngưỡng; văn bản cho biết Hàn Quốc mất 42 năm."
+    },
+    {
+      "id": "A-dev-06",
+      "split": "dev",
+      "group": "multihop",
+      "question": "Năm 2020, thiệt hại do biến đổi khí hậu (CEA) là 10 tỷ USD (3,2% GDP), còn thiệt hại trực tiếp trung bình hàng năm về tài sản do các hiện tượng khí hậu cực đoan là 2,4 tỷ USD (0,8% GDP). Khoản thứ nhất lớn gấp khoảng mấy lần khoản thứ hai (tính theo tỷ USD)?",
+      "answerable": true,
+      "expected_answer": "10/2,4 ≈ 4,2 lần (tính theo % GDP: 3,2/0,8 = 4 lần).",
+      "evidence": [
+        {
+          "page": 17,
+          "region": "Đoạn đầu trang",
+          "detail": "năm 2020 Việt Nam đã thiệt hại 10 tỷ USD, tương đương 3,2% GDP"
+        },
+        {
+          "page": 30,
+          "region": "Đoạn trên Hình 8",
+          "detail": "thiệt hại trực tiếp về tài sản công và tư khoảng 2,4 tỷ USD hàng năm, tương đương 0,8% GDP"
+        }
+      ],
+      "reason": "Kết hợp hai trang; chấp nhận 4–4,2 lần."
+    },
+    {
+      "id": "A-dev-07",
+      "split": "dev",
+      "group": "text",
+      "question": "Theo báo cáo, sự mất cân bằng giữa giảm nhẹ và thích ứng được thể hiện rõ nhất ở đâu trong chiến lược của Việt Nam và biểu hiện cụ thể là gì?",
+      "answerable": true,
+      "expected_answer": "Trong Chiến lược Tăng trưởng Xanh (VGGS): có đặt một số mục tiêu về cường độ sử dụng năng lượng (toàn quốc và theo ngành) nhưng không có mục tiêu cụ thể tương tự về khả năng thích ứng.",
+      "evidence": [
+        {
+          "page": 23,
+          "region": "Gạch đầu dòng đầu tiên trong ba thách thức",
+          "detail": "Sự mất cân bằng giữa giảm nhẹ và thích ứng được thể hiện rõ nhất trong VGGS, trong đó có đặt ra một số mục tiêu về cường độ sử dụng năng lượng... nhưng không có mục tiêu cụ thể tương tự về khả năng thích ứng"
+        }
+      ],
+      "reason": "Thông tin từ văn xuôi."
+    },
+    {
+      "id": "A-dev-08",
+      "split": "dev",
+      "group": "abstain",
+      "question": "Báo cáo dự báo lượng mưa trung bình hàng năm của Việt Nam sẽ tăng bao nhiêu milimét vào năm 2050?",
+      "answerable": false,
+      "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+      "evidence": [],
+      "reason": "Đã grep 'lượng mưa' (13 lần), ' mm ', 'milimet', 'mi-li-mét': không có số liệu mm. Trang 16 chỉ nói bất định lớn về xu hướng lượng mưa tương lai; không có dự báo định lượng."
+    },
+    {
+      "id": "B-dev-01",
+      "split": "dev",
+      "group": "table",
+      "question": "Theo Bảng 3, chênh lệch về tác động kinh tế ròng giai đoạn 2022–2040 giữa NZP có cải cách hỗ trợ và NZP không có cải cách là bao nhiêu tỷ USD (NPV)?",
+      "answerable": true,
+      "expected_answer": "Khoảng 133,6 tỷ USD (-1,3 so với -134,9).",
+      "evidence": [
+        {
+          "page": 50,
+          "region": "Bảng 3, hàng 'Tác động kinh tế ròng', cột 2022–2040, hai nhóm",
+          "detail": "NZP: -134,9; NZP với cải cách hỗ trợ: -1,3"
+        }
+      ],
+      "reason": "Phép tính: -1,3-(-134,9)=133,6."
+    },
+    {
+      "id": "B-dev-02",
+      "split": "dev",
+      "group": "table",
+      "question": "Trong Bảng 5 (ADS so với CPS, 2022–2040), hạng mục chi phí vốn nào thay đổi theo tỷ lệ phần trăm cao nhất và mức thay đổi tuyệt đối (tỷ USD) của nó là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Mặt trời: +429%, tương ứng +21 tỷ USD.",
+      "evidence": [
+        {
+          "page": 57,
+          "region": "Bảng 5, hàng 'Mặt trời' (tiếp theo từ trang 56)",
+          "detail": "+21 tỷ USD, +429%; so sánh Gió ngoài khơi +39, +402%; Gió trên bờ +8, +55%"
+        }
+      ],
+      "reason": "So sánh cột 'Thay đổi' giữa các hạng mục (429% > 402%)."
+    },
+    {
+      "id": "B-dev-03",
+      "split": "dev",
+      "group": "chart",
+      "question": "Theo Hình 16 (các biện pháp giảm phát thải từ sản xuất lúa gạo, $/tCO2e), biện pháp nào có chi phí trên mỗi tCO2e cao nhất, và giá trị xấp xỉ bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "'Chuyển từ trồng lúa sang trồng ngô', khoảng 380–400 $/tCO2e (cột cao nhất, ~390).",
+      "evidence": [
+        {
+          "page": 65,
+          "region": "Hình 16, nửa trên trang, cột ngoài cùng bên phải",
+          "detail": "cột cao nhất, đỉnh sát mốc 400 (khoảng 390) trên trục 0–500"
+        }
+      ],
+      "reason": "Biểu đồ cột không nhãn dữ liệu, dùng tối đa và dung sai."
+    },
+    {
+      "id": "B-dev-04",
+      "split": "dev",
+      "group": "chart",
+      "question": "Theo Hình 18 (tác động của NZP so với BAU vào năm 2040), giá trị ghi trên biểu đồ cho 'Mức nghèo ($3,20)' và cho 'Bất bình đẳng (Chỉ số Gini)' là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Mức nghèo ($3,20): -0,1; Bất bình đẳng (Gini): -1,1.",
+      "evidence": [
+        {
+          "page": 70,
+          "region": "Hình 18, nửa trên trang",
+          "detail": "nhãn cột: Mức nghèo ($3,20) -0,1; Kinh tế không ổn định ($5,50) -0,1; Bất bình đẳng (Chỉ số Gini) -1,1"
+        }
+      ],
+      "reason": "Đọc nhãn dữ liệu in trên biểu đồ."
+    },
+    {
+      "id": "B-dev-06",
+      "split": "dev",
+      "group": "multihop",
+      "question": "Theo Bảng 4, biện pháp hỗ trợ đơn lẻ nào cho mức thay đổi GDP năm 2030 cao nhất, và theo phần văn bản giải thích, kết quả đó dựa trên giả định gì?",
+      "answerable": true,
+      "expected_answer": "Tăng khả năng cạnh tranh: GDP 2030 +0,9%; giả định tăng xuất khẩu 20% (so với BAU) trong giai đoạn 2022–2040 nhờ mở rộng sản xuất carbon thấp.",
+      "evidence": [
+        {
+          "page": 53,
+          "region": "Bảng 4, cột GDP 2030",
+          "detail": "ô nhiễm không khí 0,8; cạnh tranh 0,9; hiệu quả năng lượng 0,5; dịch chuyển lao động -0,2; hạn chế lấn át -0,5"
+        },
+        {
+          "page": 51,
+          "region": "Đoạn 'Nâng cao năng lực cạnh tranh quốc tế' cuối trang",
+          "detail": "'Nếu Việt Nam có thể tăng xuất khẩu lên 20% (so với kịch bản BAU) trong giai đoạn 2022–2040 ... GDP sẽ cao hơn 0,9% vào năm 2030'"
+        }
+      ],
+      "reason": "Bảng ở trang 53 xác định biện pháp; văn bản trang 51 cho giả định."
+    },
+    {
+      "id": "B-dev-07",
+      "split": "dev",
+      "group": "text",
+      "question": "Theo dự thảo Quy hoạch Điện 8 (PDP8, tháng 10/2021), công suất điện than dự kiến năm 2030 là bao nhiêu GW và so với công suất lắp đặt năm 2022 thì như thế nào?",
+      "answerable": true,
+      "expected_answer": "38 GW vào năm 2030, cao hơn gần hai lần so với công suất 20 GW năm 2022.",
+      "evidence": [
+        {
+          "page": 54,
+          "region": "Đoạn văn dưới biểu đồ Hình 12, đoạn bắt đầu 'Tại Hội nghị thượng đỉnh về biến đổi khí hậu'",
+          "detail": "'theo kế hoạch mới là 38 GW vào năm 2030. Tuy nhiên công suất mới này vẫn cao hơn gần hai lần so với công suất lắp đặt năm 2022 là 20GW'"
+        }
+      ],
+      "reason": "Thông tin điều kiện/đối chiếu từ văn xuôi."
+    },
+    {
+      "id": "B-dev-08",
+      "split": "dev",
+      "group": "abstain",
+      "question": "Giá điện bán lẻ bình quân hiện nay của EVN là bao nhiêu đồng/kWh?",
+      "answerable": false,
+      "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+      "evidence": [],
+      "reason": "Đã grep: 'đồng/kWh', 'VND', 'bán lẻ' (chỉ ngành thương mại bán lẻ), 'giá điện' (chỉ thảo luận định tính: ADS cao hơn CPS 26% năm 2040, cải cách giá điện), 'kWh'. Không có mức giá tuyệt đối."
+    },
+    {
+      "id": "C-dev-01",
+      "split": "dev",
+      "group": "table",
+      "question": "Trong Phụ lục 1, hàng 'Kịch bản phát thải - BAU' và 'Mục tiêu NDC - 27% dưới BAU (có điều kiện)': năm 2030, phát thải mục tiêu có điều kiện thấp hơn BAU bao nhiêu triệu tấn CO2e?",
+      "answerable": true,
+      "expected_answer": "Thấp hơn 250,9 triệu tấn CO2e (927,9 - 677).",
+      "evidence": [
+        {
+          "page": 92,
+          "region": "Phụ lục 1 (tiếp), ba hàng đầu của bảng, cột # năm 2030",
+          "detail": "BAU 2030: 927,9; NDC 9% vô điều kiện: 844; NDC 27% có điều kiện: 677 (triệu tấn CO2e, nguồn VN NDC)"
+        }
+      ],
+      "reason": "Hiệu hai ô: 927,9 - 677 = 250,9."
+    },
+    {
+      "id": "C-dev-02",
+      "split": "dev",
+      "group": "table",
+      "question": "Theo Bảng 6 (Tiêu chí ưu tiên), hành động có mức Khẩn cấp 'Trung bình' và Tác động 'Trung bình' được mô tả như thế nào?",
+      "answerable": true,
+      "expected_answer": "Là những hành động cần thời gian để hình thành và thực hiện; tác động có thể không chắc chắn trong một số trường hợp.",
+      "evidence": [
+        {
+          "page": 84,
+          "region": "Bảng 6, hàng 'Khẩn cấp: Trung bình', cột 'Tác động: Trung bình'",
+          "detail": "'Những hành động cần thời gian để hình thành và thực hiện; tác động có thể không chắc chắn trong một số trường hợp'"
+        }
+      ],
+      "reason": "Tra cứu ô giao nhau của hàng và cột trong bảng 2x2."
+    },
+    {
+      "id": "C-dev-03",
+      "split": "dev",
+      "group": "chart",
+      "question": "Theo Hình 19 (Chỉ số giá theo nhóm hàng hóa, 2022-2040, % lệch so với BAU), đến năm 2040 nhóm hàng nào có chỉ số giá tăng cao nhất so với BAU, và khoảng bao nhiêu %?",
+      "answerable": true,
+      "expected_answer": "Nhóm Năng lượng, khoảng 15% (chấp nhận 14-16%).",
+      "evidence": [
+        {
+          "page": 71,
+          "region": "Hình 19, đường màu xanh dương (Năng lượng) ở điểm cuối năm 2040",
+          "detail": "Đường Năng lượng kết thúc khoảng 15% trên trục (0 đến 20); Vận tải khoảng 4,5%; các nhóm còn lại gần 0 hoặc âm nhẹ (Y tế khoảng -1,5%)"
+        }
+      ],
+      "reason": "Biểu đồ đường không có nhãn dữ liệu nên cho dung sai; nhóm cao nhất không mơ hồ."
+    },
+    {
+      "id": "C-dev-04",
+      "split": "dev",
+      "group": "chart",
+      "question": "Trong Hình 20, ở kịch bản NZP đã cải cách (cột cam), những lĩnh vực nào giảm việc làm so với BAU vào năm 2040 và mức giảm lớn nhất là bao nhiêu %?",
+      "answerable": true,
+      "expected_answer": "Thương mại (-5,4%), Nông nghiệp (-5,4%) và Không hoạt động (-0,7%) giảm; mức giảm lớn nhất là 5,4% (Thương mại và Nông nghiệp bằng nhau).",
+      "evidence": [
+        {
+          "page": 72,
+          "region": "Hình 20, các cột cam nằm dưới trục 0",
+          "detail": "Thương mại -5,4; Nông nghiệp -5,4; Không hoạt động -0,7; các lĩnh vực khác dương (Điện 23,6; Khai thác mỏ 18,4; Vận tải 7,9; Xây dựng 9,8; Công nghiệp 7,4; Dịch vụ 12,4)"
+        }
+      ],
+      "reason": "Đọc các nhãn dữ liệu âm của chuỗi cam."
+    },
+    {
+      "id": "C-dev-05",
+      "split": "dev",
+      "group": "figure",
+      "question": "Trong ma trận ưu tiên Phụ lục 4, phần 'Hành động xuyên suốt', hành động 'Triển khai chương trình đào tạo xanh cho các tổ chức tài chính' nằm ở ô nào xét theo mức Khẩn cấp và Tác động?",
+      "answerable": true,
+      "expected_answer": "Ô Khẩn cấp = Trung bình và Tác động = Trung bình.",
+      "evidence": [
+        {
+          "page": 102,
+          "region": "Ma trận 'Hành động xuyên suốt', hàng 'Khẩn cấp: Trung bình', cột phải (Tác động: Trung bình), mục thứ 5",
+          "detail": "'Triển khai chương trình đào tạo xanh cho các tổ chức tài chính.'"
+        }
+      ],
+      "reason": "Hình ma trận dạng lưới (Phụ lục 4); vì không có hình thứ 5 thực sự trong phạm vi nên dùng ma trận đồ họa. Cột phải của trang là Tác động Trung bình (cột trái là Cao, theo đầu cột ở trang 100)."
+    },
+    {
+      "id": "C-dev-06",
+      "split": "dev",
+      "group": "multihop",
+      "question": "Chương 5 nêu tổng chi phí khử carbon đến 2040 là 114 tỷ USD (gồm 81 tỷ USD đầu tư và 33 tỷ USD cho các chương trình xã hội). Phụ lục 3B nêu tổng vốn đầu tư cần thiết (NPV) cho NZP là bao nhiêu, và con số này bằng khoảng bao nhiêu % của 114 tỷ USD?",
+      "answerable": true,
+      "expected_answer": "81,3 tỷ USD (NPV); bằng khoảng 71% của 114 tỷ USD (81,3/114 ≈ 71,3%).",
+      "evidence": [
+        {
+          "page": 77,
+          "region": "Đoạn văn đầu Chương 5",
+          "detail": "'Hành trình khử carbon... đòi hỏi thêm 114 tỷ USD đến năm 2040, bao gồm 81 tỷ USD đầu tư và 33 tỷ USD cho các chương trình xã hội'"
+        },
+        {
+          "page": 96,
+          "region": "Phụ lục 3B, gạch đầu dòng cuối",
+          "detail": "'Tổng vốn đầu tư cần thiết tương đương 81,3 tỷ USD (NPV)'"
+        }
+      ],
+      "reason": "Kết hợp hai trang; 81,3/114 ≈ 0,713."
+    },
+    {
+      "id": "C-dev-07",
+      "split": "dev",
+      "group": "text",
+      "question": "Theo mục 5.3, vì sao ODA cho Việt Nam giảm mạnh giữa năm 2014 và 2019 và con số cụ thể là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "ODA giảm từ 4,2 tỷ USD (2014) xuống khoảng 1,0 tỷ USD (2019), kể từ khi Việt Nam tốt nghiệp các nguồn vốn ưu đãi cao của IDA (Ngân hàng Thế giới) và ADF (Ngân hàng Phát triển Châu Á) trong năm 2017 và 2018.",
+      "evidence": [
+        {
+          "page": 80,
+          "region": "Mục 5.3, đoạn thứ hai",
+          "detail": "'ODA cho Việt Nam đã giảm mạnh từ 4,2 tỷ USD năm 2014 xuống chỉ còn khoảng 1,0 tỷ USD năm 2019 kể từ khi Việt Nam tốt nghiệp các nguồn vốn ưu đãi cao của IDA và ADF trong năm 2017 và 2018'"
+        }
+      ],
+      "reason": "Tổng hợp nguyên nhân và số liệu từ một đoạn văn xuôi."
+    },
+    {
+      "id": "C-dev-08",
+      "split": "dev",
+      "group": "abstain",
+      "question": "Dư nợ tín dụng xanh của Việt Nam vào cuối năm 2022 là bao nhiêu tỷ USD?",
+      "answerable": false,
+      "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+      "evidence": [],
+      "reason": "Đã grep 'tín dụng xanh' (10 lần), 'dư nợ', '2022' trong ngữ cảnh tín dụng. Hình 22 chỉ có dữ liệu 2016-2020 và 2021:Q1 (14,5 tỷ USD); văn bản chỉ nói tín dụng xanh tăng gần gấp 5 lần kể từ 2015. Không có số liệu 2022."
+    }
+  ]
+}

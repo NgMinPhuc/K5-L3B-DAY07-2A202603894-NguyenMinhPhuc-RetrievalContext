@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hộp 6",
+   "title": "10 điểm nổi bật trên phương diện kỹ thuật của Kịch bản Tăng tốc Khử carbon (ADS)",
+   "region": "center of page",
+   "content": "A gray boxed text panel containing 10 numbered-style technical highlights for the Accelerated Decarbonization Scenario (ADS). It is presented as a narrative list rather than a chart.\n\nTranscription of the box content:\n1. \"Công suất lắp đặt của các nhà máy nhiệt điện than sẽ đạt mức cao nhất vào năm 2025 (sau khi các dự án đang xây dựng hoàn thành). Trong giai đoạn tiếp theo sẽ dần dần loại bỏ sử dụng than, lượng phát thải khí nhà kính sẽ giảm xuống mức rất thấp vào năm 2040.\"\n2. \"Lượng phát thải của ngành điện đạt đỉnh vào năm 2030, và sẽ giảm xuống thấp hơn mức năm 2020 vào năm 2040.\"\n3. \"Tỷ trọng của nhiên liệu hóa thạch sẽ giảm xuống dưới 10% tổng công suất phát điện vào năm 2040.\"\n4. \"Năng lượng tái tạo (ví dụ năng lượng mặt trời, năng lượng gió ngoài khơi, năng lượng gió trên đất liền) chiếm ưu thế trong hệ thống điện và chiếm tới 90% tổng công suất lắp đặt.\"\n5. \"Phân tích nhấn mạnh tầm quan trọng của việc vượt qua những thách thức về tính gián đoạn và độ tin cậy khi triển khai năng lượng tái tạo trên quy mô lớn trong hệ thống điện. Điều này có ý nghĩa đối với cả phụ tải cơ bản và quản lý phụ tải giờ cao điểm.\"\n6. \"Sẽ cần phải có công suất dự trữ năng lượng đáng kể (ví dụ pin tích điện và thủy điện tích năng) trong trường hợp có tiến bộ về công nghệ dự trữ năng lượng.\"\n7. \"Công suất và tính linh hoạt của lưới điện sẽ cần được tăng đáng kể.\"\n8. \"Cần thực hiện mô hình hệ thống điện định kỳ để cập nhật các quyết định đầu tư. Khi các công nghệ mới đã được thương mại hóa trên quy mô lớn, vai trò của các công nghệ đó trên lộ trình giảm thiểu carbon sẽ được nâng cao hơn.\"\n9. \"Khí tự nhiên có thể đóng vai trò một loại nhiên liệu chuyển tiếp. Dựa trên phân tích hiện tại, khí tự nhiên xuất hiện trong tất cả các kịch bản phát điện đến năm 2040, cho đến khi các công nghệ sạch khác trở nên hiệu quả hơn về mặt chi phí.\"\n10. \"Đối với đầu tư năng lượng sạch cần thiết, việc triển khai thực hiện không cân đối hoặc không khớp về thời gian (ví dụ, quy mô năng lượng tái tạo hoặc không đủ công suất lưới điện không tăng kịp để bù đắp cho công suất than tương ứng bị giảm) có thể gây lo ngại về an ninh năng lượng và nguy cơ quay lại sử dụng than.\"\n\nMain message: the ADS pathway requires rapid coal phase-down, dominant renewables, major grid flexibility and storage expansion, and careful investment timing to avoid reliability and security risks.",
+   "notes": "This is a boxed narrative infographic rather than a quantitative chart; no additional figures/tables are present on the page."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3027,
+  "completion_tokens": 737
+ }
+}

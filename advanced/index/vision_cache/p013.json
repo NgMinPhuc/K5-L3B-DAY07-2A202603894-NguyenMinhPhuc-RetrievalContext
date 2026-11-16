@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 1",
+   "title": "Mô hình phát triển mới cho Việt Nam",
+   "region": "upper-middle of page",
+   "content": "Conceptual development model diagram showing two pathways from \"Việt Nam hiện nay\" (top center, blue box) to \"Việt Nam năm 2045\" (bottom center, orange box). Left side arrow loop is labeled \"Lộ trình xây dựng khả năng chống chịu\" and right side arrow loop is labeled \"Lộ trình khử carbon\". Between the top and bottom boxes is a bullet list of actions:\n- Xây dựng cơ sở hạ tầng có khả năng chống chịu\n- Bảo vệ những đối tượng bị tổn thương nhất\n- Cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp\n- Định giá carbon\n- Huy động nguồn vốn\n\nThe arrows are large curved arrows in blue (upper arc) and orange (lower arc), visually indicating movement from the present to 2045 through the two pathways. Main message: Vietnam can reach 2045 development goals by combining resilience-building and decarbonization measures.",
+   "notes": "Text layer includes surrounding body text and source line; diagram itself contains no numeric data beyond labels. Source: \"Nguồn: Ngân hàng Thế giới.\""
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2944,
+  "completion_tokens": 280
+ }
+}

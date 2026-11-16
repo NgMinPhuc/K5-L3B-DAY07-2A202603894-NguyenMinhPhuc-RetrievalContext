@@ -1,0 +1,15 @@
+{
+ "elements": [
+  {
+   "type": "map",
+   "label": "Hình 11",
+   "title": "Rủi ro ngập lụt tại các vùng ven biển",
+   "region": "right-center of page",
+   "content": "Map of Vietnam showing relative flood risk by coastal/provincial areas, shaded in multiple greens from very light to dark. Labeled locations include Hanoi, Haiphong, Da Nang, Ho Chi Minh City, and Can Tho. The legend is titled \"Relative Flood Risk\" and shows five green classes (lightest to darkest) corresponding to increasing risk; the exact class labels are too small to read clearly. The map highlights higher relative flood risk along many coastal stretches, especially central and southern coastal areas, with lower risk in some inland/northern areas. Main message: coastal Vietnam has varying but often elevated flood risk, with darker green areas indicating higher risk. Note/source text shown below the map: \"Nguồn: Ngân hàng Thế giới.\" Disclaimer text states that borders, colors, names, and other information shown do not imply any World Bank judgment regarding legal status or endorsement of boundaries."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3186,
+  "completion_tokens": 231
+ }
+}

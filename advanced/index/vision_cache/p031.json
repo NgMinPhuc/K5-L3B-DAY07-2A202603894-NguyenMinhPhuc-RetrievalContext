@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "A text-only page with a bold introductory paragraph followed by three bullet points summarizing estimated climate adaptation financing needs for Viet Nam. No tables, charts, maps, or other data visuals are present. Main quantitative statements in the page text:\n- Estimated cost to improve resilience of private commercial and industrial assets: about 228 tỷ USD over 2022–2050.\n- Estimated additional cost for upgrading/augmenting public infrastructure and new adaptation investments: about 228–266 tỷ USD to 2050.\n- Estimated cost for reducing vulnerability through early warning systems and disaster response programs: about 22–53 tỷ USD from 2022–2050.\n- Overall additional financial need for Viet Nam: 342–411 tỷ USD in 2022–2050 at NPV, or about 4,5–5,4% GDP per year.\n- Current climate-related private investment estimate: about 25% of government investment budget, or 1,5% GDP.\n- Current public financing for disaster response programs: about 0,3% GDP.\nThe page also includes footnotes 29–31 citing IMF 2021, a CCDR fiscal policy summary (January 2022), and MPI & UNDP 2022.",
+   "notes": "This page contains only narrative text and footnotes; there are no standalone informative visuals to index separately. The content field summarizes the page's quantitative information because no table/figure is visible."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3476,
+  "completion_tokens": 324
+ }
+}

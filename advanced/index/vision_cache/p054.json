@@ -1,0 +1,23 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 12",
+   "title": "Ngành điện Việt Nam phụ thuộc rất nhiều vào than",
+   "region": "middle of page",
+   "content": "Two donut charts presented side by side.\n\nLeft chart title: \"Công suất lắp đặt theo loại hình nhiên liệu hóa thạch (2020)\"\n- Center total: 68 GW\n- Categories shown in legend below: Khí đốt, Năng lượng tái tạo, Thủy điện, Than đá\n- Visible shares around the ring: 13%, 25%, 30%, 30%\n- Color-to-category mapping as shown: Khí đốt (light beige) = 13%; Năng lượng tái tạo (orange) = 25%; Thủy điện (dark blue) = 30%; Than đá (light blue) = 30%.\n\nRight chart title: \"Điện năng sản xuất từ nhiên liệu hóa thạch (2020)\"\n- Center total: 200 TWh\n- Categories shown in legend below: Khí đốt, Năng lượng tái tạo, Thủy điện, Than đá\n- Visible shares around the ring: 17%, 20%, 59%, and a very small remaining slice not labeled by percentage on the image.\n- Color-to-category mapping as shown: Khí đốt (light beige) = 17%; Năng lượng tái tạo (orange) = small thin slice; Thủy điện (dark blue) = 20%; Than đá (light blue) = 59%.\n\nLegend below both charts: beige square Khí đốt; orange square Năng lượng tái tạo; dark blue square Thủy điện; light blue square Than đá.\n\nMain message: Vietnam's power sector relies heavily on coal, especially in installed fossil-fuel capacity and in fossil-fuel electricity generation.\n\nSource line: \"Nguồn: Ngân hàng Thế giới, dựa trên dữ liệu của Bộ Công Thương và EVN.\""
+  },
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "lower half",
+   "content": "No additional informative visual elements beyond the figure above on this page.",
+   "notes": "The page text references Hình 13, but only Hình 12 is visible on this page image."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3151,
+  "completion_tokens": 484
+ }
+}

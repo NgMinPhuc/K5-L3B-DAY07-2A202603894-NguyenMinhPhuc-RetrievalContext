@@ -1,0 +1,1358 @@
+[
+  {
+    "query_id": "q016",
+    "split": "test",
+    "question": "Theo Bộ luật Lao động 2012, người lao động được nghỉ bao nhiêu ngày vào dịp Quốc khánh?",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2012, người lao động được nghỉ 01 ngày vào dịp Quốc khánh, cụ thể là ngày 02/9 dương lịch. [blld-2012:article:77472-78249]",
+    "expected_answer_for_offline_review_only": "01 ngày (ngày 02 tháng 9 dương lịch).",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 33,
+        "evidence": "Ngày Quốc khánh 01 ngày (ngày 02 tháng 9 dương lịch)"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:77472-78249",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 33,
+        "text_to_review": "Điều 115. Nghỉ lễ, tết\n1. Ngư ời lao động đư ợc ngh ỉ làm vi ệc, hư ởng nguyên lương trong nh ững\nngày lễ, tết sau đây:\na) Tết Dương lịch 01 ngày (ngày 01 tháng 01 dương lịch);\nb) Tết Âm lịch 05 ngày;\nc) Ngày Chiến thắng 01 ngày (ngày 30 tháng 4 dương lịch);\nd) Ngày Quốc tế lao động 01 ngày (ngày 01 tháng 5 dương lịch);\nđ) Ngày Quốc khánh 01 ngày (ngày 02 tháng 9 dương lịch);\ne) Ngày Giỗ Tổ Hùng Vương 01 ngày (ngày 10 tháng 3 âm lịch).\n2. Lao động là công dân nước ngoài làm việc tại Việt Nam ngoài ngày nghỉ lễ\ntheo quy định tại khoản 1 Điều này còn được nghỉ thêm 01 ngày Tết cổ truyền dân\ntộc và 01 ngày Quốc khánh của nước họ.\n3. Nếu những ngày ngh ỉ theo quy đ ịnh tại khoản 1 Đi ều này trùng vào ngày\nnghỉ hằng tuần, thì người lao động được nghỉ bù vào ngày kế tiếp.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 01 ngày (02/9), đúng Điều 115 BLLĐ 2012 theo câu hỏi; chunk nêu rõ."
+  },
+  {
+    "query_id": "q017",
+    "split": "test",
+    "question": "Theo Nghị định 145/2020/NĐ-CP, thành viên tổ lái tàu bay có hợp đồng lao động không xác định thời hạn phải báo trước ít nhất bao nhiêu ngày khi đơn phương chấm dứt hợp đồng?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Ít nhất 120 ngày.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 7,
+        "evidence": "Ít nhất 120 ngày đối với hợp đồng lao động không xác định thời hạn hoặc hợp đồng lao động xác định thời hạn từ 12 tháng trở lên"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q018",
+    "split": "test",
+    "question": "Tôi nghỉ việc sau 4 năm làm ở công ty, công ty phải trả trợ cấp thôi việc theo cách tính nào?",
+    "status": "answered",
+    "answer": "Theo Điều 46, trợ cấp thôi việc được tính như sau: mỗi năm làm việc được trợ cấp một nửa tháng tiền lương; thời gian làm việc để tính trợ cấp là tổng thời gian làm việc thực tế trừ đi thời gian đã tham gia bảo hiểm thất nghiệp và thời gian đã được trả trợ cấp thôi việc/trợ cấp mất việc làm; tiền lương tính trợ cấp là bình quân 06 tháng liền kề theo hợp đồng lao động trước khi thôi việc [blld-2019:article:41088-42114]. Nếu bạn làm 4 năm và thuộc trường hợp được hưởng, cách tính cơ bản là 4 × 1/2 tháng lương = 2 tháng tiền lương, nhưng còn phải trừ các khoảng thời gian không tính theo quy định nêu trên [blld-2019:article:41088-42114].",
+    "expected_answer_for_offline_review_only": "Nếu làm việc thường xuyên từ đủ 12 tháng trở lên: mỗi năm làm việc được trợ cấp một nửa tháng tiền lương (trừ trường hợp đủ điều kiện hưởng lương hưu...).",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 11,
+        "evidence": "mỗi năm làm việc được trợ cấp một nửa tháng tiền lương"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 15,
+        "evidence": "mỗi năm làm việc được trợ cấp một nửa tháng tiền lương"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:41088-42114",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 11,
+        "text_to_review": "Điều 46. Trợ cấp thôi việc\n1. Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4, 6, 7, 9 và 10 Điều 34 của Bộ luật này thì\nngười sử dụng lao động có trách nhiệm trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình\ntừ đủ 12 tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương, trừ trường hợp đủ điều kiện hưởng\nlương hưu theo quy định của pháp luật về bảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 của\nBộ luật này.\n2. Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng\nlao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm\nthất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n3. Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi\nngười lao động thôi việc.\n4. Chính phủ quy định chi tiết Điều này.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Nêu đúng mỗi năm nửa tháng lương, kèm cách tính thời gian và lương bình quân; thiếu nhắc rõ điều kiện đủ 12 tháng nhưng ý chính khớp."
+  },
+  {
+    "query_id": "q019",
+    "split": "test",
+    "question": "Theo luật, ca đêm được tính từ mấy giờ đến mấy giờ?",
+    "status": "answered",
+    "answer": "Theo luật, giờ làm việc ban đêm được tính từ 22 giờ đến 6 giờ sáng ngày hôm sau.[blld-2019:article:90033-90135]",
+    "expected_answer_for_offline_review_only": "Từ 22 giờ đến 06 giờ sáng ngày hôm sau.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 22,
+        "evidence": "Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 30,
+        "evidence": "Giờ làm việc ban đêm được tính từ 22 giờ đến 6 giờ sáng ngày hôm sau"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:90033-90135",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 22,
+        "text_to_review": "Điều 106. Giờ làm việc ban đêm\nGiờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 22 giờ đến 06 giờ sáng hôm sau; Điều 106 BLLĐ 2019 hỗ trợ."
+  },
+  {
+    "query_id": "q020",
+    "split": "test",
+    "question": "Nghị định hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động có hiệu lực thi hành từ ngày nào?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Từ ngày 01 tháng 02 năm 2021.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1205",
+        "page": 11,
+        "evidence": "Nghị định này có hiệu lực thi hành kể từ ngày 01 tháng 02 năm 2021"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q144",
+    "split": "test",
+    "question": "Đang thử việc mà muốn nghỉ thì có phải báo trước và bồi thường cho công ty không?",
+    "status": "answered",
+    "answer": "Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà **không cần báo trước và không phải bồi thường**. [blld-2019:article:22074-22772]",
+    "expected_answer_for_offline_review_only": "Không, mỗi bên có quyền hủy bỏ hợp đồng thử việc mà không cần báo trước và không phải bồi thường.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 6,
+        "evidence": "Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà không cần báo trước và không phải bồi thường"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 9,
+        "evidence": "Trong thời gian thử việc, mỗi bên có quyền huỷ bỏ thoả thuận thử việc mà không cần báo trước và không phải bồi thường"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:22074-22772",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 6,
+        "text_to_review": "Điều 27. Kết thúc thời gian thử việc\n1. Khi kết thúc thời gian thử việc, người sử dụng lao động phải thông báo kết quả thử việc cho người lao động.\nTrường hợp thử việc đạt yêu cầu thì người sử dụng lao động tiếp tục thực hiện hợp đồng lao động đã giao kết đối\nvới trường hợp thỏa thuận thử việc trong hợp đồng lao động hoặc phải giao kết hợp đồng lao động đối với trường\nhợp giao kết hợp đồng thử việc.\nTrường hợp thử việc không đạt yêu cầu thì chấm dứt hợp đồng lao động đã giao kết hoặc hợp đồng thử việc.\n2. Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà\nkhông cần báo trước và không phải bồi thường.\nMục 2. THỰC HIỆN HỢP ĐỒNG LAO ĐỘNG",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng: không cần báo trước và không phải bồi thường; khoản 2 Điều 27 hỗ trợ."
+  },
+  {
+    "query_id": "q145",
+    "split": "test",
+    "question": "Muốn sửa đổi nội dung hợp đồng lao động thì phải báo cho bên kia trước bao lâu?",
+    "status": "answered",
+    "answer": "Phải báo cho bên kia biết trước ít nhất 03 ngày làm việc về nội dung cần sửa đổi, bổ sung hợp đồng lao động. [blld-2019:article:27072-27693]",
+    "expected_answer_for_offline_review_only": "Ít nhất 03 ngày làm việc.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 7,
+        "evidence": "nếu bên nào có yêu cầu sửa đổi, bổ sung nội dung hợp đồng lao động thì phải báo cho bên kia biết trước ít nhất 03 ngày làm"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 10,
+        "evidence": "nếu bên nào có yêu cầu sửa đổi, bổ sung nội dung hợp đồng lao động thì phải báo cho bên kia"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:27072-27693",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 7,
+        "text_to_review": "Điều 33. Sửa đổi, bổ sung hợp đồng lao động\n1. Trong quá trình thực hiện hợp đồng lao động, nếu bên nào có yêu cầu sửa đổi, bổ sung nội dung hợp đồng lao\nđộng thì phải báo cho bên kia biết trước ít nhất 03 ngày làm việc về nội dung cần sửa đổi, bổ sung.\n2. Trường hợp hai bên thỏa thuận được thì việc sửa đổi, bổ sung nội dung hợp đồng lao động được tiến hành bằng\nviệc ký kết phụ lục hợp đồng lao động hoặc giao kết hợp đồng lao động mới.\n3. Trường hợp hai bên không thỏa thuận được việc sửa đổi, bổ sung nội dung hợp đồng lao động thì tiếp tục thực\nhiện hợp đồng lao động đã giao kết.\nMục 3. CHẤM DỨT HỢP ĐỒNG LAO ĐỘNG",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 03 ngày làm việc; Điều 33 khoản 1 hỗ trợ."
+  },
+  {
+    "query_id": "q146",
+    "split": "test",
+    "question": "Công ty có được cho nghỉ việc một nhân viên nữ đang nghỉ thai sản không?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Không, người sử dụng lao động không được đơn phương chấm dứt hợp đồng với người lao động đang nghỉ thai sản hoặc nuôi con dưới 12 tháng tuổi.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 9,
+        "evidence": "người lao động đang nghỉ thai sản hoặc nuôi con dưới 12 tháng tuổi"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q147",
+    "split": "test",
+    "question": "Tiền lương dùng để tính trợ cấp thôi việc được xác định như thế nào?",
+    "status": "answered",
+    "answer": "Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động thôi việc. [blld-2019:article:41088-42114]",
+    "expected_answer_for_offline_review_only": "Là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi thôi việc.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 11,
+        "evidence": "Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động thôi việc"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 15,
+        "evidence": "Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân theo hợp đồng lao động của 06 tháng liền kề"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:41088-42114",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 11,
+        "text_to_review": "Điều 46. Trợ cấp thôi việc\n1. Khi hợp đồng lao động chấm dứt theo quy định tại các khoản 1, 2, 3, 4, 6, 7, 9 và 10 Điều 34 của Bộ luật này thì\nngười sử dụng lao động có trách nhiệm trả trợ cấp thôi việc cho người lao động đã làm việc thường xuyên cho mình\ntừ đủ 12 tháng trở lên, mỗi năm làm việc được trợ cấp một nửa tháng tiền lương, trừ trường hợp đủ điều kiện hưởng\nlương hưu theo quy định của pháp luật về bảo hiểm xã hội và trường hợp quy định tại điểm e khoản 1 Điều 36 của\nBộ luật này.\n2. Thời gian làm việc để tính trợ cấp thôi việc là tổng thời gian người lao động đã làm việc thực tế cho người sử dụng\nlao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo hiểm\nthất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc làm.\n3. Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi\nngười lao động thôi việc.\n4. Chính phủ quy định chi tiết Điều này.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng bình quân 06 tháng liền kề theo HĐLĐ; Điều 46 khoản 3 hỗ trợ."
+  },
+  {
+    "query_id": "q148",
+    "split": "test",
+    "question": "Trợ cấp mất việc làm được tính dựa trên tiền lương nào?",
+    "status": "answered",
+    "answer": "Trợ cấp mất việc làm được tính dựa trên tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động mất việc làm [blld-2019:article:42114-42967].",
+    "expected_answer_for_offline_review_only": "Tiền lương bình quân của 06 tháng liền kề theo hợp đồng trước khi mất việc làm.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 11,
+        "evidence": "Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động mất việc làm"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:42114-42967",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 11,
+        "text_to_review": "Điều 47. Trợ cấp mất việc làm\n1. Người sử dụng lao động trả trợ cấp mất việc làm cho người lao động đã làm việc thường xuyên cho mình từ đủ 12\ntháng trở lên mà bị mất việc làm theo quy định tại khoản 11 Điều 34 của Bộ luật này, cứ mỗi năm làm việc trả 01\ntháng tiền lương nhưng ít nhất bằng 02 tháng tiền lương.\n2. Thời gian làm việc để tính trợ cấp mất việc làm là tổng thời gian người lao động đã làm việc thực tế cho người sử\ndụng lao động trừ đi thời gian người lao động đã tham gia bảo hiểm thất nghiệp theo quy định của pháp luật về bảo\nhiểm thất nghiệp và thời gian làm việc đã được người sử dụng lao động chi trả trợ cấp thôi việc, trợ cấp mất việc\nlàm.\n3. Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động\ntrước khi người lao động mất việc làm.\n4. Chính phủ quy định chi tiết Điều này.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng bình quân 06 tháng liền kề trước khi mất việc; Điều 47 khoản 3 hỗ trợ."
+  },
+  {
+    "query_id": "q149",
+    "split": "test",
+    "question": "Công đoàn có được tổ chức đình công khi tranh chấp lao động đang được giải quyết không?",
+    "status": "answered",
+    "answer": "Có. Theo tài liệu, đình công là sự ngừng việc tạm thời, tự nguyện và có tổ chức của người lao động nhằm đạt được yêu cầu trong quá trình giải quyết tranh chấp lao động [blld-2019:article:167809-168106]. Đồng thời, khi đã có đình công thì Ban chấp hành công đoàn có quyền rút quyết định đình công hoặc chấm dứt đình công [blld-2012:article:145535-146380].",
+    "expected_answer_for_offline_review_only": "Không được.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 16,
+        "evidence": "Trong khi đang giải quyết tranh chấp lao động, tổ chức đại diện người lao động không được tổ chức đình công"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:167809-168106",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 41,
+        "text_to_review": "Điều 198. Đình công\nĐình công là sự ngừng việc tạm thời, tự nguyện và có tổ chức của người lao động nhằm đạt được yêu cầu trong quá\ntrình giải quyết tranh chấp lao động và do tổ chức đại diện người lao động có quyền thương lượng tập thể là một bên\ntranh chấp lao động tập thể tổ chức và lãnh đạo.",
+        "supports_answer": false
+      },
+      {
+        "citation_id": "blld-2012:article:145535-146380",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 60,
+        "text_to_review": "Điều 214. Quyền của các bên trước và trong quá trình đình công\n1. Tiếp tục thỏa thuận để giải quyết nội dung tranh chấp lao động tập thể hoặc\ncùng đề nghị cơ quan quản lý nhà nước về lao động, tổ chức công đoàn và tổ chức\nđại diện người sử dụng lao động ở cấp tỉnh tiến hành hoà giải.\n2. Ban chấp hành công đoàn có quyền sau đây:\na) Rút quyết định đình công nếu chưa đình công hoặc chấm dứt đình công nếu\nđang đình công;\nb) Yêu cầu Tòa án tuyên bố cuộc đình công là hợp pháp.\n3. Người sử dụng lao động có quyền sau đây:\na) Chấp nhận toàn bộ hoặc một phần yêu cầu và thông báo b ằng văn bản cho\nBan chấp hành công đoàn tổ chức, lãnh đạo đình công;\nb) Đóng cửa tạm thời nơi làm việc trong thời gian đình công do không đủ điều\nkiện để duy trì hoạt động bình thường hoặc để bảo vệ tài sản;\nc) Yêu cầu Tòa án tuyên bố cuộc đình công là bất hợp pháp.",
+        "supports_answer": false
+      }
+    ],
+    "citation_context_membership": [
+      true,
+      true
+    ],
+    "citation_support": [
+      false,
+      false
+    ],
+    "answer_grade": 0,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Trả lời \"Có\" trái với đáp án (không được tổ chức đình công khi đang giải quyết tranh chấp). Điều 198 chỉ định nghĩa đình công, Điều 214 BLLĐ 2012 nói quyền rút/chấm dứt đình công; không chunk nào hỗ trợ kết luận."
+  },
+  {
+    "query_id": "q150",
+    "split": "test",
+    "question": "Công ty gặp sự cố bất khả kháng thì được chậm trả lương tối đa bao lâu?",
+    "status": "answered",
+    "answer": "Công ty gặp sự cố bất khả kháng thì được chậm trả lương tối đa 30 ngày. Nếu trả lương chậm từ 15 ngày trở lên thì phải đền bù cho người lao động ít nhất bằng tiền lãi của số tiền trả chậm theo lãi suất huy động tiền gửi có kỳ hạn 01 tháng của ngân hàng nơi mở tài khoản trả lương tại thời điểm trả lương. [blld-2019:article:83363-84484]",
+    "expected_answer_for_offline_review_only": "Không được chậm quá 30 ngày.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 21,
+        "evidence": "Trường hợp vì lý do bất khả kháng mà người sử dụng lao động đã tìm mọi biện pháp khắc phục nhưng không thể trả lương đúng hạn thì không được chậm quá 30 ngày"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:83363-84484",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 21,
+        "text_to_review": "Điều 97. Kỳ hạn trả lương\n1. Người lao động hưởng lương theo giờ, ngày, tuần thì được trả lương sau giờ, ngày, tuần làm việc hoặc được trả\ngộp do hai bên thỏa thuận nhưng không quá 15 ngày phải được trả gộp một lần.\n2. Người lao động hưởng lương theo tháng được trả một tháng một lần hoặc nửa tháng một lần. Thời điểm trả lương\ndo hai bên thỏa thuận và phải được ấn định vào một thời điểm có tính chu kỳ.\n3. Người lao động hưởng lương theo sản phẩm, theo khoán được trả lương theo thỏa thuận của hai bên; nếu công\nviệc phải làm trong nhiều tháng thì hằng tháng được tạm ứng tiền lương theo khối lượng công việc đã làm trong\ntháng.\n4. Trường hợp vì lý do bất khả kháng mà người sử dụng lao động đã tìm mọi biện pháp khắc phục nhưng không thể\ntrả lương đúng hạn thì không được chậm quá 30 ngày; nếu trả lương chậm từ 15 ngày trở lên thì người sử dụng lao\nđộng phải đền bù cho người lao động một khoản tiền ít nhất bằng số tiền lãi của số tiền trả chậm tính theo lãi suất\nhuy động tiền gửi có kỳ hạn 01 tháng do ngân hàng nơi người sử dụng lao động mở tài khoản trả lương cho người\nlao động công bố tại thời điểm trả lương.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng tối đa 30 ngày, bổ sung đúng phần đền bù từ 15 ngày; Điều 97 khoản 4 hỗ trợ."
+  },
+  {
+    "query_id": "q151",
+    "split": "test",
+    "question": "Công ty được khấu trừ tối đa bao nhiêu phần trăm lương mỗi tháng?",
+    "status": "answered",
+    "answer": "Công ty được khấu trừ tối đa 30% tiền lương thực trả hằng tháng của người lao động sau khi trích nộp các khoản bảo hiểm bắt buộc và thuế theo quy định.[blld-2019:article:88045-88580]",
+    "expected_answer_for_offline_review_only": "Không quá 30% tiền lương thực trả hằng tháng (sau khi trích nộp BHXH, BHYT, BHTN, thuế TNCN).",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 22,
+        "evidence": "Mức khấu trừ tiền lương hằng tháng không được quá 30% tiền lương thực trả hằng tháng"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 30,
+        "evidence": "Mức khấu trừ tiền lương hằng tháng không được quá 30% tiền lương hằng tháng"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:88045-88580",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 22,
+        "text_to_review": "Điều 102. Khấu trừ tiền lương\n1. Người sử dụng lao động chỉ được khấu trừ tiền lương của người lao động để bồi thường thiệt hại do làm hư hỏng\ndụng cụ, thiết bị, tài sản của người sử dụng lao động theo quy định tại Điều 129 của Bộ luật này.\n2. Người lao động có quyền được biết lý do khấu trừ tiền lương của mình.\n3. Mức khấu trừ tiền lương hằng tháng không được quá 30% tiền lương thực trả hằng tháng của người lao động sau\nkhi trích nộp các khoản bảo hiểm xã hội bắt buộc, bảo hiểm y tế, bảo hiểm thất nghiệp, thuế thu nhập cá nhân.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng không quá 30% tiền lương thực trả sau khi trừ bảo hiểm và thuế; Điều 102 khoản 3 hỗ trợ."
+  },
+  {
+    "query_id": "q152",
+    "split": "test",
+    "question": "Trước khi chuyển sang ca làm việc khác, người lao động được nghỉ ít nhất bao lâu?",
+    "status": "answered",
+    "answer": "Người lao động được nghỉ ít nhất 12 giờ trước khi chuyển sang ca làm việc khác.[blld-2019:article:93269-93391]",
+    "expected_answer_for_offline_review_only": "Ít nhất 12 giờ.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 23,
+        "evidence": "Người lao động làm việc theo ca được nghỉ ít nhất 12 giờ trước khi chuyển sang ca làm việc khác"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 31,
+        "evidence": "được nghỉ ít nhất 12 giờ trước khi chuyển sang ca làm việc khác"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:93269-93391",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 23,
+        "text_to_review": "Điều 110. Nghỉ chuyển ca\nNgười lao động làm việc theo ca được nghỉ ít nhất 12 giờ trước khi chuyển sang ca làm việc khác.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng ít nhất 12 giờ; Điều 110 hỗ trợ."
+  },
+  {
+    "query_id": "q153",
+    "split": "test",
+    "question": "Nội quy lao động có hiệu lực từ khi nào?",
+    "status": "answered",
+    "answer": "Nội quy lao động có hiệu lực sau 15 ngày kể từ ngày cơ quan nhà nước có thẩm quyền quy định tại Điều 119 nhận được đầy đủ hồ sơ đăng ký nội quy lao động. Trường hợp người sử dụng lao động sử dụng dưới 10 người lao động ban hành nội quy lao động bằng văn bản thì hiệu lực do người sử dụng lao động quyết định trong nội quy lao động. [blld-2019:article:101539-101927]",
+    "expected_answer_for_offline_review_only": "Sau 15 ngày kể từ ngày cơ quan nhà nước có thẩm quyền nhận được đủ hồ sơ đăng ký.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 25,
+        "evidence": "Nội quy lao động có hiệu lực sau 15 ngày kể từ ngày cơ quan nhà nước có thẩm quyền"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:101539-101927",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 25,
+        "text_to_review": "Điều 121. Hiệu lực của nội quy lao động\nNội quy lao động có hiệu lực sau 15 ngày kể từ ngày cơ quan nhà nước có thẩm quyền quy định tại Điều 119 của Bộ\nluật này nhận được đầy đủ hồ sơ đăng ký nội quy lao động.\nTrường hợp người sử dụng lao động sử dụng dưới 10 người lao động ban hành nội quy lao động bằng văn bản thì\nhiệu lực do người sử dụng lao động quyết định trong nội quy lao động.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 15 ngày kể từ khi nhận đủ hồ sơ đăng ký, kèm ngoại lệ dưới 10 lao động; Điều 121 hỗ trợ."
+  },
+  {
+    "query_id": "q154",
+    "split": "test",
+    "question": "Công ty được tạm đình chỉ công việc của nhân viên vi phạm tối đa bao lâu?",
+    "status": "answered",
+    "answer": "Công ty được tạm đình chỉ công việc của nhân viên tối đa 15 ngày; trường hợp đặc biệt cũng không được quá 90 ngày. Sau thời hạn này, người sử dụng lao động phải nhận người lao động trở lại làm việc. [blld-2012:article:86696-87717]",
+    "expected_answer_for_offline_review_only": "Không quá 15 ngày, trường hợp đặc biệt không quá 90 ngày.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 27,
+        "evidence": "Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc biệt không được quá 90 ngày"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 37,
+        "evidence": "Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc biệt cũng không được quá 90 ngày"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:86696-87717",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 36,
+        "text_to_review": "Điều 129. Tạm đình chỉ công việc\n1. Người sử dụng lao động có quyền tạm đình chỉ công việc của người lao động\nkhi vụ việc vi phạm có những tình tiết phức tạp, nếu xét thấy để người lao động tiếp\ntục làm việc sẽ gây khó khăn cho vi ệc xác minh. Việc tạm đình chỉ công việc của\nngười lao động chỉ được thực hiện sau khi tham khảo ý kiến của tổ chức đại diện tập\nthể lao động tại cơ sở.\n2. Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trư ờng hợp đặc\nbiệt cũng không đư ợc quá 90 ngày . Trong th ời gian b ị tạm đình ch ỉ công vi ệc,\nngười lao động được tạm ứng 50% tiền lương trước khi bị đình chỉ công việc.\nHết thời hạn tạm đình chỉ công việc, người sử dụng lao động phải nhận người\nlao động trở lại làm việc.\n3. Trường hợp người lao động bị xử lý kỷ luật lao động, người lao động cũng\nkhông phải trả lại số tiền lương đã tạm ứng.\n4. Trường hợp người lao động không bị xử lý kỷ luật lao động thì được người\nsử dụng lao động trả đủ tiền lương cho thời gian bị tạm đình chỉ công việc.\nMục 2\nTRÁCH NHIỆM VẬT CHẤT",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 15 ngày, đặc biệt không quá 90 ngày; trích BLLĐ 2012 (Điều 129) thay vì 2019 nhưng nội dung khớp và gold có cả 2012; chunk hỗ trợ."
+  },
+  {
+    "query_id": "q155",
+    "split": "test",
+    "question": "Người chưa đủ 15 tuổi được làm việc tối đa bao nhiêu giờ mỗi ngày và mỗi tuần?",
+    "status": "answered",
+    "answer": "Người chưa đủ 15 tuổi được làm việc tối đa 04 giờ mỗi ngày và 20 giờ mỗi tuần.[blld-2019:article:120332-120856]",
+    "expected_answer_for_offline_review_only": "Không quá 04 giờ/ngày và 20 giờ/tuần; không được làm thêm giờ, làm đêm.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 30,
+        "evidence": "Thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 45,
+        "evidence": "Thời giờ làm việc của người dưới 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:120332-120856",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 30,
+        "text_to_review": "Điều 146. Thời giờ làm việc của người chưa thành niên\n1. Thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần; không\nđược làm thêm giờ, làm việc vào ban đêm.\n2. Thời giờ làm việc của người từ đủ 15 tuổi đến chưa đủ 18 tuổi không được quá 08 giờ trong 01 ngày và 40 giờ\ntrong 01 tuần. Người từ đủ 15 tuổi đến chưa đủ 18 tuổi có thể được làm thêm giờ, làm việc vào ban đêm trong một\nsố nghề, công việc theo danh mục do Bộ trưởng Bộ Lao động - Thương binh và Xã hội ban hành.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 04 giờ/ngày và 20 giờ/tuần; không nhắc cấm làm thêm giờ/làm đêm nhưng đó là phần phụ so với câu hỏi. Điều 146 hỗ trợ."
+  },
+  {
+    "query_id": "q156",
+    "split": "test",
+    "question": "Thời hiệu yêu cầu hòa giải viên lao động hòa giải tranh chấp lao động cá nhân là bao lâu?",
+    "status": "answered",
+    "answer": "Thời hiệu yêu cầu hòa giải viên lao động hòa giải tranh chấp lao động cá nhân là 06 tháng, kể từ ngày phát hiện ra hành vi mà mỗi bên tranh chấp cho rằng quyền, lợi ích hợp pháp của mình bị vi phạm.[blld-2012:article:137360-137895]",
+    "expected_answer_for_offline_review_only": "06 tháng kể từ ngày phát hiện hành vi vi phạm.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 39,
+        "evidence": "Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 57,
+        "evidence": "Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:137360-137895",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 57,
+        "text_to_review": "Điều 202. Thời hiệu yêu cầu giải quyết tranh chấp lao động cá nhân\n1. Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao\nđộng cá nhân là 06 tháng, kể từ ngày phát hiện ra hành vi mà m ỗi bên tranh ch ấp\ncho rằng quyền, lợi ích hợp pháp của mình bị vi phạm.\n2. Thời hiệu yêu cầu Toà án giải quyết tranh chấp lao động cá nhân là 01 năm,\nkể từ ngày phát hiện ra hành vi mà mỗi bên tranh chấp cho rằng quyền, lợi ích hợp\npháp của mình bị vi phạm.\nMục 3\nTHẨM QUYỀN VÀ TRÌNH TỰ GIẢI QUYẾT\nTRANH CHẤP LAO ĐỘNG TẬP THỂ",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 06 tháng kể từ ngày phát hiện hành vi vi phạm; trích Điều 202 BLLĐ 2012, gold có cả 2012 nên chấp nhận."
+  },
+  {
+    "query_id": "q157",
+    "split": "test",
+    "question": "Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân là bao lâu?",
+    "status": "answered",
+    "answer": "Trong context không thấy quy định về “thời hiệu” yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân. Chỉ có quy định về trình tự và thời hạn giải quyết: trong 07 ngày làm việc phải thành lập Ban trọng tài lao động, và trong 30 ngày kể từ khi thành lập thì phải ra quyết định giải quyết tranh chấp [blld-2019:article:158380-159595].",
+    "expected_answer_for_offline_review_only": "09 tháng kể từ ngày phát hiện hành vi vi phạm.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 39,
+        "evidence": "Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân là 09 tháng"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:158380-159595",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 39,
+        "text_to_review": "Điều 189. Giải quyết tranh chấp lao động cá nhân của Hội đồng trọng tài lao động\n1. Trên cơ sở đồng thuận, các bên tranh chấp có quyền yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp\ntrong trường hợp quy định tại khoản 7 Điều 188 của Bộ luật này. Khi yêu cầu Hội đồng trọng tài lao động giải quyết\ntranh chấp, các bên không được đồng thời yêu cầu Tòa án giải quyết, trừ trường hợp quy định tại khoản 4 Điều này.\n2. Trong thời hạn 07 ngày làm việc kể từ ngày nhận được yêu cầu giải quyết tranh chấp theo quy định tại khoản 1\nĐiều này, Ban trọng tài lao động phải được thành lập để giải quyết tranh chấp.\n3. Trong thời hạn 30 ngày kể từ ngày Ban trọng tài lao động được thành lập, Ban trọng tài lao động phải ra quyết\nđịnh về việc giải quyết tranh chấp và gửi cho các bên tranh chấp.\n4. Trường hợp hết thời hạn quy định tại khoản 2 Điều này mà Ban trọng tài lao động không được thành lập hoặc hết\nthời hạn quy định tại khoản 3 Điều này mà Ban trọng tài lao động không ra quyết định giải quyết tranh chấp thì các\nbên có quyền yêu cầu Tòa án giải quyết.\n5. Trường hợp một trong các bên không thi hành quyết định giải quyết tranh chấp của Ban trọng tài lao động thì các\nbên có quyền yêu cầu Tòa án giải quyết.",
+        "supports_answer": false
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 0,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Trả lời không có quy định về thời hiệu, trái đáp án 09 tháng; chunk Điều 189 chỉ nói thời hạn thành lập Ban trọng tài và ra quyết định, không chứa thời hiệu 09 tháng."
+  },
+  {
+    "query_id": "q158",
+    "split": "test",
+    "question": "Bộ luật Lao động 2019 có hiệu lực thi hành từ ngày nào?",
+    "status": "answered",
+    "answer": "Bộ luật Lao động 2019 có hiệu lực thi hành từ ngày 01 tháng 01 năm 2021. [blld-2019:article:188222-189252]",
+    "expected_answer_for_offline_review_only": "Từ ngày 01 tháng 01 năm 2021.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 46,
+        "evidence": "Bộ luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2021"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:188222-189252",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 46,
+        "text_to_review": "Điều 220. Hiệu lực thi hành\n1. Bộ luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2021.\nBộ luật Lao động số 10/2012/QH13 hết hiệu lực thi hành kể từ ngày Bộ luật này có hiệu lực.\n2. Kể từ ngày Bộ luật này có hiệu lực thi hành, hợp đồng lao động, thỏa ước lao động tập thể, các thỏa thuận hợp\npháp đã giao kết có nội dung không trái hoặc bảo đảm cho người lao động có quyền và điều kiện thuận lợi hơn so\nvới quy định của Bộ luật này được tiếp tục thực hiện, trừ trường hợp các bên có thỏa thuận về việc sửa đổi, bổ sung\nđể phù hợp và để áp dụng quy định của Bộ luật này.\n3. Chế độ lao động đối với cán bộ, công chức, viên chức, người thuộc lực lượng Quân đội nhân dân, Công an nhân\ndân, tổ chức xã hội, xã viên hợp tác xã, người làm việc không có quan hệ lao động do các văn bản pháp luật khác\nquy định nhưng tùy từng đối tượng mà được áp dụng một số quy định trong Bộ luật này.\nBộ luật này được Quốc hội nước Cộng hòa xã hội chủ nghĩa Việt Nam khóa XIV, kỳ họp thứ 8 thông qua ngày 20\ntháng 11 năm 2019./.\n\nCHỦ TỊCH QUỐC HỘI",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 01/01/2021; Điều 220 hỗ trợ."
+  },
+  {
+    "query_id": "q159",
+    "split": "test",
+    "question": "Bộ luật Lao động 2012 có hiệu lực thi hành từ ngày nào?",
+    "status": "answered",
+    "answer": "Bộ luật Lao động 2012 có hiệu lực thi hành từ ngày 01 tháng 05 năm 2013.[blld-2012:article:160914-162085]",
+    "expected_answer_for_offline_review_only": "Từ ngày 01 tháng 05 năm 2013.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 67,
+        "evidence": "Bộ luật này có hiệu lực thi hành từ ngày 01 tháng 05 năm 2013"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:160914-162085",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 67,
+        "text_to_review": "Điều 240. Hiệu lực của Bộ luật lao động\n1. Bộ luật này có hiệu lực thi hành từ ngày 01 tháng 05 năm 2013.\nBộ luật lao động ngày 23 tháng 6 năm 1994, Luật sửa đổi, bổ sung một số điều\ncủa Bộ luật lao động số 35/2002/QH10, Luật sửa đổi, bổ sung một số điều của Bộ luật\nlao động số 74/2006/QH11 và Luật sửa đổi, bổ sung một số điều của Bộ luật lao động\nsố 84/2007/QH11 hết hiệu lực kể từ ngày Bộ luật này có hiệu lực.\n2. Kể từ ngày Bộ luật này có hiệu lực thi hành:\na) Các hợp đồng lao đ ộng, thoả ước lao động tập thể, những thoả thuận hợp\npháp khác đã giao k ết và nh ững thoả thuận có l ợi hơn cho ngư ời lao đ ộng so v ới\nquy định của Bộ luật này được tiếp tục thực hiện; những thoả thuận không phù hợp\nvới quy định của Bộ luật phải được sửa đổi, bổ sung;\nb) Quy định về thời gian hưởng chế độ khi sinh con tại Luật bảo hiểm xã hội\nsố 71/2006/QH11 được thực hiện theo quy định của Bộ luật này.\nLao động nữ nghỉ sinh con trước ngày Bộ luật này có hi ệu lực, mà đến ngày\n01 tháng 5 năm 2013 vẫn đang trong thời gian nghỉ sinh con theo quy định tại Luật\nbảo hiểm xã h ội số 71/2006/QH11 thì thời gian hưởng chế độ khi sinh con được\nthực hiện theo quy định của Bộ luật này.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 01/05/2013; Điều 240 BLLĐ 2012 hỗ trợ."
+  },
+  {
+    "query_id": "q160",
+    "split": "test",
+    "question": "Bộ luật Lao động 2019 được Quốc hội khóa nào thông qua, tại kỳ họp thứ mấy?",
+    "status": "answered",
+    "answer": "Bộ luật Lao động 2019 được Quốc hội khóa XIV thông qua tại kỳ họp thứ 8. [blld-2019:article:0-298]",
+    "expected_answer_for_offline_review_only": "Quốc hội khóa XIV, kỳ họp thứ 8, thông qua ngày 20/11/2019.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 46,
+        "evidence": "khóa XIV, kỳ họp thứ 8 thông qua ngày 20 tháng 11 năm 2019"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:0-298",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 1,
+        "text_to_review": "QUỐC HỘI\n--------\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n---------------\nBộ luật số: 45/2019/QH14 Hà Nội, ngày 20 tháng 11 năm 2019\n\nBỘ LUẬT\nLAO ĐỘNG\nCăn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam;\nQuốc hội ban hành Bộ luật Lao động.\nChương I\nNHỮNG QUY ĐỊNH CHUNG",
+        "supports_answer": false
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đáp án đúng (khóa XIV, kỳ họp thứ 8) nhưng chunk trích là trang đầu, không nêu khóa/kỳ họp; thông tin nằm ở trang 46 (gold) nên trích dẫn không hỗ trợ."
+  },
+  {
+    "query_id": "q161",
+    "split": "test",
+    "question": "Bộ luật Lao động 2012 được Quốc hội khóa nào thông qua, tại kỳ họp thứ mấy?",
+    "status": "answered",
+    "answer": "Bộ luật Lao động 2012 được Quốc hội khóa XIII thông qua tại kỳ họp thứ 3. [blld-2012:article:0-349]",
+    "expected_answer_for_offline_review_only": "Quốc hội khóa XIII, kỳ họp thứ 3, thông qua ngày 18/6/2012.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 68,
+        "evidence": "khóa XIII, kỳ họp thứ 3 thông qua ngày 18 tháng 6 năm 2012"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:0-349",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 1,
+        "text_to_review": "QUỐC HỘI\n______\n\nLuật số: 10/2012/QH13\nCỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\n_______________________\n\nBỘ LUẬT\nLAO ĐỘNG\n\nCăn cứ Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam năm 1992 đã\nđược sửa đổi, bổ sung một số điều theo Nghị quyết số 51/2001/QH10;\nQuốc hội ban hành Bộ luật lao động.\n\nCHƯƠNG I\nNHỮNG QUY ĐỊNH CHUNG",
+        "supports_answer": false
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      false
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đáp án đúng (khóa XIII, kỳ họp thứ 3) nhưng chunk trích là trang đầu, không nêu khóa/kỳ họp; thông tin ở trang 68 (gold) nên trích dẫn không hỗ trợ."
+  },
+  {
+    "query_id": "q162",
+    "split": "test",
+    "question": "Theo Nghị định 145/2020/NĐ-CP, người lao động thuộc ngành nghề đặc thù có hợp đồng dưới 12 tháng phải báo trước bao lâu khi đơn phương chấm dứt?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Ít nhất bằng một phần tư thời hạn của hợp đồng lao động.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 7,
+        "evidence": "Ít nhất bằng một phần tư thời hạn của hợp đồng lao động đối với hợp đồng lao động có thời hạn dưới 12 tháng"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q163",
+    "split": "test",
+    "question": "Trước buổi đối thoại định kỳ tại nơi làm việc, các bên phải gửi nội dung đối thoại trước bao lâu?",
+    "status": "answered",
+    "answer": "Theo tài liệu, đối thoại tại nơi làm việc được tiến hành định kỳ 03 tháng một lần hoặc theo yêu cầu của một bên [blld-2012:article:49145-49455]. Tuy nhiên, trong context không có quy định về việc các bên phải gửi nội dung đối thoại trước bao lâu trước buổi đối thoại định kỳ, nên chưa đủ căn cứ để trả lời chính xác câu hỏi này.",
+    "expected_answer_for_offline_review_only": "Chậm nhất 05 ngày làm việc trước ngày bắt đầu đối thoại.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 38,
+        "evidence": "Chậm nhất 05 ngày làm việc trước ngày bắt đầu tổ chức đối thoại định kỳ, các bên có trách nhiệm gửi nội dung đối thoại"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:49145-49455",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 21,
+        "text_to_review": "Điều 65. Tiến hành đối thoại tại nơi làm việc\n1. Đối thoại tại nơi là m việc được tiến hành định kỳ 03 tháng m ột lần hoặc\ntheo yêu cầu của một bên.\n2. Người sử dụng lao đ ộng có nghĩa v ụ bố trí địa điểm và các điều kiện vật\nchất khác bảo đảm cho việc đối thoại tại nơi làm việc.\n\nMục 2\nTHƯƠNG LƯỢNG TẬP THỂ",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 0,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Nói không đủ căn cứ, không đưa ra đáp án 05 ngày làm việc (Nghị định 145/2020 Điều 39); chunk BLLĐ 2012 chỉ hỗ trợ chu kỳ 03 tháng, không đúng nguồn gold."
+  },
+  {
+    "query_id": "q164",
+    "split": "test",
+    "question": "Sau buổi đối thoại tại nơi làm việc, công ty phải công bố công khai nội dung chính trong bao lâu?",
+    "status": "answered",
+    "answer": "Công ty phải công bố công khai những nội dung chính của đối thoại chậm nhất trong 03 ngày làm việc kể từ khi kết thúc đối thoại [nd-145-2020-cb1203:article:68418-68761].",
+    "expected_answer_for_offline_review_only": "Chậm nhất 03 ngày làm việc kể từ khi kết thúc đối thoại.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 38,
+        "evidence": "Chậm nhất 03 ngày làm việc kể từ khi kết thúc đối thoại, người sử dụng lao động có trách nhiệm công bố công khai tại nơi làm việc"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "nd-145-2020-cb1203:article:68418-68761",
+        "in_final_context": true,
+        "source": "data/nd-145-2020-cb1203.pdf",
+        "source_id": "nd-145-2020-cb1203",
+        "page": 38,
+        "text_to_review": "Điều 39. Tổ chức đối thoại định kỳ tại nơi làm việc\n5. Chậm nhất 03 ngày làm việc kể từ khi kết thúc đối thoại, người sử dụng lao\nđộng có trách nhiệm công bố công khai tại nơi làm việc những nội dung chính của\nđối thoại; tổ chức đại diện người lao động (nếu có), nhóm đại diện đối thoại của\nngười lao động (nếu có) ph ổ biến những nội dung chính c ủa đối thoại đến người\nlao động là thành viên.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 03 ngày làm việc; Điều 39 khoản 5 NĐ 145/2020 hỗ trợ."
+  },
+  {
+    "query_id": "q165",
+    "split": "test",
+    "question": "Theo Bộ luật Lao động 2012, đối thoại tại nơi làm việc được tổ chức định kỳ bao lâu một lần?",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2012, đối thoại tại nơi làm việc được tiến hành định kỳ 03 tháng một lần, hoặc theo yêu cầu của một bên. [blld-2012:article:49145-49455]",
+    "expected_answer_for_offline_review_only": "Định kỳ 03 tháng một lần hoặc theo yêu cầu của một bên.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 21,
+        "evidence": "Đối thoại tại nơi làm việc được tiến hành định kỳ 03 tháng một lần hoặc theo yêu cầu của một bên"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:49145-49455",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 21,
+        "text_to_review": "Điều 65. Tiến hành đối thoại tại nơi làm việc\n1. Đối thoại tại nơi là m việc được tiến hành định kỳ 03 tháng m ột lần hoặc\ntheo yêu cầu của một bên.\n2. Người sử dụng lao đ ộng có nghĩa v ụ bố trí địa điểm và các điều kiện vật\nchất khác bảo đảm cho việc đối thoại tại nơi làm việc.\n\nMục 2\nTHƯƠNG LƯỢNG TẬP THỂ",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng định kỳ 03 tháng một lần hoặc theo yêu cầu một bên; Điều 65 BLLĐ 2012 hỗ trợ."
+  },
+  {
+    "query_id": "q166",
+    "split": "test",
+    "question": "Nghỉ không lương có được tính vào thời gian làm việc để hưởng phép năm không?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Có, nếu được người sử dụng lao động đồng ý nhưng cộng dồn không quá 01 tháng trong một năm.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 58,
+        "evidence": "Thời gian nghỉ việc không hưởng lương nếu được người sử dụng lao động đồng ý nhưng cộng dồn không quá 01 tháng trong một năm"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q167",
+    "split": "test",
+    "question": "Thời gian nghỉ do tai nạn lao động có được tính để hưởng ngày nghỉ hằng năm không?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Có, nhưng cộng dồn không quá 6 tháng.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 59,
+        "evidence": "Thời gian nghỉ do tai nạn lao động, bệnh nghề nghiệp nhưng cộng dồn không quá 6 tháng"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q168",
+    "split": "test",
+    "question": "Nhà trẻ ở khu vực có nhiều lao động nhận trẻ ở độ tuổi nào?",
+    "status": "answered",
+    "answer": "Nhà trẻ ở khu vực có nhiều lao động nhận trẻ từ 3 tháng tuổi đến 3 tuổi [nd-145-2020-cb1203:article:119742-120224].",
+    "expected_answer_for_offline_review_only": "Từ 03 tháng tuổi đến 03 tuổi.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 68,
+        "evidence": "Nhà trẻ, nhóm trẻ độc lập nhận trẻ em từ 03 tháng tuổi đến 03 tuổi"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "nd-145-2020-cb1203:article:119742-120224",
+        "in_final_context": true,
+        "source": "data/nd-145-2020-cb1203.pdf",
+        "source_id": "nd-145-2020-cb1203",
+        "page": 68,
+        "text_to_review": "Điều 77. Nhà trẻ, lớp mẫu giáo\nNhà trẻ, lớp mẫu giáo là c ơ sở giáo d ục mầm non theo quy định tại Điều 26\ncủa Luật Giáo dục, gồm:\n1. Nhà trẻ, nhóm trẻ độc lập nhận trẻ em từ 03 tháng tuổi đến 03 tuổi.\n2. Trường mẫu giáo, lớp mẫu giáo độc lập nhận trẻ em từ 03 tuổi đến 06 tuổi.\n3. Trường mầm non, lớp mầm non độc lập là cơ sở giáo dục kết hợp nhà trẻ và\nmẫu giáo, nhận trẻ em từ 03 tháng tuổi đến 06 tuổi.\n\nMục 2\nBẢO ĐẢM BÌNH ĐẲNG GIỚI\nVÀ NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG NỮ",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng từ 03 tháng đến 03 tuổi; Điều 77 NĐ 145/2020 hỗ trợ."
+  },
+  {
+    "query_id": "q169",
+    "split": "test",
+    "question": "Lớp mẫu giáo độc lập nhận trẻ trong độ tuổi nào?",
+    "status": "answered",
+    "answer": "Lớp mẫu giáo độc lập nhận trẻ em từ 03 tuổi đến 06 tuổi [nd-145-2020-cb1203:article:119742-120224].",
+    "expected_answer_for_offline_review_only": "Từ 03 tuổi đến 06 tuổi.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 68,
+        "evidence": "Trường mẫu giáo, lớp mẫu giáo độc lập nhận trẻ em từ 03 tuổi đến 06 tuổi"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "nd-145-2020-cb1203:article:119742-120224",
+        "in_final_context": true,
+        "source": "data/nd-145-2020-cb1203.pdf",
+        "source_id": "nd-145-2020-cb1203",
+        "page": 68,
+        "text_to_review": "Điều 77. Nhà trẻ, lớp mẫu giáo\nNhà trẻ, lớp mẫu giáo là c ơ sở giáo d ục mầm non theo quy định tại Điều 26\ncủa Luật Giáo dục, gồm:\n1. Nhà trẻ, nhóm trẻ độc lập nhận trẻ em từ 03 tháng tuổi đến 03 tuổi.\n2. Trường mẫu giáo, lớp mẫu giáo độc lập nhận trẻ em từ 03 tuổi đến 06 tuổi.\n3. Trường mầm non, lớp mầm non độc lập là cơ sở giáo dục kết hợp nhà trẻ và\nmẫu giáo, nhận trẻ em từ 03 tháng tuổi đến 06 tuổi.\n\nMục 2\nBẢO ĐẢM BÌNH ĐẲNG GIỚI\nVÀ NHỮNG QUY ĐỊNH RIÊNG ĐỐI VỚI LAO ĐỘNG NỮ",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng từ 03 đến 06 tuổi; Điều 77 khoản 2 hỗ trợ."
+  },
+  {
+    "query_id": "q170",
+    "split": "test",
+    "question": "Muốn được bổ nhiệm làm trọng tài viên lao động cần trình độ và kinh nghiệm như thế nào?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Trình độ đại học trở lên, hiểu biết pháp luật và ít nhất 05 năm làm việc trong lĩnh vực liên quan đến quan hệ lao động.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1203",
+        "page": 90,
+        "evidence": "Có trình độ đại học trở lên, hiểu biết pháp luật và có ít nhất 05 năm làm việc trong lĩnh vực có liên quan đến quan hệ lao động"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q171",
+    "split": "test",
+    "question": "Theo Bộ luật Lao động 2012, người lao động bị khiển trách thì sau bao lâu được tự động xóa kỷ luật nếu không tái phạm?",
+    "status": "answered",
+    "answer": "Người lao động bị khiển trách thì sau 03 tháng, nếu không tái phạm, đương nhiên được xóa kỷ luật [blld-2012:article:85806-86402].",
+    "expected_answer_for_offline_review_only": "Sau 03 tháng kể từ ngày bị xử lý.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 36,
+        "evidence": "Người lao động bị khiển trách sau 03 tháng"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:85806-86402",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 36,
+        "text_to_review": "Điều 127. Xoá kỷ luật, giảm thời hạn chấp hành kỷ luật lao động\n1. Người lao đ ộng bị khiển trách sau 03 tháng, ho ặc bị xử lý kỷ luật kéo dài\nthời h ạn nâng lương sau 06 tháng, k ể từ ngày b ị xử lý, n ếu không tái ph ạm thì\nđương nhiên đư ợc xoá k ỷ luật. Trường hợp bị xử lý kỷ luật lao đ ộng bằng hình\nthức cách chức thì sau th ời hạn 03 năm, nếu tiếp tục vi phạm kỷ luật lao động thì\nkhông bị coi là tái phạm.\n2. Người lao động bị xử lý kỷ luật kéo dài th ời hạn nâng lương sau khi ch ấp\nhành được một nửa thời hạn nếu sửa chữa tiến bộ, có thể được người sử dụng lao\nđộng xét giảm thời hạn.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 03 tháng nếu không tái phạm; Điều 127 BLLĐ 2012 hỗ trợ."
+  },
+  {
+    "query_id": "q172",
+    "split": "test",
+    "question": "Theo Bộ luật Lao động 2012, người bị tai nạn lao động suy giảm 5-10% khả năng lao động được bồi thường ít nhất bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Ít nhất 1,5 tháng tiền lương theo hợp đồng lao động.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 41,
+        "evidence": "Ít nhất bằng 1,5 tháng tiền lương theo hợp đồng lao động nếu bị suy giảm từ 5,0% đến 10% khả năng lao động"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q173",
+    "split": "test",
+    "question": "Theo Bộ luật Lao động 2012, lao động từ 15 đến dưới 18 tuổi được làm việc tối đa bao nhiêu giờ?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Không quá 08 giờ/ngày và 40 giờ/tuần.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 45,
+        "evidence": "Thời giờ làm việc của người lao động chưa thành niên từ đủ 15 tuổi đến dưới 18 tuổi không được quá 08 giờ trong 01 ngày và 40 giờ"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q174",
+    "split": "test",
+    "question": "Theo Bộ luật Lao động 2012, thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là bao lâu?",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2012, thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là 01 năm, kể từ ngày phát hiện ra hành vi mà mỗi bên tranh chấp cho rằng quyền, lợi ích hợp pháp của mình bị vi phạm. [blld-2012:article:137360-137895]",
+    "expected_answer_for_offline_review_only": "01 năm kể từ ngày phát hiện hành vi vi phạm.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 57,
+        "evidence": "Thời hiệu yêu cầu Toà án giải quyết tranh chấp lao động cá nhân là 01 năm"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:137360-137895",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 57,
+        "text_to_review": "Điều 202. Thời hiệu yêu cầu giải quyết tranh chấp lao động cá nhân\n1. Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao\nđộng cá nhân là 06 tháng, kể từ ngày phát hiện ra hành vi mà m ỗi bên tranh ch ấp\ncho rằng quyền, lợi ích hợp pháp của mình bị vi phạm.\n2. Thời hiệu yêu cầu Toà án giải quyết tranh chấp lao động cá nhân là 01 năm,\nkể từ ngày phát hiện ra hành vi mà mỗi bên tranh chấp cho rằng quyền, lợi ích hợp\npháp của mình bị vi phạm.\nMục 3\nTHẨM QUYỀN VÀ TRÌNH TỰ GIẢI QUYẾT\nTRANH CHẤP LAO ĐỘNG TẬP THỂ",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng 01 năm kể từ ngày phát hiện; Điều 202 khoản 2 BLLĐ 2012 hỗ trợ."
+  },
+  {
+    "query_id": "q175",
+    "split": "test",
+    "question": "Người nước ngoài vào Việt Nam chào bán dịch vụ trong bao lâu thì không cần giấy phép lao động?",
+    "status": "answered",
+    "answer": "Người nước ngoài vào Việt Nam để chào bán dịch vụ thì không cần giấy phép lao động nếu thời hạn vào Việt Nam là dưới 03 tháng.[blld-2019:article:127226-128419]",
+    "expected_answer_for_offline_review_only": "Dưới 03 tháng.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 32,
+        "evidence": "Vào Việt Nam với thời hạn dưới 03 tháng để thực hiện chào bán dịch vụ"
+      },
+      {
+        "source_id": "blld-2012",
+        "page": 49,
+        "evidence": "Vào Việt Nam với thời hạn dưới 03 tháng để thực hiện chào bán dịch vụ"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:127226-128419",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 32,
+        "text_to_review": "Điều 154. Người lao động nước ngoài làm việc tại Việt Nam không thuộc diện cấp giấy phép lao động\n1. Là chủ sở hữu hoặc thành viên góp vốn của công ty trách nhiệm hữu hạn có giá trị góp vốn theo quy định của\nChính phủ.\n2. Là Chủ tịch Hội đồng quản trị hoặc thành viên Hội đồng quản trị của công ty cổ phần có giá trị góp vốn theo quy\nđịnh của Chính phủ.\n3. Là Trưởng văn phòng đại diện, dự án hoặc chịu trách nhiệm chính về hoạt động của tổ chức quốc tế, tổ chức phi\nchính phủ nước ngoài tại Việt Nam.\n4. Vào Việt Nam với thời hạn dưới 03 tháng để thực hiện chào bán dịch vụ.\n5. Vào Việt Nam với thời hạn dưới 03 tháng để xử lý sự cố, tình huống kỹ thuật, công nghệ phức tạp nảy sinh làm\nảnh hưởng hoặc có nguy cơ ảnh hưởng tới sản xuất, kinh doanh mà các chuyên gia Việt Nam và các chuyên gia\nnước ngoài hiện đang ở Việt Nam không xử lý được.\n6. Là luật sư nước ngoài đã được cấp Giấy phép hành nghề luật sư tại Việt Nam theo quy định của Luật Luật sư.\n7. Trường hợp theo quy định của điều ước quốc tế mà nước Cộng hòa xã hội chủ nghĩa Việt Nam là thành viên.\n8. Người nước ngoài kết hôn với người Việt Nam và sinh sống trên lãnh thổ Việt Nam.\n9. Trường hợp khác theo quy định của Chính phủ.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng dưới 03 tháng; Điều 154 khoản 4 BLLĐ 2019 hỗ trợ."
+  },
+  {
+    "query_id": "q176",
+    "split": "test",
+    "question": "Theo Bộ luật Lao động 2012, sử dụng học sinh, sinh viên nước ngoài đang học tại Việt Nam làm việc thì phải báo trước cơ quan quản lý nhà nước về lao động bao lâu?",
+    "status": "answered",
+    "answer": "Theo Bộ luật Lao động 2012, khi sử dụng học sinh, sinh viên nước ngoài đang học tại Việt Nam làm việc, người sử dụng lao động phải báo trước 07 ngày với cơ quan quản lý nhà nước về lao động cấp tỉnh [blld-2012:article:116722-117837].",
+    "expected_answer_for_offline_review_only": "Phải báo trước 07 ngày.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2012",
+        "page": 49,
+        "evidence": "phải báo trước 07 ngày với cơ quan quản"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2012:article:116722-117837",
+        "in_final_context": true,
+        "source": "data/blld-2012.pdf",
+        "source_id": "blld-2012",
+        "page": 48,
+        "text_to_review": "Điều 172. Công dân nước ngoài làm việc tại Việt Nam không thuộc diện\ncấp giấy phép lao động\n1. Là thành viên góp vốn hoặc là chủ sở hữu của công ty trách nhiệm hữu hạn.\n2. Là thành viên Hội đồng quản trị của công ty cổ phần.\n3. Là Trưởng văn phòng đ ại di ện, d ự án của t ổ chức qu ốc t ế, tổ chức phi\nchính phủ tại Việt Nam.\n4. Vào Việt Nam với thời hạn dưới 03 tháng để thực hiện chào bán dịch vụ.\n5. Vào Việt Nam với thời hạn dưới 03 tháng để xử lý những sự cố, tình huống\nkỹ thuật, công nghệ phức tạp nảy sinh làm ảnh hưởng hoặc có nguy cơ ảnh hưởng\ntới s ản xu ất, kinh doanh mà các chuyên gia Vi ệt Nam và các chuyên gia nư ớc\nngoài hiện đang ở Việt Nam không xử lý được.\n6. Là lu ật sư nư ớc ngoài đã đư ợc cấp giấy phép hành ngh ề luật sư t ại Việt\nNam theo quy định của Luật luật sư.\n7. Theo quy đ ịnh của Điều ước quốc tế mà Cộng hoà xã h ội chủ nghĩa Việt\nNam là thành viên.\n8. Là h ọc sinh, sinh viên h ọc tập tại Việt Nam làm vi ệc tại Việt Nam nhưng\nngười sử dụng lao động phải báo trước 07 ngày với cơ quan quản lý nhà nư ớc về\nlao động cấp tỉnh.\n9. Các trường hợp khác theo quy định của Chính phủ.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng báo trước 07 ngày với cơ quan quản lý nhà nước về lao động cấp tỉnh; Điều 172 khoản 8 (trang 48 thay vì 49 trong gold, nội dung đúng)."
+  },
+  {
+    "query_id": "q177",
+    "split": "test",
+    "question": "Khi Hội đồng trọng tài đang giải quyết tranh chấp tập thể về lợi ích ở nơi không được đình công, các bên có được đồng thời đề nghị nơi khác giải quyết không?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": "Không được đồng thời đề nghị (cơ quan khác) giải quyết.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "nd-145-2020-cb1205",
+        "page": 7,
+        "evidence": "Trong thời gian Hội đồng trọng tài lao động giải quyết tranh chấp lao động tập thể về lợi ích, các bên không được đồng thời đề nghị"
+      }
+    ],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": 0,
+    "abstention_correct": false,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain nhầm: câu có đáp án và gold evidence nhưng agent không trả lời."
+  },
+  {
+    "query_id": "q178",
+    "split": "test",
+    "question": "Thanh tra lao động có quyền thanh tra, điều tra ở những nơi nào?",
+    "status": "answered",
+    "answer": "Thanh tra lao động có quyền thanh tra, điều tra tại nơi thuộc đối tượng, phạm vi thanh tra được giao theo quyết định thanh tra. Nếu thanh tra đột xuất theo quyết định của người có thẩm quyền trong trường hợp khẩn cấp có nguy cơ đe dọa an toàn, tính mạng, sức khỏe, danh dự, nhân phẩm của người lao động tại nơi làm việc thì không cần báo trước. [blld-2019:article:179036-179416]",
+    "expected_answer_for_offline_review_only": "Nơi thuộc đối tượng, phạm vi thanh tra được giao theo quyết định thanh tra.",
+    "gold_for_offline_review_only": [
+      {
+        "source_id": "blld-2019",
+        "page": 44,
+        "evidence": "Thanh tra lao động có quyền thanh tra, điều tra nơi thuộc đối tượng, phạm vi thanh tra được giao theo quyết định thanh tra"
+      }
+    ],
+    "citation_references": [
+      {
+        "citation_id": "blld-2019:article:179036-179416",
+        "in_final_context": true,
+        "source": "data/blld-2019.pdf",
+        "source_id": "blld-2019",
+        "page": 44,
+        "text_to_review": "Điều 216. Quyền của thanh tra lao động\nThanh tra lao động có quyền thanh tra, điều tra nơi thuộc đối tượng, phạm vi thanh tra được giao theo quyết định\nthanh tra.\nKhi thanh tra đột xuất theo quyết định của người có thẩm quyền trong trường hợp khẩn cấp có nguy cơ đe dọa an\ntoàn, tính mạng, sức khỏe, danh dự, nhân phẩm của người lao động tại nơi làm việc thì không cần báo trước.",
+        "supports_answer": true
+      }
+    ],
+    "citation_context_membership": [
+      true
+    ],
+    "citation_support": [
+      true
+    ],
+    "answer_grade": 2,
+    "abstention_correct": null,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Đúng nơi thuộc đối tượng, phạm vi thanh tra theo quyết định thanh tra, kèm trường hợp đột xuất không cần báo trước; Điều 216 hỗ trợ."
+  },
+  {
+    "query_id": "abst-test-001",
+    "split": "test",
+    "question": "Các tài liệu trong kho cho biết có bao nhiêu người lao động Việt Nam thất nghiệp trong quý IV năm 2025?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": null,
+    "gold_for_offline_review_only": [],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": null,
+    "abstention_correct": true,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain đúng: câu không có evidence trong kho."
+  },
+  {
+    "query_id": "abst-test-002",
+    "split": "test",
+    "question": "Mức giảm trừ gia cảnh cho mỗi người phụ thuộc theo chính sách thuế thu nhập cá nhân hiện hành là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "expected_answer_for_offline_review_only": null,
+    "gold_for_offline_review_only": [],
+    "citation_references": [],
+    "citation_context_membership": [],
+    "citation_support": [],
+    "answer_grade": null,
+    "abstention_correct": true,
+    "review_note": "[AI-assisted review — cần người kiểm tra lại trước khi nộp] Abstain đúng: câu không có evidence trong kho."
+  }
+]

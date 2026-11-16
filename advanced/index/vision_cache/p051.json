@@ -1,0 +1,15 @@
+{
+ "elements": [
+  {
+   "type": "infographic",
+   "label": "Hộp 5",
+   "title": "Ô nhiễm không khí ở Hà Nội: Hành động có mục tiêu có thể tối đa hóa lợi ích kép như thế nào",
+   "region": "middle of page",
+   "content": "Text box describing air pollution in Hanoi and targeted actions to maximize co-benefits from decarbonization.\n\nMain points transcribed:\n- Vietnam’s main national benefit from decarbonization is reduced air pollution, especially in Hanoi and surrounding provinces.\n- Current air quality requires urgent action to reduce pollution levels and people’s exposure to harmful PM2.5.\n- The annual average concentration measured is clearly above the national air quality standard (NAAQS) of 25 µg/m³ and above the World Health Organization guideline of 10 µg/m³.\n- PM2.5 in Hanoi comes from both local and neighboring areas.\n- A recent World Bank analysis identified the main sources as:\n  (i) nearly 35% from industry, including power plants and large industrial facilities around Hanoi;\n  (ii) about 25% from transport;\n  (iii) 20% related to ammonia emissions from livestock and fertilizer use;\n  (iv) 10% from residential emissions (mainly biomass cooking);\n  (v) about 7% from open burning of agricultural waste.\n- PM2.5 concentrations are projected to continue rising, mainly due to planned coal capacity expansion without stronger air pollution regulations.\n- According to the Government’s plan, 10 new coal-fired power plants will come into operation in the northern region by 2030.\n- Agricultural pollution is expected to increase due to higher output and lack of policies addressing ammonia emissions.\n- Improving Hanoi’s air quality requires urgent, closely coordinated action with neighboring provinces.\n- Priority actions should include: reducing dependence on coal, for example by repurposing the 100 MV plant in Ninh Binh; encouraging farmers to use less polluting inputs and burn less waste; improving public transport; and applying stricter vehicle emissions standards.\n\nSource line:\nNguồn: Ngân hàng Thế giới, 2021, “Nguồn tích tụ gây ô nhiễm không khí ở Hà Nội, chưa xuất bản.”\n\nVisible text labels/numbers: PM2.5; NAAQS 25 µg/m³; 10 µg/m³; 35%; 25%; 20%; 10%; 7%; 10 nhà máy; 2030; 100 MV; Ninh Bình."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3503,
+  "completion_tokens": 543
+ }
+}

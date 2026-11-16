@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "center-right / lower half",
+   "content": "A text-based callout section with a bold heading and five bullet points describing Vietnam’s climate vulnerability and projected impacts. It states that Vietnam is highly vulnerable to climate change, ranking 127/182 on Notre Dame’s Global Adaptation Initiative (ND-GAIN), 13/180 on Germanwatch’s Global Climate Risk Index for 2000–2019, and 91/192 on the ND-GAIN readiness index. The bullet points say: 1) if Vietnam’s average temperature rises at a rate similar to the global average, by 2080–90 average temperature could increase by 1–3.4°C relative to the 1986–2005 baseline, with a larger range between maximum and minimum temperatures; 2) increased extreme heat is likely to amplify impacts on human health, livelihoods, and ecosystems; 3) model results show large uncertainty around two key issues for Vietnam: future rainfall trends and changes in the intensity of extreme events; 4) low-lying coastal areas and river deltas are highly vulnerable to sea-level rise, and without effective adaptation, 6 million to 12 million people could be negatively affected by coastal flooding in 2070–2100 depending on the global emissions pathway; 5) climate change is worsening already high flood risk, and by 2035–2044 several million more people each year will be affected by severe floods. The bold concluding sentence below the bullets says climate change is increasingly disrupting Vietnam’s economy and the costs are beginning to slow growth; it references initial calculations in the Country Environmental Analysis (CEA).",
+   "notes": "No graphical chart or table is visible on this page; this is a text-based infographic/boxed summary presented as bold text plus bullets."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3340,
+  "completion_tokens": 378
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 14",
+   "title": "Sản xuất than nội địa của Việt Nam tập trung ở các vùng núi phía Bắc",
+   "region": "upper half",
+   "content": "Figure showing a stylized map of northern and central Vietnam with provincial boundaries outlined in light blue and key coal-producing areas highlighted in orange. Text labels on the map: Hà Nội (marked with a dark dot), Na Dương, Thái Nguyên, Hòn Gai, Cẩm Phả, Quảng Ninh, Đồng bằng sông Hồng, Sông Đà, Sông Cả và Nghệ Tĩnh. A blue callout label reads “Tỉnh sản xuất than chính” and points to the highlighted areas. Several orange elongated shapes indicate the main coal production zones concentrated in the northern mountainous region, with a smaller highlighted area farther south. Main message: domestic coal production is concentrated in northern mountainous provinces, especially around Quảng Ninh and nearby regions. Source line: “Nguồn: Ngân hàng Thế giới dựa trên thông tin của chính phủ”.",
+   "notes": "No scale, legend, or coordinates shown; this is a thematic locator map rather than a geographic statistical map."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3061,
+  "completion_tokens": 256
+ }
+}

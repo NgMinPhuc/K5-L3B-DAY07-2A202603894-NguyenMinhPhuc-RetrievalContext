@@ -1,0 +1,662 @@
+[
+  {
+    "query_id": "A-test-01",
+    "group": "table",
+    "question": "Theo Bảng 1 (So sánh phát thải giữa các nước), nước nào có cường độ phát thải carbon (tCO2e/triệu $GDP) cao nhất, và giá trị đó là bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Đông Timor, với 4.271,0 tCO2e/triệu $GDP (cao hơn Mông Cổ 4.250,9).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 19,
+        "region": "Bảng 1, cột 'Phát thải Carbon (tCO2e/triệu $GDP)'",
+        "detail": "Đông Timor 4.271,0; Mông Cổ 4.250,9; Myanmar 3.040,9; Campuchia 2.814,1; Papua New Guinea 2.658,3; Việt Nam 1.486,2"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-02",
+    "group": "table",
+    "question": "Theo Bảng 2 (nhu cầu tài chính thích ứng 2022–2050), lấy cận dưới của 'Tổng nhu cầu tài chính' trừ đi 'Nguồn tài chính hiện có' (giá trị tích lũy, tỷ USD NPV). Kết quả bằng bao nhiêu và trùng với hàng nào của bảng?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "479,2 − 136,9 = 342,3 tỷ USD (NPV), trùng với cận dưới của hàng 'Nhu cầu tài chính tăng thêm' (342,3–410,7).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 32,
+        "region": "Bảng 2, cột 'Giá trị tích lũy (tỷ USD tính theo NPV)'",
+        "detail": "Nhu cầu tài chính tăng thêm 342,3–410,7; Tổng nhu cầu tài chính 479,2–547,6; Nguồn tài chính hiện có 136,9"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-03",
+    "group": "chart",
+    "question": "Theo Hình 3 (Chi phí ước tính do biến đổi khí hậu năm 2020, triệu USD), hạng mục nào có chi phí lớn nhất và chi phí đó gấp khoảng bao nhiêu lần chi phí của hạng mục Nông nghiệp?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Thủy sản (4.219 triệu USD), gấp khoảng 5 lần Nông nghiệp (837 triệu USD): 4219/837 ≈ 5,04.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 17,
+        "region": "Hình 3, biểu đồ treemap nửa dưới trang",
+        "detail": "Thủy sản 4219; Năng suất lao động 2807; Mực nước biển dâng 1474; Nông nghiệp 837; Chi phí giải nhiệt 518; Thiên tai 447; Sức khỏe 235; Nước 218; Du lịch 148"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-04",
+    "group": "chart",
+    "question": "Theo Hình 6 (khảo sát doanh nghiệp 2019), đối với tác động 'Doanh thu sụt giảm', tổng tỷ lệ doanh nghiệp báo cáo ở hai mức 'Tương đối nhiều' và 'Rất nhiều' là bao nhiêu phần trăm?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "51% (35% 'Tương đối nhiều' + 16% 'Rất nhiều').",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 25,
+        "region": "Hình 6, hàng 'Doanh thu sụt giảm'",
+        "detail": "Hầu như không 12; Khá ít 37; Tương đối nhiều 35; Rất nhiều 16"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-05",
+    "group": "figure",
+    "question": "Sơ đồ 'Mô hình phát triển mới cho Việt Nam' (Hình 1) gồm hai lộ trình nào, và trong danh sách hành động ở giữa sơ đồ có những mục nào liên quan đến 'định giá' và 'nguồn vốn'? Danh sách có tất cả mấy mục?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Hai lộ trình: 'Lộ trình xây dựng khả năng chống chịu' và 'Lộ trình khử carbon'. Danh sách có 5 mục, trong đó có 'Định giá carbon' và 'Huy động nguồn vốn'.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 13,
+        "region": "Hình 1, sơ đồ đầu trang",
+        "detail": "Hai mũi tên hai bên: 'Lộ trình xây dựng khả năng chống chịu', 'Lộ trình khử carbon'; giữa: từ 'Việt Nam hiện nay' đến 'Việt Nam năm 2045', 5 gạch đầu dòng: Xây dựng cơ sở hạ tầng có khả năng chống chịu; Bảo vệ những đối tượng bị tổn thương nhất; Cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp; Định giá carbon; Huy động nguồn vốn"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-06",
+    "group": "chart",
+    "question": "Trong biểu đồ phân tán Hình 5 (Phát thải GHG trên đầu người so với GDP trên đầu người, chấm đỏ là Việt Nam), chấm đỏ nằm ở khoảng nào của trục hoành (GDP trên đầu người: dưới 5.000, 5.000–10.000 hay trên 10.000) và phát thải trên đầu người xấp xỉ bao nhiêu tấn?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Chấm đỏ nằm ở nhóm GDP trên đầu người thấp, khoảng 2.500–3.000 (dưới 5.000), với phát thải khoảng 4 tấn/đầu người (khớp 3,8 trong Bảng 1).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 19,
+        "region": "Hình 5, nửa dưới trang, chấm màu đỏ ở góc dưới bên trái",
+        "detail": "Chấm đỏ tại x≈2.700, y≈3,8–4 trên các trục 0–30.000 và 0–35"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-07",
+    "group": "multihop",
+    "question": "Văn bản trang 8 nói phát thải GHG của Việt Nam năm 2018 'ngang bằng' với Malaysia, Thái Lan, Pháp và Vương quốc Anh. Dựa vào Bảng 1, trong bốn nước đó nước nào có tổng phát thải (MtCO2e) gần Việt Nam nhất và chênh lệch bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Pháp (361,4 MtCO2e), chênh 364,4 − 361,4 = 3,0 MtCO2e so với Việt Nam (364,4).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 18,
+        "region": "Đoạn văn dưới Hình 4",
+        "detail": "Phát thải GHG của Việt Nam khoảng 364 triệu tấn CO2e năm 2018, ngang bằng Malaysia, Thái Lan, Pháp và Vương quốc Anh"
+      },
+      {
+        "page": 19,
+        "region": "Bảng 1, cột 'Tổng phát thải (MtCO2e)'",
+        "detail": "Việt Nam 364,4; Pháp 361,4; Malaysia 388,1; Thái Lan 431,2; Vương quốc Anh 441,1"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-08",
+    "group": "multihop",
+    "question": "Báo cáo ước tính chi đầu tư liên quan khí hậu để xây dựng khả năng chống chịu hiện nay khoảng 1,5% GDP và tài trợ công cho ứng phó thiên tai khoảng 0,3% GDP. Tổng hai khoản này là bao nhiêu % GDP và khớp với giá trị nào ở hàng 'Nguồn tài chính hiện có' của Bảng 2?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "1,5% + 0,3% = 1,8% GDP, khớp với hàng 'Nguồn tài chính hiện có': 1,8% GDP trung bình mỗi năm (136,9 tỷ USD NPV).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 31,
+        "region": "Đoạn cuối trang",
+        "detail": "chi đầu tư liên quan khí hậu để xây dựng khả năng chống chịu khoảng 25% ngân sách đầu tư của Chính phủ, tức 1,5% GDP; tài trợ công cho ứng phó thiên tai khoảng 0,3% GDP"
+      },
+      {
+        "page": 32,
+        "region": "Bảng 2, hàng 'Nguồn tài chính hiện có'",
+        "detail": "1,8 (% GDP); 136,9 (tỷ USD NPV)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-09",
+    "group": "text",
+    "question": "Theo báo cáo, việc giảm cường độ phát thải carbon trên một đơn vị GDP (mục tiêu của VGGS) có đảm bảo giảm phát thải tuyệt đối hay không?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Không tự động; còn phụ thuộc vào tốc độ tăng trưởng GDP. Các chỉ số này liên quan nhưng khác nhau (NDC dùng giảm phát thải so với BAU, VGGS dùng cường độ carbon trên đơn vị GDP).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 24,
+        "region": "Gạch đầu dòng đầu trang",
+        "detail": "NDC định nghĩa mục tiêu giảm nhẹ là giảm phát thải GHG so với BAU, trong khi VGGS nhắm đến cường độ phát thải carbon trên đơn vị GDP... việc giảm cường độ phát thải carbon trên đơn vị GDP có giúp giảm phát thải tuyệt đối hay không còn phụ thuộc vào tốc độ tăng trưởng GDP"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-10",
+    "group": "text",
+    "question": "Theo báo cáo, vì sao nếu để thị trường tự quyết định thì có thể không huy động đủ các khoản đầu tư ban đầu cho thích ứng với biến đổi khí hậu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Vì trong thập kỷ đầu chi phí xây dựng khả năng chống chịu cao hơn lợi ích thu được; thị trường tập trung vào lợi nhuận ngắn hạn; và cá nhân có xu hướng đầu tư ít hơn mức cần thiết cho tập thể vì lợi ích cá nhân thấp hơn lợi ích xã hội (ví dụ nông dân chờ người khác đầu tư hệ thống tưới).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 32,
+        "region": "Đoạn thứ hai sau Bảng 2",
+        "detail": "Trong thập kỷ đầu tiên, chi phí... cao hơn lợi ích; thị trường có xu hướng tập trung vào lợi nhuận ngắn hạn; cá nhân đầu tư ít hơn mức cần thiết xét từ góc độ tập thể; ví dụ người nông dân và hệ thống tưới tiết kiệm nước"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-11",
+    "group": "abstain",
+    "question": "Báo cáo cho biết nhiệt độ trung bình của Việt Nam đã tăng bao nhiêu °C trong giai đoạn 1960–2020?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "A-test-12",
+    "group": "abstain",
+    "question": "Theo Hình 3 hoặc phần liên quan, chi phí thiệt hại do biến đổi khí hậu năm 2020 riêng cho ngành dệt may là bao nhiêu triệu USD?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-01",
+    "group": "table",
+    "question": "Theo Bảng 3 (Nhu cầu đầu tư và lợi nhuận đầu ra theo Lộ trình NZP), trong phần 'NZP với những cải cách hỗ trợ', tác động kinh tế ròng của giai đoạn 2031–2040 là bao nhiêu tỷ USD theo NPV và nó dương hay âm?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "+19,3 tỷ USD (NPV), tức là dương.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 50,
+        "region": "Bảng 3, nhóm 'NZP với những cải cách hỗ trợ', hàng 'Tác động kinh tế ròng', cột 2031–2040",
+        "detail": "19,3 (cùng nhóm: nhu cầu đầu tư 49,5; mức sản lượng tăng 68,7)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-02",
+    "group": "table",
+    "question": "Trong Bảng 4, nếu chỉ kết hợp NZP với MỘT biện pháp hỗ trợ đơn lẻ (không tính hàng 'tất cả các biện pháp hỗ trợ'), biện pháp nào là duy nhất cho thay đổi GDP năm 2040 mang giá trị dương, và giá trị là bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "NZP và tăng hiệu quả năng lượng, GDP 2040 thay đổi +0,2%.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 53,
+        "region": "Bảng 4, cột 'Tỷ lệ thay đổi GDP (%)' năm 2040, các hàng 2–6",
+        "detail": "ô nhiễm không khí -1,0; cạnh tranh -0,6; hiệu quả năng lượng 0,2; dịch chuyển lao động -0,2; hạn chế lấn át -0,9; (NZP không cải cách -2,2)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-03",
+    "group": "chart",
+    "question": "Theo biểu đồ phát thải GHG ngành điện (Hình 13, nửa phải), năm 2040 phát thải của kịch bản CPS và ADS lần lượt là bao nhiêu triệu tấn CO2e, và CPS cao hơn ADS bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "CPS khoảng 246 triệu tấn CO2e, ADS khoảng 63 triệu tấn CO2e; CPS cao hơn ADS khoảng 183 triệu tấn CO2e.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 56,
+        "region": "Hình 13, biểu đồ đường bên phải (Phát thải GHG ngành điện, triệu tấn CO2e, 2020-40), nhãn cuối đường năm 2040",
+        "detail": "CPS: 246; ADS: 63"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-04",
+    "group": "chart",
+    "question": "Trong Hình 17 (các biện pháp hiệu quả về mặt chi phí để giảm phát thải từ chăn nuôi, trục $/tCO2e), biện pháp nào có chi phí trên mỗi tCO2e cao nhất và mức đó xấp xỉ bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "'Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR)', khoảng 700–750 $/tCO2e (cột cao nhất, khoảng 730).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 65,
+        "region": "Hình 17, nửa dưới trang, cột ngoài cùng bên phải",
+        "detail": "cột cao nhất nằm giữa mốc 600 và 800 trên trục, xấp xỉ 730 $/tCO2e; nhãn cột: Cải thiện chất lượng khẩu phần ăn cho trâu nuôi lấy thịt (TMR)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-05",
+    "group": "figure",
+    "question": "Trên bản đồ Hình 14 (Sản xuất than nội địa của Việt Nam tập trung ở các vùng núi phía Bắc), hai địa điểm được khoanh vòng tròn đỏ là gì và chúng thuộc tỉnh sản xuất than chính nào được chú thích trên bản đồ?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Hòn Gai và Cẩm Phả, thuộc tỉnh Quảng Ninh.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 59,
+        "region": "Hình 14, bản đồ miền Bắc; vòng tròn đỏ phía đông bắc, ô chú thích 'Quảng Ninh' và chú giải 'Tỉnh sản xuất than chính'",
+        "detail": "Nhãn 'Hòn Gai' và 'Cẩm Phả' có vòng tròn đỏ; đường dẫn từ ô 'Quảng Ninh'. Các vùng elip cam khác: Sông Đà, Đồng bằng sông Hồng, Sông Cả và Nghệ Tĩnh, Thái Nguyên, Na Dương"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-06",
+    "group": "figure",
+    "question": "Bản đồ Hình 11 (Rủi ro ngập lụt tại các vùng ven biển) đánh dấu (ghi nhãn) những thành phố nào?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Năm thành phố: Hà Nội, Hải Phòng, Đà Nẵng, TP Hồ Chí Minh và Cần Thơ.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 42,
+        "region": "Hình 11, cột phải trang, bản đồ Việt Nam tô xanh lá theo 'Relative Flood Risk'",
+        "detail": "Nhãn chấm xanh: Hanoi, Haiphong, Da Nang, Ho Chi Minh City, Can Tho"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-07",
+    "group": "multihop",
+    "question": "Dựa vào Hình 12 (tỷ trọng than trong công suất lắp đặt 2020 trên tổng 68 GW) và đoạn văn về công suất nhiệt điện than năm 2010 ở trang liền trước, công suất nhiệt điện than năm 2020 đã tăng khoảng bao nhiêu lần so với năm 2010?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Khoảng 4 lần: than chiếm 30% của 68 GW (≈20 GW) năm 2020, so với 5 GW năm 2010.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 54,
+        "region": "Hình 12, vòng tròn bên trái (Công suất lắp đặt 2020)",
+        "detail": "Tổng 68 GW; phần than đá (màu xanh sáng) 30%"
+      },
+      {
+        "page": 53,
+        "region": "Đoạn văn phần 4.3.1, đoạn thứ hai",
+        "detail": "'công suất lắp đặt của các nhà máy nhiệt điện than đã tăng gấp 4 lần trong một thập kỷ (từ 5 GW năm 2010 lên 20 GW năm 2020)'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-08",
+    "group": "multihop",
+    "question": "Nhu cầu đầu tư của Lộ trình NZP giai đoạn 2022–2040 (Bảng 3) lớn hơn bao nhiêu tỷ USD so với 'Tổng chi phí' tăng thêm của kịch bản ADS so với CPS (Bảng 5, trước khi trừ tiết kiệm nhiên liệu)? Cả hai đều tính theo NPV.",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "81,3 − 65 = khoảng 16,3 tỷ USD.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 50,
+        "region": "Bảng 3, hàng 'Nhu cầu đầu tư', cột 2022–2040",
+        "detail": "81,3 tỷ USD"
+      },
+      {
+        "page": 57,
+        "region": "Bảng 5, hàng 'Tổng chi phí' (tiếp theo từ trang 56)",
+        "detail": "+65 tỷ USD, 56%"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-09",
+    "group": "text",
+    "question": "Theo phần 4.1, trong ba phương án thuế carbon toàn nền kinh tế (khởi điểm khoảng 12 USD/tCO2e năm 2022), mức nào được cho là đủ lớn để tạo thay đổi cần thiết, và khi kết hợp với đầu tư theo ngành thì giảm phát thải so với BAU bao nhiêu % vào năm 2030 và 2040?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Mức tăng lên 90 USD/tCO2e vào năm 2040; giảm 42,8% năm 2030 và 73,6% năm 2040 so với BAU.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 49,
+        "region": "Đoạn văn 4.1, đoạn bắt đầu 'Các khoản đầu tư cấp ngành sẽ cần được hỗ trợ từ định giá carbon'",
+        "detail": "các phương án 40, 90, 120 USD/tCO2e vào 2040; 'Phương án thuế carbon ở mức 90 USD/tCO2e có vẻ đủ lớn'; 'giúp giảm 42,8% ... vào năm 2030 và 73,6% vào năm 2040'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-10",
+    "group": "text",
+    "question": "Theo Hộp 5 về ô nhiễm không khí ở Hà Nội, nguồn nào đóng góp lớn thứ hai vào PM2.5 sau ngành công nghiệp và tỷ lệ đóng góp khoảng bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Vận tải, khoảng 25% (sau ngành công nghiệp gần 35%).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 51,
+        "region": "Hộp 5, đoạn 2 'PM2.5 tại Hà Nội xuất phát cả từ nguồn cục bộ...'",
+        "detail": "(i) gần 35% công nghiệp; (ii) khoảng 25% vận tải; (iii) 20% amoniac từ chăn nuôi/phân bón; (iv) 10% dân cư; (v) khoảng 7% đốt chất thải nông nghiệp"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-11",
+    "group": "abstain",
+    "question": "Chi phí quy dẫn (LCOE, tính bằng USD/MWh) của điện gió ngoài khơi tại Việt Nam theo báo cáo là bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-test-12",
+    "group": "abstain",
+    "question": "Báo cáo ước tính cần đầu tư bao nhiêu tỷ USD cho công nghệ thu giữ và lưu trữ carbon (CCS) ở Việt Nam đến năm 2040?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "B-dev-05",
+    "group": "figure",
+    "question": "Bản đồ Hình 10 ở phần Đồng bằng sông Cửu Long mô tả dự báo hiện tượng gì và cho năm nào?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Dự báo tình trạng ngập mặn do triều cường vào năm 2050 tại khu vực sông Mekong (ĐBSCL).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 40,
+        "region": "Hình 10, cột phải trang, phụ đề in nghiêng dưới tiêu đề",
+        "detail": "'Dự báo tình trạng ngập mặn do triều cường vào năm 2050 tại khu vực sông Mekong'; bản đồ có nhãn CAM PU CHIA, BIỂN ĐÔNG"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-01",
+    "group": "table",
+    "question": "Trong Phụ lục 1 (Dữ liệu Khí hậu và Phát triển chính), phát thải khí nhà kính của ngành Điện/nhiệt năm 2018 là bao nhiêu triệu tấn CO2e và gấp khoảng bao nhiêu lần so với năm 2005?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "109,13 triệu tấn CO2e (năm 2018); gấp khoảng 4,5 lần so với 24,28 triệu tấn năm 2005 (109,13/24,28 ≈ 4,49).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 91,
+        "region": "Phụ lục 1, mục Giảm nhẹ biến đổi khí hậu, hàng 'Điện/nhiệt', các cột #",
+        "detail": "Triệu tấn CO2e: 4,88 (1990); 24,28 (2005); 109,13 (2018); nguồn Climatewatch"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-02",
+    "group": "table",
+    "question": "Trong bảng 'Các kết quả chính về phát thải và kinh tế vĩ mô từ CGE' (Phụ lục 3B), lượng khí thải năm 2040 ở đường cơ sở là bao nhiêu triệu tấn CO2, và kịch bản Phát thải ròng bằng 0 (cột không kèm cải cách) lệch -73,65% so với đường cơ sở. Hỏi lượng khí thải năm 2040 theo kịch bản này khoảng bao nhiêu triệu tấn CO2?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Đường cơ sở 1.123,3 triệu tấn CO2; kịch bản phát thải ròng bằng 0 khoảng 296 triệu tấn CO2 (1.123,3 x (1 - 0,7365) ≈ 296).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 97,
+        "region": "Bảng CGE, hàng 'Lượng khí thải (Triệu tấn CO2)*', cột Đường cơ sở 2040 và cột Phát thải ròng bằng 0 năm 2040",
+        "detail": "Đường cơ sở: 440 / 725 / 1.123,3 (2022/2030/2040); NZP sai số: -6,39 / -42,89 / -73,65"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-03",
+    "group": "chart",
+    "question": "Trong Hình 20 (Những thay đổi về việc làm theo lĩnh vực vào năm 2040), ở kịch bản NZP (cột xanh đậm, không cải cách), ngành nào giảm việc làm nhiều nhất so với BAU và mức giảm là bao nhiêu %?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Ngành Vận tải, giảm 6,3% (-6,3) so với BAU.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 72,
+        "region": "Hình 20, biểu đồ cột nhóm, nhóm 'Vận tải', cột xanh đậm (NZP)",
+        "detail": "Nhãn dữ liệu -6,3; các cột xanh đậm khác: Điện 0, Khai thác mỏ 2,2, Xây dựng 1,7, Công nghiệp -0,4, Dịch vụ 0,1, Thương mại 0,4, Nông nghiệp 0, Không hoạt động 0,1"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-04",
+    "group": "chart",
+    "question": "Theo Hình 22 (biểu đồ bên trái 'Dư nợ tín dụng xanh'), dư nợ tín dụng xanh tăng thêm bao nhiêu tỷ USD từ năm 2016 đến năm 2020?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Tăng 10,8 tỷ USD (từ 3,7 lên 14,5 tỷ USD).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 78,
+        "region": "Hình 22, biểu đồ cột bên trái 'Dư nợ tín dụng xanh'",
+        "detail": "Nhãn: 2016: 3,7; 2017: 7,8; 2018: 10,3; 2019: 13,9; 2020: 14,5; 2021:Q1: 14,5 (tỷ USD)"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-05",
+    "group": "figure",
+    "question": "Trong sơ đồ Hình 21 (Nhu cầu và các nguồn tài chính tiềm năng giai đoạn 2022-2040), nguồn tài chính nào có quy mô nhỏ nhất, bao nhiêu tỷ USD và tương đương bao nhiêu % GDP mỗi năm?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Nguồn 'Bên ngoài': 54 tỷ USD, khoảng 1% GDP mỗi năm.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 77,
+        "region": "Hình 21, nửa dưới trang, ba hộp màu cam dưới hộp xanh 'Nhu cầu tài chính 368 tỷ USD'",
+        "detail": "Khu vực tư nhân 184 tỷ USD (~3,4% GDP/năm); Khu vực công 130 tỷ USD (~2,4%); Bên ngoài 54 tỷ USD (~1%). Tổng 368 tỷ USD"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-06",
+    "group": "table",
+    "question": "Trong ma trận ưu tiên ở Phụ lục 4 (phần 'Lộ trình xây dựng khả năng chống chịu'), hành động 'Nâng cấp đường sá và cơ sở vật chất ngành điện lên các tiêu chuẩn thiết kế có khả năng chống chịu với khí hậu cao hơn' nằm ở ô nào xét theo mức độ Khẩn cấp và Tác động?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Ô Khẩn cấp = Cao và Tác động = Cao.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 100,
+        "region": "Ma trận Phụ lục 4, hàng 'Khẩn cấp: Cao', cột 'Tác động: Cao', mục cuối cùng của ô",
+        "detail": "Văn bản: 'Nâng cấp đường sá và cơ sở vật chất ngành điện lên các tiêu chuẩn thiết kế có khả năng chống chịu với khí hậu cao hơn.'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-07",
+    "group": "multihop",
+    "question": "Hình 21 cho biết khu vực công cần đóng góp 130 tỷ USD trong giai đoạn 2022-2040. Thuế carbon mô hình hóa trong NZP huy động được gần 80 tỷ USD trong cùng giai đoạn. Thuế carbon này đáp ứng khoảng bao nhiêu % phần đóng góp 130 tỷ USD của khu vực công?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Khoảng 61-62% (80/130 ≈ 61,5%).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 77,
+        "region": "Hình 21, hộp 'Khu vực công'",
+        "detail": "130 tỷ USD, ~2,4% GDP mỗi năm"
+      },
+      {
+        "page": 79,
+        "region": "Mục 5.2, đoạn đầu",
+        "detail": "'áp dụng thuế carbon được mô hình hóa trong NZP sẽ huy động được gần 80 tỷ USD trong giai đoạn 2022-2040, tức là trung bình 1,5% GDP mỗi năm'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-08",
+    "group": "multihop",
+    "question": "Phụ lục 1 ghi phát thải của ngành Nông nghiệp năm 2018 (nguồn Climatewatch) là bao nhiêu, còn bảng so sánh nguồn ở Phụ lục 3 mục D ghi ước tính theo NDC cập nhật (2020) là bao nhiêu? Con số NDC cao hơn bao nhiêu triệu tấn CO2e?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Climatewatch 2018: 70,99 triệu tấn CO2e; NDC: 104,5 triệu tấn CO2e; chênh lệch ≈ 33,5 triệu tấn (104,5 - 70,99 = 33,51).",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 91,
+        "region": "Phụ lục 1, hàng 'Nông nghiệp', cột # thứ 3 (2018)",
+        "detail": "70,99 triệu tấn CO2e, nguồn Climatewatch"
+      },
+      {
+        "page": 98,
+        "region": "Phụ lục 3 mục D, bảng 'Nguồn thông tin / Lượng khí thải ước tính'",
+        "detail": "Chính phủ Việt Nam/NDC cập nhật (2020): 104,5; FAO (2019): 72,74; Climate Watch (WRI) (2018): 71; Climate Transparency (2018): 61"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-09",
+    "group": "text",
+    "question": "Theo phần 4.4.3 và khuyến nghị, nếu một phần 30% doanh thu thuế carbon được phân bổ cho các chương trình xã hội hỗ trợ chuyển đổi (trong kịch bản NZP), GDP năm 2040 thay đổi thế nào so với kịch bản NZP dồn toàn bộ thuế carbon cho khử carbon, và trong điều kiện nào GDP 2040 vẫn cao hơn BAU?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "GDP 2040 thấp hơn khoảng 0,5% so với NZP dồn toàn bộ thu từ thuế carbon vào chuyển đổi khử carbon; tuy nhiên nếu phân bổ đó là một phần của gói đầy đủ các biện pháp hỗ trợ (thảo luận ở phần 4.2) thì GDP 2040 vẫn cao hơn kịch bản BAU, dù với tỷ lệ thấp hơn.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 74,
+        "region": "Khuyến nghị, gạch đầu dòng thứ ba ('Cân nhắc cẩn thận các phương án...phân bổ thu từ thuế carbon')",
+        "detail": "'khoảng 30% doanh thu từ thuế carbon được phân bổ cho các chương trình xã hội... GDP vào năm 2040 sẽ thấp hơn khoảng 0,5%... nếu việc phân bổ như vậy là một phần của gói đầy đủ các biện pháp hỗ trợ được thảo luận trong phần 4.2, thì GDP năm 2040 sẽ vẫn cao hơn so với kịch bản BAU, tuy với tỷ lệ thấp hơn.'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-10",
+    "group": "text",
+    "question": "Theo Hộp 9 (bài học quốc tế về chương trình đào tạo lại), thời điểm triển khai và độ dài, cường độ của chương trình đào tạo lại ảnh hưởng thế nào đến tác động đối với người lao động mất việc?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Người lao động được đào tạo lại càng sớm sau khi mất việc thì tác động (về tiền lương và khả năng được tái sử dụng) càng cao; chương trình càng ngắn và chuyên sâu thì tác động tới việc chuyển sang nghề mới càng lớn.",
+    "gold_evidence_for_offline_review_only": [
+      {
+        "page": 73,
+        "region": "Hộp 9, đoạn 'Một yếu tố quan trọng là thời gian và cường độ...'",
+        "detail": "'Người lao động được tái đào tạo càng sớm sau khi nghỉ việc, thì tác động của chương trình đào tạo càng cao, xét về tiền lương và tái sử dụng lao động trong tương lai. Ngoài ra, chương trình tái đào tạo càng ngắn và chuyên sâu thì tác động tới người lao động trong việc chuyển dịch sang nghề mới càng lớn.'"
+      }
+    ],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-11",
+    "group": "abstain",
+    "question": "Tổng giá trị trái phiếu xanh (tỷ USD) mà các tổ chức tại Việt Nam đã phát hành tính đến năm 2021 là bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  },
+  {
+    "query_id": "C-test-12",
+    "group": "abstain",
+    "question": "Theo mô hình NZP, mức giá carbon (USD/tấn CO2e) vào năm 2050 là bao nhiêu?",
+    "status": "error",
+    "answer": null,
+    "citations": [],
+    "expected_for_offline_review_only": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+    "gold_evidence_for_offline_review_only": [],
+    "pass": null,
+    "review_reason": null
+  }
+]

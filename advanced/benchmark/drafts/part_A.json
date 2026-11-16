@@ -1,0 +1,328 @@
+{
+ "part": "A",
+ "pages": "1-35",
+ "questions": [
+  {
+   "id": "A-test-01",
+   "split": "test",
+   "group": "table",
+   "question": "Theo Bảng 1 (So sánh phát thải giữa các nước), nước nào có cường độ phát thải carbon (tCO2e/triệu $GDP) cao nhất, và giá trị đó là bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "Đông Timor, với 4.271,0 tCO2e/triệu $GDP (cao hơn Mông Cổ 4.250,9).",
+   "evidence": [
+    {
+     "page": 19,
+     "region": "Bảng 1, cột 'Phát thải Carbon (tCO2e/triệu $GDP)'",
+     "detail": "Đông Timor 4.271,0; Mông Cổ 4.250,9; Myanmar 3.040,9; Campuchia 2.814,1; Papua New Guinea 2.658,3; Việt Nam 1.486,2"
+    }
+   ],
+   "reason": "Đọc cột 3 của bảng và tìm giá trị lớn nhất; Đông Timor 4.271,0 > Mông Cổ 4.250,9."
+  },
+  {
+   "id": "A-test-02",
+   "split": "test",
+   "group": "table",
+   "question": "Theo Bảng 2 (nhu cầu tài chính thích ứng 2022–2050), lấy cận dưới của 'Tổng nhu cầu tài chính' trừ đi 'Nguồn tài chính hiện có' (giá trị tích lũy, tỷ USD NPV). Kết quả bằng bao nhiêu và trùng với hàng nào của bảng?",
+   "answerable": true,
+   "expected_answer": "479,2 − 136,9 = 342,3 tỷ USD (NPV), trùng với cận dưới của hàng 'Nhu cầu tài chính tăng thêm' (342,3–410,7).",
+   "evidence": [
+    {
+     "page": 32,
+     "region": "Bảng 2, cột 'Giá trị tích lũy (tỷ USD tính theo NPV)'",
+     "detail": "Nhu cầu tài chính tăng thêm 342,3–410,7; Tổng nhu cầu tài chính 479,2–547,6; Nguồn tài chính hiện có 136,9"
+    }
+   ],
+   "reason": "Tính từ ô bảng: 479,2 − 136,9 = 342,3; đối chiếu hàng 'Nhu cầu tài chính tăng thêm'."
+  },
+  {
+   "id": "A-test-03",
+   "split": "test",
+   "group": "chart",
+   "question": "Theo Hình 3 (Chi phí ước tính do biến đổi khí hậu năm 2020, triệu USD), hạng mục nào có chi phí lớn nhất và chi phí đó gấp khoảng bao nhiêu lần chi phí của hạng mục Nông nghiệp?",
+   "answerable": true,
+   "expected_answer": "Thủy sản (4.219 triệu USD), gấp khoảng 5 lần Nông nghiệp (837 triệu USD): 4219/837 ≈ 5,04.",
+   "evidence": [
+    {
+     "page": 17,
+     "region": "Hình 3, biểu đồ treemap nửa dưới trang",
+     "detail": "Thủy sản 4219; Năng suất lao động 2807; Mực nước biển dâng 1474; Nông nghiệp 837; Chi phí giải nhiệt 518; Thiên tai 447; Sức khỏe 235; Nước 218; Du lịch 148"
+    }
+   ],
+   "reason": "Số liệu in trực tiếp trên các ô; tỉ số 4219/837 ≈ 5,04."
+  },
+  {
+   "id": "A-test-04",
+   "split": "test",
+   "group": "chart",
+   "question": "Theo Hình 6 (khảo sát doanh nghiệp 2019), đối với tác động 'Doanh thu sụt giảm', tổng tỷ lệ doanh nghiệp báo cáo ở hai mức 'Tương đối nhiều' và 'Rất nhiều' là bao nhiêu phần trăm?",
+   "answerable": true,
+   "expected_answer": "51% (35% 'Tương đối nhiều' + 16% 'Rất nhiều').",
+   "evidence": [
+    {
+     "page": 25,
+     "region": "Hình 6, hàng 'Doanh thu sụt giảm'",
+     "detail": "Hầu như không 12; Khá ít 37; Tương đối nhiều 35; Rất nhiều 16"
+    }
+   ],
+   "reason": "Cộng hai nhãn dữ liệu: 35 + 16 = 51."
+  },
+  {
+   "id": "A-test-05",
+   "split": "test",
+   "group": "figure",
+   "question": "Sơ đồ 'Mô hình phát triển mới cho Việt Nam' (Hình 1) gồm hai lộ trình nào, và trong danh sách hành động ở giữa sơ đồ có những mục nào liên quan đến 'định giá' và 'nguồn vốn'? Danh sách có tất cả mấy mục?",
+   "answerable": true,
+   "expected_answer": "Hai lộ trình: 'Lộ trình xây dựng khả năng chống chịu' và 'Lộ trình khử carbon'. Danh sách có 5 mục, trong đó có 'Định giá carbon' và 'Huy động nguồn vốn'.",
+   "evidence": [
+    {
+     "page": 13,
+     "region": "Hình 1, sơ đồ đầu trang",
+     "detail": "Hai mũi tên hai bên: 'Lộ trình xây dựng khả năng chống chịu', 'Lộ trình khử carbon'; giữa: từ 'Việt Nam hiện nay' đến 'Việt Nam năm 2045', 5 gạch đầu dòng: Xây dựng cơ sở hạ tầng có khả năng chống chịu; Bảo vệ những đối tượng bị tổn thương nhất; Cải cách cơ cấu để khuyến khích nông dân và doanh nghiệp; Định giá carbon; Huy động nguồn vốn"
+    }
+   ],
+   "reason": "Sơ đồ khái niệm (diagram) có nội dung riêng, không trang trí."
+  },
+  {
+   "id": "A-test-06",
+   "split": "test",
+   "group": "figure",
+   "question": "Trong biểu đồ phân tán Hình 5 (Phát thải GHG trên đầu người so với GDP trên đầu người, chấm đỏ là Việt Nam), chấm đỏ nằm ở khoảng nào của trục hoành (GDP trên đầu người: dưới 5.000, 5.000–10.000 hay trên 10.000) và phát thải trên đầu người xấp xỉ bao nhiêu tấn?",
+   "answerable": true,
+   "expected_answer": "Chấm đỏ nằm ở nhóm GDP trên đầu người thấp, khoảng 2.500–3.000 (dưới 5.000), với phát thải khoảng 4 tấn/đầu người (khớp 3,8 trong Bảng 1).",
+   "evidence": [
+    {
+     "page": 19,
+     "region": "Hình 5, nửa dưới trang, chấm màu đỏ ở góc dưới bên trái",
+     "detail": "Chấm đỏ tại x≈2.700, y≈3,8–4 trên các trục 0–30.000 và 0–35"
+    }
+   ],
+   "reason": "Đọc vị trí chấm đỏ; chấp nhận GDP 2.000–3.500 và phát thải 3–5 tấn. Phạm vi trang 1–35 không có bản đồ/infographic nên dùng Hình 1 (sơ đồ) và Hình 5 (biểu đồ phân tán chú thích điểm nổi bật)."
+  },
+  {
+   "id": "A-test-07",
+   "split": "test",
+   "group": "multihop",
+   "question": "Văn bản trang 8 nói phát thải GHG của Việt Nam năm 2018 'ngang bằng' với Malaysia, Thái Lan, Pháp và Vương quốc Anh. Dựa vào Bảng 1, trong bốn nước đó nước nào có tổng phát thải (MtCO2e) gần Việt Nam nhất và chênh lệch bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "Pháp (361,4 MtCO2e), chênh 364,4 − 361,4 = 3,0 MtCO2e so với Việt Nam (364,4).",
+   "evidence": [
+    {
+     "page": 18,
+     "region": "Đoạn văn dưới Hình 4",
+     "detail": "Phát thải GHG của Việt Nam khoảng 364 triệu tấn CO2e năm 2018, ngang bằng Malaysia, Thái Lan, Pháp và Vương quốc Anh"
+    },
+    {
+     "page": 19,
+     "region": "Bảng 1, cột 'Tổng phát thải (MtCO2e)'",
+     "detail": "Việt Nam 364,4; Pháp 361,4; Malaysia 388,1; Thái Lan 431,2; Vương quốc Anh 441,1"
+    }
+   ],
+   "reason": "Cần danh sách nước từ văn bản trang 18 và số liệu từ Bảng 1 trang 19; chênh lệch: Pháp 3,0; Malaysia 23,7; Thái Lan 66,8; Anh 76,7."
+  },
+  {
+   "id": "A-test-08",
+   "split": "test",
+   "group": "multihop",
+   "question": "Báo cáo ước tính chi đầu tư liên quan khí hậu để xây dựng khả năng chống chịu hiện nay khoảng 1,5% GDP và tài trợ công cho ứng phó thiên tai khoảng 0,3% GDP. Tổng hai khoản này là bao nhiêu % GDP và khớp với giá trị nào ở hàng 'Nguồn tài chính hiện có' của Bảng 2?",
+   "answerable": true,
+   "expected_answer": "1,5% + 0,3% = 1,8% GDP, khớp với hàng 'Nguồn tài chính hiện có': 1,8% GDP trung bình mỗi năm (136,9 tỷ USD NPV).",
+   "evidence": [
+    {
+     "page": 31,
+     "region": "Đoạn cuối trang",
+     "detail": "chi đầu tư liên quan khí hậu để xây dựng khả năng chống chịu khoảng 25% ngân sách đầu tư của Chính phủ, tức 1,5% GDP; tài trợ công cho ứng phó thiên tai khoảng 0,3% GDP"
+    },
+    {
+     "page": 32,
+     "region": "Bảng 2, hàng 'Nguồn tài chính hiện có'",
+     "detail": "1,8 (% GDP); 136,9 (tỷ USD NPV)"
+    }
+   ],
+   "reason": "Kết hợp số liệu trong văn bản (trang 31) và bảng (trang 32): 1,5 + 0,3 = 1,8."
+  },
+  {
+   "id": "A-test-09",
+   "split": "test",
+   "group": "text",
+   "question": "Theo báo cáo, việc giảm cường độ phát thải carbon trên một đơn vị GDP (mục tiêu của VGGS) có đảm bảo giảm phát thải tuyệt đối hay không?",
+   "answerable": true,
+   "expected_answer": "Không tự động; còn phụ thuộc vào tốc độ tăng trưởng GDP. Các chỉ số này liên quan nhưng khác nhau (NDC dùng giảm phát thải so với BAU, VGGS dùng cường độ carbon trên đơn vị GDP).",
+   "evidence": [
+    {
+     "page": 24,
+     "region": "Gạch đầu dòng đầu trang",
+     "detail": "NDC định nghĩa mục tiêu giảm nhẹ là giảm phát thải GHG so với BAU, trong khi VGGS nhắm đến cường độ phát thải carbon trên đơn vị GDP... việc giảm cường độ phát thải carbon trên đơn vị GDP có giúp giảm phát thải tuyệt đối hay không còn phụ thuộc vào tốc độ tăng trưởng GDP"
+    }
+   ],
+   "reason": "Câu hỏi điều kiện từ văn xuôi."
+  },
+  {
+   "id": "A-test-10",
+   "split": "test",
+   "group": "text",
+   "question": "Theo báo cáo, vì sao nếu để thị trường tự quyết định thì có thể không huy động đủ các khoản đầu tư ban đầu cho thích ứng với biến đổi khí hậu?",
+   "answerable": true,
+   "expected_answer": "Vì trong thập kỷ đầu chi phí xây dựng khả năng chống chịu cao hơn lợi ích thu được; thị trường tập trung vào lợi nhuận ngắn hạn; và cá nhân có xu hướng đầu tư ít hơn mức cần thiết cho tập thể vì lợi ích cá nhân thấp hơn lợi ích xã hội (ví dụ nông dân chờ người khác đầu tư hệ thống tưới).",
+   "evidence": [
+    {
+     "page": 32,
+     "region": "Đoạn thứ hai sau Bảng 2",
+     "detail": "Trong thập kỷ đầu tiên, chi phí... cao hơn lợi ích; thị trường có xu hướng tập trung vào lợi nhuận ngắn hạn; cá nhân đầu tư ít hơn mức cần thiết xét từ góc độ tập thể; ví dụ người nông dân và hệ thống tưới tiết kiệm nước"
+    }
+   ],
+   "reason": "Tổng hợp nhiều ý trong cùng đoạn; chấp nhận nếu nêu được ít nhất hai lý do chính."
+  },
+  {
+   "id": "A-test-11",
+   "split": "test",
+   "group": "abstain",
+   "question": "Báo cáo cho biết nhiệt độ trung bình của Việt Nam đã tăng bao nhiêu °C trong giai đoạn 1960–2020?",
+   "answerable": false,
+   "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+   "evidence": [],
+   "reason": "Đã grep toàn tài liệu: '1960', '1958 ', 'nhiệt độ.*0,[0-9]+°C', '°C' (chỉ có dự báo 1–3,4°C đến 2080–90 so với 1986–2005 ở trang 16 và mô tả RCP ở trang 29), không có số liệu nhiệt độ đã tăng trong quá khứ 1960–2020."
+  },
+  {
+   "id": "A-test-12",
+   "split": "test",
+   "group": "abstain",
+   "question": "Theo Hình 3 hoặc phần liên quan, chi phí thiệt hại do biến đổi khí hậu năm 2020 riêng cho ngành dệt may là bao nhiêu triệu USD?",
+   "answerable": false,
+   "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+   "evidence": [],
+   "reason": "Hình 3 (trang 17) chỉ liệt kê 9 hạng mục (Thủy sản, Năng suất lao động, Mực nước biển dâng, Nông nghiệp, Chi phí giải nhiệt, Thiên tai, Sức khỏe, Nước, Du lịch), không có dệt may. Đã grep 'dệt may|dệt|may mặc' toàn tài liệu: chỉ 1 lần nhắc 'dệt' trong ngữ cảnh DNNN phát thải, không có chi phí thiệt hại."
+  },
+  {
+   "id": "A-dev-01",
+   "split": "dev",
+   "group": "table",
+   "question": "Theo Bảng 1, nước nào có phát thải trên đầu người (tCO2e) thấp hơn Việt Nam, và phát thải trên đầu người của Việt Nam gấp khoảng mấy lần nước đó?",
+   "answerable": true,
+   "expected_answer": "Philipin (2,2 tCO2e/đầu người); 3,8/2,2 ≈ 1,7 lần.",
+   "evidence": [
+    {
+     "page": 19,
+     "region": "Bảng 1, cột 'Phát thải trên đầu người', hai hàng cuối",
+     "detail": "Việt Nam 3,8; Philipin 2,2 (các nước còn lại đều ≥ 4,3)"
+    }
+   ],
+   "reason": "Chỉ Philipin thấp hơn Việt Nam; 3,8/2,2 ≈ 1,73."
+  },
+  {
+   "id": "A-dev-02",
+   "split": "dev",
+   "group": "table",
+   "question": "Theo Bảng 2, 'Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng' có mức trung bình mỗi năm (% GDP) và giá trị tích lũy (tỷ USD NPV) là bao nhiêu?",
+   "answerable": true,
+   "expected_answer": "0,3–0,7% GDP mỗi năm; 22,8–53,2 tỷ USD (NPV).",
+   "evidence": [
+    {
+     "page": 32,
+     "region": "Bảng 2, hàng 'Hỗ trợ tài chính cho người dân và doanh nghiệp bị ảnh hưởng'",
+     "detail": "0,3–0,7; 22,8-53,2"
+    }
+   ],
+   "reason": "Đọc trực tiếp ô bảng."
+  },
+  {
+   "id": "A-dev-03",
+   "split": "dev",
+   "group": "chart",
+   "question": "Theo Hình 7, năm 2018 (sơ bộ), ngành nào có tỷ trọng sản lượng của DNNN cao nhất và ngành nào thấp nhất, chênh nhau bao nhiêu điểm phần trăm?",
+   "answerable": true,
+   "expected_answer": "Cao nhất: Than 98%; thấp nhất: Kim loại 14%; chênh 84 điểm phần trăm.",
+   "evidence": [
+    {
+     "page": 26,
+     "region": "Hình 7, nhãn bên phải biểu đồ",
+     "detail": "Than 98%; Phân hóa học 94%; Điện 85%; Vận tải hàng hóa 55%; Phân bón NPK 55%; Xi măng 35%; Vận chuyển hành khách 27%; Kim loại 14%"
+    }
+   ],
+   "reason": "98 − 14 = 84."
+  },
+  {
+   "id": "A-dev-04",
+   "split": "dev",
+   "group": "chart",
+   "question": "Theo Hình 8 (thiệt hại GDP, % lệch so với đường cơ sở), đến năm 2050 kịch bản nào gây thiệt hại lớn hơn, và khoảng bao nhiêu % GDP cho mỗi kịch bản (chấp nhận sai số ±0,5 điểm %)?",
+   "answerable": true,
+   "expected_answer": "RCP 4.5 lớn hơn: khoảng 12% GDP, so với RCP 2.6 khoảng 10% GDP.",
+   "evidence": [
+    {
+     "page": 30,
+     "region": "Hình 8, điểm cuối đường năm 2050",
+     "detail": "RCP 2.6 ≈ 9,9–10; RCP 4.5 ≈ 12,3–12,4; hai đường gần trùng nhau tới khoảng 2030 rồi tách ra"
+    },
+    {
+     "page": 30,
+     "region": "Đoạn văn dưới hình",
+     "detail": "9,8% (RCP 2.6) hay 12,3% GDP (RCP 4.5) vào năm 2050"
+    }
+   ],
+   "reason": "Đọc chart theo xu hướng và giá trị xấp xỉ; văn bản trang 29 ghi 9,9% và 12,4%, trang 30 ghi 9,8% và 12,3%, nên cần dung sai."
+  },
+  {
+   "id": "A-dev-05",
+   "split": "dev",
+   "group": "figure",
+   "question": "Trong Hình 2, đường nào của các nước so sánh vượt qua ngưỡng HIC (quốc gia có thu nhập cao), và đường Việt Nam (2021–2045) ở cuối thời kỳ so với ngưỡng này như thế nào?",
+   "answerable": true,
+   "expected_answer": "Chỉ Hàn Quốc (1951–2005) vượt ngưỡng HIC (khoảng T+42 trở đi, lên trên 20.000 USD); Thái Lan và Trung Quốc vẫn dưới ngưỡng. Đường Việt Nam (2021–2045) chỉ tiến sát/chạm ngưỡng (khoảng 12.000–12.700 USD) ở khoảng T+54.",
+   "evidence": [
+    {
+     "page": 15,
+     "region": "Hình 2, biểu đồ đường nửa trên trang",
+     "detail": "Ngưỡng HIC ≈ 12.695 USD (đường ngang); Hàn Quốc vượt ngưỡng quanh T+42 và đạt ~21.000 ở T+54; Trung Quốc ~10.500 ở T+36; Thái Lan ~5.500; Việt Nam (2021–2045, nét đứt) ~12.000 ở T+54"
+    }
+   ],
+   "reason": "Đọc xu hướng và so sánh với đường ngưỡng; văn bản cho biết Hàn Quốc mất 42 năm."
+  },
+  {
+   "id": "A-dev-06",
+   "split": "dev",
+   "group": "multihop",
+   "question": "Năm 2020, thiệt hại do biến đổi khí hậu (CEA) là 10 tỷ USD (3,2% GDP), còn thiệt hại trực tiếp trung bình hàng năm về tài sản do các hiện tượng khí hậu cực đoan là 2,4 tỷ USD (0,8% GDP). Khoản thứ nhất lớn gấp khoảng mấy lần khoản thứ hai (tính theo tỷ USD)?",
+   "answerable": true,
+   "expected_answer": "10/2,4 ≈ 4,2 lần (tính theo % GDP: 3,2/0,8 = 4 lần).",
+   "evidence": [
+    {
+     "page": 17,
+     "region": "Đoạn đầu trang",
+     "detail": "năm 2020 Việt Nam đã thiệt hại 10 tỷ USD, tương đương 3,2% GDP"
+    },
+    {
+     "page": 30,
+     "region": "Đoạn trên Hình 8",
+     "detail": "thiệt hại trực tiếp về tài sản công và tư khoảng 2,4 tỷ USD hàng năm, tương đương 0,8% GDP"
+    }
+   ],
+   "reason": "Kết hợp hai trang; chấp nhận 4–4,2 lần."
+  },
+  {
+   "id": "A-dev-07",
+   "split": "dev",
+   "group": "text",
+   "question": "Theo báo cáo, sự mất cân bằng giữa giảm nhẹ và thích ứng được thể hiện rõ nhất ở đâu trong chiến lược của Việt Nam và biểu hiện cụ thể là gì?",
+   "answerable": true,
+   "expected_answer": "Trong Chiến lược Tăng trưởng Xanh (VGGS): có đặt một số mục tiêu về cường độ sử dụng năng lượng (toàn quốc và theo ngành) nhưng không có mục tiêu cụ thể tương tự về khả năng thích ứng.",
+   "evidence": [
+    {
+     "page": 23,
+     "region": "Gạch đầu dòng đầu tiên trong ba thách thức",
+     "detail": "Sự mất cân bằng giữa giảm nhẹ và thích ứng được thể hiện rõ nhất trong VGGS, trong đó có đặt ra một số mục tiêu về cường độ sử dụng năng lượng... nhưng không có mục tiêu cụ thể tương tự về khả năng thích ứng"
+    }
+   ],
+   "reason": "Thông tin từ văn xuôi."
+  },
+  {
+   "id": "A-dev-08",
+   "split": "dev",
+   "group": "abstain",
+   "question": "Báo cáo dự báo lượng mưa trung bình hàng năm của Việt Nam sẽ tăng bao nhiêu milimét vào năm 2050?",
+   "answerable": false,
+   "expected_answer": "Tài liệu không cung cấp đủ bằng chứng để trả lời.",
+   "evidence": [],
+   "reason": "Đã grep 'lượng mưa' (13 lần), ' mm ', 'milimet', 'mi-li-mét': không có số liệu mm. Trang 16 chỉ nói bất định lớn về xu hướng lượng mưa tương lai; không có dự báo định lượng."
+  }
+ ]
+}

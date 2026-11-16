@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "middle of page (bullet list and section text)",
+   "content": "Text-based figure-like content consisting of two bold bullet recommendations and a section heading with explanatory paragraphs. The bullets read:\n1) \"Xây dựng một phương pháp tiếp cận có hệ thống cho việc sử dụng các giải pháp dựa vào thiên nhiên (giải pháp thuận thiên):\" Followed by text explaining that to exploit protective and economic functions of ecosystems (including mangroves and dunes), a systematic approach is needed for restoration, conservation, monitoring, and management. Policy, regulatory, and legal frameworks should be strengthened, and lessons from past initiatives synthesized to inform future technical guidance and programs.\n2) \"Hạn chế những dự án phát triển mới, bao gồm cả những dự án tại các vùng đệm, bằng cách tăng cường và thực thi các quy định về sử dụng đất:\" Followed by text explaining the need for specific regulations to avoid uncontrolled urban development, preserve green space, reduce altered flow and flood risk, and enforce strict construction standards and urban plans in risky areas. It states that building quality and building regulations are important determinants of climate resilience.\nSection heading: \"3.3.6. Chăm lo cho những người dân dễ bị tổn thương nhất\"\nMain body text states: without rapid and comprehensive adaptation responses, climate change could push an additional 400.000 đến 1 triệu người into extreme poverty by 2030. About 10% of households in Viet Nam are vulnerable to poverty due to climate-related phenomena. Vulnerability varies by hazard, social connectivity, and poverty rates across regions. Poor households in the Northern Midlands and Mountains are most affected by rainfall and temperature changes, while poor households in North Central Coast, Central Coast, and Mekong Delta are most affected by sea level rise. Poor households have less resilience and strategic capacity to cope; ethnic minorities are at higher risk. Climate change threatens livelihoods and production capacity, affects health and nutrition, and impacts access to learning and education (Hộp 3).\nA final paragraph says the Government of Viet Nam has developed strategies so the most vulnerable can respond and recover quickly from disasters without long-term consequences. Early warning systems and data are operating, but must be improved through better inter-agency cooperation and information exchange. The most vulnerable populations should be targeted in policies, policy frameworks, and information-sharing mechanisms to prepare for emergencies.",
+   "notes": "This page does not contain charts, tables, maps, or boxed infographic figures separate from the body text; only text and bullet-point recommendations are visible. The page includes footnote references 48 and 49, but no standalone visual element."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3471,
+  "completion_tokens": 556
+ }
+}

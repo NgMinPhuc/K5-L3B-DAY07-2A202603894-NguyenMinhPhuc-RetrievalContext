@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "table",
+   "label": "",
+   "title": "Danh sách từ viết tắt",
+   "region": "full page",
+   "content": "| Từ viết tắt | Nghĩa |\n|---|---|\n| 1M5R | Một phải Năm giảm |\n| ADS | Kịch bản khử carbon tăng cường |\n| ASEAN | Hiệp hội các Quốc gia Đông Nam Á |\n| AWD | Xen kẽ ướt và khô |\n| BAU | Hoạt động thông thường |\n| BRT | Xe buýt nhanh |\n| CBAM | Cơ chế điều chỉnh biên giới carbon |\n| CCDR | Báo cáo Quốc gia về Khí hậu và Phát triển |\n| CEA | Phân tích Môi trường Quốc gia |\n| CGE | Mô hình cân bằng tổng thể |\n| CNG | Khí nén tự nhiên |\n| CO₂ | Ôxit Carbon |\n| COP26 | Cuộc họp lần thứ 26 của các Bên tham gia Công ước khung của Liên Hợp Quốc về Biến đổi khí hậu |\n| COVID-19 | Dịch Covid 2019 |\n| CPS | Kịch bản chính sách hiện đang được đề xuất |\n| EIPs | Các khu công nghiệp sinh thái |\n| EPT | Thuế bảo vệ môi trường |\n| ESCOs | Các công ty dịch vụ năng lượng |\n| ESG | Quản trị-xã hội-môi trường |\n| EV | Xe điện |\n| EVN | Tổng công ty điện lực Việt Nam |\n| FIT | Biểu giá mua điện |\n| GDP | Tổng sản phẩm quốc nội |\n| GHG | Khí nhà kính |\n| GIDD | Mô hình động phân phối thu nhập toàn cầu |\n| HVDC | Dòng điện 1 chiều điện áp cao |\n| IFC | Tập đoàn Tài chính Quốc tế |",
+   "notes": "Page contains only a list of abbreviations; no other informative visual elements detected."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2585,
+  "completion_tokens": 440
+ }
+}

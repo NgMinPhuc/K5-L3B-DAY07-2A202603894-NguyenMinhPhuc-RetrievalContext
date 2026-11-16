@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "",
+   "title": "",
+   "region": "full page",
+   "content": "Full-page cover photograph showing an aerial view of patchwork agricultural fields in Vietnam, with green, yellow, brown, and purple plots separated by trees and narrow paths. Overlaid text identifies the report section and title: large section number \"3\" and the title \"Thích ứng với Biến đổi Khí hậu – Lộ trình xây dựng khả năng chống chịu\". At the top left, smaller text reads \"Việt Nam: Báo cáo về Khí hậu và Phát triển\" and \"Thích ứng với Biến đổi Khí hậu - Lộ trình xây dựng khả năng chống chịu\". A vertical multicolor design strip runs along the left edge. Photo credit text appears on the image: \"© Nguyen Quang Ngoc Tonkin/Shutterstock\" (also vertically along the right edge).",
+   "notes": "No charts, tables, maps, or other data visuals on the page; this is a chapter title/cover page with a background photo and graphic design elements."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 2323,
+  "completion_tokens": 226
+ }
+}

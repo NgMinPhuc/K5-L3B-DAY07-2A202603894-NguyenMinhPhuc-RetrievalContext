@@ -1,0 +1,16 @@
+{
+ "elements": [
+  {
+   "type": "figure",
+   "label": "Hình 6",
+   "title": "",
+   "region": "upper-middle/right (referenced in text; no visible embedded graphic on this page)",
+   "content": "Referenced figure only. The page text states that many businesses report climate change impacts affecting their income, mainly because extreme weather events disrupt operations, and also because of reduced labor productivity and other issues. The text cites this as Hình 6. No actual figure, chart, legend, axes, or data are visible on this page image.",
+   "notes": "The figure itself is not visible on the provided page image; only a textual reference appears."
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 3539,
+  "completion_tokens": 134
+ }
+}

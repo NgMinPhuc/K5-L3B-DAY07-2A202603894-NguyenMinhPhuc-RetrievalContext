@@ -1,0 +1,148 @@
+{
+  "created_at": "2026-11-16T16:51:45.329565+00:00",
+  "split": "dev",
+  "benchmark_path": "data/dev_benchmark_day7.json",
+  "dev_questions": 162,
+  "test_questions_file_read": false,
+  "test_results_used_for_selection": false,
+  "model": null,
+  "configs": [
+    {
+      "config": {
+        "name": "hybrid_rrf_citation_fix",
+        "method": "hybrid_rrf",
+        "top_k": 5,
+        "budget": 1400,
+        "candidate_k": 20,
+        "rrf_constant": 60,
+        "hypothesis": "Keep the selected dev retrieval settings; normalize model citations to plain IDs and ensure the answer includes bracketed citation markers to prevent structurally valid answers becoming abstentions."
+      },
+      "split": "dev",
+      "n": 162,
+      "errors": 0,
+      "retrieval": {
+        "hit1": {
+          "n": 106,
+          "of": 160
+        },
+        "evidence_hit3": {
+          "n": 139,
+          "of": 160
+        },
+        "retrieved_evidence_any_turn": {
+          "n": 153,
+          "of": 160
+        },
+        "context_evidence_rate": {
+          "n": 105,
+          "of": 160
+        }
+      },
+      "agent": {
+        "answered": 133,
+        "abstained": 29,
+        "correct_abstentions": {
+          "n": 2,
+          "of": 2
+        },
+        "answerable_abstentions": {
+          "n": 27,
+          "of": 160
+        },
+        "citation_ids_in_final_context": {
+          "n": 133,
+          "of": 133
+        },
+        "semantic_answer_grades": {
+          "review_method": "AI-assisted review (LLM reviewers read answer, expected answer, gold evidence and cited chunk text/page for every answered item); needs human spot-check before submission",
+          "answer_grade_counts_over_160_answerable": {
+            "0": 37,
+            "1": 9,
+            "2": 114
+          },
+          "answer_grade_mean_over_160": 1.481,
+          "answered_grade_counts": {
+            "0": 10,
+            "1": 9,
+            "2": 114
+          },
+          "correct_and_fully_supported": 111,
+          "citations_supporting": {
+            "n": 127,
+            "of": 137
+          },
+          "answers_all_citations_supporting": {
+            "n": 123,
+            "of": 133
+          },
+          "correct_abstentions": {
+            "n": 2,
+            "of": 2
+          },
+          "wrong_abstentions_on_answerable": 27,
+          "non_full_marks": {
+            "q007": 0,
+            "q031": 1,
+            "q035": 1,
+            "q051": 0,
+            "q053": 0,
+            "q060": 1,
+            "q078": 1,
+            "q087": 0,
+            "q096": 1,
+            "q104": 0,
+            "q116": 1,
+            "q124": 0,
+            "q126": 0,
+            "q179": 1,
+            "q180": 0,
+            "q185": 1,
+            "q190": 1,
+            "q192": 0,
+            "q195": 0
+          }
+        },
+        "semantic_grading_note": "Filled by AI-assisted review on dev only; citation ID presence alone is not semantic validation. Human spot-check recommended."
+      },
+      "latency": {
+        "shared_index_build_seconds": 0.2205,
+        "mean_query_ms": 3504.44,
+        "median_query_ms": 2755.82,
+        "successful_n": 162
+      },
+      "usage": {
+        "query_embedding_tokens": 9685,
+        "chat_usage": {
+          "prompt_tokens": 303598,
+          "completion_tokens": 23198,
+          "total_tokens": 326796
+        },
+        "embedding_estimated_cost_usd": 0.00019370000000000002,
+        "embedding_cost_note": "Configured EMBEDDING_PRICE_PER_1M_USD.",
+        "chat_estimated_cost_usd": 0.3320895,
+        "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+        "total_estimated_cost_usd": 0.3322832
+      },
+      "review_required": 0
+    }
+  ],
+  "selection_rule": "Chọn trên dev theo Evidence Hit@3 và Context Evidence Rate; nếu gần nhau, ưu tiên answer/citation sau khi review thủ công, rồi latency/cost. Không chọn dựa trên test.",
+  "selection_status": "reviewed_on_dev",
+  "selected_configuration": "hybrid_rrf_citation_fix",
+  "comparison_vs_previous_selected": {
+    "previous": "run_20261116/hybrid_rrf_more_context",
+    "previous_answer_grades_0_1_2": [
+      136,
+      0,
+      24
+    ],
+    "previous_mean": 0.3,
+    "new_answer_grades_0_1_2": [
+      37,
+      9,
+      114
+    ],
+    "new_mean": 1.481
+  },
+  "test_note": "artifacts/day7_test/run_20261116_final was produced at 23:24 for hybrid_rrf_more_context before this dev run; its results were not read or used for this selection. hybrid_rrf_citation_fix has not been run on test yet."
+}

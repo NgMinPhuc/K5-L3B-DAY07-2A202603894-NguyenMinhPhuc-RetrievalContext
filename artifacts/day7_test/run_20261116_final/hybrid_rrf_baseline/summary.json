@@ -1,0 +1,89 @@
+{
+  "config": {
+    "name": "hybrid_rrf_baseline",
+    "method": "hybrid_rrf",
+    "top_k": 3,
+    "budget": 800,
+    "candidate_k": 20,
+    "rrf_constant": 60,
+    "hypothesis": "Fuse dense and lexical ranks equally with RRF to combine semantic and exact-term matches."
+  },
+  "split": "test",
+  "n": 42,
+  "errors": 0,
+  "retrieval": {
+    "hit1": {
+      "n": 26,
+      "of": 40
+    },
+    "evidence_hit3": {
+      "n": 29,
+      "of": 40
+    },
+    "retrieved_evidence_any_turn": {
+      "n": 32,
+      "of": 40
+    },
+    "context_evidence_rate": {
+      "n": 13,
+      "of": 40
+    }
+  },
+  "agent": {
+    "answered": 7,
+    "abstained": 35,
+    "correct_abstentions": {
+      "n": 2,
+      "of": 2
+    },
+    "answerable_abstentions": {
+      "n": 33,
+      "of": 40
+    },
+    "citation_ids_in_final_context": {
+      "n": 7,
+      "of": 7
+    },
+    "semantic_answer_grades": {
+      "0": 1,
+      "1": 1,
+      "2": 5
+    },
+    "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation.",
+    "semantic_answer_grade_mean": {
+      "sum": 11,
+      "of": 40,
+      "scale": 2,
+      "mean": 0.275
+    },
+    "semantic_citation_support": {
+      "n": 6,
+      "of": 7
+    },
+    "manual_abstention_correct": {
+      "n": 2,
+      "of": 2
+    },
+    "manual_review_note": "Tất cả câu trả lời được review thủ công theo expected answer và text/source/page của citations; hai abstention cases cũng được kiểm tra."
+  },
+  "latency": {
+    "shared_index_build_seconds": 0.1164,
+    "mean_query_ms": 5303.2,
+    "median_query_ms": 6281.84,
+    "successful_n": 42
+  },
+  "usage": {
+    "query_embedding_tokens": 4556,
+    "chat_usage": {
+      "total_tokens": 86839,
+      "prompt_tokens": 80082,
+      "completion_tokens": 6757
+    },
+    "embedding_estimated_cost_usd": 9.112000000000001e-05,
+    "embedding_cost_note": "Configured EMBEDDING_PRICE_PER_1M_USD.",
+    "chat_estimated_cost_usd": 0.090468,
+    "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+    "total_estimated_cost_usd": 0.09055912
+  },
+  "review_required": 0
+}

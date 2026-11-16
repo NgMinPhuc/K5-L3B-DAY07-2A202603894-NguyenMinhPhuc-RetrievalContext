@@ -1,0 +1,34 @@
+[
+  {
+    "id": "abst-dev-001",
+    "split": "dev",
+    "question": "Theo các tài liệu trong kho, tỷ lệ thất nghiệp của Việt Nam năm 2024 là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Kho chỉ gồm Bộ luật Lao động 2012, Bộ luật Lao động 2019 và Nghị định 145/2020/NĐ-CP; không có số liệu thống kê thất nghiệp năm 2024."
+  },
+  {
+    "id": "abst-dev-002",
+    "split": "dev",
+    "question": "Mức lương tối thiểu vùng cụ thể áp dụng tại Hà Nội từ ngày 01/07/2025 là bao nhiêu theo các tài liệu này?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Kho có các văn bản lao động đến năm 2020 nhưng không có nghị định quy định mức lương tối thiểu vùng có hiệu lực từ 01/07/2025."
+  },
+  {
+    "id": "abst-test-001",
+    "split": "test",
+    "question": "Các tài liệu trong kho cho biết có bao nhiêu người lao động Việt Nam thất nghiệp trong quý IV năm 2025?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Các tài liệu là văn bản quy phạm pháp luật lao động, không chứa số liệu lao động thất nghiệp theo quý năm 2025."
+  },
+  {
+    "id": "abst-test-002",
+    "split": "test",
+    "question": "Mức giảm trừ gia cảnh cho mỗi người phụ thuộc theo chính sách thuế thu nhập cá nhân hiện hành là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Kho không gồm văn bản thuế thu nhập cá nhân hoặc quy định mức giảm trừ gia cảnh."
+  }
+]

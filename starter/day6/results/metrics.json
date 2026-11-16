@@ -1,0 +1,294 @@
+{
+  "model": "text-embedding-3-small",
+  "top_k": 3,
+  "questions": 200,
+  "query_tokens": 8530,
+  "query_cost_usd": 0.000171,
+  "query_embed_seconds": 3.47,
+  "search_seconds": {
+    "A": 5.73,
+    "B": 5.31,
+    "C": 5.04
+  },
+  "selection_rule": "Chọn chiến lược có Hit@3 dev cao nhất; hòa thì Hit@1 dev; hòa tiếp thì grounding thủ công; cuối cùng là chi phí/thời gian.",
+  "chosen_on_dev": "C",
+  "note": "Grounding/coherence/metadata-đúng chưa có: chấm tay trong results/audit_*.csv",
+  "metrics": {
+    "A": {
+      "dev": {
+        "hit1": {
+          "n": 41,
+          "of": 160,
+          "rate": 0.2562
+        },
+        "hit3": {
+          "n": 81,
+          "of": 160,
+          "rate": 0.5062
+        },
+        "filter_questions_hit3": {
+          "n": 16,
+          "of": 46,
+          "rate": 0.3478
+        },
+        "filter_compliance_top3": {
+          "n": 3,
+          "of": 46,
+          "rate": 0.0652
+        },
+        "partial_evidence_in_top3": 18,
+        "hit3_by_type": {
+          "dien_dat_lai": {
+            "n": 7,
+            "of": 13,
+            "rate": 0.5385
+          },
+          "dieu_kien_ngoai_le": {
+            "n": 21,
+            "of": 38,
+            "rate": 0.5526
+          },
+          "metadata_filter": {
+            "n": 16,
+            "of": 46,
+            "rate": 0.3478
+          },
+          "truc_tiep": {
+            "n": 37,
+            "of": 63,
+            "rate": 0.5873
+          }
+        }
+      },
+      "test": {
+        "hit1": {
+          "n": 10,
+          "of": 40,
+          "rate": 0.25
+        },
+        "hit3": {
+          "n": 17,
+          "of": 40,
+          "rate": 0.425
+        },
+        "filter_questions_hit3": {
+          "n": 4,
+          "of": 13,
+          "rate": 0.3077
+        },
+        "filter_compliance_top3": {
+          "n": 0,
+          "of": 13,
+          "rate": 0.0
+        },
+        "partial_evidence_in_top3": 6,
+        "hit3_by_type": {
+          "dien_dat_lai": {
+            "n": 2,
+            "of": 3,
+            "rate": 0.6667
+          },
+          "dieu_kien_ngoai_le": {
+            "n": 2,
+            "of": 6,
+            "rate": 0.3333
+          },
+          "metadata_filter": {
+            "n": 4,
+            "of": 13,
+            "rate": 0.3077
+          },
+          "truc_tiep": {
+            "n": 9,
+            "of": 18,
+            "rate": 0.5
+          }
+        }
+      }
+    },
+    "B": {
+      "dev": {
+        "hit1": {
+          "n": 79,
+          "of": 160,
+          "rate": 0.4938
+        },
+        "hit3": {
+          "n": 120,
+          "of": 160,
+          "rate": 0.75
+        },
+        "filter_questions_hit3": {
+          "n": 32,
+          "of": 46,
+          "rate": 0.6957
+        },
+        "filter_compliance_top3": {
+          "n": 5,
+          "of": 46,
+          "rate": 0.1087
+        },
+        "partial_evidence_in_top3": 0,
+        "hit3_by_type": {
+          "dien_dat_lai": {
+            "n": 10,
+            "of": 13,
+            "rate": 0.7692
+          },
+          "dieu_kien_ngoai_le": {
+            "n": 25,
+            "of": 38,
+            "rate": 0.6579
+          },
+          "metadata_filter": {
+            "n": 32,
+            "of": 46,
+            "rate": 0.6957
+          },
+          "truc_tiep": {
+            "n": 53,
+            "of": 63,
+            "rate": 0.8413
+          }
+        }
+      },
+      "test": {
+        "hit1": {
+          "n": 20,
+          "of": 40,
+          "rate": 0.5
+        },
+        "hit3": {
+          "n": 28,
+          "of": 40,
+          "rate": 0.7
+        },
+        "filter_questions_hit3": {
+          "n": 8,
+          "of": 13,
+          "rate": 0.6154
+        },
+        "filter_compliance_top3": {
+          "n": 0,
+          "of": 13,
+          "rate": 0.0
+        },
+        "partial_evidence_in_top3": 0,
+        "hit3_by_type": {
+          "dien_dat_lai": {
+            "n": 2,
+            "of": 3,
+            "rate": 0.6667
+          },
+          "dieu_kien_ngoai_le": {
+            "n": 2,
+            "of": 6,
+            "rate": 0.3333
+          },
+          "metadata_filter": {
+            "n": 8,
+            "of": 13,
+            "rate": 0.6154
+          },
+          "truc_tiep": {
+            "n": 16,
+            "of": 18,
+            "rate": 0.8889
+          }
+        }
+      }
+    },
+    "C": {
+      "dev": {
+        "hit1": {
+          "n": 91,
+          "of": 160,
+          "rate": 0.5687
+        },
+        "hit3": {
+          "n": 128,
+          "of": 160,
+          "rate": 0.8
+        },
+        "filter_questions_hit3": {
+          "n": 40,
+          "of": 46,
+          "rate": 0.8696
+        },
+        "filter_compliance_top3": {
+          "n": 46,
+          "of": 46,
+          "rate": 1.0
+        },
+        "partial_evidence_in_top3": 1,
+        "hit3_by_type": {
+          "dien_dat_lai": {
+            "n": 10,
+            "of": 13,
+            "rate": 0.7692
+          },
+          "dieu_kien_ngoai_le": {
+            "n": 25,
+            "of": 38,
+            "rate": 0.6579
+          },
+          "metadata_filter": {
+            "n": 40,
+            "of": 46,
+            "rate": 0.8696
+          },
+          "truc_tiep": {
+            "n": 53,
+            "of": 63,
+            "rate": 0.8413
+          }
+        }
+      },
+      "test": {
+        "hit1": {
+          "n": 22,
+          "of": 40,
+          "rate": 0.55
+        },
+        "hit3": {
+          "n": 29,
+          "of": 40,
+          "rate": 0.725
+        },
+        "filter_questions_hit3": {
+          "n": 9,
+          "of": 13,
+          "rate": 0.6923
+        },
+        "filter_compliance_top3": {
+          "n": 13,
+          "of": 13,
+          "rate": 1.0
+        },
+        "partial_evidence_in_top3": 0,
+        "hit3_by_type": {
+          "dien_dat_lai": {
+            "n": 2,
+            "of": 3,
+            "rate": 0.6667
+          },
+          "dieu_kien_ngoai_le": {
+            "n": 2,
+            "of": 6,
+            "rate": 0.3333
+          },
+          "metadata_filter": {
+            "n": 9,
+            "of": 13,
+            "rate": 0.6923
+          },
+          "truc_tiep": {
+            "n": 16,
+            "of": 18,
+            "rate": 0.8889
+          }
+        }
+      }
+    }
+  }
+}

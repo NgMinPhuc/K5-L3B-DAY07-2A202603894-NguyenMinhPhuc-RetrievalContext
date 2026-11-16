@@ -4,7 +4,10 @@ Adapters are intentionally not provided: Day 6 has no fixed database schema and
 model providers differ. Never use fake adapters to report benchmark quality.
 """
 from typing import Any, Protocol
-from baseline import pack_context
+try:  # Support both `python -m starter...` and legacy starter/ on sys.path.
+    from .baseline import pack_context
+except ImportError:  # Existing tests/importers use the top-level `agentic` module.
+    from baseline import pack_context
 
 
 class Controller(Protocol):
@@ -69,7 +72,11 @@ def run_agent(question: str, controller: Controller, retriever: Retriever, *,
             valid = bool(answer.strip() and citations and all(i in chunks and f'[{i}]' in answer for i in citations))
             if valid:
                 return {'status': 'answered', 'answer': answer, 'citations': citations, 'events': events + [{'event': 'answer'}]}
-            return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events + [{'event': 'invalid_or_missing_citations'}]}
+            return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [],
+                    'events': events + [{'event': 'invalid_or_missing_citations',
+                                         'attempted_answer': answer,
+                                         'attempted_citations': citations,
+                                         'context_ids': list(chunks)}]}
         else:
             raise ValueError('action phải là search hoặc answer')
     return {'status': 'abstain', 'answer': 'Không đủ bằng chứng để trả lời.', 'citations': [], 'events': events}

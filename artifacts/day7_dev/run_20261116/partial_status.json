@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "split": "dev",
+  "model": "gpt-5.4-mini",
+  "dev_questions_per_configuration": 162,
+  "test_questions_read": false,
+  "selected_configuration": "hybrid_rrf_more_context",
+  "estimated_total_cost_usd": 1.71522045,
+  "summary": "summary.json",
+  "selection": "selection.md",
+  "note": "Estimated token cost, not a billing statement. Failed PostgreSQL attempts are preserved under failed_attempts.jsonl for the two resumed configurations; successful final traces and summaries have zero system errors."
+}

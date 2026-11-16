@@ -1,0 +1,417 @@
+{
+  "created_at": "2026-11-16T15:47:31.728434+00:00",
+  "split": "dev",
+  "benchmark_path": "data/dev_benchmark_day7.json",
+  "dev_questions": 162,
+  "test_questions_file_read": false,
+  "test_results_used_for_selection": false,
+  "model": "gpt-5.4-mini",
+  "configs": [
+    {
+      "config": {
+        "name": "tfidf_baseline",
+        "method": "tfidf",
+        "top_k": 3,
+        "budget": 800,
+        "candidate_k": null,
+        "hypothesis": "Lexical TF-IDF baseline; exact legal terms may help, but paraphrases may be missed."
+      },
+      "split": "dev",
+      "n": 162,
+      "errors": 0,
+      "retrieval": {
+        "hit1": {
+          "n": 84,
+          "of": 160
+        },
+        "evidence_hit3": {
+          "n": 103,
+          "of": 160
+        },
+        "retrieved_evidence_any_turn": {
+          "n": 111,
+          "of": 160
+        },
+        "context_evidence_rate": {
+          "n": 45,
+          "of": 160
+        }
+      },
+      "agent": {
+        "answered": 19,
+        "abstained": 143,
+        "correct_abstentions": {
+          "n": 2,
+          "of": 2
+        },
+        "answerable_abstentions": {
+          "n": 141,
+          "of": 160
+        },
+        "citation_ids_in_final_context": {
+          "n": 19,
+          "of": 19
+        },
+        "semantic_answer_grades": {},
+        "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation."
+      },
+      "latency": {
+        "shared_index_build_seconds": 0.1593,
+        "mean_query_ms": 4223.08,
+        "median_query_ms": 4742.27,
+        "successful_n": 162
+      },
+      "usage": {
+        "query_embedding_tokens": 0,
+        "chat_usage": {
+          "completion_tokens": 25935,
+          "prompt_tokens": 312429,
+          "total_tokens": 338364
+        },
+        "embedding_estimated_cost_usd": 0.0,
+        "embedding_cost_note": "Day 6 pinned price table; verify current provider pricing before reporting.",
+        "chat_estimated_cost_usd": 0.35102925,
+        "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+        "total_estimated_cost_usd": 0.35102925
+      },
+      "review_required": 19
+    },
+    {
+      "config": {
+        "name": "dense_baseline",
+        "method": "dense",
+        "top_k": 3,
+        "budget": 800,
+        "candidate_k": null,
+        "hypothesis": "Dense Day 6 index baseline; semantic similarity should retrieve paraphrases."
+      },
+      "split": "dev",
+      "n": 162,
+      "errors": 0,
+      "retrieval": {
+        "hit1": {
+          "n": 87,
+          "of": 160
+        },
+        "evidence_hit3": {
+          "n": 122,
+          "of": 160
+        },
+        "retrieved_evidence_any_turn": {
+          "n": 130,
+          "of": 160
+        },
+        "context_evidence_rate": {
+          "n": 42,
+          "of": 160
+        }
+      },
+      "agent": {
+        "answered": 17,
+        "abstained": 145,
+        "correct_abstentions": {
+          "n": 2,
+          "of": 2
+        },
+        "answerable_abstentions": {
+          "n": 143,
+          "of": 160
+        },
+        "citation_ids_in_final_context": {
+          "n": 17,
+          "of": 17
+        },
+        "semantic_answer_grades": {},
+        "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation."
+      },
+      "latency": {
+        "shared_index_build_seconds": 0.1593,
+        "mean_query_ms": 5272.37,
+        "median_query_ms": 6182.74,
+        "successful_n": 162
+      },
+      "usage": {
+        "query_embedding_tokens": 16929,
+        "chat_usage": {
+          "completion_tokens": 26026,
+          "prompt_tokens": 326400,
+          "total_tokens": 352426
+        },
+        "embedding_estimated_cost_usd": 0.00033858,
+        "embedding_cost_note": "Day 6 pinned price table; verify current provider pricing before reporting.",
+        "chat_estimated_cost_usd": 0.361917,
+        "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+        "total_estimated_cost_usd": 0.36225557999999997
+      },
+      "review_required": 17
+    },
+    {
+      "config": {
+        "name": "hybrid_rrf_baseline",
+        "method": "hybrid_rrf",
+        "top_k": 3,
+        "budget": 800,
+        "candidate_k": 20,
+        "rrf_constant": 60,
+        "hypothesis": "Fuse dense and lexical ranks equally with RRF to combine semantic and exact-term matches."
+      },
+      "split": "dev",
+      "n": 162,
+      "errors": 0,
+      "retrieval": {
+        "hit1": {
+          "n": 103,
+          "of": 160
+        },
+        "evidence_hit3": {
+          "n": 139,
+          "of": 160
+        },
+        "retrieved_evidence_any_turn": {
+          "n": 140,
+          "of": 160
+        },
+        "context_evidence_rate": {
+          "n": 51,
+          "of": 160
+        }
+      },
+      "agent": {
+        "answered": 21,
+        "abstained": 141,
+        "correct_abstentions": {
+          "n": 2,
+          "of": 2
+        },
+        "answerable_abstentions": {
+          "n": 139,
+          "of": 160
+        },
+        "citation_ids_in_final_context": {
+          "n": 21,
+          "of": 21
+        },
+        "semantic_answer_grades": {
+          "0": 141,
+          "1": 1,
+          "2": 18
+        },
+        "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation.",
+        "semantic_answer_grade_mean": {
+          "sum": 37,
+          "of": 160,
+          "scale": 2,
+          "mean": 0.2313
+        },
+        "semantic_citation_support": {
+          "n": 20,
+          "of": 22
+        },
+        "manual_abstention_correct": {
+          "n": 2,
+          "of": 2
+        },
+        "manual_review_note": "Reviewed against expected answer and cited chunk text/page. See citation_review_queue.json."
+      },
+      "latency": {
+        "shared_index_build_seconds": 0.1593,
+        "mean_query_ms": 6262.16,
+        "median_query_ms": 6237.1,
+        "successful_n": 162
+      },
+      "usage": {
+        "query_embedding_tokens": 16123,
+        "chat_usage": {
+          "completion_tokens": 25384,
+          "prompt_tokens": 310718,
+          "total_tokens": 336102
+        },
+        "embedding_estimated_cost_usd": 0.00032246,
+        "embedding_cost_note": "Day 6 pinned price table; verify current provider pricing before reporting.",
+        "chat_estimated_cost_usd": 0.3472665,
+        "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+        "total_estimated_cost_usd": 0.34758896
+      },
+      "review_required": 21
+    },
+    {
+      "config": {
+        "name": "hybrid_rrf_wide_candidates",
+        "method": "hybrid_rrf",
+        "top_k": 3,
+        "budget": 800,
+        "candidate_k": 40,
+        "rrf_constant": 60,
+        "hypothesis": "Improvement 1: increase per-retriever candidates from 20 to 40; hypothesis: broader candidate recall gives RRF more chances to include evidence."
+      },
+      "split": "dev",
+      "n": 162,
+      "errors": 0,
+      "retrieval": {
+        "hit1": {
+          "n": 102,
+          "of": 160
+        },
+        "evidence_hit3": {
+          "n": 137,
+          "of": 160
+        },
+        "retrieved_evidence_any_turn": {
+          "n": 142,
+          "of": 160
+        },
+        "context_evidence_rate": {
+          "n": 53,
+          "of": 160
+        }
+      },
+      "agent": {
+        "answered": 21,
+        "abstained": 141,
+        "correct_abstentions": {
+          "n": 2,
+          "of": 2
+        },
+        "answerable_abstentions": {
+          "n": 139,
+          "of": 160
+        },
+        "citation_ids_in_final_context": {
+          "n": 21,
+          "of": 21
+        },
+        "semantic_answer_grades": {},
+        "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation."
+      },
+      "latency": {
+        "shared_index_build_seconds": 0.1166,
+        "mean_query_ms": 5676.72,
+        "median_query_ms": 6014.38,
+        "successful_n": 162
+      },
+      "usage": {
+        "query_embedding_tokens": 15910,
+        "chat_usage": {
+          "completion_tokens": 25317,
+          "total_tokens": 329938,
+          "prompt_tokens": 304621
+        },
+        "embedding_estimated_cost_usd": 0.0003182,
+        "embedding_cost_note": "Day 6 pinned price table; verify current provider pricing before reporting.",
+        "chat_estimated_cost_usd": 0.34239225,
+        "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+        "total_estimated_cost_usd": 0.34271045
+      },
+      "review_required": 21
+    },
+    {
+      "config": {
+        "name": "hybrid_rrf_more_context",
+        "method": "hybrid_rrf",
+        "top_k": 5,
+        "budget": 1400,
+        "candidate_k": 20,
+        "rrf_constant": 60,
+        "hypothesis": "Improvement 2: allow top-5 retrieval and 1400-character context; hypothesis: extra context helps when evidence is split or ranked just below top-3."
+      },
+      "split": "dev",
+      "n": 162,
+      "errors": 0,
+      "retrieval": {
+        "hit1": {
+          "n": 102,
+          "of": 160
+        },
+        "evidence_hit3": {
+          "n": 135,
+          "of": 160
+        },
+        "retrieved_evidence_any_turn": {
+          "n": 153,
+          "of": 160
+        },
+        "context_evidence_rate": {
+          "n": 101,
+          "of": 160
+        }
+      },
+      "agent": {
+        "answered": 27,
+        "abstained": 135,
+        "correct_abstentions": {
+          "n": 2,
+          "of": 2
+        },
+        "answerable_abstentions": {
+          "n": 133,
+          "of": 160
+        },
+        "citation_ids_in_final_context": {
+          "n": 27,
+          "of": 27
+        },
+        "semantic_answer_grades": {
+          "0": 136,
+          "1": 0,
+          "2": 24
+        },
+        "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation.",
+        "semantic_answer_grade_mean": {
+          "sum": 48,
+          "of": 160,
+          "scale": 2,
+          "mean": 0.3
+        },
+        "semantic_citation_support": {
+          "n": 24,
+          "of": 27
+        },
+        "manual_abstention_correct": {
+          "n": 2,
+          "of": 2
+        },
+        "manual_review_note": "Reviewed against expected answer and cited chunk text/page. See citation_review_queue.json."
+      },
+      "latency": {
+        "shared_index_build_seconds": 0.1166,
+        "mean_query_ms": 4412.06,
+        "median_query_ms": 3132.56,
+        "successful_n": 162
+      },
+      "usage": {
+        "query_embedding_tokens": 10048,
+        "chat_usage": {
+          "completion_tokens": 22401,
+          "total_tokens": 303242,
+          "prompt_tokens": 280841
+        },
+        "embedding_estimated_cost_usd": 0.00020096,
+        "embedding_cost_note": "Day 6 pinned price table; verify current provider pricing before reporting.",
+        "chat_estimated_cost_usd": 0.31143525,
+        "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+        "total_estimated_cost_usd": 0.31163620999999997
+      },
+      "review_required": 27
+    }
+  ],
+  "selection_rule": "Chọn trên dev theo Evidence Hit@3 và Context Evidence Rate; nếu gần nhau, ưu tiên answer/citation sau khi review thủ công, rồi latency/cost. Không chọn dựa trên test.",
+  "selection_status": "selected_on_dev",
+  "selected_configuration": "hybrid_rrf_more_context",
+  "selection_reason": "Hybrid RRF with top_k=5 and context budget=1400: Context Evidence Rate 101/160 and 24/160 grade-2 answers, versus hybrid baseline 51/160 and 18/160; Evidence Hit@3 decreases by 4 (139 to 135).",
+  "manual_review": {
+    "configs": [
+      "hybrid_rrf_baseline",
+      "hybrid_rrf_more_context"
+    ],
+    "selected_answered_cases_reviewed": 27,
+    "selected_correct_supported_answers": "24/27",
+    "selected_correct_abstentions": "2/2",
+    "selected_errors": [
+      "q048",
+      "q104",
+      "q105"
+    ],
+    "reviewer": "Codex manual dev review",
+    "human_spot_check_recommended": true
+  }
+}

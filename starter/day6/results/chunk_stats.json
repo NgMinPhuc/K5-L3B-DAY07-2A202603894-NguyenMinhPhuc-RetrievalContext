@@ -1,0 +1,48 @@
+{
+  "pages_indexed": 221,
+  "pages_skipped": 36,
+  "load_seconds": 16.29,
+  "A": {
+    "params": {
+      "chunker": "fixed_size",
+      "size": 800,
+      "overlap": 100
+    },
+    "chunks": 788,
+    "total_chars": 626869,
+    "len_min": 287,
+    "len_median": 797.0,
+    "len_p90": 799,
+    "len_max": 799,
+    "over_limit": 0,
+    "cross_page_chunks": 242,
+    "without_article": 5,
+    "chunk_seconds": 0.023,
+    "dev_questions": 160,
+    "evidence_in_one_chunk": 157,
+    "evidence_split_ids": [
+      "q026",
+      "q038",
+      "q135"
+    ]
+  },
+  "B": {
+    "params": {
+      "chunker": "by_article",
+      "max_size": 1500
+    },
+    "chunks": 714,
+    "total_chars": 554972,
+    "len_min": 91,
+    "len_median": 756.5,
+    "len_p90": 1351,
+    "len_max": 2222,
+    "over_limit": 3,
+    "cross_page_chunks": 189,
+    "without_article": 4,
+    "chunk_seconds": 0.027,
+    "dev_questions": 160,
+    "evidence_in_one_chunk": 160,
+    "evidence_split_ids": []
+  }
+}

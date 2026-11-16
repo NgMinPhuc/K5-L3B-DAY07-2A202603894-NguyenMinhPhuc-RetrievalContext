@@ -1,0 +1,3833 @@
+{
+  "version": "day7-v1",
+  "corpus": "Day06: Bộ luật Lao động 2012, Bộ luật Lao động 2019, Nghị định 145/2020/NĐ-CP",
+  "provenance": "200 câu có đáp án được chuyển từ benchmark Day06, giữ nguyên split và evidence; 4 câu thiếu evidence được khai báo riêng trong data/abstention_cases.json.",
+  "split_note": "Day06 đã báo cáo kết quả trên 40 câu test; cấu hình Day06 được chọn bằng dev. Không dùng các câu test này để chọn cấu hình Day07. Nếu dùng kết quả test để điều chỉnh agent/retrieval, phải tạo test mới trước khi báo đánh giá độc lập.",
+  "counts": {
+    "dev_answerable": 160,
+    "dev_unanswerable": 2,
+    "test_answerable": 40,
+    "test_unanswerable": 2
+  },
+  "questions": [
+    {
+      "id": "q001",
+      "split": "dev",
+      "question": "Thời gian thử việc tối đa đối với công việc của người quản lý doanh nghiệp là bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 180 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 6,
+          "evidence": "Không quá 180 ngày đối với công việc của người quản lý doanh nghiệp"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q002",
+      "split": "dev",
+      "question": "Nhân viên văn phòng làm đủ một năm cho một công ty thì được nghỉ phép năm bao nhiêu ngày có lương?",
+      "answerable": true,
+      "expected_answer": "12 ngày làm việc (điều kiện làm việc bình thường).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 24,
+          "evidence": "12 ngày làm việc đối với người làm công việc trong điều kiện bình thường"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 32,
+          "evidence": "12 ngày làm việc đối với người làm công việc trong điều kiện bình thường"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q003",
+      "split": "dev",
+      "question": "Nếu công ty trả lương trễ hạn thì người lao động có được nghỉ việc ngay mà không cần báo trước không?",
+      "answerable": true,
+      "expected_answer": "Có, được đơn phương chấm dứt HĐLĐ không cần báo trước, trừ trường hợp quy định tại khoản 4 Điều 97.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 8,
+          "evidence": "Người lao động có quyền đơn phương chấm dứt hợp đồng lao động không cần báo trước trong trường hợp sau đây: a) Không được bố trí theo đúng công việc, địa điểm làm việc hoặc không được bảo đảm điều kiện làm việc theo thỏa thuận, trừ trường hợp quy định tại Điều 29 của Bộ luật này; b) Không được trả đủ lương hoặc trả lương không đúng thời hạn, trừ trường hợp quy định tại khoản 4 Điều 97 của Bộ luật này"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q004",
+      "split": "dev",
+      "question": "Làm thêm giờ vào ngày nghỉ lễ, tết thì được trả lương ít nhất bằng bao nhiêu phần trăm?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 300%, chưa kể tiền lương ngày lễ, tết đối với người hưởng lương ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 21,
+          "evidence": "Vào ngày nghỉ lễ, tết, ngày nghỉ có hưởng lương, ít nhất bằng 300%"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 28,
+          "evidence": "Vào ngày nghỉ lễ, ngày nghỉ có hưởng lương, ít nhất bằng 300%"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q005",
+      "split": "dev",
+      "question": "Tôi sắp cưới vợ, tôi được nghỉ mấy ngày mà vẫn hưởng nguyên lương?",
+      "answerable": true,
+      "expected_answer": "03 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 24,
+          "evidence": "Kết hôn: nghỉ 03 ngày"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 33,
+          "evidence": "Kết hôn: nghỉ 03 ngày"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q006",
+      "split": "dev",
+      "question": "Lao động nữ được nghỉ thai sản bao lâu?",
+      "answerable": true,
+      "expected_answer": "06 tháng trước và sau khi sinh; nghỉ trước sinh không quá 02 tháng; sinh đôi trở lên mỗi con từ con thứ 2 thêm 01 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 29,
+          "evidence": "Lao động nữ được nghỉ thai sản trước và sau khi sinh con là 06 tháng; thời gian nghỉ trước khi sinh không quá 02 tháng"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 44,
+          "evidence": "Lao động nữ được nghỉ trước và sau khi sinh con là 06 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q007",
+      "split": "dev",
+      "question": "Độ tuổi lao động tối thiểu của người lao động là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Đủ 15 tuổi (trừ trường hợp tại Mục 1 Chương XI).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 1,
+          "evidence": "Độ tuổi lao động tối thiểu của người lao động là đủ 15 tuổi"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 1,
+          "evidence": "Người lao động là người từ đủ 15 tuổi trở lên"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q008",
+      "split": "dev",
+      "question": "Doanh nghiệp sử dụng bao nhiêu lao động trở lên thì nội quy lao động bắt buộc phải bằng văn bản?",
+      "answerable": true,
+      "expected_answer": "Từ 10 người lao động trở lên.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 25,
+          "evidence": "nếu sử dụng từ 10 người lao động trở lên thì nội quy lao động phải bằng văn bản"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 34,
+          "evidence": "sử dụng từ 10 người lao động trở lên phải có nội quy lao động bằng văn bản"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q009",
+      "split": "dev",
+      "question": "Nếu công ty quy định thời giờ làm việc theo tuần thì mỗi ngày được làm tối đa bao nhiêu giờ?",
+      "answerable": true,
+      "expected_answer": "Không quá 10 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 22,
+          "evidence": "trường hợp theo tuần thì thời giờ làm việc bình thường không quá 10 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 30,
+          "evidence": "trường hợp theo tuần thì thời giờ làm việc bình thường không quá 10 giờ trong 01 ngày, nhưng không quá 48 giờ trong 01 tuần"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q010",
+      "split": "dev",
+      "question": "Chị em trong những ngày đèn đỏ được nghỉ bao nhiêu phút mỗi ngày mà vẫn được tính lương?",
+      "answerable": true,
+      "expected_answer": "30 phút mỗi ngày, tính vào thời giờ làm việc, vẫn hưởng đủ lương.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 69,
+          "evidence": "Lao động nữ trong thời gian hành kinh có quyền được nghỉ mỗi ngày 30 phút tính vào thời giờ làm việc"
+        },
+        {
+          "source_id": "blld-2019",
+          "page": 28,
+          "evidence": "Lao động nữ trong thời gian hành kinh được nghỉ mỗi ngày 30 phút"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 44,
+          "evidence": "Lao động nữ trong thời gian hành kinh được nghỉ mỗi ngày 30 phút"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q011",
+      "split": "dev",
+      "question": "Khi làm việc theo ca liên tục vào ban đêm, thời gian nghỉ giữa giờ được tính vào giờ làm việc ít nhất bao nhiêu phút?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 45 phút (ca liên tục ban ngày: ít nhất 30 phút).",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 58,
+          "evidence": "Thời gian nghỉ giữa giờ được tính vào giờ làm việc đối với trường hợp làm việc theo ca liên tục quy định tại khoản 3 Điều 63 Nghị định này ít nhất 30 phút, riêng trường hợp làm việc ban đêm thì được tính ít nhất 45 phút"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q012",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, tuổi nghỉ hưu của nam và nữ là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Nam đủ 60 tuổi, nữ đủ 55 tuổi.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 52,
+          "evidence": "được hưởng lương hưu khi nam đủ 60 tuổi, nữ đủ 55 tuổi"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q013",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, từ năm 2021 tuổi nghỉ hưu của lao động nam trong điều kiện lao động bình thường là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Đủ 60 tuổi 03 tháng (sau đó mỗi năm tăng 03 tháng, đến 62 tuổi vào năm 2028).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 34,
+          "evidence": "Kể từ năm 2021, tuổi nghỉ hưu của người lao động trong điều kiện lao động bình thường là đủ 60 tuổi 03 tháng đối với lao động nam"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q014",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong một tháng là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Không quá 30 giờ trong 01 tháng (tổng không quá 200 giờ/năm, trường hợp đặc biệt 300 giờ/năm).",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 31,
+          "evidence": "không quá 30 giờ trong 01 tháng và tổng số không quá 200 giờ trong 01 năm"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q015",
+      "split": "dev",
+      "question": "Theo Nghị định 145/2020/NĐ-CP, khi làm thêm vào ngày nghỉ lễ, tết thì tổng số giờ làm thêm trong một ngày tối đa là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Không quá 12 giờ trong một ngày.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 56,
+          "evidence": "Tổng số giờ làm thêm không quá 12 giờ trong một ngày, khi làm thêm vào ngày nghỉ lễ, tết và ngày nghỉ hằng tuần"
+        }
+      ],
+      "filter": {
+        "document_id": "nd-145-2020"
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q016",
+      "split": "test",
+      "question": "Theo Bộ luật Lao động 2012, người lao động được nghỉ bao nhiêu ngày vào dịp Quốc khánh?",
+      "answerable": true,
+      "expected_answer": "01 ngày (ngày 02 tháng 9 dương lịch).",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 33,
+          "evidence": "Ngày Quốc khánh 01 ngày (ngày 02 tháng 9 dương lịch)"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q017",
+      "split": "test",
+      "question": "Theo Nghị định 145/2020/NĐ-CP, thành viên tổ lái tàu bay có hợp đồng lao động không xác định thời hạn phải báo trước ít nhất bao nhiêu ngày khi đơn phương chấm dứt hợp đồng?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 120 ngày.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 7,
+          "evidence": "Ít nhất 120 ngày đối với hợp đồng lao động không xác định thời hạn hoặc hợp đồng lao động xác định thời hạn từ 12 tháng trở lên"
+        }
+      ],
+      "filter": {
+        "document_id": "nd-145-2020"
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q018",
+      "split": "test",
+      "question": "Tôi nghỉ việc sau 4 năm làm ở công ty, công ty phải trả trợ cấp thôi việc theo cách tính nào?",
+      "answerable": true,
+      "expected_answer": "Nếu làm việc thường xuyên từ đủ 12 tháng trở lên: mỗi năm làm việc được trợ cấp một nửa tháng tiền lương (trừ trường hợp đủ điều kiện hưởng lương hưu...).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 11,
+          "evidence": "mỗi năm làm việc được trợ cấp một nửa tháng tiền lương"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 15,
+          "evidence": "mỗi năm làm việc được trợ cấp một nửa tháng tiền lương"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q019",
+      "split": "test",
+      "question": "Theo luật, ca đêm được tính từ mấy giờ đến mấy giờ?",
+      "answerable": true,
+      "expected_answer": "Từ 22 giờ đến 06 giờ sáng ngày hôm sau.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 22,
+          "evidence": "Giờ làm việc ban đêm được tính từ 22 giờ đến 06 giờ sáng ngày hôm sau"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 30,
+          "evidence": "Giờ làm việc ban đêm được tính từ 22 giờ đến 6 giờ sáng ngày hôm sau"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q020",
+      "split": "test",
+      "question": "Nghị định hướng dẫn Bộ luật Lao động về điều kiện lao động và quan hệ lao động có hiệu lực thi hành từ ngày nào?",
+      "answerable": true,
+      "expected_answer": "Từ ngày 01 tháng 02 năm 2021.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1205",
+          "page": 11,
+          "evidence": "Nghị định này có hiệu lực thi hành kể từ ngày 01 tháng 02 năm 2021"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q021",
+      "split": "dev",
+      "question": "Pháp luật lao động định nghĩa quấy rối tình dục tại nơi làm việc như thế nào?",
+      "answerable": true,
+      "expected_answer": "Là hành vi có tính chất tình dục của bất kỳ người nào đối với người khác tại nơi làm việc mà không được người đó mong muốn hoặc chấp nhận.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 2,
+          "evidence": "Quấy rối tình dục tại nơi làm việc là hành vi có tính chất tình dục của bất kỳ người nào đối với người khác tại nơi làm việc mà không được người đó mong muốn"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q022",
+      "split": "dev",
+      "question": "Doanh nghiệp được tuyển dụng lao động qua những hình thức nào?",
+      "answerable": true,
+      "expected_answer": "Trực tiếp hoặc thông qua tổ chức dịch vụ việc làm, doanh nghiệp hoạt động cho thuê lại lao động.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 3,
+          "evidence": "Người sử dụng lao động có quyền trực tiếp hoặc thông qua tổ chức dịch vụ việc làm, doanh nghiệp hoạt động cho thuê lại lao động để tuyển dụng lao động"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q023",
+      "split": "dev",
+      "question": "Nguyên tắc tự do giao kết hợp đồng lao động bị giới hạn bởi những gì?",
+      "answerable": true,
+      "expected_answer": "Không được trái pháp luật, thỏa ước lao động tập thể và đạo đức xã hội.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 4,
+          "evidence": "Tự do giao kết hợp đồng lao động nhưng không được trái pháp luật, thỏa ước lao động tập thể và đạo đức xã hội"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q024",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, hợp đồng có thời hạn dưới bao lâu thì được giao kết bằng lời nói?",
+      "answerable": true,
+      "expected_answer": "Dưới 01 tháng (trừ một số trường hợp luật quy định).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 4,
+          "evidence": "Hai bên có thể giao kết hợp đồng lao động bằng lời nói đối với hợp đồng có thời hạn dưới 01 tháng"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q025",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, công việc tạm thời có thời hạn dưới bao lâu thì được giao kết hợp đồng bằng lời nói?",
+      "answerable": true,
+      "expected_answer": "Dưới 03 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 6,
+          "evidence": "Đối với công việc tạm thời có thời hạn dưới 03 tháng, các bên có thể giao kết hợp đồng lao động bằng lời nói"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q026",
+      "split": "dev",
+      "question": "Nhóm lao động làm việc mùa vụ có thể ủy quyền cho một người đại diện ký hợp đồng lao động không?",
+      "answerable": true,
+      "expected_answer": "Có, với công việc mùa vụ/công việc nhất định dưới 12 tháng, nhóm người lao động từ đủ 18 tuổi trở lên có thể ủy quyền cho một người trong nhóm giao kết.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 4,
+          "evidence": "Đối với công việc theo mùa vụ, công việc nhất định có thời hạn dưới 12 tháng thì nhóm người lao động từ đủ 18 tuổi trở lên có thể ủy quyền cho một người lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q027",
+      "split": "dev",
+      "question": "Người 16 tuổi muốn tự ký hợp đồng lao động thì cần điều kiện gì?",
+      "answerable": true,
+      "expected_answer": "Cần có sự đồng ý bằng văn bản của người đại diện theo pháp luật của người đó.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 5,
+          "evidence": "Người lao động từ đủ 15 tuổi đến chưa đủ 18 tuổi khi có sự đồng ý bằng văn bản của người đại diện theo pháp luật của người đó"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q028",
+      "split": "dev",
+      "question": "Hợp đồng lao động xác định thời hạn có thời hạn tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 36 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 5,
+          "evidence": "hai bên xác định thời hạn, thời điểm chấm dứt hiệu lực của hợp đồng trong thời gian không quá 36 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q029",
+      "split": "dev",
+      "question": "Hợp đồng lao động đã hết hạn nhưng tôi vẫn tiếp tục đi làm, hai bên phải ký hợp đồng mới trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 30 ngày kể từ ngày hợp đồng hết hạn.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 5,
+          "evidence": "Trong thời hạn 30 ngày kể từ ngày hợp đồng lao động hết hạn, hai bên phải ký kết hợp đồng lao động mới"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q030",
+      "split": "dev",
+      "question": "Có thể dùng phụ lục hợp đồng để thay đổi thời hạn của hợp đồng lao động không?",
+      "answerable": true,
+      "expected_answer": "Không, phụ lục hợp đồng không được sửa đổi thời hạn của hợp đồng lao động.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 6,
+          "evidence": "Phụ lục hợp đồng lao động quy định chi tiết, sửa đổi, bổ sung một số điều, khoản của hợp đồng lao động nhưng không được sửa đổi thời hạn của hợp đồng"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q031",
+      "split": "dev",
+      "question": "Hợp đồng lao động thời hạn 3 tuần có được yêu cầu thử việc không?",
+      "answerable": true,
+      "expected_answer": "Không, không áp dụng thử việc với hợp đồng có thời hạn dưới 01 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 6,
+          "evidence": "Không áp dụng thử việc đối với người lao động giao kết hợp đồng lao động có thời hạn dưới 01 tháng"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q032",
+      "split": "dev",
+      "question": "Tôi là công nhân kỹ thuật, công ty được bắt thử việc tối đa bao nhiêu ngày?",
+      "answerable": true,
+      "expected_answer": "Không quá 30 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 6,
+          "evidence": "Không quá 30 ngày đối với công việc có chức danh nghề nghiệp cần trình độ chuyên môn, kỹ thuật trung cấp, công nhân kỹ thuật, nhân viên nghiệp vụ"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 9,
+          "evidence": "Không quá 30 ngày đối với công việc có chức danh nghề cần trình độ chuyên môn kỹ thuật trung cấp nghề"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q033",
+      "split": "dev",
+      "question": "Công việc phổ thông không yêu cầu bằng cấp thì thời gian thử việc tối đa là mấy ngày?",
+      "answerable": true,
+      "expected_answer": "Không quá 06 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 6,
+          "evidence": "Không quá 06 ngày làm việc đối với công việc khác"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q034",
+      "split": "dev",
+      "question": "Lương thử việc tối thiểu phải bằng bao nhiêu phần trăm lương chính thức?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 85% mức lương của công việc đó.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 6,
+          "evidence": "Tiền lương của người lao động trong thời gian thử việc do hai bên thỏa thuận nhưng ít nhất phải bằng 85% mức lương của công việc đó"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 9,
+          "evidence": "Tiền lương của người lao động trong thời gian thử việc do hai bên thoả thuận nhưng ít nhất phải bằng 85%"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q035",
+      "split": "dev",
+      "question": "Công ty điều chuyển tôi sang làm công việc khác hợp đồng quá bao lâu thì phải có sự đồng ý của tôi?",
+      "answerable": true,
+      "expected_answer": "Quá 60 ngày làm việc cộng dồn trong 01 năm thì phải được người lao động đồng ý bằng văn bản.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 7,
+          "evidence": "trường hợp chuyển người lao động làm công việc khác so với hợp đồng lao động quá 60 ngày làm việc cộng dồn trong 01 năm thì chỉ được thực hiện khi người lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q036",
+      "split": "dev",
+      "question": "Khi bị tạm chuyển sang công việc khác, lương công việc mới thấp nhất là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất bằng 85% tiền lương công việc cũ nhưng không thấp hơn mức lương tối thiểu.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 7,
+          "evidence": "Tiền lương theo công việc mới ít nhất phải bằng 85% tiền lương của công việc cũ nhưng không thấp hơn mức lương tối thiểu"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 10,
+          "evidence": "Tiền lương theo công việc mới ít nhất phải bằng 85% mức tiền lương công việc cũ"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q037",
+      "split": "dev",
+      "question": "Bị chuyển sang việc khác lương thấp hơn thì được giữ lương cũ trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Được giữ nguyên tiền lương công việc cũ trong thời hạn 30 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 7,
+          "evidence": "Nếu tiền lương của công việc mới thấp hơn tiền lương của công việc cũ thì được giữ nguyên tiền lương của công việc cũ trong thời hạn 30 ngày làm việc"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q038",
+      "split": "dev",
+      "question": "Trong thời gian tạm hoãn hợp đồng lao động người lao động có được nhận lương không?",
+      "answerable": true,
+      "expected_answer": "Không được hưởng lương và quyền lợi đã giao kết, trừ khi hai bên có thỏa thuận hoặc luật quy định khác.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 7,
+          "evidence": "Trong thời gian tạm hoãn thực hiện hợp đồng lao động, người lao động không được hưởng lương và quyền, lợi ích đã giao kết trong hợp đồng lao động"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q039",
+      "split": "dev",
+      "question": "Người lao động có hợp đồng không xác định thời hạn muốn nghỉ việc phải báo trước bao nhiêu ngày?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 45 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 8,
+          "evidence": "Ít nhất 45 ngày nếu làm việc theo hợp đồng lao động không xác định thời hạn"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q040",
+      "split": "dev",
+      "question": "Tôi ký hợp đồng 2 năm, giờ muốn nghỉ thì phải báo trước cho công ty bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 30 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 8,
+          "evidence": "Ít nhất 30 ngày nếu làm việc theo hợp đồng lao động xác định thời hạn có thời hạn từ 12 tháng đến 36 tháng"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q041",
+      "split": "dev",
+      "question": "Nhân viên tự ý nghỉ không lý do mấy ngày liên tục thì công ty được đơn phương chấm dứt hợp đồng?",
+      "answerable": true,
+      "expected_answer": "Từ 05 ngày làm việc liên tục trở lên.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 9,
+          "evidence": "Người lao động tự ý bỏ việc mà không có lý do chính đáng từ 05 ngày làm việc liên tục trở lên"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q042",
+      "split": "dev",
+      "question": "Công ty muốn chấm dứt hợp đồng không xác định thời hạn với nhân viên thì phải báo trước bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 45 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 9,
+          "evidence": "Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 12,
+          "evidence": "Ít nhất 45 ngày đối với hợp đồng lao động không xác định thời hạn"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q043",
+      "split": "dev",
+      "question": "Đã nộp đơn xin nghỉ việc rồi thì có rút lại được không?",
+      "answerable": true,
+      "expected_answer": "Được, mỗi bên có quyền hủy bỏ việc đơn phương chấm dứt trước khi hết thời hạn báo trước (thông báo bằng văn bản, cần bên kia đồng ý).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 9,
+          "evidence": "Mỗi bên đều có quyền hủy bỏ việc đơn phương chấm dứt hợp đồng lao động trước khi hết thời hạn báo trước"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q044",
+      "split": "dev",
+      "question": "Phương án sử dụng lao động phải được công khai cho người lao động trong thời hạn bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong 15 ngày kể từ ngày được thông qua.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 10,
+          "evidence": "Phương án sử dụng lao động phải được thông báo công khai cho người lao động biết trong thời hạn 15 ngày kể từ ngày được thông qua"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q045",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, cơ quan nào có quyền tuyên bố hợp đồng lao động vô hiệu?",
+      "answerable": true,
+      "expected_answer": "Tòa án nhân dân.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 12,
+          "evidence": "Tòa án nhân dân có quyền tuyên bố hợp đồng lao động vô hiệu"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q046",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, những cơ quan nào có quyền tuyên bố hợp đồng lao động vô hiệu?",
+      "answerable": true,
+      "expected_answer": "Thanh tra lao động và Tòa án nhân dân.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 16,
+          "evidence": "Thanh tra lao động, Toà án nhân dân có quyền tuyên bố hợp đồng lao động vô hiệu"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q047",
+      "split": "dev",
+      "question": "Một người lao động được cho thuê lại tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Tối đa 12 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 12,
+          "evidence": "Thời hạn cho thuê lại lao động đối với người lao động tối đa là 12 tháng"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 17,
+          "evidence": "Thời hạn cho thuê lại lao động tối đa không quá 12 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q048",
+      "split": "dev",
+      "question": "Công ty thuê lại lao động có được chuyển người đó sang làm cho công ty khác không?",
+      "answerable": true,
+      "expected_answer": "Không được.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 12,
+          "evidence": "Bên thuê lại lao động không được chuyển người lao động thuê lại cho người sử dụng lao động khác"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q049",
+      "split": "dev",
+      "question": "Người học nghề, tập nghề tại doanh nghiệp phải đủ bao nhiêu tuổi?",
+      "answerable": true,
+      "expected_answer": "Đủ 14 tuổi trở lên và đủ sức khỏe phù hợp.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 14,
+          "evidence": "Người học nghề, người tập nghề phải đủ 14 tuổi trở lên và phải có đủ sức khỏe phù hợp với yêu cầu học nghề, tập nghề"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 19,
+          "evidence": "phải đủ 14 tuổi và phải có đủ sức khoẻ phù hợp với yêu cầu của nghề"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q050",
+      "split": "dev",
+      "question": "Sau khi nhận yêu cầu thương lượng tập thể, chậm nhất bao lâu phải bắt đầu thương lượng?",
+      "answerable": true,
+      "expected_answer": "Không quá 30 ngày kể từ ngày nhận được yêu cầu.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 16,
+          "evidence": "Thời gian bắt đầu thương lượng không được quá 30 ngày kể từ ngày nhận được yêu cầu thương lượng tập thể"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q051",
+      "split": "dev",
+      "question": "Một cuộc thương lượng tập thể được kéo dài tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 90 ngày kể từ ngày bắt đầu, trừ khi các bên thỏa thuận khác.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 16,
+          "evidence": "Thời gian thương lượng tập thể không được quá 90 ngày kể từ ngày bắt đầu thương lượng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q052",
+      "split": "dev",
+      "question": "Thỏa ước lao động tập thể doanh nghiệp cần bao nhiêu người lao động tán thành mới được ký?",
+      "answerable": true,
+      "expected_answer": "Trên 50% người lao động của doanh nghiệp biểu quyết tán thành.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 17,
+          "evidence": "Thỏa ước lao động tập thể doanh nghiệp chỉ được ký kết khi có trên 50% người lao động của doanh nghiệp biểu quyết tán thành"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q053",
+      "split": "dev",
+      "question": "Thỏa ước lao động tập thể có thời hạn bao lâu?",
+      "answerable": true,
+      "expected_answer": "Từ 01 năm đến 03 năm.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 18,
+          "evidence": "Thỏa ước lao động tập thể có thời hạn từ 01 năm đến 03 năm"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 26,
+          "evidence": "Thoả ước lao động tập thể doanh nghiệp có thời hạn từ 01 năm đến 03 năm"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q054",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, các bên có thể thương lượng kéo dài thỏa ước lao động tập thể trong khoảng thời gian nào trước khi hết hạn?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 90 ngày trước ngày thỏa ước hết hạn.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 19,
+          "evidence": "Trong thời hạn 90 ngày trước ngày thỏa ước lao động tập thể hết hạn, các bên có thể thương lượng để kéo dài thời hạn"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q055",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, hai bên có thể thương lượng kéo dài thỏa ước lao động tập thể trong thời hạn nào trước khi hết hạn?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 03 tháng trước ngày thỏa ước hết hạn.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 25,
+          "evidence": "Trong thời hạn 03 tháng trước ngày thoả ước lao động tập thể hết hạn, hai bên có thể thương lượng"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q056",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, mức lương tối thiểu được xác lập và ấn định theo những tiêu chí nào?",
+      "answerable": true,
+      "expected_answer": "Xác lập theo vùng, ấn định theo tháng và giờ.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 20,
+          "evidence": "Mức lương tối thiểu được xác lập theo vùng, ấn định theo tháng, giờ"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q057",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, mức lương tối thiểu được xác định theo những tiêu chí nào?",
+      "answerable": true,
+      "expected_answer": "Theo tháng, ngày, giờ và được xác lập theo vùng, ngành.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 27,
+          "evidence": "Mức lương tối thiểu được xác định theo tháng, ngày, giờ và được xác lập theo vùng, ngành"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q058",
+      "split": "dev",
+      "question": "Hội đồng tiền lương quốc gia có vai trò gì?",
+      "answerable": true,
+      "expected_answer": "Là cơ quan tư vấn cho Chính phủ về mức lương tối thiểu và chính sách tiền lương đối với người lao động.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 20,
+          "evidence": "Hội đồng tiền lương quốc gia là cơ quan tư vấn cho Chính phủ về mức lương tối thiểu và chính sách tiền lương"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q059",
+      "split": "dev",
+      "question": "Công ty bắt nhân viên dùng lương để mua sản phẩm của công ty có đúng luật không?",
+      "answerable": true,
+      "expected_answer": "Không, người sử dụng lao động không được ép buộc người lao động chi tiêu lương vào mua hàng hóa, dịch vụ của mình.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 21,
+          "evidence": "không được ép buộc người lao động chi tiêu lương vào việc mua hàng hóa, sử dụng dịch vụ của người sử dụng lao động"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q060",
+      "split": "dev",
+      "question": "Người hưởng lương theo ngày có thể được trả gộp lương tối đa bao nhiêu ngày một lần?",
+      "answerable": true,
+      "expected_answer": "Không quá 15 ngày phải được trả gộp một lần.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 21,
+          "evidence": "Người lao động hưởng lương theo giờ, ngày, tuần thì được trả lương sau giờ, ngày, tuần làm việc hoặc được trả gộp do hai bên thỏa thuận nhưng không quá 15 ngày"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q061",
+      "split": "dev",
+      "question": "Làm thêm vào ngày nghỉ hằng tuần (ví dụ Chủ nhật) được trả lương ít nhất bao nhiêu phần trăm?",
+      "answerable": true,
+      "expected_answer": "Ít nhất bằng 200%.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 21,
+          "evidence": "Vào ngày nghỉ hằng tuần, ít nhất bằng 200%"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 28,
+          "evidence": "Vào ngày nghỉ hằng tuần, ít nhất bằng 200%"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q062",
+      "split": "dev",
+      "question": "Làm ca đêm thì được cộng thêm bao nhiêu phần trăm lương?",
+      "answerable": true,
+      "expected_answer": "Được trả thêm ít nhất bằng 30% tiền lương của ngày làm việc bình thường.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 21,
+          "evidence": "Người lao động làm việc vào ban đêm thì được trả thêm ít nhất bằng 30% tiền lương"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q063",
+      "split": "dev",
+      "question": "Phải ngừng việc vì sự cố điện nước dưới 2 tuần thì tiền lương ngừng việc tối thiểu là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Nếu ngừng việc từ 14 ngày làm việc trở xuống, tiền lương ngừng việc do thỏa thuận nhưng không thấp hơn mức lương tối thiểu.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 22,
+          "evidence": "Trường hợp ngừng việc từ 14 ngày làm việc trở xuống thì tiền lương ngừng việc được thỏa thuận không thấp hơn mức lương tối thiểu"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q064",
+      "split": "dev",
+      "question": "Khi nghỉ phép năm, người lao động có được tạm ứng tiền không?",
+      "answerable": true,
+      "expected_answer": "Có, được tạm ứng một khoản ít nhất bằng tiền lương của những ngày nghỉ.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 22,
+          "evidence": "Khi nghỉ hằng năm, người lao động được tạm ứng một khoản tiền ít nhất bằng tiền lương của những ngày nghỉ"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 32,
+          "evidence": "Khi nghỉ hằng năm, người lao động được tạm ứng trước một khoản tiền ít nhất bằng tiền lương của những ngày nghỉ"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q065",
+      "split": "dev",
+      "question": "Người lao động đi nghĩa vụ quân sự có được tạm ứng tiền lương không?",
+      "answerable": true,
+      "expected_answer": "Không được tạm ứng tiền lương.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 22,
+          "evidence": "Người lao động nhập ngũ theo quy định của Luật Nghĩa vụ quân sự thì không được tạm ứng tiền lương"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q066",
+      "split": "dev",
+      "question": "Thời giờ làm việc bình thường tối đa mỗi ngày và mỗi tuần là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Không quá 08 giờ/ngày và 48 giờ/tuần.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 22,
+          "evidence": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và không quá 48 giờ trong 01 tuần"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 30,
+          "evidence": "Thời giờ làm việc bình thường không quá 08 giờ trong 01 ngày và 48 giờ trong 01 tuần"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q067",
+      "split": "dev",
+      "question": "Một ngày làm việc bình thường, số giờ làm thêm tối đa là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Không quá 50% số giờ làm việc bình thường trong 01 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 23,
+          "evidence": "Bảo đảm số giờ làm thêm của người lao động không quá 50% số giờ làm việc bình thường trong 01 ngày"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q068",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, tổng số giờ làm thêm thông thường trong một năm tối đa là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Không quá 200 giờ trong 01 năm (trừ các trường hợp được làm đến 300 giờ).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 23,
+          "evidence": "Bảo đảm số giờ làm thêm của người lao động không quá 200 giờ trong 01 năm"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q069",
+      "split": "dev",
+      "question": "Công nhân may xuất khẩu có thể bị yêu cầu làm thêm tối đa bao nhiêu giờ một năm?",
+      "answerable": true,
+      "expected_answer": "Không quá 300 giờ trong 01 năm (ngành dệt, may, da, giày... được làm trên 200 giờ).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 23,
+          "evidence": "Người sử dụng lao động được sử dụng người lao động làm thêm không quá 300 giờ trong 01 năm trong một số ngành, nghề, công việc hoặc trường hợp sau đây: a) Sản xuất, gia công xuất khẩu sản phẩm hàng dệt, may, da, giày, điện, điện tử"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q070",
+      "split": "dev",
+      "question": "Làm ca liên tục 8 tiếng thì thời gian nghỉ giữa ca có được tính là giờ làm việc không?",
+      "answerable": true,
+      "expected_answer": "Có, làm ca liên tục từ 06 giờ trở lên thì thời gian nghỉ giữa giờ được tính vào giờ làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 23,
+          "evidence": "Trường hợp người lao động làm việc theo ca liên tục từ 06 giờ trở lên thì thời gian nghỉ giữa giờ được tính vào giờ làm việc"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q071",
+      "split": "dev",
+      "question": "Mỗi tuần người lao động được nghỉ liên tục ít nhất bao nhiêu giờ?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 24 giờ liên tục.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 23,
+          "evidence": "Mỗi tuần, người lao động được nghỉ ít nhất 24 giờ liên tục"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 31,
+          "evidence": "Mỗi tuần, người lao động được nghỉ ít nhất 24 giờ liên tục"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q072",
+      "split": "dev",
+      "question": "Ngày nghỉ hằng tuần có bắt buộc phải là Chủ nhật không?",
+      "answerable": true,
+      "expected_answer": "Không bắt buộc; người sử dụng lao động có thể chọn Chủ nhật hoặc ngày khác trong tuần nhưng phải ghi vào nội quy lao động.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 23,
+          "evidence": "Người sử dụng lao động có quyền quyết định sắp xếp ngày nghỉ hằng tuần vào ngày Chủ nhật hoặc ngày xác định khác trong tuần nhưng phải ghi vào nội quy lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q073",
+      "split": "dev",
+      "question": "Người lao động khuyết tật được nghỉ hằng năm bao nhiêu ngày?",
+      "answerable": true,
+      "expected_answer": "14 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 24,
+          "evidence": "14 ngày làm việc đối với người lao động chưa thành niên, lao động là người khuyết tật, người làm nghề, công việc nặng nhọc, độc hại, nguy hiểm"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q074",
+      "split": "dev",
+      "question": "Người làm công việc đặc biệt nặng nhọc, độc hại được nghỉ phép năm bao nhiêu ngày?",
+      "answerable": true,
+      "expected_answer": "16 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 24,
+          "evidence": "16 ngày làm việc đối với người làm nghề, công việc đặc biệt nặng nhọc, độc hại, nguy hiểm"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q075",
+      "split": "dev",
+      "question": "Ông nội tôi mất, tôi được nghỉ mấy ngày và có được hưởng lương không?",
+      "answerable": true,
+      "expected_answer": "Được nghỉ 01 ngày không hưởng lương và phải thông báo với người sử dụng lao động.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 24,
+          "evidence": "Người lao động được nghỉ không hưởng lương 01 ngày và phải thông báo với người sử dụng lao động khi ông nội, bà nội, ông ngoại, bà ngoại, anh, chị, em ruột chết"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 33,
+          "evidence": "Người lao động được nghỉ không hưởng lương 01 ngày và phải thông báo với người sử dụng lao động khi ông nội, bà nội, ông ngoại"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q076",
+      "split": "dev",
+      "question": "Bố đẻ của tôi mất thì tôi được nghỉ mấy ngày vẫn hưởng nguyên lương?",
+      "answerable": true,
+      "expected_answer": "03 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 24,
+          "evidence": "con đẻ, con nuôi chết: nghỉ 03 ngày"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q077",
+      "split": "dev",
+      "question": "Con gái tôi cưới chồng thì tôi được nghỉ mấy ngày có lương?",
+      "answerable": true,
+      "expected_answer": "01 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 24,
+          "evidence": "Con đẻ, con nuôi kết hôn: nghỉ 01 ngày"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 33,
+          "evidence": "Con kết hôn: nghỉ 01 ngày"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q078",
+      "split": "dev",
+      "question": "Nội quy lao động phải được đăng ký ở đâu?",
+      "answerable": true,
+      "expected_answer": "Tại cơ quan chuyên môn về lao động thuộc Ủy ban nhân dân cấp tỉnh (với doanh nghiệp từ 10 lao động trở lên).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 25,
+          "evidence": "Người sử dụng lao động sử dụng từ 10 người lao động trở lên phải đăng ký nội quy lao động tại cơ quan chuyên môn về lao động thuộc Ủy ban nhân dân cấp tỉnh"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q079",
+      "split": "dev",
+      "question": "Sau khi ban hành nội quy lao động, doanh nghiệp phải nộp hồ sơ đăng ký trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 10 ngày kể từ ngày ban hành.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 25,
+          "evidence": "Trong thời hạn 10 ngày kể từ ngày ban hành nội quy lao động, người sử dụng lao động phải nộp hồ sơ đăng ký nội quy lao động"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 34,
+          "evidence": "Trong thời hạn 10 ngày, kể từ ngày ban hành nội quy lao động, người sử dụng lao động phải nộp hồ sơ đăng ký nội quy lao động"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q080",
+      "split": "dev",
+      "question": "Thời hiệu xử lý kỷ luật lao động thông thường là bao lâu?",
+      "answerable": true,
+      "expected_answer": "06 tháng kể từ ngày xảy ra hành vi vi phạm (12 tháng với vi phạm liên quan tài chính, tài sản, bí mật...).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 26,
+          "evidence": "Thời hiệu xử lý kỷ luật lao động là 06 tháng kể từ ngày xảy ra hành vi vi phạm"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 35,
+          "evidence": "Thời hiệu xử lý kỷ luật lao động tối đa là 06 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q081",
+      "split": "dev",
+      "question": "Hình thức kỷ luật kéo dài thời hạn nâng lương được kéo dài tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 06 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 26,
+          "evidence": "Kéo dài thời hạn nâng lương không quá 06 tháng"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 36,
+          "evidence": "Kéo dài thời hạn nâng lương không quá 06 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q082",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, tự ý bỏ việc bao nhiêu ngày thì có thể bị sa thải?",
+      "answerable": true,
+      "expected_answer": "05 ngày cộng dồn trong 30 ngày hoặc 20 ngày cộng dồn trong 365 ngày, không có lý do chính đáng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 26,
+          "evidence": "Người lao động tự ý bỏ việc 05 ngày cộng dồn trong thời hạn 30 ngày hoặc 20 ngày cộng dồn trong thời hạn 365 ngày"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q083",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, tự ý bỏ việc bao nhiêu ngày thì có thể bị sa thải?",
+      "answerable": true,
+      "expected_answer": "05 ngày cộng dồn trong 01 tháng hoặc 20 ngày cộng dồn trong 01 năm, không có lý do chính đáng.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 36,
+          "evidence": "Người lao động tự ý bỏ việc 05 ngày cộng dồn trong 01 tháng hoặc 20 ngày cộng dồn trong 01 năm mà không có lý do chính đáng"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q084",
+      "split": "dev",
+      "question": "Công ty có được bắt nhân viên đang nuôi con 8 tháng tuổi làm thêm giờ, đi công tác xa không?",
+      "answerable": true,
+      "expected_answer": "Không, trừ trường hợp được người lao động đồng ý.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 28,
+          "evidence": "Đang nuôi con dưới 12 tháng tuổi, trừ trường hợp được người lao động đồng ý"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q085",
+      "split": "dev",
+      "question": "Thế nào là lao động chưa thành niên?",
+      "answerable": true,
+      "expected_answer": "Người lao động chưa đủ 18 tuổi.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 29,
+          "evidence": "Lao động chưa thành niên là người lao động chưa đủ 18 tuổi"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 45,
+          "evidence": "Người lao động chưa thành niên là người lao động dưới 18 tuổi"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q086",
+      "split": "dev",
+      "question": "Người nước ngoài muốn làm việc tại Việt Nam phải đủ bao nhiêu tuổi?",
+      "answerable": true,
+      "expected_answer": "Đủ 18 tuổi trở lên và có năng lực hành vi dân sự đầy đủ.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 31,
+          "evidence": "Đủ 18 tuổi trở lên và có năng lực hành vi dân sự đầy đủ"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q087",
+      "split": "dev",
+      "question": "Hợp đồng lao động với người nước ngoài có được dài hơn thời hạn giấy phép lao động không?",
+      "answerable": true,
+      "expected_answer": "Không được vượt quá thời hạn của giấy phép lao động.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 31,
+          "evidence": "Thời hạn của hợp đồng lao động đối với người lao động nước ngoài làm việc tại Việt Nam không được vượt quá thời hạn của Giấy phép lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q088",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, giấy phép lao động có thời hạn tối đa bao lâu và được gia hạn mấy lần?",
+      "answerable": true,
+      "expected_answer": "Tối đa 02 năm, chỉ được gia hạn một lần (tối đa 02 năm).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 32,
+          "evidence": "Thời hạn của giấy phép lao động tối đa là 02 năm, trường hợp gia hạn thì chỉ được gia hạn một lần"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q089",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, giấy phép lao động có thời hạn tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Tối đa 02 năm.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 49,
+          "evidence": "Thời hạn của giấy phép lao động tối đa là 02 năm"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q090",
+      "split": "dev",
+      "question": "Người giúp việc gia đình muốn nghỉ thì phải báo trước cho chủ nhà bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 15 ngày; mỗi bên có quyền đơn phương chấm dứt bất kỳ khi nào.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 33,
+          "evidence": "Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước ít nhất 15 ngày"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 50,
+          "evidence": "Một bên có quyền đơn phương chấm dứt hợp đồng lao động bất kỳ khi nào nhưng phải báo trước 15 ngày"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q091",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, năm 2021 tuổi nghỉ hưu của lao động nữ trong điều kiện bình thường là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Đủ 55 tuổi 04 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 34,
+          "evidence": "đủ 55 tuổi 04 tháng đối với lao động nữ"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q092",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2019, tuổi nghỉ hưu sẽ tăng đến bao nhiêu và vào năm nào?",
+      "answerable": true,
+      "expected_answer": "Nam đủ 62 tuổi vào năm 2028; nữ đủ 60 tuổi vào năm 2035.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 34,
+          "evidence": "cho đến khi đủ 62 tuổi đối với lao động nam vào năm 2028 và đủ 60 tuổi đối với lao động nữ vào năm 2035"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q093",
+      "split": "dev",
+      "question": "Nhiệm kỳ của Hội đồng trọng tài lao động là bao lâu?",
+      "answerable": true,
+      "expected_answer": "05 năm.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 37,
+          "evidence": "Nhiệm kỳ của Hội đồng trọng tài lao động là 05 năm"
+        },
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 93,
+          "evidence": "quyết định thành lập Hội đồng trọng tài lao động với nhiệm kỳ 05 năm"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q094",
+      "split": "dev",
+      "question": "Hội đồng trọng tài lao động có ít nhất bao nhiêu trọng tài viên?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 15 người, do Chủ tịch UBND cấp tỉnh quyết định.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 38,
+          "evidence": "Số lượng trọng tài viên lao động của Hội đồng trọng tài lao động do Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định, ít nhất là 15 người"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q095",
+      "split": "dev",
+      "question": "Biên bản hòa giải tranh chấp lao động phải gửi cho các bên trong thời hạn bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 01 ngày làm việc kể từ ngày lập biên bản.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 39,
+          "evidence": "Bản sao biên bản hòa giải thành hoặc hòa giải không thành phải được gửi cho các bên tranh chấp trong thời hạn 01 ngày làm việc"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 57,
+          "evidence": "Bản sao biên bản hoà giải thành hoặc hoà giải không thành phải được gửi cho hai bên tranh chấp trong thời hạn 01 ngày làm việc"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q096",
+      "split": "dev",
+      "question": "Đã yêu cầu Hội đồng trọng tài lao động giải quyết thì có được kiện ra Tòa cùng lúc không?",
+      "answerable": true,
+      "expected_answer": "Không được đồng thời yêu cầu Tòa án giải quyết (trừ trường hợp luật quy định).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 39,
+          "evidence": "Khi yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp, các bên không được đồng thời yêu cầu Tòa án giải quyết"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q097",
+      "split": "dev",
+      "question": "Cần bao nhiêu phần trăm người lao động đồng ý thì tổ chức đại diện mới được ra quyết định đình công?",
+      "answerable": true,
+      "expected_answer": "Trên 50% số người được lấy ý kiến đồng ý.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 42,
+          "evidence": "Khi có trên 50% số người được lấy ý kiến đồng ý với nội dung lấy ý kiến đình công"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 60,
+          "evidence": "Khi có trên 50% số người được lấy ý kiến đồng ý"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q098",
+      "split": "dev",
+      "question": "Người lao động tham gia đình công có được trả lương không?",
+      "answerable": true,
+      "expected_answer": "Không được trả lương và các quyền lợi khác, trừ khi các bên có thỏa thuận khác.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 42,
+          "evidence": "Người lao động tham gia đình công không được trả lương và các quyền lợi khác theo quy định của pháp luật, trừ trường hợp các bên có thỏa thuận khác"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q099",
+      "split": "dev",
+      "question": "Cơ quan nào quy định danh mục nơi sử dụng lao động không được đình công?",
+      "answerable": true,
+      "expected_answer": "Chính phủ.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 43,
+          "evidence": "Chính phủ quy định danh mục nơi sử dụng lao động không được đình công"
+        },
+        {
+          "source_id": "nd-145-2020-cb1205",
+          "page": 5,
+          "evidence": "Danh mục nơi sử dụng lao động không được đình công"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q100",
+      "split": "dev",
+      "question": "Doanh nghiệp mới thành lập phải lập sổ quản lý lao động trong thời hạn bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong 30 ngày kể từ ngày bắt đầu hoạt động.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 2,
+          "evidence": "Trong thời hạn 30 ngày kể từ ngày bắt đầu hoạt động, người sử dụng lao động phải lập sổ quản lý lao động"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q101",
+      "split": "dev",
+      "question": "Theo Nghị định 145/2020/NĐ-CP, giấy phép hoạt động cho thuê lại lao động có thời hạn tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Tối đa 60 tháng.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 22,
+          "evidence": "Thời hạn giấy phép tối đa là 60 tháng"
+        }
+      ],
+      "filter": {
+        "document_id": "nd-145-2020"
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q102",
+      "split": "dev",
+      "question": "Giấy phép cho thuê lại lao động được gia hạn mấy lần, mỗi lần bao lâu?",
+      "answerable": true,
+      "expected_answer": "Được gia hạn nhiều lần, mỗi lần tối đa 60 tháng.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 22,
+          "evidence": "Giấy phép được gia hạn nhiều lần, mỗi lần gia hạn tối đa là 60 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q103",
+      "split": "dev",
+      "question": "Người đại diện theo pháp luật của doanh nghiệp cho thuê lại lao động cần bao nhiêu năm kinh nghiệm?",
+      "answerable": true,
+      "expected_answer": "Từ đủ 03 năm (36 tháng) trở lên trực tiếp làm chuyên môn hoặc quản lý về cho thuê lại/cung ứng lao động.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 22,
+          "evidence": "Đã có thời gian trực tiếp làm chuyên môn hoặc quản lý về cho thuê lại lao động hoặc cung ứng lao động từ đủ 03 năm (36 tháng) trở lên"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q104",
+      "split": "dev",
+      "question": "Sở Lao động - Thương binh và Xã hội thẩm tra hồ sơ cấp giấy phép cho thuê lại lao động trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong 20 ngày làm việc kể từ ngày nhận đủ hồ sơ.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 24,
+          "evidence": "Trong thời hạn 20 ngày làm việc kể từ ngày nhận được hồ sơ bảo đảm theo quy định, Sở Lao động - Thương binh và Xã hội thẩm tra"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q105",
+      "split": "dev",
+      "question": "Hồ sơ đề nghị cấp lại giấy phép cho thuê lại lao động được thẩm tra trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong 15 ngày làm việc kể từ ngày nhận đủ hồ sơ.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 27,
+          "evidence": "Trong thời hạn 15 ngày làm việc kể từ ngày nhận được hồ sơ bảo đảm theo quy định, Sở Lao động - Thương binh và Xã hội thẩm tra"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q106",
+      "split": "dev",
+      "question": "Doanh nghiệp cho thuê lại lao động phải gửi báo cáo 6 tháng và báo cáo năm trước ngày nào?",
+      "answerable": true,
+      "expected_answer": "Báo cáo 6 tháng trước ngày 20/6, báo cáo năm trước ngày 20/12.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 32,
+          "evidence": "Báo cáo 06 tháng gửi trước ngày 20 tháng 6 và báo cáo năm gửi trước ngày 20 tháng 12"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q107",
+      "split": "dev",
+      "question": "Công ty có 100 nhân viên thì bên người lao động tham gia đối thoại cần ít nhất bao nhiêu người?",
+      "answerable": true,
+      "expected_answer": "Ít nhất từ 04 đến 08 người.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 37,
+          "evidence": "Ít nhất từ 04 người đến 08 người, nếu người sử dụng lao động sử dụng từ 50 người lao động đến dưới 150 người lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q108",
+      "split": "dev",
+      "question": "Doanh nghiệp có 200 lao động thì số người tham gia đối thoại phía người lao động là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất từ 09 đến 13 người.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 37,
+          "evidence": "Ít nhất từ 09 người đến 13 người, nếu người sử dụng lao động sử dụng từ 150 người lao động đến dưới 300 người lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q109",
+      "split": "dev",
+      "question": "Theo Nghị định 145/2020/NĐ-CP, mức lương tối thiểu vùng bao gồm những loại nào?",
+      "answerable": true,
+      "expected_answer": "Mức lương tối thiểu theo tháng và mức lương tối thiểu theo giờ.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 45,
+          "evidence": "Mức lương tối thiểu xác lập theo vùng (bao gồm mức lương tối thiểu theo tháng và mức lương tối thiểu theo giờ)"
+        }
+      ],
+      "filter": {
+        "document_id": "nd-145-2020"
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q110",
+      "split": "dev",
+      "question": "Thành viên Hội đồng tiền lương quốc gia có nhiệm kỳ tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 05 năm.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 47,
+          "evidence": "Nhiệm kỳ bổ nhiệm thành viên Hội đồng tiền lương quốc gia không quá 05 năm"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q111",
+      "split": "dev",
+      "question": "Theo Nghị định 145/2020/NĐ-CP, giờ làm thêm vào ngày làm việc bình thường được trả ít nhất bao nhiêu phần trăm?",
+      "answerable": true,
+      "expected_answer": "Ít nhất bằng 150% tiền lương giờ thực trả.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 51,
+          "evidence": "Mức ít nhất bằng 150% so với tiền lương giờ thực trả của công việc đang làm vào ngày làm việc bình thường"
+        }
+      ],
+      "filter": {
+        "document_id": "nd-145-2020"
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q112",
+      "split": "dev",
+      "question": "Ngoài các ngành dệt may, điện tử, trường hợp nào khác được tổ chức làm thêm từ trên 200 đến 300 giờ/năm?",
+      "answerable": true,
+      "expected_answer": "Ví dụ: công việc trực tiếp sản xuất, kinh doanh tại doanh nghiệp có thời giờ làm việc bình thường không quá 44 giờ/tuần.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 57,
+          "evidence": "Công việc trực tiếp sản xuất, kinh doanh tại các doanh nghiệp thực hiện thời giờ làm việc bình thường không quá 44 giờ trong một tuần"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q113",
+      "split": "dev",
+      "question": "Doanh nghiệp tổ chức làm thêm trên 200 giờ/năm phải thông báo cho cơ quan nào?",
+      "answerable": true,
+      "expected_answer": "Phải thông báo cho Sở Lao động - Thương binh và Xã hội.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 57,
+          "evidence": "Khi tổ chức làm thêm từ trên 200 giờ đến 300 giờ trong một năm, người sử dụng lao động phải thông báo cho Sở Lao động - Thương binh và Xã hội"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q114",
+      "split": "dev",
+      "question": "Thế nào được coi là tổ chức làm việc theo ca?",
+      "answerable": true,
+      "expected_answer": "Bố trí ít nhất 02 người hoặc 02 nhóm người thay phiên nhau làm việc trên cùng một vị trí làm việc.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 57,
+          "evidence": "Tổ chức làm việc theo ca là việc bố trí ít nhất 02 người hoặc 02 nhóm người thay phiên nhau làm việc trên cùng một vị trí làm việc"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q115",
+      "split": "dev",
+      "question": "Người làm việc từ 6 giờ trở lên trong ngày, trong đó có ít nhất 3 giờ ban đêm, được nghỉ giữa giờ bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 45 phút liên tục.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 58,
+          "evidence": "Thời gian nghỉ giữa giờ ít nhất 45 phút liên tục"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q116",
+      "split": "dev",
+      "question": "Làm chưa đủ 12 tháng thì số ngày nghỉ phép năm được tính như thế nào?",
+      "answerable": true,
+      "expected_answer": "Lấy số ngày nghỉ hằng năm cộng ngày nghỉ tăng thêm theo thâm niên (nếu có), chia 12, nhân với số tháng làm việc thực tế.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 59,
+          "evidence": "lấy số ngày nghỉ hằng năm cộng với số ngày được nghỉ tăng thêm theo thâm niên (nếu có), chia cho 12 tháng, nhân với số tháng làm việc thực tế"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q117",
+      "split": "dev",
+      "question": "Trước khi họp xử lý bồi thường thiệt hại, công ty phải thông báo trước bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 05 ngày làm việc trước cuộc họp.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 65,
+          "evidence": "Ít nhất 05 ngày làm việc trước khi tiến hành họp xử lý bồi thường thiệt hại, người sử dụng lao động thông báo"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q118",
+      "split": "dev",
+      "question": "Doanh nghiệp có 60 lao động nữ thì cần tỷ lệ nữ bao nhiêu để được coi là sử dụng nhiều lao động nữ?",
+      "answerable": true,
+      "expected_answer": "Lao động nữ chiếm từ 50% trở lên tổng số lao động (áp dụng với nhóm từ 10 đến dưới 100 lao động nữ).",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 67,
+          "evidence": "Sử dụng từ 10 lao động nữ đến dưới 100 lao động nữ, trong đó số lao động nữ chiếm 50% trở lên so với tổng số lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q119",
+      "split": "dev",
+      "question": "Công ty có 500 lao động nữ thì cần tỷ lệ nữ bao nhiêu để được coi là sử dụng nhiều lao động nữ?",
+      "answerable": true,
+      "expected_answer": "Lao động nữ chiếm từ 30% trở lên tổng số lao động.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 67,
+          "evidence": "Sử dụng từ 100 lao động nữ đến dưới 1.000 lao động nữ, trong đó số lao động nữ chiếm 30% trở lên so với tổng số lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q120",
+      "split": "dev",
+      "question": "Xã, phường được coi là nơi có nhiều lao động khi có bao nhiêu người lao động đăng ký cư trú?",
+      "answerable": true,
+      "expected_answer": "Từ 3.000 người lao động trở lên đăng ký thường trú hoặc tạm trú.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 67,
+          "evidence": "Xã, phường, thị trấn có từ 3.000 người lao động trở lên đăng ký thường trú hoặc đăng ký tạm trú"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q121",
+      "split": "dev",
+      "question": "Khi khám sức khỏe định kỳ, lao động nữ có được khám chuyên khoa phụ sản không?",
+      "answerable": true,
+      "expected_answer": "Có, theo danh mục khám chuyên khoa phụ sản do Bộ Y tế ban hành.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 69,
+          "evidence": "Khi khám sức khỏe định kỳ, lao động nữ được khám chuyên khoa phụ sản theo danh mục khám chuyên khoa phụ sản do Bộ Y tế ban hành"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q122",
+      "split": "dev",
+      "question": "Hòa giải viên lao động được bổ nhiệm với thời hạn tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 05 năm.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 84,
+          "evidence": "Thời hạn bổ nhiệm hòa giải viên lao động tối đa không quá 05 năm"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q123",
+      "split": "dev",
+      "question": "Khi có quyết định ngừng đình công mà người lao động vẫn không quay lại làm thì có được trả lương không?",
+      "answerable": true,
+      "expected_answer": "Không được trả lương (sau khi Chủ tịch UBND cấp tỉnh quyết định ngừng đình công).",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1205",
+          "page": 11,
+          "evidence": "Sau khi Chủ tịch Ủy ban nhân dân cấp tỉnh quyết định về việc ngừng đình công mà người lao động không trở lại làm việc thì không được"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q124",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, người lao động có hợp đồng xác định thời hạn bị trả lương trễ phải báo trước bao nhiêu ngày khi nghỉ việc?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 3 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 12,
+          "evidence": "Ít nhất 3 ngày làm việc đối với các trường hợp quy định tại các điểm a, b, c và g khoản 1 Điều này"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q125",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, người sử dụng lao động muốn đơn phương chấm dứt hợp đồng xác định thời hạn phải báo trước bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 30 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 13,
+          "evidence": "Ít nhất 30 ngày đối với hợp đồng lao động xác định thời hạn"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q126",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, công ty phải báo trước việc hợp đồng xác định thời hạn sắp hết hạn bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 15 ngày trước ngày hết hạn, bằng văn bản.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 15,
+          "evidence": "Ít nhất 15 ngày trước ngày hợp đồng lao động xác định thời hạn hết hạn, người sử dụng lao động phải thông báo bằng văn bản"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q127",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, sau khi chấm dứt hợp đồng hai bên phải thanh toán các khoản trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 07 ngày làm việc (trường hợp đặc biệt có thể kéo dài nhưng không quá 30 ngày).",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 15,
+          "evidence": "Trong thời hạn 07 ngày làm việc, kể từ ngày chấm dứt hợp đồng lao động, hai bên có trách nhiệm thanh toán đầy đủ các khoản có liên quan"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q128",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, doanh nghiệp lần đầu ký thỏa ước lao động tập thể có thể ký với thời hạn bao lâu?",
+      "answerable": true,
+      "expected_answer": "Có thể ký kết với thời hạn dưới 01 năm.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 26,
+          "evidence": "Đối với doanh nghiệp lần đầu tiên ký kết thoả ước lao động tập thể, thì có thể ký kết với thời hạn dưới 01 năm"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q129",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, khi thay đổi hình thức trả lương, công ty phải báo trước cho người lao động bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 10 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 28,
+          "evidence": "trường hợp thay đổi hình thức trả lương, thì người sử dụng lao động phải thông báo cho người lao động biết trước ít nhất 10 ngày"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q130",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, người làm việc liên tục 8 giờ được nghỉ giữa giờ ít nhất bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 30 phút (làm việc ban đêm ít nhất 45 phút).",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 31,
+          "evidence": "được nghỉ giữa giờ ít nhất 30 phút"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q131",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, người làm việc chưa đủ 12 tháng thì nghỉ hằng năm được tính thế nào?",
+      "answerable": true,
+      "expected_answer": "Tính theo tỷ lệ tương ứng với số thời gian làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 32,
+          "evidence": "Người lao động có dưới 12 tháng làm việc thì thời gian nghỉ hằng năm được tính theo tỷ lệ tương ứng với số thời gian làm việc"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q132",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, lao động nữ làm việc nặng nhọc mang thai từ tháng thứ mấy được chuyển việc nhẹ hơn hoặc giảm giờ làm?",
+      "answerable": true,
+      "expected_answer": "Từ tháng thứ 07; được chuyển làm việc nhẹ hơn hoặc giảm bớt 01 giờ làm việc hằng ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 44,
+          "evidence": "Lao động nữ làm công việc nặng nhọc khi mang thai từ tháng thứ 07, được chuyển làm công việc nhẹ hơn hoặc được giảm bớt 01 giờ làm việc"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q133",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, những ai có thể nghỉ hưu ở tuổi cao hơn quy định?",
+      "answerable": true,
+      "expected_answer": "Người có trình độ chuyên môn kỹ thuật cao, người làm công tác quản lý và một số trường hợp đặc biệt khác.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 52,
+          "evidence": "Người lao động có trình độ chuyên môn kỹ thuật cao, người lao động làm công tác quản lý và một số trường hợp đặc biệt khác có thể"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q134",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, Hội đồng trọng tài lao động có tối đa bao nhiêu thành viên?",
+      "answerable": true,
+      "expected_answer": "Số lẻ và không quá 07 người.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 56,
+          "evidence": "Số lượng thành viên Hội đồng trọng tài lao động là số lẻ và không quá 07 người"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q135",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, hòa giải viên lao động phải kết thúc hòa giải trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 05 ngày làm việc kể từ ngày nhận được yêu cầu.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 56,
+          "evidence": "Trong thời hạn 05 ngày làm việc, kể từ ngày nhận được yêu cầu hoà giải, hòa giải viên lao động phải kết thúc việc hòa giải"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q136",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, thời hạn nộp đơn yêu cầu Tòa án xét tính hợp pháp của cuộc đình công là bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong quá trình đình công hoặc trong 03 tháng kể từ ngày chấm dứt đình công.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 62,
+          "evidence": "Trong quá trình đình công hoặc trong thời hạn 03 tháng, kể từ ngày chấm dứt đình công, mỗi bên có quyền nộp đơn đến Toà án"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q137",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, phiên họp xét tính hợp pháp của cuộc đình công được hoãn tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 03 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 64,
+          "evidence": "Thời hạn hoãn phiên họp xét tính hợp pháp của cuộc đình công không quá 03 ngày làm việc"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q138",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, bên nhận được yêu cầu thương lượng tập thể có được từ chối không?",
+      "answerable": true,
+      "expected_answer": "Không được từ chối.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 21,
+          "evidence": "Mỗi bên đều có quyền yêu cầu thương lượng tập thể, bên nhận được yêu cầu không được từ chối việc thương lượng"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q139",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, nội dung thỏa ước lao động tập thể phải đáp ứng yêu cầu gì?",
+      "answerable": true,
+      "expected_answer": "Không trái pháp luật và phải có lợi hơn cho người lao động so với quy định của pháp luật.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 23,
+          "evidence": "Nội dung thoả ước lao động tập thể không được trái với quy định của pháp luật và phải có lợi hơn cho người lao động"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q140",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, thỏa ước lao động tập thể thời hạn dưới 1 năm được yêu cầu sửa đổi sau bao lâu thực hiện?",
+      "answerable": true,
+      "expected_answer": "Sau 03 tháng thực hiện.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 24,
+          "evidence": "Sau 03 tháng thực hiện đối với thoả ước lao động tập thể có thời hạn dưới 01 năm"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q141",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, khi không thỏa thuận được với công đoàn về chấm dứt hợp đồng với cán bộ công đoàn, công ty phải chờ bao lâu sau khi báo cơ quan lao động?",
+      "answerable": true,
+      "expected_answer": "Sau 30 ngày kể từ ngày báo cho cơ quan quản lý nhà nước về lao động địa phương.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 54,
+          "evidence": "Sau 30 ngày, kể từ ngày báo cho cơ quan quản lý nhà nước về lao động địa phương biết, người sử dụng lao động mới có quyền quyết định"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q142",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, doanh nghiệp phải khai trình việc sử dụng lao động trong thời hạn bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong 30 ngày kể từ ngày bắt đầu hoạt động.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 3,
+          "evidence": "Khai trình việc sử dụng lao động trong thời hạn 30 ngày, kể từ ngày bắt đầu hoạt động"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q143",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, người từ 13 đến dưới 15 tuổi được làm những công việc gì?",
+      "answerable": true,
+      "expected_answer": "Chỉ được làm các công việc nhẹ theo danh mục do Bộ Lao động - Thương binh và Xã hội quy định.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 46,
+          "evidence": "Người sử dụng lao động chỉ được sử dụng người từ đủ 13 tuổi đến dưới 15 tuổi làm các công việc nhẹ"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q144",
+      "split": "test",
+      "question": "Đang thử việc mà muốn nghỉ thì có phải báo trước và bồi thường cho công ty không?",
+      "answerable": true,
+      "expected_answer": "Không, mỗi bên có quyền hủy bỏ hợp đồng thử việc mà không cần báo trước và không phải bồi thường.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 6,
+          "evidence": "Trong thời gian thử việc, mỗi bên có quyền hủy bỏ hợp đồng thử việc hoặc hợp đồng lao động đã giao kết mà không cần báo trước và không phải bồi thường"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 9,
+          "evidence": "Trong thời gian thử việc, mỗi bên có quyền huỷ bỏ thoả thuận thử việc mà không cần báo trước và không phải bồi thường"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q145",
+      "split": "test",
+      "question": "Muốn sửa đổi nội dung hợp đồng lao động thì phải báo cho bên kia trước bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 03 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 7,
+          "evidence": "nếu bên nào có yêu cầu sửa đổi, bổ sung nội dung hợp đồng lao động thì phải báo cho bên kia biết trước ít nhất 03 ngày làm"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 10,
+          "evidence": "nếu bên nào có yêu cầu sửa đổi, bổ sung nội dung hợp đồng lao động thì phải báo cho bên kia"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q146",
+      "split": "test",
+      "question": "Công ty có được cho nghỉ việc một nhân viên nữ đang nghỉ thai sản không?",
+      "answerable": true,
+      "expected_answer": "Không, người sử dụng lao động không được đơn phương chấm dứt hợp đồng với người lao động đang nghỉ thai sản hoặc nuôi con dưới 12 tháng tuổi.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 9,
+          "evidence": "người lao động đang nghỉ thai sản hoặc nuôi con dưới 12 tháng tuổi"
+        }
+      ],
+      "tags": [
+        "dien_dat_lai"
+      ]
+    },
+    {
+      "id": "q147",
+      "split": "test",
+      "question": "Tiền lương dùng để tính trợ cấp thôi việc được xác định như thế nào?",
+      "answerable": true,
+      "expected_answer": "Là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi thôi việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 11,
+          "evidence": "Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động thôi việc"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 15,
+          "evidence": "Tiền lương để tính trợ cấp thôi việc là tiền lương bình quân theo hợp đồng lao động của 06 tháng liền kề"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q148",
+      "split": "test",
+      "question": "Trợ cấp mất việc làm được tính dựa trên tiền lương nào?",
+      "answerable": true,
+      "expected_answer": "Tiền lương bình quân của 06 tháng liền kề theo hợp đồng trước khi mất việc làm.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 11,
+          "evidence": "Tiền lương để tính trợ cấp mất việc làm là tiền lương bình quân của 06 tháng liền kề theo hợp đồng lao động trước khi người lao động mất việc làm"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q149",
+      "split": "test",
+      "question": "Công đoàn có được tổ chức đình công khi tranh chấp lao động đang được giải quyết không?",
+      "answerable": true,
+      "expected_answer": "Không được.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 16,
+          "evidence": "Trong khi đang giải quyết tranh chấp lao động, tổ chức đại diện người lao động không được tổ chức đình công"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q150",
+      "split": "test",
+      "question": "Công ty gặp sự cố bất khả kháng thì được chậm trả lương tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không được chậm quá 30 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 21,
+          "evidence": "Trường hợp vì lý do bất khả kháng mà người sử dụng lao động đã tìm mọi biện pháp khắc phục nhưng không thể trả lương đúng hạn thì không được chậm quá 30 ngày"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q151",
+      "split": "test",
+      "question": "Công ty được khấu trừ tối đa bao nhiêu phần trăm lương mỗi tháng?",
+      "answerable": true,
+      "expected_answer": "Không quá 30% tiền lương thực trả hằng tháng (sau khi trích nộp BHXH, BHYT, BHTN, thuế TNCN).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 22,
+          "evidence": "Mức khấu trừ tiền lương hằng tháng không được quá 30% tiền lương thực trả hằng tháng"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 30,
+          "evidence": "Mức khấu trừ tiền lương hằng tháng không được quá 30% tiền lương hằng tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q152",
+      "split": "test",
+      "question": "Trước khi chuyển sang ca làm việc khác, người lao động được nghỉ ít nhất bao lâu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 12 giờ.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 23,
+          "evidence": "Người lao động làm việc theo ca được nghỉ ít nhất 12 giờ trước khi chuyển sang ca làm việc khác"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 31,
+          "evidence": "được nghỉ ít nhất 12 giờ trước khi chuyển sang ca làm việc khác"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q153",
+      "split": "test",
+      "question": "Nội quy lao động có hiệu lực từ khi nào?",
+      "answerable": true,
+      "expected_answer": "Sau 15 ngày kể từ ngày cơ quan nhà nước có thẩm quyền nhận được đủ hồ sơ đăng ký.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 25,
+          "evidence": "Nội quy lao động có hiệu lực sau 15 ngày kể từ ngày cơ quan nhà nước có thẩm quyền"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q154",
+      "split": "test",
+      "question": "Công ty được tạm đình chỉ công việc của nhân viên vi phạm tối đa bao lâu?",
+      "answerable": true,
+      "expected_answer": "Không quá 15 ngày, trường hợp đặc biệt không quá 90 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 27,
+          "evidence": "Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc biệt không được quá 90 ngày"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 37,
+          "evidence": "Thời hạn tạm đình chỉ công việc không được quá 15 ngày, trường hợp đặc biệt cũng không được quá 90 ngày"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q155",
+      "split": "test",
+      "question": "Người chưa đủ 15 tuổi được làm việc tối đa bao nhiêu giờ mỗi ngày và mỗi tuần?",
+      "answerable": true,
+      "expected_answer": "Không quá 04 giờ/ngày và 20 giờ/tuần; không được làm thêm giờ, làm đêm.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 30,
+          "evidence": "Thời giờ làm việc của người chưa đủ 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 45,
+          "evidence": "Thời giờ làm việc của người dưới 15 tuổi không được quá 04 giờ trong 01 ngày và 20 giờ trong 01 tuần"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q156",
+      "split": "test",
+      "question": "Thời hiệu yêu cầu hòa giải viên lao động hòa giải tranh chấp lao động cá nhân là bao lâu?",
+      "answerable": true,
+      "expected_answer": "06 tháng kể từ ngày phát hiện hành vi vi phạm.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 39,
+          "evidence": "Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 57,
+          "evidence": "Thời hiệu yêu cầu hòa giải viên lao động thực hiện hòa giải tranh chấp lao động cá nhân là 06 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q157",
+      "split": "test",
+      "question": "Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân là bao lâu?",
+      "answerable": true,
+      "expected_answer": "09 tháng kể từ ngày phát hiện hành vi vi phạm.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 39,
+          "evidence": "Thời hiệu yêu cầu Hội đồng trọng tài lao động giải quyết tranh chấp lao động cá nhân là 09 tháng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q158",
+      "split": "test",
+      "question": "Bộ luật Lao động 2019 có hiệu lực thi hành từ ngày nào?",
+      "answerable": true,
+      "expected_answer": "Từ ngày 01 tháng 01 năm 2021.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 46,
+          "evidence": "Bộ luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2021"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q159",
+      "split": "test",
+      "question": "Bộ luật Lao động 2012 có hiệu lực thi hành từ ngày nào?",
+      "answerable": true,
+      "expected_answer": "Từ ngày 01 tháng 05 năm 2013.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 67,
+          "evidence": "Bộ luật này có hiệu lực thi hành từ ngày 01 tháng 05 năm 2013"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q160",
+      "split": "test",
+      "question": "Bộ luật Lao động 2019 được Quốc hội khóa nào thông qua, tại kỳ họp thứ mấy?",
+      "answerable": true,
+      "expected_answer": "Quốc hội khóa XIV, kỳ họp thứ 8, thông qua ngày 20/11/2019.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 46,
+          "evidence": "khóa XIV, kỳ họp thứ 8 thông qua ngày 20 tháng 11 năm 2019"
+        }
+      ],
+      "filter": {
+        "year": 2019
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q161",
+      "split": "test",
+      "question": "Bộ luật Lao động 2012 được Quốc hội khóa nào thông qua, tại kỳ họp thứ mấy?",
+      "answerable": true,
+      "expected_answer": "Quốc hội khóa XIII, kỳ họp thứ 3, thông qua ngày 18/6/2012.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 68,
+          "evidence": "khóa XIII, kỳ họp thứ 3 thông qua ngày 18 tháng 6 năm 2012"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q162",
+      "split": "test",
+      "question": "Theo Nghị định 145/2020/NĐ-CP, người lao động thuộc ngành nghề đặc thù có hợp đồng dưới 12 tháng phải báo trước bao lâu khi đơn phương chấm dứt?",
+      "answerable": true,
+      "expected_answer": "Ít nhất bằng một phần tư thời hạn của hợp đồng lao động.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 7,
+          "evidence": "Ít nhất bằng một phần tư thời hạn của hợp đồng lao động đối với hợp đồng lao động có thời hạn dưới 12 tháng"
+        }
+      ],
+      "filter": {
+        "document_id": "nd-145-2020"
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q163",
+      "split": "test",
+      "question": "Trước buổi đối thoại định kỳ tại nơi làm việc, các bên phải gửi nội dung đối thoại trước bao lâu?",
+      "answerable": true,
+      "expected_answer": "Chậm nhất 05 ngày làm việc trước ngày bắt đầu đối thoại.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 38,
+          "evidence": "Chậm nhất 05 ngày làm việc trước ngày bắt đầu tổ chức đối thoại định kỳ, các bên có trách nhiệm gửi nội dung đối thoại"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q164",
+      "split": "test",
+      "question": "Sau buổi đối thoại tại nơi làm việc, công ty phải công bố công khai nội dung chính trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Chậm nhất 03 ngày làm việc kể từ khi kết thúc đối thoại.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 38,
+          "evidence": "Chậm nhất 03 ngày làm việc kể từ khi kết thúc đối thoại, người sử dụng lao động có trách nhiệm công bố công khai tại nơi làm việc"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q165",
+      "split": "test",
+      "question": "Theo Bộ luật Lao động 2012, đối thoại tại nơi làm việc được tổ chức định kỳ bao lâu một lần?",
+      "answerable": true,
+      "expected_answer": "Định kỳ 03 tháng một lần hoặc theo yêu cầu của một bên.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 21,
+          "evidence": "Đối thoại tại nơi làm việc được tiến hành định kỳ 03 tháng một lần hoặc theo yêu cầu của một bên"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q166",
+      "split": "test",
+      "question": "Nghỉ không lương có được tính vào thời gian làm việc để hưởng phép năm không?",
+      "answerable": true,
+      "expected_answer": "Có, nếu được người sử dụng lao động đồng ý nhưng cộng dồn không quá 01 tháng trong một năm.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 58,
+          "evidence": "Thời gian nghỉ việc không hưởng lương nếu được người sử dụng lao động đồng ý nhưng cộng dồn không quá 01 tháng trong một năm"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q167",
+      "split": "test",
+      "question": "Thời gian nghỉ do tai nạn lao động có được tính để hưởng ngày nghỉ hằng năm không?",
+      "answerable": true,
+      "expected_answer": "Có, nhưng cộng dồn không quá 6 tháng.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 59,
+          "evidence": "Thời gian nghỉ do tai nạn lao động, bệnh nghề nghiệp nhưng cộng dồn không quá 6 tháng"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q168",
+      "split": "test",
+      "question": "Nhà trẻ ở khu vực có nhiều lao động nhận trẻ ở độ tuổi nào?",
+      "answerable": true,
+      "expected_answer": "Từ 03 tháng tuổi đến 03 tuổi.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 68,
+          "evidence": "Nhà trẻ, nhóm trẻ độc lập nhận trẻ em từ 03 tháng tuổi đến 03 tuổi"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q169",
+      "split": "test",
+      "question": "Lớp mẫu giáo độc lập nhận trẻ trong độ tuổi nào?",
+      "answerable": true,
+      "expected_answer": "Từ 03 tuổi đến 06 tuổi.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 68,
+          "evidence": "Trường mẫu giáo, lớp mẫu giáo độc lập nhận trẻ em từ 03 tuổi đến 06 tuổi"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q170",
+      "split": "test",
+      "question": "Muốn được bổ nhiệm làm trọng tài viên lao động cần trình độ và kinh nghiệm như thế nào?",
+      "answerable": true,
+      "expected_answer": "Trình độ đại học trở lên, hiểu biết pháp luật và ít nhất 05 năm làm việc trong lĩnh vực liên quan đến quan hệ lao động.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 90,
+          "evidence": "Có trình độ đại học trở lên, hiểu biết pháp luật và có ít nhất 05 năm làm việc trong lĩnh vực có liên quan đến quan hệ lao động"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q171",
+      "split": "test",
+      "question": "Theo Bộ luật Lao động 2012, người lao động bị khiển trách thì sau bao lâu được tự động xóa kỷ luật nếu không tái phạm?",
+      "answerable": true,
+      "expected_answer": "Sau 03 tháng kể từ ngày bị xử lý.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 36,
+          "evidence": "Người lao động bị khiển trách sau 03 tháng"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q172",
+      "split": "test",
+      "question": "Theo Bộ luật Lao động 2012, người bị tai nạn lao động suy giảm 5-10% khả năng lao động được bồi thường ít nhất bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Ít nhất 1,5 tháng tiền lương theo hợp đồng lao động.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 41,
+          "evidence": "Ít nhất bằng 1,5 tháng tiền lương theo hợp đồng lao động nếu bị suy giảm từ 5,0% đến 10% khả năng lao động"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q173",
+      "split": "test",
+      "question": "Theo Bộ luật Lao động 2012, lao động từ 15 đến dưới 18 tuổi được làm việc tối đa bao nhiêu giờ?",
+      "answerable": true,
+      "expected_answer": "Không quá 08 giờ/ngày và 40 giờ/tuần.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 45,
+          "evidence": "Thời giờ làm việc của người lao động chưa thành niên từ đủ 15 tuổi đến dưới 18 tuổi không được quá 08 giờ trong 01 ngày và 40 giờ"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q174",
+      "split": "test",
+      "question": "Theo Bộ luật Lao động 2012, thời hiệu yêu cầu Tòa án giải quyết tranh chấp lao động cá nhân là bao lâu?",
+      "answerable": true,
+      "expected_answer": "01 năm kể từ ngày phát hiện hành vi vi phạm.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 57,
+          "evidence": "Thời hiệu yêu cầu Toà án giải quyết tranh chấp lao động cá nhân là 01 năm"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q175",
+      "split": "test",
+      "question": "Người nước ngoài vào Việt Nam chào bán dịch vụ trong bao lâu thì không cần giấy phép lao động?",
+      "answerable": true,
+      "expected_answer": "Dưới 03 tháng.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 32,
+          "evidence": "Vào Việt Nam với thời hạn dưới 03 tháng để thực hiện chào bán dịch vụ"
+        },
+        {
+          "source_id": "blld-2012",
+          "page": 49,
+          "evidence": "Vào Việt Nam với thời hạn dưới 03 tháng để thực hiện chào bán dịch vụ"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q176",
+      "split": "test",
+      "question": "Theo Bộ luật Lao động 2012, sử dụng học sinh, sinh viên nước ngoài đang học tại Việt Nam làm việc thì phải báo trước cơ quan quản lý nhà nước về lao động bao lâu?",
+      "answerable": true,
+      "expected_answer": "Phải báo trước 07 ngày.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 49,
+          "evidence": "phải báo trước 07 ngày với cơ quan quản"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q177",
+      "split": "test",
+      "question": "Khi Hội đồng trọng tài đang giải quyết tranh chấp tập thể về lợi ích ở nơi không được đình công, các bên có được đồng thời đề nghị nơi khác giải quyết không?",
+      "answerable": true,
+      "expected_answer": "Không được đồng thời đề nghị (cơ quan khác) giải quyết.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1205",
+          "page": 7,
+          "evidence": "Trong thời gian Hội đồng trọng tài lao động giải quyết tranh chấp lao động tập thể về lợi ích, các bên không được đồng thời đề nghị"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q178",
+      "split": "test",
+      "question": "Thanh tra lao động có quyền thanh tra, điều tra ở những nơi nào?",
+      "answerable": true,
+      "expected_answer": "Nơi thuộc đối tượng, phạm vi thanh tra được giao theo quyết định thanh tra.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 44,
+          "evidence": "Thanh tra lao động có quyền thanh tra, điều tra nơi thuộc đối tượng, phạm vi thanh tra được giao theo quyết định thanh tra"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q179",
+      "split": "dev",
+      "question": "Sau khi nhận yêu cầu thương lượng tập thể, các bên phải thỏa thuận địa điểm, thời gian thương lượng trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 07 ngày làm việc.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 16,
+          "evidence": "Trong thời hạn 07 ngày làm việc kể từ ngày nhận được yêu cầu và nội dung thương lượng, các bên thỏa thuận về địa điểm, thời gian bắt đầu thương lượng"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q180",
+      "split": "dev",
+      "question": "Thỏa ước lao động tập thể ngành được ký kết khi nào?",
+      "answerable": true,
+      "expected_answer": "Khi có trên 50% tổng số người được lấy ý kiến biểu quyết tán thành.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 17,
+          "evidence": "Thỏa ước lao động tập thể ngành chỉ được ký kết khi có trên 50% tổng số người được lấy ý kiến biểu quyết tán thành"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q181",
+      "split": "dev",
+      "question": "Công ty có được trả lương theo chức danh thấp hơn lương tối thiểu không?",
+      "answerable": true,
+      "expected_answer": "Không được thấp hơn mức lương tối thiểu.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 20,
+          "evidence": "Mức lương theo công việc hoặc chức danh không được thấp hơn mức lương tối thiểu"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q182",
+      "split": "dev",
+      "question": "Phải ngừng việc do chính lỗi của người lao động thì người đó có được trả lương không?",
+      "answerable": true,
+      "expected_answer": "Không được trả lương.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 21,
+          "evidence": "Nếu do lỗi của người lao động thì người đó không được trả lương"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q183",
+      "split": "dev",
+      "question": "Xử lý kỷ luật lao động với người chưa đủ 15 tuổi cần có ai tham gia?",
+      "answerable": true,
+      "expected_answer": "Phải có sự tham gia của người đại diện theo pháp luật.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 26,
+          "evidence": "trường hợp là người chưa đủ 15 tuổi thì phải có sự tham gia của người đại diện theo pháp luật"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q184",
+      "split": "dev",
+      "question": "Khi bị xử lý kỷ luật, người lao động có quyền nhờ luật sư bào chữa không?",
+      "answerable": true,
+      "expected_answer": "Có, được tự bào chữa, nhờ luật sư hoặc tổ chức đại diện người lao động bào chữa.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 26,
+          "evidence": "Người lao động phải có mặt và có quyền tự bào chữa, nhờ luật sư hoặc tổ chức đại diện người lao động bào chữa"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q185",
+      "split": "dev",
+      "question": "Công ty có được kỷ luật nhân viên vì hành vi không được quy định trong nội quy lao động không?",
+      "answerable": true,
+      "expected_answer": "Không, đây là hành vi bị nghiêm cấm khi xử lý kỷ luật (trừ khi đã thỏa thuận trong hợp đồng hoặc luật quy định).",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 27,
+          "evidence": "Xử lý kỷ luật lao động đối với người lao động có hành vi vi phạm không được quy định trong nội quy lao động"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q186",
+      "split": "dev",
+      "question": "Lao động 16 tuổi có được làm mọi loại công việc không?",
+      "answerable": true,
+      "expected_answer": "Không, không được làm công việc hoặc ở nơi làm việc bị cấm tại Điều 147.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 29,
+          "evidence": "Người từ đủ 15 tuổi đến chưa đủ 18 tuổi không được làm công việc hoặc làm việc ở nơi làm việc quy định tại Điều 147"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q187",
+      "split": "dev",
+      "question": "Doanh nghiệp có được yêu cầu người khuyết tật nặng làm thêm giờ không?",
+      "answerable": true,
+      "expected_answer": "Không, trừ trường hợp được người lao động đồng ý.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 32,
+          "evidence": "khuyết tật nặng hoặc khuyết tật đặc biệt nặng làm thêm"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q188",
+      "split": "dev",
+      "question": "Một bên không thi hành quyết định của Ban trọng tài lao động thì phải làm gì?",
+      "answerable": true,
+      "expected_answer": "Các bên có quyền yêu cầu Tòa án giải quyết.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 40,
+          "evidence": "Trường hợp một trong các bên không thi hành quyết định giải quyết tranh chấp của Ban trọng tài lao động thì các bên có quyền yêu cầu Tòa án giải quyết"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q189",
+      "split": "dev",
+      "question": "Công ty có được can thiệp vào việc lấy ý kiến về đình công của tổ chức đại diện người lao động không?",
+      "answerable": true,
+      "expected_answer": "Không được gây khó khăn, cản trở hoặc can thiệp.",
+      "gold": [
+        {
+          "source_id": "blld-2019",
+          "page": 42,
+          "evidence": "Người sử dụng lao động không được gây khó khăn, cản trở hoặc can thiệp vào quá trình tổ chức đại diện người lao động tiến hành lấy ý kiến về"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q190",
+      "split": "dev",
+      "question": "Người làm bán thời gian thì tổng giờ làm cộng giờ làm thêm tối đa mỗi ngày là bao nhiêu?",
+      "answerable": true,
+      "expected_answer": "Không quá 12 giờ trong 01 ngày.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 56,
+          "evidence": "Trường hợp làm việc không trọn thời gian quy định tại Điều 32 của Bộ luật Lao động thì tổng số giờ làm việc bình thường và số giờ làm thêm không quá 12 giờ trong 01 ngày"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q191",
+      "split": "dev",
+      "question": "Lao động nữ mang thai có thể được nghỉ đi khám thai nhiều hơn quy định không?",
+      "answerable": true,
+      "expected_answer": "Có, người sử dụng lao động được khuyến khích tạo điều kiện cho nghỉ đi khám thai nhiều hơn quy định của Luật BHXH.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 69,
+          "evidence": "Khuyến khích người sử dụng lao động tạo điều kiện cho lao động nữ đang mang thai được nghỉ đi khám thai nhiều hơn"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q192",
+      "split": "dev",
+      "question": "Số ngày được nghỉ 30 phút trong kỳ hành kinh do ai quyết định?",
+      "answerable": true,
+      "expected_answer": "Do hai bên thỏa thuận phù hợp với thực tế nơi làm việc và nhu cầu của lao động nữ.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 70,
+          "evidence": "Số ngày có thời gian nghỉ trong thời gian hành kinh do hai bên thỏa thuận"
+        }
+      ],
+      "tags": [
+        "dieu_kien_ngoai_le"
+      ]
+    },
+    {
+      "id": "q193",
+      "split": "dev",
+      "question": "Việc thực hiện quy chế dân chủ ở cơ sở tại nơi làm việc phải tuân thủ nguyên tắc gì?",
+      "answerable": true,
+      "expected_answer": "Không được trái pháp luật và đạo đức xã hội.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 41,
+          "evidence": "Tổ chức thực hiện quy chế dân chủ ở cơ sở tại nơi làm việc không được trái pháp luật và đạo đức xã hội"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q194",
+      "split": "dev",
+      "question": "Hội đồng tiền lương quốc gia thương lượng khuyến nghị điều chỉnh lương tối thiểu bao lâu một lần?",
+      "answerable": true,
+      "expected_answer": "Hằng năm.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 46,
+          "evidence": "Hằng năm, tổ chức thương lượng để khuyến nghị với Chính phủ phương án điều chỉnh mức lương tối thiểu"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q195",
+      "split": "dev",
+      "question": "Hồ sơ xin giấy phép cho thuê lại lao động không hợp lệ thì Sở Lao động - Thương binh và Xã hội phải thông báo trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 10 ngày làm việc kể từ ngày tiếp nhận hồ sơ.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 24,
+          "evidence": "trong thời hạn 10 ngày làm việc kể từ ngày tiếp nhận hồ sơ, Sở Lao động - Thương binh và Xã hội"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q196",
+      "split": "dev",
+      "question": "Sở Lao động - Thương binh và Xã hội gửi báo cáo về cho thuê lại lao động 6 tháng và cả năm trước ngày nào?",
+      "answerable": true,
+      "expected_answer": "Báo cáo 6 tháng trước 20/7, báo cáo năm trước 20/01 năm sau.",
+      "gold": [
+        {
+          "source_id": "nd-145-2020-cb1203",
+          "page": 33,
+          "evidence": "Báo cáo 06 tháng gửi trước ngày 20 tháng 7 và báo cáo năm gửi trước ngày 20 tháng 01 năm sau"
+        }
+      ],
+      "tags": [
+        "truc_tiep"
+      ]
+    },
+    {
+      "id": "q197",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, mức lương tối thiểu được định nghĩa như thế nào?",
+      "answerable": true,
+      "expected_answer": "Là mức thấp nhất trả cho người lao động làm công việc giản đơn nhất, trong điều kiện lao động bình thường.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 27,
+          "evidence": "Mức lương tối thiểu là mức thấp nhất trả cho người lao động làm công việc giản đơn nhất, trong điều kiện lao động bình thường"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q198",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, chỉ tiêu tạo việc làm tăng thêm được xác định trong kế hoạch nào?",
+      "answerable": true,
+      "expected_answer": "Trong kế hoạch phát triển kinh tế - xã hội 05 năm và hằng năm.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 5,
+          "evidence": "Nhà nước xác định chỉ tiêu tạo việc làm tăng thêm trong kế hoạch phát triển kinh tế - xã hội 05 năm, hằng năm"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q199",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, Hội đồng trọng tài lao động phải kết thúc hòa giải trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong 07 ngày làm việc kể từ ngày nhận được đơn yêu cầu.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 58,
+          "evidence": "Trong thời hạn 07 ngày làm việc, kể từ ngày nhận được đơn yêu cầu giải quyết, Hội đồng trọng tài lao động phải kết thúc việc hòa giải"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "q200",
+      "split": "dev",
+      "question": "Theo Bộ luật Lao động 2012, sau khi ký thỏa ước lao động tập thể, phải gửi đến cơ quan quản lý nhà nước trong bao lâu?",
+      "answerable": true,
+      "expected_answer": "Trong thời hạn 10 ngày kể từ ngày ký kết.",
+      "gold": [
+        {
+          "source_id": "blld-2012",
+          "page": 24,
+          "evidence": "Trong thời hạn 10 ngày kể từ ngày ký kết, người sử dụng lao động hoặc"
+        }
+      ],
+      "filter": {
+        "year": 2012
+      },
+      "tags": [
+        "metadata_filter"
+      ]
+    },
+    {
+      "id": "abst-dev-001",
+      "split": "dev",
+      "question": "Theo các tài liệu trong kho, tỷ lệ thất nghiệp của Việt Nam năm 2024 là bao nhiêu?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Kho chỉ gồm Bộ luật Lao động 2012, Bộ luật Lao động 2019 và Nghị định 145/2020/NĐ-CP; không có số liệu thống kê thất nghiệp năm 2024."
+    },
+    {
+      "id": "abst-dev-002",
+      "split": "dev",
+      "question": "Mức lương tối thiểu vùng cụ thể áp dụng tại Hà Nội từ ngày 01/07/2025 là bao nhiêu theo các tài liệu này?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Kho có các văn bản lao động đến năm 2020 nhưng không có nghị định quy định mức lương tối thiểu vùng có hiệu lực từ 01/07/2025."
+    },
+    {
+      "id": "abst-test-001",
+      "split": "test",
+      "question": "Các tài liệu trong kho cho biết có bao nhiêu người lao động Việt Nam thất nghiệp trong quý IV năm 2025?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Các tài liệu là văn bản quy phạm pháp luật lao động, không chứa số liệu lao động thất nghiệp theo quý năm 2025."
+    },
+    {
+      "id": "abst-test-002",
+      "split": "test",
+      "question": "Mức giảm trừ gia cảnh cho mỗi người phụ thuộc theo chính sách thuế thu nhập cá nhân hiện hành là bao nhiêu?",
+      "answerable": false,
+      "expected_behavior": "search_and_abstain",
+      "absence_reason": "Kho không gồm văn bản thuế thu nhập cá nhân hoặc quy định mức giảm trừ gia cảnh."
+    }
+  ]
+}

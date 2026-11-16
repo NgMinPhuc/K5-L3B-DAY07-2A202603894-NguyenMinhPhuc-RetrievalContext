@@ -1,0 +1,70 @@
+{
+  "config": {
+    "name": "hybrid_rrf_wide_candidates",
+    "method": "hybrid_rrf",
+    "top_k": 3,
+    "budget": 800,
+    "candidate_k": 40,
+    "rrf_constant": 60,
+    "hypothesis": "Improvement 1: increase per-retriever candidates from 20 to 40; hypothesis: broader candidate recall gives RRF more chances to include evidence."
+  },
+  "split": "dev",
+  "n": 162,
+  "errors": 0,
+  "retrieval": {
+    "hit1": {
+      "n": 102,
+      "of": 160
+    },
+    "evidence_hit3": {
+      "n": 137,
+      "of": 160
+    },
+    "retrieved_evidence_any_turn": {
+      "n": 142,
+      "of": 160
+    },
+    "context_evidence_rate": {
+      "n": 53,
+      "of": 160
+    }
+  },
+  "agent": {
+    "answered": 21,
+    "abstained": 141,
+    "correct_abstentions": {
+      "n": 2,
+      "of": 2
+    },
+    "answerable_abstentions": {
+      "n": 139,
+      "of": 160
+    },
+    "citation_ids_in_final_context": {
+      "n": 21,
+      "of": 21
+    },
+    "semantic_answer_grades": {},
+    "semantic_grading_note": "Answer correctness and semantic citation support are intentionally left for manual review; citation ID presence alone is not semantic validation."
+  },
+  "latency": {
+    "shared_index_build_seconds": 0.1166,
+    "mean_query_ms": 5676.72,
+    "median_query_ms": 6014.38,
+    "successful_n": 162
+  },
+  "usage": {
+    "query_embedding_tokens": 15910,
+    "chat_usage": {
+      "completion_tokens": 25317,
+      "total_tokens": 329938,
+      "prompt_tokens": 304621
+    },
+    "embedding_estimated_cost_usd": 0.0003182,
+    "embedding_cost_note": "Day 6 pinned price table; verify current provider pricing before reporting.",
+    "chat_estimated_cost_usd": 0.34239225,
+    "chat_cost_note": "Estimated from controller token deltas and configured per-million-token prices.",
+    "total_estimated_cost_usd": 0.34271045
+  },
+  "review_required": 21
+}
